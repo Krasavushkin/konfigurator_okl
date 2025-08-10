@@ -1,0 +1,42 @@
+.input {
+    /* Базовые стили */
+    font-size: 15px;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ccc; /* Серый */
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* Состояние при фокусе */
+.input:focus {
+    border-color: #9E0929;
+    box-shadow: 0 0 0 2px rgba(158, 9, 41, 0.2);
+}
+
+/* Состояние disabled */
+.input:disabled {
+    background-color: #f5f5f5; /* Светло-серый */
+    color: #999; /* Серый */
+    cursor: not-allowed;
+}
+
+/* Ошибка (дополнительный вариант) */
+.input.error {
+    border-color: #9E0929;
+    background-color: rgba(158, 9, 41, 0.05);
+}
+
+/* Размеры (дополнительно) */
+.input.small {
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.input.large {
+    padding: 16px 20px;
+    font-size: 18px;
+}

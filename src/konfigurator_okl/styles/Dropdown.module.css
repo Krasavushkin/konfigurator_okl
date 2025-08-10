@@ -1,0 +1,126 @@
+.dropdowns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dropdown {
+    position: relative;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+.dropdownHeader {
+    font-size: 15px;
+    padding: 15px;
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.dropdownHeader:hover {
+    background: #eeeeee;
+    border-color: #9E0929;
+}
+
+.dropdownHeader.open {
+    background: #eeeeee;
+    border-color: #9E0929;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.arrow {
+    font-size: 12px;
+    color: #666;
+}
+
+.dropdownList {
+    position: absolute;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: white;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.dropdownItem {
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.dropdownItem:hover {
+    background: #ffe8ec;
+}
+
+.dropdownItem.selected {
+    background: #ffe8ec;
+    font-weight: bold;
+
+}
+
+.disabled .dropdownHeader {
+    background: #f9f9f9;
+    color: #999;
+    cursor: not-allowed;
+    border-color: #eee;
+}
+
+.result {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 4px;
+    border: 1px solid #eee;
+}
+
+.saveButton {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #9E0929;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.2s;
+}
+
+.saveButton:hover {
+    background: #9E0929;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* Адаптация для планшетов (768px и меньше) */
+@media (max-width: 768px) {
+    h3 {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Адаптация для мобильных (480px и меньше) */
+@media (max-width: 480px) {
+    h3 {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+}

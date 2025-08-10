@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Konfigurator} from "./konfigurator_okl/Konfigurator";
 
 function App() {
   return (
     <div className="App">
-
+      <Konfigurator />
     </div>
   );
 }

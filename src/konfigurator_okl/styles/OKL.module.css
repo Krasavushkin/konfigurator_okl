@@ -1,0 +1,45 @@
+.result {
+    display: flex;
+    width: 1440px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin: 20px auto;
+    gap: 20px
+}
+.oklInfo {
+    text-align: left;
+
+    width: 50%;
+    border-radius: 4px;
+
+}
+.oklBlock{
+    width: 70%;
+}
+.info{
+    border: 1px solid #ddd;
+    list-style: none;
+    justify-content: left;
+}
+.oklItem {
+    margin-bottom: 15px;
+    padding: 10px;
+
+    border-radius: 4px;
+}
+
+.cableList {
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+.removeBtn {
+    margin-left: 10px;
+    color: #9E0929;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
