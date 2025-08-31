@@ -1,0 +1,129 @@
+.oklCard {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e1e8ed;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.oklCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.oklCard.selected {
+    border: 2px solid #9E0929;
+    background: linear-gradient(135deg, #ffffff, #f0f8ff);
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 16px;
+    border: 1px solid #e1e8ed;
+    border-radius: 12px;
+}
+
+.oklInfo {
+    flex: 1;
+}
+.oklLength {
+    padding: 6px 24px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.oklTitle {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.oklActions {
+    display: flex;
+    gap: 8px;
+}
+
+.actionBtn {
+    background: none;
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background 0.2s ease;
+}
+
+.actionBtn:hover {
+    background: #f0f0f0;
+}
+
+.addCableBtn {
+    width: 80%;
+    padding: 12px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 12px;
+    font-size: 16px;
+    transition: background 0.2s ease;
+}
+
+.addCableBtn:hover {
+    background: #218838;
+}
+
+/* Состояния */
+.oklCard:active {
+    transform: translateY(0);
+}
+
+/* Рекомендуемый минималистичный стиль */
+.description {
+    margin-top: 20px;
+    padding: 16px;
+    background: #fafafa;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.description h3 {
+    margin: 0 0 12px 0;
+    color: #333;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.description > span {
+    margin-bottom: 8px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+
+
+.description a {
+    padding: 8px 16px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.description a:hover {
+    background: #0056b3;
+}
+
+.details{
+    margin-top: 20px;
+}

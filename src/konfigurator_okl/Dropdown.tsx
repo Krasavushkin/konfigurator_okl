@@ -1,17 +1,9 @@
-import React from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import styles from './styles/Dropdown.module.css';
 
 type Item = { id: string; name: string };
 
-export const Dropdown = ({
-                             title,
-                             items,
-                             selectedId,
-                             isOpen,
-                             onToggle,
-                             onSelect,
-                             disabled
-                         }: {
+interface DropdownProps {
     title: string;
     items: Item[];
     selectedId: string;
@@ -19,8 +11,57 @@ export const Dropdown = ({
     onToggle: () => void;
     onSelect: (id: string, name: string) => void;
     disabled?: boolean;
-}) => {
-    const selectedName = items.find(item => item.id === selectedId)?.name ||"не выбрано";
+    searchable?: boolean; // Новое свойство для включения поиска
+    placeholder?: string; // Плейсхолдер для поиска
+}
+
+export const Dropdown: React.FC<DropdownProps> = ({
+                                                      title,
+                                                      items,
+                                                      selectedId,
+                                                      isOpen,
+                                                      onToggle,
+                                                      onSelect,
+                                                      disabled = false,
+                                                      searchable = false, // По умолчанию поиск отключен
+                                                      placeholder = "Поиск..."
+                                                  }) => {
+    const [searchTerm, setSearchTerm] = useState('');
+    const searchInputRef = useRef<HTMLInputElement>(null);
+
+    const selectedName = items.find(item => item.id === selectedId)?.name || "не выбрано";
+
+    // Фильтруем элементы по поисковому запросу
+    const filteredItems = useMemo(() => {
+        if (!searchable || !searchTerm) return items;
+
+        return items.filter(item =>
+            item.name.toLowerCase().includes(searchTerm.toLowerCase())
+        );
+    }, [items, searchTerm, searchable]);
+
+    // Фокусируемся на поле поиска при открытии dropdown
+    useEffect(() => {
+        if (isOpen && searchable && searchInputRef.current) {
+            searchInputRef.current.focus();
+        }
+    }, [isOpen, searchable]);
+
+    // Очищаем поиск при закрытии dropdown
+    useEffect(() => {
+        if (!isOpen) {
+            setSearchTerm('');
+        }
+    }, [isOpen]);
+
+    const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setSearchTerm(e.target.value);
+    };
+
+    const handleItemSelect = (id: string, name: string) => {
+        onSelect(id, name);
+        setSearchTerm(''); // Очищаем поиск после выбора
+    };
 
     return (
         <div className={`${styles.dropdown} ${disabled ? styles.disabled : ''}`}>
@@ -36,15 +77,38 @@ export const Dropdown = ({
 
             {isOpen && (
                 <div className={styles.dropdownList}>
-                    {items.map(item => (
-                        <div
-                            key={item.id}
-                            className={`${styles.dropdownItem} ${item.id === selectedId ? styles.selected : ''}`}
-                            onClick={() => onSelect(item.id, item.name)}
-                        >
-                            {item.name}
+                    {/* Поле поиска (только для searchable dropdown) */}
+                    {searchable && (
+                        <div className={styles.searchContainer}>
+                            <input
+                                ref={searchInputRef}
+                                type="text"
+                                placeholder={placeholder}
+                                value={searchTerm}
+                                onChange={handleSearchChange}
+                                className={styles.searchInput}
+                                onClick={(e) => e.stopPropagation()} // Предотвращаем закрытие dropdown
+                            />
                         </div>
-                    ))}
+                    )}
+
+                    {/* Список элементов */}
+                    {filteredItems.length > 0 ? (
+                        filteredItems.map(item => (
+                            <div
+                                key={item.id}
+                                className={`${styles.dropdownItem} ${item.id === selectedId ? styles.selected : ''}`}
+                                onClick={() => handleItemSelect(item.id, item.name)}
+                            >
+                                {item.name}
+                            </div>
+                        ))
+                    ) : (
+                        // Сообщение, если ничего не найдено
+                        <div className={styles.noResults}>
+                            {searchTerm ? 'Ничего не найдено' : 'Нет доступных вариантов'}
+                        </div>
+                    )}
                 </div>
             )}
         </div>

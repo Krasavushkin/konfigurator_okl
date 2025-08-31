@@ -18,7 +18,7 @@ export type Fitting = BaseEntity;
 
 export type CableType = BaseEntity;
 
-export type Cable = BaseEntity & {
+export type CableData = BaseEntity & {
     cableTypeId: CableType['id'];
 };
 
@@ -196,7 +196,7 @@ export const CABLE_APPOINTMENT: BaseEntity[] = [
     {id:"cable_type:optic", name:"Оптические"},
 ]
 
-export const CABLES: Cable[] = [
+export const CABLES: CableData[] = [
     {id: nanoid(), name: "КПСнг(А)-FRHF 2x2x0,5", cableTypeId: "cable_type:signal"},
     {id: nanoid(), name: "КПСнг(А)-FRHF 2x2x1,0", cableTypeId: "cable_type:signal"},
     {id: nanoid(), name: "КПСЭнг(А)-FRLS 2x2x0,5", cableTypeId: "cable_type:signal"},

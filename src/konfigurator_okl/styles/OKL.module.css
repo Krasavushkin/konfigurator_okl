@@ -1,45 +1,231 @@
-.result {
+.configContainer {
+    padding: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 32px;
+    color: #2c3e50;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.oklGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.oklCard {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e1e8ed;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.oklCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.oklHeader {
     display: flex;
-    width: 1440px;
-    padding: 20px;
-    border: 1px solid #ddd;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.oklTitle {
+    margin: 0;
+    color: #f0f0f0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.oklLength {
+    background: #9E0929;
+    color: white;
+    padding: 6px 24px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.oklSummary {
+    margin-bottom: 20px;
+}
+
+.oklSummary h4 {
+    margin: 0 0 12px 0;
+    color: #7f8c8d;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.cableGroups {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.cableGroup {
+    padding: 8px 12px;
+    background: #e8f4fd;
+    border: 1px solid #b8dcf9;
     border-radius: 6px;
-    margin: 20px auto;
-    gap: 20px
+    font-size: 13px;
+    color: #2980b9;
+    font-weight: 500;
 }
-.oklInfo {
-    text-align: left;
 
-    width: 50%;
-    border-radius: 4px;
+.noCables {
+    color: #95a5a6;
+    font-style: italic;
+    font-size: 14px;
+}
 
+.cableDetails {
+    margin-bottom: 20px;
 }
-.oklBlock{
-    width: 70%;
-}
-.info{
-    border: 1px solid #ddd;
-    list-style: none;
-    justify-content: left;
-}
-.oklItem {
-    margin-bottom: 15px;
-    padding: 10px;
 
-    border-radius: 4px;
+.cableDetails h4 {
+    margin: 0 0 12px 0;
+    color: #7f8c8d;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .cableList {
-    border: 1px solid #ccc;
-    margin-top: 5px;
-    padding-left: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ecf0f1;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.cableItem {
+    display: flex;
+    align-items: center;
+    padding: 10px 8px;
+    margin-bottom: 6px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border-left: 3px solid #9E0929;
+}
+
+.cableItem:hover {
+    background: #e8f4f8;
+}
+
+.cableNumber {
+    min-width: 24px;
+    font-weight: 600;
+    color: #7f8c8d;
+    margin-right: 8px;
+}
+
+.cableInfo {
+    flex: 1;
+    font-size: 14px;
+    color: #2c3e50;
 }
 
 .removeBtn {
-    margin-left: 10px;
-    color: #9E0929;
-    background: none;
+    background: #e74c3c;
+    color: white;
     border: none;
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
     cursor: pointer;
-    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    transition: background 0.2s ease;
+}
+
+.removeBtn:hover {
+    background: #9E0929;
+}
+
+.emptyMessage {
+    padding: 20px;
+    text-align: center;
+    color: #bdc3c7;
+    font-style: italic;
+    background: #fafafa;
+    border-radius: 6px;
+}
+
+.limitMessage {
+    padding: 12px;
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 6px;
+    color: #856404;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.oklStats {
+    display: flex;
+    gap: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #ecf0f1;
+}
+
+.statItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.statLabel {
+    font-size: 12px;
+    color: #7f8c8d;
+    margin-bottom: 4px;
+}
+
+.statValue {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    padding-top: 24px;
+    border-top: 2px solid #ecf0f1;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .oklGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .oklCard {
+        padding: 16px;
+    }
+
+    .oklHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .oklStats {
+        flex-direction: column;
+        gap: 8px;
+    }
 }

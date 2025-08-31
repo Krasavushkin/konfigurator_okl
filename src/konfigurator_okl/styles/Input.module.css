@@ -10,7 +10,10 @@
     transition: all 0.3s ease;
     outline: none;
 }
-
+.title {
+    font-size: 18px;
+    font-weight: bold;
+}
 /* Состояние при фокусе */
 .input:focus {
     border-color: #9E0929;

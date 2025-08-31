@@ -1,15 +1,16 @@
 import React, { ChangeEvent } from 'react';
 import styles from './styles/Input.module.css';
+
 interface InputProps {
     title: string;
     value: number;
     onChange: (value: string) => void;
     placeholder?: string;
-    type?: 'text' | 'password' | 'email' | 'number';
     className?: string;
     disabled?: boolean;
     size?: 'default' | 'small' | 'large';
     error?: boolean;
+    min?: number;
 }
 
 export const Input: React.FC<InputProps> = ({
@@ -17,38 +18,59 @@ export const Input: React.FC<InputProps> = ({
                                                 value,
                                                 onChange,
                                                 placeholder = '',
-                                                type = 'text',
                                                 className = '',
                                                 disabled = false,
                                                 size = 'default',
                                                 error = false,
+                                                min = 1,
                                             }) => {
     const sizeClass = {
         'small': styles.small,
         'large': styles.large,
         'default': ''
     }[size];
+
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-        onChange(e.target.value);
+        const inputValue = e.target.value;
+
+        // Разрешаем только цифры и точку
+        if (!/^\d*\.?\d*$/.test(inputValue)) {
+            return;
+        }
+
+        onChange(inputValue);
+    };
+
+    const handleBlur = () => {
+        // При потере фокуса проверяем и нормализуем
+        if (value < min) {
+            onChange(min.toString());
+        }
     };
 
     return (
-        <div>
-            <h3> {title}</h3>
+        <div className={styles.inputContainer}>
+            <h3 className={styles.title}>{title}</h3>
             <input
-                type={"number"}
+                type="text"
+                inputMode="decimal"
                 value={value}
                 onChange={handleChange}
+                onBlur={handleBlur}
                 placeholder={placeholder}
                 className={`
-        ${styles.input} 
-        ${sizeClass} 
-        ${error ? styles.error : ''} 
-        ${className}
-      `}
+                    ${styles.input} 
+                    ${sizeClass} 
+                    ${error ? styles.error : ''} 
+                    ${className}
+                `}
                 disabled={disabled}
             />
+            {error && value < min && (
+                <div className={styles.errorMessage}>
+                    Значение не может быть меньше {min}
+                </div>
+            )}
         </div>
-
     );
 };
