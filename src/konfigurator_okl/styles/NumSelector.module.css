@@ -1,0 +1,91 @@
+.selectorContainer {
+}
+/* Базовые стили (десктоп) */
+.selectorTitle {
+    text-align: left;
+    font-size: clamp(16px, 2vw, 18px); /* Адаптивный размер */
+    margin-bottom: clamp(8px, 1.5vw, 12px);
+    font-weight: 600;
+    width: 100%;
+}
+
+.selector {
+    width: 100%;
+    max-width: 160px;
+    padding: clamp(8px, 2vw, 10px) 12px;
+    font-size: clamp(14px, 1.8vw, 15px);
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #333;
+    transition: all 0.2s ease;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23333'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    cursor: pointer;
+}
+
+.selector:focus {
+    outline: none;
+    border-color: #9E0929;
+    box-shadow: 0 0 0 2px rgba(158, 9, 41, 0.2);
+}
+
+.selector:hover {
+    border-color: #bbb;
+}
+
+.option {
+    padding: 8px;
+    font-size: inherit;
+}
+
+/* Планшетная версия (768px - 1024px) */
+@media (max-width: 1024px) {
+    .selector {
+        max-width: 140px;
+        padding: 9px 12px;
+    }
+}
+
+/* Мобильная версия (до 768px) */
+@media (max-width: 768px) {
+    .selectorTitle {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .selector {
+        max-width: 80%;
+        padding: 10px 12px;
+        font-size: 15px;
+        background-size: 14px;
+    }
+}
+
+/* Очень маленькие экраны (до 480px) */
+@media (max-width: 480px) {
+    .selectorTitle {
+        font-size: 15px;
+    }
+
+    .selector {
+        padding: 8px 10px;
+        font-size: 14px;
+        background-position: right 8px center;
+    }
+
+    .option {
+        padding: 6px 8px;
+    }
+}
+
+/* Оптимизация для touch-устройств */
+@media (pointer: coarse) {
+    .selector {
+        padding: 12px 14px; /* Увеличенная область касания */
+        min-height: 44px; /* Минимальный размер для удобного тапа */
+    }
+}

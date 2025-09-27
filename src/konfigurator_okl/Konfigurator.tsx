@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { CABLE_APPOINTMENT, CABLES, FITTINGS, OKL, SURFACES, SUSPENSIONS } from './data';
+import {CABLE_APPOINTMENT, CABLES, FITTINGS, OKL, SURFACES, SUSPENSIONS, TIME_OF_WORK} from './data';
 import styles from './styles/Konfigurator.module.css';
 import { Dropdown } from './Dropdown';
 import { Header } from './Header';
@@ -7,6 +7,7 @@ import { Input } from './Input';
 import { Button } from './Button';
 import {ConfigOKL} from "./ConfigOKL";
 import {OKLconfig} from "./infoOKL/OKLconfig";
+import {NumSelector} from "./NumSelector";
 
 type Cable = {
     id: string;
@@ -191,6 +192,23 @@ export const Konfigurator = () => {
             oklList,
         });
     };
+    const handleCopyOKL = (oklId: string) => {
+        const oklToCopy = oklList.find(okl => okl.id === oklId);
+        if (!oklToCopy) return;
+
+        // Создаем копию с новым ID
+        const copiedOKL: OKLItem = {
+            ...oklToCopy,
+            id: generateUniqueId(),
+            name: `${oklToCopy.name}`,
+            cables: oklToCopy.cables.map(cable => ({
+                ...cable,
+                id: generateUniqueId() // Новые ID для кабелей
+            }))
+        };
+
+        setOklList(prev => [...prev, copiedOKL]);
+    };
 
     return (
         <div className={styles.container}>
@@ -198,6 +216,7 @@ export const Konfigurator = () => {
 
                 <div className={styles.dropdowns}>
                     <Dropdown
+                        id="dropdown-suspension"
                         title="Тип кабеленесущего элемента"
                         items={SUSPENSIONS}
                         selectedId={selectedSuspension}
@@ -249,6 +268,8 @@ export const Konfigurator = () => {
                 />
             </div>
                 <div className={styles.dropdowns}>
+                    <NumSelector title={"Время работы ОКЛ в минутах"} value={1} data={TIME_OF_WORK} onChange={()=>{}} />
+
                     <Dropdown
                         title="Назначение кабеля"
                         items={CABLE_APPOINTMENT}
@@ -288,6 +309,7 @@ export const Konfigurator = () => {
                 onEditOKL={handleEditOKL}
                 onAddCable={handleAddCable}
                 onSave={handleSaveConfig}
+                onCopyOKL={handleCopyOKL}
             />
 
             {/*{selectedFitting && (v

@@ -4,6 +4,7 @@ import styles from './styles/Dropdown.module.css';
 type Item = { id: string; name: string };
 
 interface DropdownProps {
+    id?: string
     title: string;
     items: Item[];
     selectedId: string;
@@ -31,15 +32,6 @@ export const Dropdown: React.FC<DropdownProps> = ({
 
     const selectedName = items.find(item => item.id === selectedId)?.name || "не выбрано";
 
-    // Фильтруем элементы по поисковому запросу
-    const filteredItems = useMemo(() => {
-        if (!searchable || !searchTerm) return items;
-
-        return items.filter(item =>
-            item.name.toLowerCase().includes(searchTerm.toLowerCase())
-        );
-    }, [items, searchTerm, searchable]);
-
     // Фокусируемся на поле поиска при открытии dropdown
     useEffect(() => {
         if (isOpen && searchable && searchInputRef.current) {
@@ -55,8 +47,24 @@ export const Dropdown: React.FC<DropdownProps> = ({
     }, [isOpen]);
 
     const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setSearchTerm(e.target.value);
+        let value = e.target.value;
+
+        // Удаляем пробелы в начале
+        value = value.trimStart();
+
+        // Заменяем multiple пробелы на один
+        value = value.replace(/\s{2,}/g, ' ');
+
+        setSearchTerm(value);
     };
+
+    const filteredItems = useMemo(() => {
+        if (!searchable || !searchTerm.trim()) return items;
+
+        return items.filter(item =>
+            item.name.toLowerCase().includes(searchTerm.toLowerCase().trim())
+        );
+    }, [items, searchTerm, searchable]);
 
     const handleItemSelect = (id: string, name: string) => {
         onSelect(id, name);

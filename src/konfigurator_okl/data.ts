@@ -196,6 +196,8 @@ export const CABLE_APPOINTMENT: BaseEntity[] = [
     {id:"cable_type:optic", name:"Оптические"},
 ]
 
+export const TIME_OF_WORK = [11, 20, 21, 23, 24, 25, 26, 27, 29, 41, 50, 57, 58, 65, 68, 69, 72, 89, 93, 95, 120]
+
 export const CABLES: CableData[] = [
     {id: nanoid(), name: "КПСнг(А)-FRHF 2x2x0,5", cableTypeId: "cable_type:signal"},
     {id: nanoid(), name: "КПСнг(А)-FRHF 2x2x1,0", cableTypeId: "cable_type:signal"},

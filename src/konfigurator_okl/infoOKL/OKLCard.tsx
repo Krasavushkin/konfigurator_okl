@@ -1,10 +1,11 @@
 import React from 'react';
-import { CableList } from './CableList';
-import { CapacityIndicator } from './CapacityIndicator';
-import { OKLActions } from './OKLActions';
+import {CableList} from './CableList';
+import {CapacityIndicator} from './CapacityIndicator';
+import {OKLActions} from './OKLActions';
 import styles from './OKLCard.module.css';
 import {OKL} from "../data";
 import {Button} from "../Button";
+import {Link} from "./Link";
 
 export type OKL = {
     id: string;
@@ -28,6 +29,7 @@ interface OKLCardProps {
     onDelete: (oklId: string) => void;
     onRemoveCable: (oklId: string, cableId: string) => void;
     onAddCable: (oklId: string) => void;
+    onCopy: (oklId: string) => void;
 }
 
 export const OKLCard: React.FC<OKLCardProps> = ({
@@ -37,21 +39,25 @@ export const OKLCard: React.FC<OKLCardProps> = ({
                                                     onEdit,
                                                     onDelete,
                                                     onRemoveCable,
-                                                    onAddCable
+                                                    onCopy
                                                 }) => {
     const handleCardClick = () => {
         onSelect(okl.id);
     };
 
-    const handleAddCableClick = (e: React.MouseEvent) => {
-        e.stopPropagation();
-        onAddCable(okl.id);
-    };
-
     return (
         <div
             className={`${styles.oklCard} ${isSelected ? styles.selected : ''}`}
-            onClick={handleCardClick}>
+            onClick={handleCardClick}
+        >
+          {/*   Индикатор выбора
+            {isSelected && (
+                <div className={styles.selectionIndicator}>
+                    <span>✓</span>
+                    Выбрано для добавления кабелей
+                </div>
+            )}
+*/}
             <h3>Наименование ОКЛ:</h3>
 
             {/* Заголовок и действия */}
@@ -67,20 +73,45 @@ export const OKLCard: React.FC<OKLCardProps> = ({
                     onEdit={onEdit}
                     onDelete={onDelete}
                     isSelected={isSelected}
+                    onCopy={onCopy}
                 />
             </div>
 
-            {/* Индикатор заполнения */}
-            <CapacityIndicator cableCount={okl.cables.length} />
+            {/* Остальной код без изменений */}
+            <CapacityIndicator cableCount={okl.cables.length}/>
 
-            {/* Список кабелей */}
             <CableList
                 cables={okl.cables}
                 oklId={okl.id}
                 onRemoveCable={onRemoveCable}
             />
-            {/* Кнопка добавления кабеля */}
-            {okl.cables.length < 8 && (
+
+            <div className={styles.description}>
+                <h3>Описание:</h3>
+                <span>
+                    СПЕЦКАБЛАЙН-{okl.name}-{okl.length} м
+                </span>
+                ({okl.cables.map((cable, index) => (
+                <span key={cable.id} className={styles.cableItem}>
+                        {index > 0 && " + "}
+                    {cable.name} - {cable.length}м
+                    </span>
+            ))})
+
+                <Link
+                    href={"https://spetskabel.ru/products/lines/gf-gl/"}
+                    className={styles.details}
+                    title={"Информация об ОКЛ"}
+                >
+                    Подробнее
+                </Link>
+            </div>
+        </div>
+    );
+};
+
+{/* Кнопка добавления кабеля */}
+{/*  {okl.cables.length < 8 && (
                <button
                     className={styles.addCableBtn}
                     onClick={handleAddCableClick}
@@ -89,21 +120,9 @@ export const OKLCard: React.FC<OKLCardProps> = ({
                 </button>
 
 
-            )}
-            <div className={styles.description}>
-                <h3 >Описание:</h3>
-                <span>
-                    СПЕЦКАБЛАЙН-{okl.name}-{okl.length} м </span>
-                ({okl.cables.map((cable, index) => (
-                <span key={cable.id} className={styles.cableItem}>
-                             {index > 0 && " + "}
-                    {cable.name} - {cable.length}м
-                            </span> ))})
-                <div className={styles.details}>
-                    <a href={'https://spetskabel.ru/products/lines/gf-gl/'}>Подробнее</a>
-                </div>
+            )}*/}
 
-            </div>
-        </div>
-    );
-};
+/*  const handleAddCableClick = (e: React.MouseEvent) => {
+        e.stopPropagation();
+        onAddCable(okl.id);
+    };*/
