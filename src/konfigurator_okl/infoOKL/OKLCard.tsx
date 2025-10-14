@@ -4,7 +4,6 @@ import {CapacityIndicator} from './CapacityIndicator';
 import {OKLActions} from './OKLActions';
 import styles from './OKLCard.module.css';
 import {OKL} from "../data";
-import {Button} from "../Button";
 import {Link} from "./Link";
 
 export type OKL = {
@@ -19,6 +18,7 @@ export type Cable = {
     cableTypeId: string;
     name: string;
     length: number;
+    description?: string
 };
 
 interface OKLCardProps {

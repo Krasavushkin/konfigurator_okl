@@ -1,30 +1,96 @@
-  import * as XLSX from 'xlsx';
+import * as XLSX from 'xlsx';
 import {Cable, OKL} from "../infoOKL/OKLCard";
 import html2pdf from 'html2pdf.js'
 
 
-
 export class ExportService {
-    // PDF экспорт
+
     async exportToPDF(oklList: OKL[], fileName: string = 'OKL-Configuration'): Promise<void> {
-        const element = document.createElement('div');
-        element.innerHTML = this.generateHTMLContent(oklList);
-        document.body.appendChild(element);
+        const container = document.createElement('div');
 
-        const options = {
-            margin: 10,
-            filename: `${fileName}-${this.getFormattedDate()}.pdf`,
-            image: { type: 'jpeg', quality: 0.98 },
-            html2canvas: { scale: 2 },
-            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-        };
+        const styles = `
+        <style>
+            body { font-family: "Arial", sans-serif; font-size: 12px; color: #222; }
+            h1 { text-align: center; color: #8B0000; margin-bottom: 20px; }
+            .okl-block {
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                margin-bottom: 20px;
+                padding: 10px 15px;
+                background: #f9f9f9;
+            }
+            .okl-title { font-size: 14px; font-weight: bold; color: #800000; margin-bottom: 10px; }
+            table {
+                width: 100%; border-collapse: collapse; margin-top: 5px;
+            }
+            th, td {
+                border: 1px solid #aaa; padding: 6px 8px; text-align: left;
+            }
+            th {
+                background-color: #eee; font-weight: bold;
+            }
+            .footer {
+                  text-align: center;
+                  font-size: 12px;
+                  color: #555;
+                  margin-bottom: 30px;
+                  padding-bottom: 10px;
+                  border-bottom: 1px solid #ccc;
+                  bottom: 0;
+                  width: 100%;
+                  font-family: "Arial", sans-serif;
+                  }
+        </style>
+    `;
 
+        // === 2. Собираем контент ===
+        const content = `
+        <div class="footer">
+            © ООО НПП "Спецкабель", ${new Date().getFullYear()}
+        </div>
+        ${styles}
+        <h1>Конфигурация ОКЛ</h1>
+        ${oklList.map(okl => `
+            <div class="okl-block">
+              <div class="okl-title">
+  СПЕЦКАБЛАЙН-${okl.name}
+  (${okl.cables
+            .map((cable, index) =>
+                `${cable.name} - ${cable.length} м${index < okl.cables.length - 1 ? ' + ' : ''}`
+            )
+            .join('')}
+  )
+</div>
+
+                <p><b>Длина ОКЛ:</b> ${okl.length} м</p>
+                <p><b>Количество кабелей:</b> ${okl.cables.length}</p>
+                <p><b>Общая длина кабелей:</b> ${this.calculateTotalCableLength(okl.cables)} м</p>
+
+            </div>
+        `).join('')}
+       
+    `;
+
+        container.innerHTML = content;
+        document.body.appendChild(container);
+
+        // === 3. Конвертируем в PDF ===
         try {
-            await html2pdf().from(element).set(options).save();
+            await html2pdf()
+                .from(container)
+                .set({
+                    margin: 10,
+                    filename: `${fileName}-${this.getFormattedDate()}.pdf`,
+                    image: {type: 'jpeg', quality: 1},
+                    html2canvas: {scale: 2},
+                    jsPDF: {unit: 'mm', format: 'a4', orientation: 'portrait'}
+                })
+                .save();
         } finally {
-            document.body.removeChild(element);
+            document.body.removeChild(container);
         }
     }
+
 
     private generateHTMLContent(oklList: OKL[]): string {
         return `
@@ -182,7 +248,7 @@ export class ExportService {
             content += '\n' + '-'.repeat(40) + '\n\n';
         });
 
-        const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+        const blob = new Blob([content], {type: 'text/plain;charset=utf-8'});
         const link = document.createElement('a');
         link.href = URL.createObjectURL(blob);
         link.download = `${fileName}-${this.getFormattedDate()}.txt`;

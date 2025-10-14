@@ -1,13 +1,11 @@
 import React, { useState, useMemo } from 'react';
 import {CABLE_APPOINTMENT, CABLES, FITTINGS, OKL, SURFACES, SUSPENSIONS, TIME_OF_WORK} from './data';
-import styles from './styles/Konfigurator.module.css';
+import styles from './styles/Konfigurator2.module.css';
 import { Dropdown } from './Dropdown';
 import { Header } from './Header';
 import { Input } from './Input';
 import { Button } from './Button';
-import {ConfigOKL} from "./ConfigOKL";
 import {OKLconfig} from "./infoOKL/OKLconfig";
-import {NumSelector} from "./NumSelector";
 
 type Cable = {
     id: string;
@@ -23,7 +21,7 @@ type OKLItem = {
     cables: Cable[];
 };
 
-export const Konfigurator = () => {
+export const Konfigurator2 = () => {
     const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
     const [selectedCableType, setSelectedCableType] = useState<string>('');
@@ -210,8 +208,10 @@ export const Konfigurator = () => {
     };
 
     return (
-        <div className={styles.container}>
+        <>
             <Header />
+            <div className={styles.container}>
+
 
                 <div className={styles.dropdowns}>
                     <Dropdown
@@ -242,32 +242,32 @@ export const Konfigurator = () => {
                         disabled={!selectedSurface}
                     />
                 </div>
-            <div className={styles.dropdowns}>
-                <Dropdown
-                    title="Огнестойкая кабельная линия"
-                    items={availableOKL}
-                    selectedId={selectedOKL}
-                    isOpen={activeDropdown === 'OKL'}
-                    onToggle={() => toggleDropdown('OKL')}
-                    onSelect={handleSelect('OKL')}
-                    disabled={false}
-                    searchable={true}
-                    placeholder="Поиск ОКЛ..."
-                />
-                <Input
-                    title="Длина в метрах"
-                    value={meter}
-                    onChange={(e) => setMeter(Number(e))}
-                    placeholder="длина в метрах"
-                />
-                <Button
-                    title="+ Добавить ОКЛ"
-                    onClick={handleAddOKL}
-                    disabled={!selectedOKL || meter < 1}
-                />
-            </div>
                 <div className={styles.dropdowns}>
-               {/*     <NumSelector title={"Время работы ОКЛ в минутах"} value={1} data={TIME_OF_WORK} onChange={()=>{}} />
+                    <Dropdown
+                        title="Огнестойкая кабельная линия"
+                        items={availableOKL}
+                        selectedId={selectedOKL}
+                        isOpen={activeDropdown === 'OKL'}
+                        onToggle={() => toggleDropdown('OKL')}
+                        onSelect={handleSelect('OKL')}
+                        disabled={false}
+                        searchable={true}
+                        placeholder="Поиск ОКЛ..."
+                    />
+                    <Input
+                        title="Длина в метрах"
+                        value={meter}
+                        onChange={(e) => setMeter(Number(e))}
+                        placeholder="длина в метрах"
+                    />
+                    <Button
+                        title="+ Добавить ОКЛ"
+                        onClick={handleAddOKL}
+                        disabled={!selectedOKL || meter < 1}
+                    />
+                </div>
+                <div className={styles.dropdowns}>
+                    {/*     <NumSelector title={"Время работы ОКЛ в минутах"} value={1} data={TIME_OF_WORK} onChange={()=>{}} />
 */}
                     <Dropdown
                         title="Назначение кабеля"
@@ -301,17 +301,17 @@ export const Konfigurator = () => {
                     />
                 </div>
 
-            <OKLconfig
-                oklList={oklList}
-                onRemoveCable={handleRemoveCable}
-                onDeleteOKL={handleDeleteOKL}
-                onEditOKL={handleEditOKL}
-                onAddCable={handleAddCable}
-                onSave={handleSaveConfig}
-                onCopyOKL={handleCopyOKL}
-            />
+                <OKLconfig
+                    oklList={oklList}
+                    onRemoveCable={handleRemoveCable}
+                    onDeleteOKL={handleDeleteOKL}
+                    onEditOKL={handleEditOKL}
+                    onAddCable={handleAddCable}
+                    onSave={handleSaveConfig}
+                    onCopyOKL={handleCopyOKL}
+                />
 
-            {/*{selectedFitting && (v
+                {/*{selectedFitting && (v
                 <ConfigOKL
                     oklList={oklList}
                     fittingsName={getSelectedName(FITTINGS, selectedFitting)}
@@ -321,7 +321,9 @@ export const Konfigurator = () => {
                     onSave={handleSaveConfig}
                 />
             )}*/}
-        </div>
+            </div>
+        </>
+
     );
 };
 

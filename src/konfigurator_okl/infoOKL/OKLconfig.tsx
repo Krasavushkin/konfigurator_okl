@@ -13,6 +13,9 @@ interface ConfigurationSummaryProps {
     onAddCable: (oklId: string) => void;
     onSave: () => void;
     onCopyOKL: (oklId: string) => void;
+
+    
+    selectedOKL?: (oklId: string)=> void
 }
 
 export const OKLconfig: React.FC<ConfigurationSummaryProps> = ({
