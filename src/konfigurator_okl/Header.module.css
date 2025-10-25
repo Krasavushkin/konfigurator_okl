@@ -1,0 +1,161 @@
+/* Стили для варианта с акцентной полосой */
+.header {
+    background: #ffffff;
+    border-bottom: 4px solid #e9ecef;
+    position: relative;
+}
+
+.accentStrip {
+    height: 4px;
+    background: linear-gradient(90deg, #9E0929 0%, #7b0720 50%, #5d0518 100%);
+    width: 100%;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logoSection {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    color: inherit;
+    padding: 12px 20px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.7);
+    min-width: 280px;
+}
+
+.logoSection:hover {
+    background: rgba(255, 255, 255, 0.9);
+    border-color: rgba(158, 9, 41, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(158, 9, 41, 0.15);
+}
+
+.logoImg {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.logoSection:hover .logoImg {
+    transform: scale(1.05);
+}
+
+.logoText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 16px;
+    height: 100%;
+}
+
+.companyLine {
+    font-size: 14px;
+    font-weight: 400;
+    color: #6c757d;
+    line-height: 1.2;
+    margin-bottom: 2px;
+}
+
+.brandName {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2c3e50;
+    line-height: 1.1;
+    letter-spacing: 0.5px;
+}
+
+.title {
+    text-align: center;
+    flex: 1;
+}
+
+.title h1 {
+    font-size: clamp(20px, 3vw, 32px);
+    font-weight: 700;
+    margin: 0 0 4px 0;
+    color: #2c3e50;
+}
+
+.title p {
+    font-size: 14px;
+    margin: 0;
+    color: #6c757d;
+    font-weight: 400;
+}
+
+.badge {
+    background: #f8f9fa;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #6c757d;
+    border: 1px solid #e9ecef;
+    font-weight: 500;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    .logoSection {
+        min-width: auto;
+        max-width: 300px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .logoText {
+        border-left: none;
+        border-top: 2px solid rgba(158, 9, 41, 0.2);
+        padding-left: 0;
+        padding-top: 12px;
+        text-align: center;
+    }
+
+    .title {
+        order: -1;
+    }
+
+    .badge {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 12px 16px;
+    }
+
+    .logoSection {
+        padding: 10px 16px;
+        gap: 12px;
+    }
+
+    .logoImg {
+        height: 40px;
+    }
+
+    .companyLine {
+        font-size: 12px;
+    }
+
+    .brandName {
+        font-size: 18px;
+    }
+}

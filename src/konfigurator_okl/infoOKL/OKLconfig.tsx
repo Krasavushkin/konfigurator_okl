@@ -13,9 +13,10 @@ interface ConfigurationSummaryProps {
     onAddCable: (oklId: string) => void;
     onSave: () => void;
     onCopyOKL: (oklId: string) => void;
+    getOKLCapacityInfo?: (oklId: string) => CapacityInfo | null;
 
-
-    getOKLCapacityInfo?: (oklId: string) => CapacityInfo | null; // Добавляем функцию
+    selectedOKL?: string; // 🔧 ВНЕШНЕЕ СОСТОЯНИЕ ВЫБРАННОЙ ОКЛ
+    onSelectOKL?: (oklId: string) => void; // 🔧 КОЛБЭК ДЛЯ ВЫБОРА ОКЛ
 }
 
 export const OKLconfig: React.FC<ConfigurationSummaryProps> = ({
@@ -25,20 +26,28 @@ export const OKLconfig: React.FC<ConfigurationSummaryProps> = ({
                                                                    onEditOKL,
                                                                    onAddCable,
                                                                    onCopyOKL,
-                                                                   getOKLCapacityInfo
+                                                                   getOKLCapacityInfo,
+                                                                   selectedOKL: externalSelectedOKL,
+                                                                   onSelectOKL,
                                                                }) => {
-    const [selectedOKL, setSelectedOKL] = useState<string>('');
-    const [previousOKLCount, setPreviousOKLCount] = useState<number>(0);
+    const [internalSelectedOKL, setInternalSelectedOKL] = useState<string>('');
 
     useEffect(() => {
-        if (oklList.length > previousOKLCount) {
-            setSelectedOKL(oklList[oklList.length - 1].id);
+        if (externalSelectedOKL) {
+            setInternalSelectedOKL(externalSelectedOKL);
         }
-        setPreviousOKLCount(oklList.length);
-    }, [oklList, previousOKLCount]);
+    }, [externalSelectedOKL]);
+
     const handleSelectOKL = (oklId: string) => {
-        setSelectedOKL(prev => prev === oklId ? '' : oklId);
-        onAddCable(oklId)
+        const newSelected = internalSelectedOKL === oklId ? '' : oklId;
+        setInternalSelectedOKL(newSelected);
+
+        // 🔧 УВЕДОМЛЯЕМ РОДИТЕЛЯ О ВЫБОРЕ
+        if (onSelectOKL) {
+            onSelectOKL(newSelected);
+        }
+
+        onAddCable(oklId);
     };
 
     return (
@@ -48,7 +57,7 @@ export const OKLconfig: React.FC<ConfigurationSummaryProps> = ({
                     <OKLCard
                         key={okl.id}
                         okl={okl}
-                        isSelected={selectedOKL === okl.id}
+                        isSelected={internalSelectedOKL  === okl.id}
                         onSelect={handleSelectOKL}
                         onEdit={onEditOKL}
                         onDelete={onDeleteOKL}

@@ -1,4 +1,4 @@
-import React, {useState, useMemo} from 'react';
+import React, {useState, useMemo, useEffect, useRef} from 'react';
 import {CABLE_APPOINTMENT, FITTINGS} from './data';
 import styles from './styles/Konfigurator2.module.css';
 import {Dropdown} from './Dropdown';
@@ -15,13 +15,16 @@ import {CapacityStatus} from "./CapacityStatus";
 
 
 export const Konfigurator2 = () => {
+
+
     const {
         allOKL,
         allCables,
         getCompatibleCables,
         getMaxFireTime,
         getCablesByType,
-        getCompatibleCableAppointments
+        getCompatibleCableAppointments,
+        getCompatibleCablesForOKL
     } = useOKLData();
     const {
         oklList,
@@ -33,7 +36,7 @@ export const Konfigurator2 = () => {
         deleteOKL,
         copyOKL,
 
-        canAddCableToOKL, // 🔧 ИСПОЛЬЗУЕМ НОВЫЕ ФУНКЦИИ
+        canAddCableToOKL,
         getOKLCapacityInfo
     } = useOKLManager();
 
@@ -48,6 +51,28 @@ export const Konfigurator2 = () => {
 
     const [meter, setMeterOKL] = useState<number>(1);
     const [meterCable, setMeterCable] = useState<number>(1);
+
+    const prevOKLCountRef = useRef(oklList.length);
+
+    useEffect(() => {
+        if (oklList.length > prevOKLCountRef.current) {
+            resetCableFilters();
+        }
+        prevOKLCountRef.current = oklList.length;
+    }, [oklList.length]);
+
+    // 🔧 СБРОС ПРИ СМЕНЕ ВЫБРАННОЙ ОКЛ
+    useEffect(() => {
+        resetCableFilters();
+    }, [selectedOKL]);
+
+    // 🔧 ФУНКЦИЯ ДЛЯ СБРОСА ФИЛЬТРОВ КАБЕЛЕЙ
+    const resetCableFilters = () => {
+        setSelectedCableType('');
+        setSelectedCable('');
+        setMeterCable(1);
+    };
+
 
 //??????
     const [isEditingOKL, setIsEditingOKL] = useState<string | null>(null);
@@ -92,18 +117,17 @@ export const Konfigurator2 = () => {
 //... Выбор доступных типов кабелей
     const availableCableAppointments = useMemo(() => {
         if (!selectedOKL) return CABLE_APPOINTMENT;
-        return getCompatibleCableAppointments(selectedOKL);
-    }, [selectedOKL]);
+        return getCompatibleCableAppointments(selectedOKL, oklList);
+    }, [selectedOKL, oklList]);
 
-//... Выбор доступного кабеля
-    const filteredCables = useMemo(
-        () =>
-            selectedCableType
+    const filteredCables = useMemo(() => {
+        if (!selectedOKL) {
+            return selectedCableType
                 ? getCablesByType(selectedCableType)
-                : allCables,
-        [selectedCableType, allCables]
-    );
-
+                : allCables;
+        }
+        return getCompatibleCablesForOKL(selectedOKL, selectedCableType, oklList);
+    }, [selectedOKL, selectedCableType, oklList]);
 
     const toggleDropdown = (dropdownName: string) => {
         setActiveDropdown(activeDropdown === dropdownName ? null : dropdownName);
@@ -178,9 +202,7 @@ export const Konfigurator2 = () => {
             selectedOKL ? getOKLCapacityInfo(selectedOKL) : null,
         [selectedOKL, oklList]);
 
-   /* const canAddCable = useMemo(() =>
-            selectedOKL && selectedCable ? canAddCableToOKL(selectedOKL, selectedCable) : false,
-        [selectedOKL, selectedCable, oklList]);*/
+
     const cableValidation = useMemo(() =>
             selectedOKL && selectedCable ? canAddCableToOKL(selectedOKL, selectedCable) : { canAdd: false },
         [selectedOKL, selectedCable, oklList]);
@@ -205,6 +227,7 @@ export const Konfigurator2 = () => {
 
 
                 <div className={styles.dropdowns}>
+                    <h2>Фильтры для подбора ОКЛ</h2>
                     <Dropdown
                         id="dropdown-suspension"
                         title="Тип кабеленесущего элемента"
@@ -234,6 +257,7 @@ export const Konfigurator2 = () => {
                     />
                 </div>
                 <div className={styles.dropdowns}>
+                    <h2>Выбор марки ОКЛ</h2>
                     <Dropdown
                         title="Огнестойкая кабельная линия"
                         items={availableOKL}
@@ -258,8 +282,7 @@ export const Konfigurator2 = () => {
                     />
                 </div>
                 <div className={styles.dropdowns}>
-                    {/*     <NumSelector title={"Время работы ОКЛ в минутах"} value={1} data={TIME_OF_WORK} onChange={()=>{}} />
-*/}
+                    <h2>Подбор кабеля для ОКЛ</h2>
                     <Dropdown
                         title="Назначение кабеля"
                         items={availableCableAppointments}
@@ -310,8 +333,10 @@ export const Konfigurator2 = () => {
                 onAddCable={handleAddCable}
                 onSave={handleSaveConfig}
                 onCopyOKL={handleCopyOKL}
-
                 getOKLCapacityInfo={getOKLCapacityInfo}
+
+                selectedOKL={selectedOKL} // 🔧 ПЕРЕДАЕМ ВЫБРАННУЮ ОКЛ
+                onSelectOKL={setSelectedOKL} // 🔧 ПЕРЕДАЕМ ФУНКЦИЮ ВЫБОРА
             />
         </>
 

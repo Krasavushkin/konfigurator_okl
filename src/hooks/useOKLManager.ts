@@ -11,11 +11,10 @@ export const useOKLManager = () => {
     const generateUniqueId = () =>
         Date.now().toString(36) + Math.random().toString(36).slice(2);
 
-    // 🔧 УПРОЩЕННОЕ добавление ОКЛ - ищем по ID, а не по имени
+    // добавление ОКЛ
     const addOKL = (oklId: string, length: number) => {
         const oklData = OKL_DB.find(o => o.id === oklId);
         if (!oklData) {
-            console.error('ОКЛ не найдена в базе:', oklId);
             return null;
         }
 
@@ -34,19 +33,21 @@ export const useOKLManager = () => {
         return newOKL.id;
     };
 
+    // Намеренный выбор ОКЛ
+    const selectOKL = (oklId: string) => {
+        setSelectedOKL(oklId);
+    };
     // 🔧 УПРОЩЕННОЕ добавление кабеля с проверкой вместимости
     const addCable = (oklId: string, cableId: string, length: number) => {
         const cableData = ALL_CABLES.find(c => c.id === cableId);
         const okl = oklList.find(o => o.id === oklId);
 
         if (!cableData || !okl) {
-            console.error('Данные не найдены:', { cableId, oklId });
             return;
         }
 
-        // 🔧 ПРОВЕРКА ВМЕСТИМОСТИ В ХУКЕ
+        //ПРОВЕРКА ВМЕСТИМОСТИ В ХУКЕ
         if (!canAddCableToOKL(oklId, cableId)) {
-            console.error('Нельзя добавить кабель: превышена вместимость');
             return;
         }
 
@@ -68,25 +69,7 @@ export const useOKLManager = () => {
         );
     };
 
-    // 🔧 НОВАЯ ФУНКЦИЯ: проверка возможности добавления кабеля
-    /*const canAddCableToOKL = (oklId: string, cableId: string) => {
-        const okl = oklList.find(o => o.id === oklId);
-        const cableData = ALL_CABLES.find(c => c.id === cableId);
-
-        if (!okl || !cableData) return false;
-
-        // Проверка количества кабелей
-        if (okl.cables.length >= 8) return false;
-
-        // Проверка площади сечения
-        if (okl.sectionOKL && cableData.outerDiameter) {
-            const usedArea = calculateUsedArea(okl.cables);
-            const newCableArea = calculateCableArea(cableData.outerDiameter);
-            return (usedArea + newCableArea) <= okl.sectionOKL;
-        }
-
-        return true;
-    };*/
+    // проверка возможности добавления кабеля
     const canAddCableToOKL = (oklId: string, cableId: string): { canAdd: boolean; reason?: string } => {
         const okl = oklList.find(o => o.id === oklId);
         const cableData = ALL_CABLES.find(c => c.id === cableId);
@@ -140,7 +123,7 @@ export const useOKLManager = () => {
 
         return { canAdd: true };
     };
-    // 🔧 ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ ДЛЯ РАСЧЕТОВ
+    //  ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ ДЛЯ РАСЧЕТОВ
     const calculateCableArea = (outerDiameter: number): number => {
         const radius = outerDiameter / 2;
         return Math.PI * Math.pow(radius, 2);
@@ -153,7 +136,7 @@ export const useOKLManager = () => {
         }, 0);
     };
 
-    // 🔧 НОВАЯ ФУНКЦИЯ: получение информации о заполненности ОКЛ
+    // НОВАЯ ФУНКЦИЯ: получение информации о заполненности ОКЛ
     const getOKLCapacityInfo = (oklId: string) => {
         const okl = oklList.find(o => o.id === oklId);
         if (!okl) return null;
@@ -199,13 +182,13 @@ export const useOKLManager = () => {
     return {
         oklList,
         selectedOKL,
-        setSelectedOKL,
+        setSelectedOKL: selectOKL,
         addOKL,
         addCable,
         removeCable,
         deleteOKL,
         copyOKL,
-        canAddCableToOKL, // 🔧 ЭКСПОРТИРУЕМ НОВЫЕ ФУНКЦИИ
+        canAddCableToOKL,
         getOKLCapacityInfo,
 
         canAddAnyCable

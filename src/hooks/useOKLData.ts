@@ -27,14 +27,54 @@ export const useOKLData = () => {
     };
 
     // Найти все назначения кабелей, которые подходят для конкретной ОКЛ
-    const getCompatibleCableAppointments = (oklId: string) => {
-        const okl = allOKL.find(o => o.id === oklId);
-        if (!okl) return [];
+    const getCompatibleCableAppointments = (oklId: string, oklList: any[] = []) => {
+        // Ищем ОКЛ сначала в добавленных, потом в базе данных
+        let okl = oklList.find(o => o.id === oklId);
+        if (!okl) {
+            okl = allOKL.find(o => o.id === oklId);
+        }
 
-        const compatibleMaps = allOKLCableMap.filter(map => map.oklType.includes(okl.type));
+        if (!okl) {
+            return allAppointments;
+        }
+
+
+        // Ищем совместимые типы кабелей
+        const compatibleMaps = allOKLCableMap.filter(map =>
+            map.oklType.includes(okl!.type!)
+        );
+
         const allowedCableTypeIds = compatibleMaps.map(map => map.cableTypeId);
-
         return allAppointments.filter(a => allowedCableTypeIds.includes(a.id));
+    };
+
+
+    const getCompatibleCablesForOKL = (oklId: string, cableTypeId?: string, oklList: any[] = []) => {
+        // Ищем ОКЛ сначала в добавленных, потом в базе
+        let okl = oklList.find(o => o.id === oklId);
+        if (!okl) {
+            okl = allOKL.find(o => o.id === oklId);
+        }
+
+        if (!okl) {
+            return cableTypeId ? getCablesByType(cableTypeId) : allCables;
+        }
+
+        // Получаем совместимые назначения
+        const compatibleAppointments = getCompatibleCableAppointments(oklId, oklList);
+        const allowedCableTypeIds = compatibleAppointments.map(a => a.id);
+
+        let compatibleCables = allCables.filter(cable =>
+            allowedCableTypeIds.includes(cable.cableTypeId)
+        );
+
+        if (cableTypeId) {
+            compatibleCables = compatibleCables.filter(cable =>
+                cable.cableTypeId === cableTypeId
+            );
+        }
+
+        return compatibleCables;
     };
     // Получить кабели по типу (назначению)
     const getCablesByType = (cableTypeId: string) => {
@@ -55,6 +95,7 @@ export const useOKLData = () => {
         getCompatibleCables,
         getMaxFireTime,
         getCablesByType,
-        getCompatibleCableAppointments
+        getCompatibleCableAppointments,
+        getCompatibleCablesForOKL
     };
 };

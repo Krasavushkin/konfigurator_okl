@@ -1,73 +1,322 @@
+/* OnboardingSidebar.module.css */
 .sidebar {
     position: fixed;
     top: 0;
     left: 0;
-    height: auto;
-    width: 30%;
-    /*width: 280px;*/
-    background: #fff;
-    border-right: 1px solid #ddd;
-    box-shadow: 2px 0 6px rgba(0,0,0,0.1);
-    transform: translateX(-100%); /* по умолчанию скрыт */
-    transition: transform 0.3s ease;
+    height: 100vh;
+    width: 400px;
+    max-width: 90vw;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border-right: 1px solid #e9ecef;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.1);
+    transform: translateX(-100%);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.sidebar.open {
+    transform: translateX(0);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: white;
+    border-bottom: 1px solid #e9ecef;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.title {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.closeBtn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #6c757d;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.closeBtn:hover {
+    background: #f8f9fa;
+    color: #495057;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
     padding: 16px;
-}
-.container{
-
-}
-.open {
-    transform: translateX(0); /* выезд */
+    gap: 8px;
+    background: white;
+    border-bottom: 1px solid #e9ecef;
+    overflow-x: auto;
 }
 
-.h2 {
-
+.navBtn {
+    flex: 1;
+    min-width: 60px;
+    padding: 12px 8px;
+    border: none;
+    background: #f8f9fa;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: all 0.2s ease;
+    white-space: nowrap;
 }
 
+.navBtn:hover {
+    background: #e9ecef;
+    transform: translateY(-1px);
+}
+
+.navBtn.active {
+    background: #9E0929;
+    color: white;
+    box-shadow: 0 2px 8px rgba(158, 9, 41, 0.3);
+}
+
+/* Content */
+.content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.section {
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.sectionTitle {
+    margin: 0 0 16px 0;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.text {
+    line-height: 1.6;
+    color: #495057;
+    margin: 0 0 16px 0;
+    white-space: pre-line;
+}
+
+/* Steps */
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.step {
+    background: white;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    padding: 16px;
+    transition: all 0.2s ease;
+}
+
+.step:hover {
+    border-color: #9E0929;
+    box-shadow: 0 2px 8px rgba(158, 9, 41, 0.1);
+}
+
+.stepHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.stepNumber {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background: #9E0929;
+    color: white;
+    border-radius: 50%;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.stepTitle {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.stepDescription {
+    margin: 0;
+    font-size: 0.875rem;
+    color: #6c757d;
+    line-height: 1.5;
+}
+
+/* Quick Actions */
+.quickActions {
+    margin-top: 20px;
+}
+
+.actionBtn {
+    width: 100%;
+    padding: 12px 16px;
+    background: #9E0929;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.actionBtn:hover {
+    background: #7b0720;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(158, 9, 41, 0.3);
+}
+
+/* Mobile Progress */
+.mobileProgress {
+    display: none;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px;
+    background: white;
+    border-top: 1px solid #e9ecef;
+}
+
+.progressDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #dee2e6;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.progressDot.active {
+    background: #9E0929;
+    transform: scale(1.2);
+}
+
+/* Help Button */
 .helpBtn {
     position: fixed;
     top: 80px;
-    left: 10px;
-    font-size: 22px;
-    background: none;
-    border: 1px solid #9e0929;
-    color: #9e0929;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background: #9E0929;
+    color: white;
+    border: none;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    font-size: 1.25rem;
+    font-weight: 600;
     cursor: pointer;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 16px rgba(158, 9, 41, 0.4);
+    transition: all 0.3s ease;
     z-index: 1100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .helpBtn:hover {
     background: #7b0720;
-    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(158, 9, 41, 0.5);
 }
 
-.closeBtn {
-    position: fixed;
-    top: 35px;
-    right: 10px;
-    color: #7b0720;
-    background-color: white;
-    border: none;
-    font-size: 18px;
-    cursor: pointer;
-    margin-left: auto;
+.helpBtn.hidden {
+    display: none;
 }
 
-.closeBtn:hover {
- /*   background: #7b0720;
-    color: white;*/
-    background-color: white;
-    border: 1px solid #7b0720;
-}
+/* Responsive */
 @media (max-width: 768px) {
+    .sidebar {
+        width: 100vw;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .mobileProgress {
+        display: flex;
+    }
+
     .helpBtn {
-        top: 65px;
-        left: 20px;
-        width: 35px;
-        height: 35px;
+        top: 70px;
+        left: 16px;
+        width: 44px;
+        height: 44px;
+        font-size: 1.125rem;
+    }
+
+    .header {
+        padding: 16px;
+    }
+
+    .content {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .step {
+        padding: 12px;
+    }
+
+    .stepHeader {
+        gap: 8px;
+    }
+
+    .stepNumber {
+        width: 24px;
+        height: 24px;
+        font-size: 0.75rem;
     }
 }
