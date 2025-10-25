@@ -1,11 +1,12 @@
 import React from 'react';
 import {CableList} from './CableList';
-import {CapacityIndicator} from './CapacityIndicator';
 import {OKLActions} from './OKLActions';
 import styles from './OKLCard.module.css';
-import {OKL} from "../data";
+
 import {Link} from "./Link";
 import {CapacityStatus} from "../CapacityStatus";
+import {useOKLData} from "../../hooks/useOKLData";
+import {useOKLLink} from "../../hooks/useOKLLink";
 
 export type OKL = {
     id: string;
@@ -71,20 +72,17 @@ export const OKLCard: React.FC<OKLCardProps> = ({
         e.stopPropagation(); // Предотвращаем всплытие
         onAddCable(okl.id);
     };
+    const { getCompatibleCables } = useOKLData();
+    const availableCables = getCompatibleCables(okl.type || '');
+    const oklLink = useOKLLink(okl.type);
+
 
     return (
         <div
             className={`${styles.oklCard} ${isSelected ? styles.selected : ''}`}
             onClick={handleCardClick}
         >
-          {/*   Индикатор выбора
-            {isSelected && (
-                <div className={styles.selectionIndicator}>
-                    <span>✓</span>
-                    Выбрано для добавления кабелей
-                </div>
-            )}
-*/}
+
             <h3>Наименование ОКЛ:</h3>
 
             {/* Заголовок и действия */}
@@ -107,8 +105,8 @@ export const OKLCard: React.FC<OKLCardProps> = ({
             {/* Остальной код без изменений */}
             <CapacityStatus
                 capacityInfo={capacityInfo}
+                availableCables={availableCables}
                 compact={true}
-                className={styles.capacityStatus}
             />
 
             <CableList
@@ -130,7 +128,7 @@ export const OKLCard: React.FC<OKLCardProps> = ({
             ))})
 
                 <Link
-                    href={"https://spetskabel.ru/products/lines/gf-gl/"}
+                    href={oklLink.link}
                     className={styles.details}
                     title={"Информация об ОКЛ"}
                 >

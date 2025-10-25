@@ -69,7 +69,7 @@ export const useOKLManager = () => {
     };
 
     // 🔧 НОВАЯ ФУНКЦИЯ: проверка возможности добавления кабеля
-    const canAddCableToOKL = (oklId: string, cableId: string) => {
+    /*const canAddCableToOKL = (oklId: string, cableId: string) => {
         const okl = oklList.find(o => o.id === oklId);
         const cableData = ALL_CABLES.find(c => c.id === cableId);
 
@@ -86,8 +86,60 @@ export const useOKLManager = () => {
         }
 
         return true;
+    };*/
+    const canAddCableToOKL = (oklId: string, cableId: string): { canAdd: boolean; reason?: string } => {
+        const okl = oklList.find(o => o.id === oklId);
+        const cableData = ALL_CABLES.find(c => c.id === cableId);
+
+        if (!okl || !cableData) {
+            return { canAdd: false};
+        }
+
+        // Проверка количества кабелей
+        if (okl.cables.length >= 8) {
+            return { canAdd: false};
+        }
+
+        // Проверка площади сечения
+        if (okl.sectionOKL && cableData.outerDiameter) {
+            const usedArea = calculateUsedArea(okl.cables);
+            const newCableArea = calculateCableArea(cableData.outerDiameter);
+
+            if ((usedArea + newCableArea) > okl.sectionOKL) {
+                return {canAdd: false,};
+            }
+        }
+
+        return { canAdd: true };
     };
 
+    const canAddAnyCable = (oklId: string, availableCables: any[]): { canAdd: boolean; reason?: string } => {
+        const okl = oklList.find(o => o.id === oklId);
+        if (!okl) return { canAdd: false};
+
+        // Проверка количества кабелей
+        if (okl.cables.length >= 8) {
+            return { canAdd: false};
+        }
+
+        // Проверка: есть ли ХОТЯ БЫ ОДИН кабель, который поместится по объему
+        if (okl.sectionOKL) {
+            const usedArea = calculateUsedArea(okl.cables);
+            const freeArea = okl.sectionOKL - usedArea;
+
+            const canFitAnyCable = availableCables.some(cable => {
+                if (!cable.outerDiameter) return false;
+                const cableArea = calculateCableArea(cable.outerDiameter);
+                return cableArea <= freeArea;
+            });
+
+            if (!canFitAnyCable) {
+                return {canAdd: false,}
+            };
+        }
+
+        return { canAdd: true };
+    };
     // 🔧 ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ ДЛЯ РАСЧЕТОВ
     const calculateCableArea = (outerDiameter: number): number => {
         const radius = outerDiameter / 2;
@@ -154,7 +206,9 @@ export const useOKLManager = () => {
         deleteOKL,
         copyOKL,
         canAddCableToOKL, // 🔧 ЭКСПОРТИРУЕМ НОВЫЕ ФУНКЦИИ
-        getOKLCapacityInfo
+        getOKLCapacityInfo,
+
+        canAddAnyCable
     };
 };
 

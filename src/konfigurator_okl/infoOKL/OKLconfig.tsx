@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import {CapacityInfo, OKL, OKLCard} from './OKLCard';
 import styles from '../styles/OKL.module.css';
 import {Button} from "../Button";
@@ -28,7 +28,14 @@ export const OKLconfig: React.FC<ConfigurationSummaryProps> = ({
                                                                    getOKLCapacityInfo
                                                                }) => {
     const [selectedOKL, setSelectedOKL] = useState<string>('');
+    const [previousOKLCount, setPreviousOKLCount] = useState<number>(0);
 
+    useEffect(() => {
+        if (oklList.length > previousOKLCount) {
+            setSelectedOKL(oklList[oklList.length - 1].id);
+        }
+        setPreviousOKLCount(oklList.length);
+    }, [oklList, previousOKLCount]);
     const handleSelectOKL = (oklId: string) => {
         setSelectedOKL(prev => prev === oklId ? '' : oklId);
         onAddCable(oklId)

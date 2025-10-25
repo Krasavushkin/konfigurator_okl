@@ -178,9 +178,16 @@ export const Konfigurator2 = () => {
             selectedOKL ? getOKLCapacityInfo(selectedOKL) : null,
         [selectedOKL, oklList]);
 
-    const canAddCable = useMemo(() =>
+   /* const canAddCable = useMemo(() =>
             selectedOKL && selectedCable ? canAddCableToOKL(selectedOKL, selectedCable) : false,
+        [selectedOKL, selectedCable, oklList]);*/
+    const cableValidation = useMemo(() =>
+            selectedOKL && selectedCable ? canAddCableToOKL(selectedOKL, selectedCable) : { canAdd: false },
         [selectedOKL, selectedCable, oklList]);
+
+    const canAddCable = cableValidation.canAdd;
+
+
 
     const handleSaveConfig = () => {
         console.log('Сохраняем конфигурацию:', {
@@ -189,12 +196,6 @@ export const Konfigurator2 = () => {
             fitting: getSelectedName(FITTINGS, selectedFitting),
             oklList,
         });
-    };
-    const getCapacityClass = (fillPercentage: number, cableCount: number) => {
-        if (cableCount >= 8 || fillPercentage >= 1) return styles.full;
-        if (fillPercentage >= 0.8) return styles.high;
-        if (fillPercentage >= 0.6 || cableCount >= 6) return styles.medium;
-        return styles.low;
     };
 
     return (
@@ -289,129 +290,16 @@ export const Konfigurator2 = () => {
                         onClick={handleAddCableToOKL}
                         disabled={!canAddCable || meterCable < 1}
                     />
-                    <CapacityStatus capacityInfo={capacityInfo} />
-                    {/*{capacityInfo && (
-                        <div className={styles.capacityInfo}>
-                             Строка с количеством кабелей
-                            <div className={styles.capacityRow}>
-                                <span>Кабелей: {capacityInfo.cableCount}/8</span>
-                                <span className={
-                                    capacityInfo.cableCount >= 8 ? styles.error :
-                                        capacityInfo.cableCount >= 6 ? styles.warning : styles.success
-                                }>
-                {capacityInfo.cableCount >= 8 ? "✗ лимит" :
-                    capacityInfo.cableCount >= 6 ? "⚠ почти заполнено" : "✓ можно добавить"}
-            </span>
+                    {selectedCable && !canAddCable && cableValidation.reason && (
+                        <div className={styles.validationError}>
+                            <div className={styles.errorIcon}>⚠</div>
+                            <div className={styles.errorText}>
+                                <strong>Нельзя добавить кабель:</strong>
+                                <span>{cableValidation.reason}</span>
                             </div>
-
-                             Горизонтальная шкала заполнения
-                            <div className={styles.capacitySection}>
-                                <div className={styles.capacityRow}>
-                                    <span>Заполнение объема:</span>
-                                    <span>{((capacityInfo.usedArea / capacityInfo.maxArea) * 100).toFixed(1)}%</span>
-                                </div>
-
-                                <div className={styles.capacityBar}>
-                                    <div
-                                        className={`${styles.capacityFill} ${
-                                            capacityInfo.usedArea / capacityInfo.maxArea > 0.8 ? styles.danger :
-                                                capacityInfo.usedArea / capacityInfo.maxArea > 0.6 ? styles.warning : ''
-                                        }`}
-                                        style={{
-                                            width: `${Math.min((capacityInfo.usedArea / capacityInfo.maxArea) * 100, 100)}%`
-                                        }}
-                                    >
-                                        <span className={styles.capacityText}>
-                                            {capacityInfo.usedArea.toFixed(1)} мм²
-                                        </span>
-                                    </div>
-                                </div>
-
-                                <div className={styles.capacityStats}>
-                                    <span>0%</span>
-                                    <span>Свободно: {capacityInfo.freeArea.toFixed(1)} мм²</span>
-                                    <span>100%</span>
-                                </div>
-                            </div>
-
-                            Детальная информация
-                            <div className={styles.capacityDetails}>
-                                <div className={styles.capacityRow}>
-                                    <span>Объем ОКЛ:</span>
-                                    <span className={styles.success}>{capacityInfo.maxArea.toFixed(1)} мм²</span>
-                                </div>
-                                <div className={styles.capacityRow}>
-                                    <span>Занято:</span>
-                                    <span>{capacityInfo.usedArea.toFixed(1)} мм²</span>
-                                </div>
-                                <div className={styles.capacityRow}>
-                                    <span>Свободно:</span>
-                                    <span className={
-                                        capacityInfo.freeArea < capacityInfo.maxArea * 0.2 ? styles.error :
-                                            capacityInfo.freeArea < capacityInfo.maxArea * 0.4 ? styles.warning : styles.success
-                                    }>
-                    {capacityInfo.freeArea.toFixed(1)} мм²
-                </span>
-                                </div>
-                            </div>
-                        </div>
-                    )}*/}
-                    {/*{capacityInfo && (
-                        <div className={styles.capacityInfo}>
-                            <div className={styles.capacityRow}>
-                                <span>Заполненность:</span>
-                                <span>{((capacityInfo.usedArea / capacityInfo.maxArea) * 100).toFixed(1)}%</span>
-                            </div>
-                             Общий статус
-                            <div className={styles.capacityRow}>
-                                <span>Статус:</span>
-                                <span className={
-                                    capacityInfo.cableCount >= 8 || capacityInfo.usedArea >= capacityInfo.maxArea ? styles.error :
-                                        capacityInfo.cableCount >= 6 || capacityInfo.usedArea >= capacityInfo.maxArea * 0.8 ? styles.warning : styles.success
-                                }>
-                                    {capacityInfo.cableCount >= 8 || capacityInfo.usedArea >= capacityInfo.maxArea ? "✗ заполнено" :
-                                        capacityInfo.cableCount >= 6 || capacityInfo.usedArea >= capacityInfo.maxArea * 0.8 ? "! почти заполнено" :
-                                            "✓ добавьте кабель"}
-
-                                </span>
-                            </div>
-                             Двойная шкала
-                            <div className={styles.doubleBar}>
-                                <div className={styles.barSection}>
-                                    <div className={styles.barLabel}>Кабели в ОКЛ</div>
-                                    <div className={styles.barContainer}>
-                                        <div
-                                            className={`${styles.barFill} ${styles.cableBar} ${
-                                                capacityInfo.cableCount >= 8 ? styles.danger :
-                                                    capacityInfo.cableCount >= 6 ? styles.warning : styles.success
-                                            }`}
-                                            style={{ width: `${(capacityInfo.cableCount / 8) * 100}%` }}
-                                        >
-                                            <span className={styles.barText}>{capacityInfo.cableCount}/8</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className={styles.barSection}>
-                                    <div className={styles.barLabel}>Заполненность ОКЛ</div>
-                                    <div className={styles.barContainer}>
-                                        <div
-                                            className={`${styles.barFill} ${styles.volumeBar} ${
-                                                capacityInfo.usedArea >= capacityInfo.maxArea ? styles.danger :
-                                                    capacityInfo.usedArea >= capacityInfo.maxArea * 0.8 ? styles.warning : styles.success
-                                            }`}
-                                            style={{ width: `${Math.min((capacityInfo.usedArea / capacityInfo.maxArea) * 100, 100)}%` }}
-                                        >
-                                            <span className={styles.barText}>{((capacityInfo.usedArea / capacityInfo.maxArea) * 100).toFixed(0)}%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
                         </div>
                     )}
-                </div>*/}
+                    {capacityInfo && <CapacityStatus capacityInfo={capacityInfo} availableCables={filteredCables}/>}
                 </div>
             </div>
             <OKLconfig
