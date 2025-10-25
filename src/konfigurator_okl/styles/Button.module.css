@@ -1,29 +1,36 @@
 .button {
     margin-top: 35px;
-    border: 1px solid #9E0929;
-    border-radius: 4px;
+    border: 2px solid #9E0929;
+    border-radius: 12px;
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: inherit;
     min-width: 250px;
     background-color: white;
-    color: #8d0a28;
+    color: #9E0929;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 600;
     height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(158, 9, 41, 0.15);
 }
 
-@media (hover: hover) {
-    .button:hover {
-        font-weight: 500;
-        background-color: #9E0929;
-        color: white;
-    }
-
+.button::after {
+    transition: transform 0.3s ease;
 }
 
+.button:hover {
+    background-color: #9E0929;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(158, 9, 41, 0.3);
+}
 
-.button:disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
+.button:hover::after {
+    transform: translateX(4px);
 }

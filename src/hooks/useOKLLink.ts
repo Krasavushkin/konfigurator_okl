@@ -24,3 +24,10 @@ export const getOKLLink = (oklType: string | undefined): OKLLink => {
 export const useOKLLink = (oklType: string | undefined): OKLLink => {
     return useMemo(() => getOKLLink(oklType), [oklType]);
 };
+
+export const getOKLDescription = (oklType: string | undefined): string => {
+    if (!oklType) return '';
+
+    const link = getOKLLink(oklType);
+    return link.description || '';
+};

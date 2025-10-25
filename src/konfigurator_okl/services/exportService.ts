@@ -53,7 +53,7 @@ export class ExportService {
         ${oklList.map(okl => `
             <div class="okl-block">
               <div class="okl-title">
-  СПЕЦКАБЛАЙН-${okl.name}
+  СПЕЦКАБЛАЙН-${okl.name}-${okl.length}м
   (${okl.cables
             .map((cable, index) =>
                 `${cable.name} - ${cable.length} м${index < okl.cables.length - 1 ? ' + ' : ''}`

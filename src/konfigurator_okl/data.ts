@@ -73,6 +73,7 @@ export interface OKLLink {
     description: string;
 }
 
+
 export const OKL_LINKS: OKLLink[] = [
     {
         oklType: "gl",

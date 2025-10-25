@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../styles/ExportButtons.module.css';
 import {useExport} from "./useExport";
 import {OKL} from "../infoOKL/OKLCard";
+import {Button} from "../Button";
 
 interface ExportButtonsProps {
     oklList: OKL[];
@@ -20,22 +21,15 @@ export const ExportButtons: React.FC<ExportButtonsProps> = ({
 
     return (
         <div className={styles.exportButtons}>
-            {/*<div className={styles.footer}>
-                <Button
-                    title="Сохранить конфигурацию"
-                    onClick={onSave}
-                    disabled={oklList.length === 0}
-                />
-
-            </div>*/}
-            <button
+            <Button title={"Сохранить в PDF 📄"} onClick={() => handleExport(exportPDF)} disabled={isExporting || oklList.length === 0}/>
+         {/*   <button
                 className={styles.exportBtn}
                 onClick={() => handleExport(exportPDF)}
                 disabled={isExporting || oklList.length === 0}
                 title="Сохранить в PDF"
             >
                 {isExporting ? '⏳' : '📄'} Сохранить в PDF
-            </button>
+            </button>*/}
 
           {/*  <button
                 className={styles.exportBtn}
