@@ -1,4 +1,5 @@
 import {nanoid} from "nanoid";
+import {NewCable} from "./infoOKL/OKLCard";
 
 export type BaseEntity = {
     id: string;
@@ -37,23 +38,23 @@ export const SUSPENSIONS: Suspension[] = [
         ],
         defaultFittings: {
             "surface:beton": ["fitting:skoba"],
-            "surface:gipsokarton": ["fitting:skoba"],
+            "surface:gkl": ["fitting:skoba"],
             "surface:sandwichpanel": ["fitting:skoba"],
             "surface:armatura": ["fitting:provoloka", "fitting:homut"]}},
-    {id: `suspension:goffrirovannaya_truba`,
-        name: "Гофрированная труба",
+    {id: `suspension:gofrirovanaya_plastikovaya_truba`,
+        name: "Гофрированная пластиковая труба",
         compatibleSurfaces: [
             "surface:beton",
-            "surface:gipsokarton",
-            "surface:sandwichpanel",
+            "surface:gkl",
+            "surface:sendvic_panel",
             "surface:armatura"
         ],
         defaultFittings: {
             "surface:beton": ["fitting:skoba"],
-            "surface:gipsokarton": ["fitting:skoba"],
-            "surface:sandwichpanel": ["fitting:skoba"],
+            "surface:gkl": ["fitting:skoba"],
+            "surface:sendvic_panel": ["fitting:skoba"],
             "surface:armatura": ["fitting:provoloka", "fitting:homut"]}},
-    {id: `suspension:metallicheskiy_kabel_kanal`,
+   /* {id: `suspension:metallicheskiy_kabel_kanal`,
         name: "Металлический кабель-канал",
         compatibleSurfaces: [
             "surface:beton",
@@ -81,19 +82,21 @@ export const SUSPENSIONS: Suspension[] = [
         ],
         defaultFittings: {
             "surface:beton": ["fitting:skoba"],
-        }},
-    {id: `suspension:plastikovyy_kabel_kanal`,
+        }},*/
+    {id: `suspension:kabel_kanal`,
         name: "Пластиковый кабель-канал",
         compatibleSurfaces: [
             "surface:beton",
-            "surface:gipsokarton",
+            "surface:gkl",
+            "surface:sendvic_panel",
         ],
         defaultFittings: {
             "surface:beton": ["fitting:dubel_homut", "fitting:kruchok"],
-            "surface:gipsokarton": ["fitting:dubel_homut"],
+            "surface:gkl": ["fitting:dubel_homut"],
+            "surface:sendvic_panel": ["fitting:skoba"],
         }
         },
-    {id: `suspension:setka_manye_na_kryuchkah`,
+    /*{id: `suspension:setka_manye_na_kryuchkah`,
         name: "Сетка Манье на крючках",
         compatibleSurfaces: [
             "surface:beton",
@@ -135,25 +138,25 @@ export const SUSPENSIONS: Suspension[] = [
         ],
         defaultFittings: {
             "surface:beton": ["fitting:dubel_homut"],
-        }},
-    {id: `suspension:otkritaya_prokladka`,
+        }},*/
+    {id: `suspension:otkrytaya_prokladka`,
         name: "Открытая прокладка",
         compatibleSurfaces: [
             "surface:beton",
-            "surface:gipsokarton",
-            "surface:sandwichpanel",
+            "surface:gkl",
+            "surface:sendvic_panel",
         ],
         defaultFittings: {
             "surface:beton": ["fitting:skoba", "fitting:dubel_homut"],
-            "surface:gipsokarton": ["fitting:dubel_homut"],
-            "surface:sandwichpanel": ["fitting:dubel_homut"],
+            "surface:gkl": ["fitting:dubel_homut"],
+            "surface:sendvic_panel": ["fitting:dubel_homut"],
         }}
 ]
 
 export const SURFACES: Surface[] = [
     { id: "surface:beton", name: "Бетон" },
-    { id: "surface:gipsokarton", name: "Гипсокартон" },
-    { id: "surface:sandwichpanel", name: "Сэндвичпанель" },
+    { id: "surface:gkl", name: "Гипсокартон" },
+    { id: "surface:sendvic_panel", name: "Сэндвичпанель" },
     { id: "surface:armatura", name: "Арматура" }
 ];
 
@@ -188,7 +191,7 @@ export const CABLE_APPOINTMENT: BaseEntity[] = [
     {id:"cable_type:power450_750", name:"Силовые на номинальное переменное напряжение до 450/750 В)"},
     {id:"cable_type:lan", name:"Для структурированных кабельных сетей"},
     {id:"cable_type:ltx", name:"С низкой токсичностью продуктов горения"},
-    {id:"cable_type:power450_750ltx", name:"Силовые на номинальное переменное напряжение до 450/750 В с низкой токсичностью продуктов горения"},
+    {id:"cable_type:power450_750_ltx", name:"Силовые на номинальное переменное напряжение до 450/750 В с низкой токсичностью продуктов горения"},
     {id:"cable_type:scab", name:"Универсальные СКАБ для контрольно-измерительных приборов и аппаратуры"},
     {id:"cable_type:scap", name:"Монтажные до 500 В"},
     {id:"cable_type:scab_m", name:"Универсальные до 1 кВ"},
@@ -235,3 +238,53 @@ export const CABLES: CableData[] = [
     {id: nanoid(), name: "СКАБ-C 660нг(A)-FRHF-ХЛ 2х1,0 м3", cableTypeId: "cable_type:scab_s"},
 
 ]
+
+// types/config.ts
+export interface ConfigState {
+    activeDropdown: string | null;
+    selectedCableType: string;
+    selectedCable: string;
+    selectedSuspension: string;
+    selectedSurface: string;
+    selectedFitting: string;
+    selectedOKL: string;
+    meter: number;
+    meterCable: number;
+    oklList: newOKLItem[];
+    isEditingOKL: string | null;
+}
+
+export interface OKLItem {
+    id: string;
+    name: string;
+    length: number;
+    cables: CableItem[];
+}
+export interface newOKLItem {
+    id: string;
+    name: string;
+    length: number;
+    cables: NewCable[];
+    sectionOKL?: number;
+    type: string;
+    TU: string;
+    description: string;
+}
+
+export interface CableItem {
+    id: string;
+    cableTypeId: string;
+    name: string;
+    length: number;
+    cores?: number;
+    outerDiameter?: number;
+    TU?: string
+}
+
+export interface CompletionStatus {
+    suspension: boolean;
+    surface: boolean;
+    fitting: boolean;
+    okl: boolean;
+    cables: boolean;
+}

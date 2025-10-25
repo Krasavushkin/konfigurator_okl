@@ -1,0 +1,86 @@
+[
+  {
+    "oklType": [
+      "okl_gl",
+      "okl_hd",
+      "okl_h",
+      "okl_hgk",
+      "okl_hsp",
+      "okl_gf"
+    ],
+    "cableTypeId": "cable_type:signal",
+    "maxFireWorkTime": 57
+  },
+  {
+    "oklType": [
+      "okl_gl",
+      "okl_hd",
+      "okl_h",
+      "okl_hgk",
+      "okl_hsp",
+      "okl_gf"
+    ],
+    "cableTypeId": "cable_type:rs485",
+    "maxFireWorkTime": 72
+  },
+  {
+    "oklType": [
+      "okl_gl",
+      "okl_hd",
+      "okl_h",
+      "okl_hgk",
+      "okl_hsp",
+      "okl_gf"
+    ],
+    "cableTypeId": "cable_type:power450_750",
+    "maxFireWorkTime": 72
+  },
+  {
+    "oklType": [
+      "okl_gl",
+      "okl_hd",
+      "okl_h",
+      "okl_hgk",
+      "okl_hsp",
+      "okl_gf"
+    ],
+    "cableTypeId": "cable_type:lan",
+    "maxFireWorkTime": 120
+  },
+  {
+    "oklType": [
+      "okl_gl",
+      "okl_hd",
+      "okl_h",
+      "okl_hgk",
+      "okl_hsp",
+      "okl_gf"
+    ],
+    "cableTypeId": "cable_type:ltx",
+    "maxFireWorkTime": 41
+  },
+  {
+    "oklType": [
+      "okl_gl",
+      "okl_hd",
+      "okl_h",
+      "okl_hgk",
+      "okl_hsp",
+      "okl_gf"
+    ],
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "maxFireWorkTime": 41
+  },
+  {
+    "oklType": [
+      "okl_gl",
+      "okl_hd",
+      "okl_h",
+      "okl_hgk",
+      "okl_hsp",
+      "okl_gf"
+    ],
+    "cableTypeId": "cable_type:scab",
+    "maxFireWorkTime": 69
+  }
+]

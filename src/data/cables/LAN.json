@@ -1,0 +1,434 @@
+[
+  {
+    "id": "cable_lan_3cat_1",
+    "name": "СПЕЦЛАН U/UTP Cat 3 ZH нг(А)-FRHF 2х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 4,
+    "coreDiameter": 0.52,
+    "outerDiameter": 8,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_3cat_2",
+    "name": "СПЕЦЛАН U/UTP Cat 3 ZH нг(А)-FRHF 4х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 8,
+    "coreDiameter": 0.52,
+    "outerDiameter": 9,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_3cat_3",
+    "name": "СПЕЦЛАН U/UTP Cat 3 PVC LS нг(А)-FRLS 2х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 4,
+    "coreDiameter": 0.52,
+    "outerDiameter": 8,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_3cat_4",
+    "name": "СПЕЦЛАН U/UTP Cat 3 PVC LS нг(А)-FRLS 4х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 8,
+    "coreDiameter": 0.52,
+    "outerDiameter": 9,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_3cat_5",
+    "name": "СПЕЦЛАН F/UTP Cat 3 ZH нг(А)-FRHF 2х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 4,
+    "coreDiameter": 0.52,
+    "outerDiameter": 8.5,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_3cat_6",
+    "name": "СПЕЦЛАН F/UTP Cat 3 ZH нг(А)-FRHF 4х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 8,
+    "coreDiameter": 0.52,
+    "outerDiameter": 9.5,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_3cat_7",
+    "name": "СПЕЦЛАН F/UTP Cat 3 PVC LS нг(А)-FRLS 2х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 4,
+    "coreDiameter": 0.52,
+    "outerDiameter": 8.5,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_3cat_8",
+    "name": "СПЕЦЛАН F/UTP Cat 3 PVC LS нг(А)-FRLS 4х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 8,
+    "coreDiameter": 0.52,
+    "outerDiameter": 9.5,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_3cat_9",
+    "name": "СПЕЦЛАН F/UTP Cat 3 ZH КГнг(А)-FRHF 2х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 4,
+    "coreDiameter": 0.52,
+    "outerDiameter": 10,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_3cat_10",
+    "name": "СПЕЦЛАН F/UTP Cat 3 ZH КГнг(А)-FRHF 4х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 8,
+    "coreDiameter": 0.52,
+    "outerDiameter": 11,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_3cat_11",
+    "name": "СПЕЦЛАН F/UTP Cat 3 PVC LS КГнг(А)-FRLS 2х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 4,
+    "coreDiameter": 0.52,
+    "outerDiameter": 10,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_3cat_12",
+    "name": "СПЕЦЛАН F/UTP Cat 3 PVC LS КГнг(А)-FRLS 4х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 8,
+    "coreDiameter": 0.52,
+    "outerDiameter": 11,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_3cat_13",
+    "name": "СПЕЦЛАН F/UTP Cat 3 ZH Кнг(А)-FRHF 2х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 4,
+    "coreDiameter": 0.52,
+    "outerDiameter": 14.5,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_3cat_14",
+    "name": "СПЕЦЛАН F/UTP Cat 3 ZH Кнг(А)-FRHF 4х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 8,
+    "coreDiameter": 0.52,
+    "outerDiameter": 15.5,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_3cat_15",
+    "name": "СПЕЦЛАН F/UTP Cat 3 PVC LS Кнг(А)-FRLS 2х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 4,
+    "coreDiameter": 0.52,
+    "outerDiameter": 14.5,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_3cat_16",
+    "name": "СПЕЦЛАН F/UTP Cat 3 PVC LS Кнг(А)-FRLS 4х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 8,
+    "coreDiameter": 0.52,
+    "outerDiameter": 15.5,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_3cat_17",
+    "name": "СПЕЦЛАН U/UTP Cat 3 PVC LS нг(А)-FRLSLTx 2х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 4,
+    "coreDiameter": 0.52,
+    "outerDiameter": 8,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_3cat_18",
+    "name": "СПЕЦЛАН U/UTP Cat 3 PVC LS нг(А)-FRLSLTx 4х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 8,
+    "coreDiameter": 0.52,
+    "outerDiameter": 9,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_3cat_19",
+    "name": "СПЕЦЛАН F/UTP Cat 3 PVC LS нг(А)-FRLSLTx 2х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 4,
+    "coreDiameter": 0.52,
+    "outerDiameter": 8.5,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_3cat_20",
+    "name": "СПЕЦЛАН F/UTP Cat 3 PVC LS нг(А)-FRLSLTx 4х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 8,
+    "coreDiameter": 0.52,
+    "outerDiameter": 9.5,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_5cat_20",
+    "name": "СПЕЦЛАН U/UTP Cat 5 ZH нг(А)-FRHF 2х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 4,
+    "coreDiameter": 0.52,
+    "outerDiameter": 7,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_5cat_21",
+    "name": "СПЕЦЛАН U/UTP Cat 5 ZH нг(А)-FRHF 4х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 8,
+    "coreDiameter": 0.52,
+    "outerDiameter": 8,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_5cat_22",
+    "name": "СПЕЦЛАН U/UTP Cat 5 PVC LS нг(D)-FRLS 2х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 4,
+    "coreDiameter": 0.52,
+    "outerDiameter": 7,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_5cat_23",
+    "name": "СПЕЦЛАН U/UTP Cat 5 PVC LS нг(D)-FRLS 4х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 8,
+    "coreDiameter": 0.52,
+    "outerDiameter": 8,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_5cat_24",
+    "name": "СПЕЦЛАН F/UTP Cat 5 ZH нг(А)-FRHF 2х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 4,
+    "coreDiameter": 0.52,
+    "outerDiameter": 7.5,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_5cat_25",
+    "name": "СПЕЦЛАН F/UTP Cat 5 ZH нг(А)-FRHF 4х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 8,
+    "coreDiameter": 0.52,
+    "outerDiameter": 8.5,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_5cat_26",
+    "name": "СПЕЦЛАН F/UTP Cat 5 PVC LS нг(D)-FRLS 2х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 4,
+    "coreDiameter": 0.52,
+    "outerDiameter": 7.5,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_5cat_27",
+    "name": "СПЕЦЛАН F/UTP Cat 5 PVC LS нг(D)-FRLS 4х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 8,
+    "coreDiameter": 0.52,
+    "outerDiameter": 8.5,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_5cat_28",
+    "name": "СПЕЦЛАН F/UTP Cat 5 ZH КГнг(А)-FRHF 2х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 4,
+    "coreDiameter": 0.52,
+    "outerDiameter": 9,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_5cat_29",
+    "name": "СПЕЦЛАН F/UTP Cat 5 ZH КГнг(А)-FRHF 4х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 8,
+    "coreDiameter": 0.52,
+    "outerDiameter": 10,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_5cat_30",
+    "name": "СПЕЦЛАН F/UTP Cat 5 PVC LS КГнг(D)-FRLS 2х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 4,
+    "coreDiameter": 0.52,
+    "outerDiameter": 9,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_5cat_31",
+    "name": "СПЕЦЛАН F/UTP Cat 5 PVC LS КГнг(D)-FRLS 4х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 8,
+    "coreDiameter": 0.52,
+    "outerDiameter": 10,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_5cat_32",
+    "name": "СПЕЦЛАН F/UTP Cat 5 ZH Кнг(А)-FRHF 2х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 4,
+    "coreDiameter": 0.52,
+    "outerDiameter": 13.5,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_5cat_33",
+    "name": "СПЕЦЛАН F/UTP Cat 5 ZH Кнг(А)-FRHF 4х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 8,
+    "coreDiameter": 0.52,
+    "outerDiameter": 14.5,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_5cat_34",
+    "name": "СПЕЦЛАН F/UTP Cat 5 PVC LS Кнг(D)-FRLS 2х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 4,
+    "coreDiameter": 0.52,
+    "outerDiameter": 13.5,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_5cat_35",
+    "name": "СПЕЦЛАН F/UTP Cat 5 PVC LS Кнг(D)-FRLS 4х2х0,52",
+    "cableTypeId": "cable_type:lan",
+    "cores": 8,
+    "coreDiameter": 0.52,
+    "outerDiameter": 14.5,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_6cat_35",
+    "name": "СПЕЦЛАН F/FTP Cat 6 ZH нг(А)-FRHF 4х2х0,57",
+    "cableTypeId": "cable_type:lan",
+    "cores": 8,
+    "coreDiameter": 0.57,
+    "outerDiameter": 10.3,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_6cat_36",
+    "name": "СПЕЦЛАН S/FTP Cat 6 ZH нг(А)-FRHF 4х2х0,57",
+    "cableTypeId": "cable_type:lan",
+    "cores": 8,
+    "coreDiameter": 0.57,
+    "outerDiameter": 10.5,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_6cat_37",
+    "name": "СПЕЦЛАН F/FTP Cat 6 ZH КГнг(А)-FRHF 4х2х0,57",
+    "cableTypeId": "cable_type:lan",
+    "cores": 8,
+    "coreDiameter": 0.57,
+    "outerDiameter": 12,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_6cat_38",
+    "name": "СПЕЦЛАН S/FTP Cat 6 ZH КГнг(А)-FRHF 4х2х0,57",
+    "cableTypeId": "cable_type:lan",
+    "cores": 8,
+    "coreDiameter": 0.57,
+    "outerDiameter": 12,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_6cat_39",
+    "name": "СПЕЦЛАН F/FTP Cat 6 ZH Кнг(А)-FRHF 4х2х0,57",
+    "cableTypeId": "cable_type:lan",
+    "cores": 8,
+    "coreDiameter": 0.57,
+    "outerDiameter": 16.5,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_6cat_40",
+    "name": "СПЕЦЛАН S/FTP Cat 6 ZH Кнг(А)-FRHF 4х2х0,57",
+    "cableTypeId": "cable_type:lan",
+    "cores": 8,
+    "coreDiameter": 0.57,
+    "outerDiameter": 16.5,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_6cat_41",
+    "name": "СПЕЦЛАН F/FTP Cat 6 PVC нг(А)-FRLS 4х2х0,57",
+    "cableTypeId": "cable_type:lan",
+    "cores": 8,
+    "coreDiameter": 0.57,
+    "outerDiameter": 10.3,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_6cat_42",
+    "name": "СПЕЦЛАН S/FTP Cat 6 PVC нг(А)-FRLS 4х2х0,57",
+    "cableTypeId": "cable_type:lan",
+    "cores": 8,
+    "coreDiameter": 0.57,
+    "outerDiameter": 10.5,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_6cat_43",
+    "name": "СПЕЦЛАН F/FTP Cat 6 PVC КГнг(А)-FRLS 4х2х0,57",
+    "cableTypeId": "cable_type:lan",
+    "cores": 8,
+    "coreDiameter": 0.57,
+    "outerDiameter": 12,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_6cat_44",
+    "name": "СПЕЦЛАН S/FTP Cat 6 PVC КГнг(А)-FRLS 4х2х0,57",
+    "cableTypeId": "cable_type:lan",
+    "cores": 8,
+    "coreDiameter": 0.57,
+    "outerDiameter": 12,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_6cat_45",
+    "name": "СПЕЦЛАН F/FTP Cat 6 PVC Кнг(А)-FRLS 4х2х0,57",
+    "cableTypeId": "cable_type:lan",
+    "cores": 8,
+    "coreDiameter": 0.57,
+    "outerDiameter": 16.5,
+    "TU": "ТУ 16.К99-048-2012"
+  },
+  {
+    "id": "cable_lan_6cat_46",
+    "name": "СПЕЦЛАН S/FTP Cat 6 PVC Кнг(А)-FRLS 4х2х0,57",
+    "cableTypeId": "cable_type:lan",
+    "cores": 8,
+    "coreDiameter": 0.57,
+    "outerDiameter": 16.5,
+    "TU": "ТУ 16.К99-048-2012"
+  }
+]

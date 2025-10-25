@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {OKL, OKLCard} from './OKLCard';
+import {CapacityInfo, OKL, OKLCard} from './OKLCard';
 import styles from '../styles/OKL.module.css';
 import {Button} from "../Button";
 import {ExportButtons} from "../services/ExportButtons";
@@ -14,8 +14,8 @@ interface ConfigurationSummaryProps {
     onSave: () => void;
     onCopyOKL: (oklId: string) => void;
 
-    
-    selectedOKL?: (oklId: string)=> void
+
+    getOKLCapacityInfo?: (oklId: string) => CapacityInfo | null; // Добавляем функцию
 }
 
 export const OKLconfig: React.FC<ConfigurationSummaryProps> = ({
@@ -24,8 +24,8 @@ export const OKLconfig: React.FC<ConfigurationSummaryProps> = ({
                                                                    onDeleteOKL,
                                                                    onEditOKL,
                                                                    onAddCable,
-                                                                   onSave,
                                                                    onCopyOKL,
+                                                                   getOKLCapacityInfo
                                                                }) => {
     const [selectedOKL, setSelectedOKL] = useState<string>('');
 
@@ -48,20 +48,12 @@ export const OKLconfig: React.FC<ConfigurationSummaryProps> = ({
                         onRemoveCable={onRemoveCable}
                         onAddCable={onAddCable}
                         onCopy={onCopyOKL}
+                        capacityInfo={getOKLCapacityInfo ? getOKLCapacityInfo(okl.id) : null}
                     />
                 ))}
 
             </div>
             <ExportButtons oklList={oklList} fileName="Конфигурация-ОКЛ" />
-            <div className={styles.footer}>
-                <Button
-                    title="Сохранить конфигурацию"
-                    onClick={onSave}
-                    disabled={oklList.length === 0}
-                />
-
-            </div>
-
         </div>
     );
 };

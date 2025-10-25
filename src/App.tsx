@@ -8,8 +8,8 @@ function App() {
     return (
         <div className="App">
             <OnboardingSidebar/>
-            <Konfigurator/>
-         {/*   <Konfigurator2 />*/}
+            {/*<Konfigurator/>*/}
+            <Konfigurator2 />
         </div>
     );
 }

@@ -5,12 +5,23 @@ import {OKLActions} from './OKLActions';
 import styles from './OKLCard.module.css';
 import {OKL} from "../data";
 import {Link} from "./Link";
+import {CapacityStatus} from "../CapacityStatus";
 
 export type OKL = {
     id: string;
     name: string;
     length: number;
     cables: Cable[];
+    sectionOKL?: number;
+    type?: string;
+};
+
+export type CapacityInfo = {
+    cableCount: number;
+    usedArea: number;
+    maxArea: number;
+    freeArea: number;
+    isFull: boolean;
 };
 
 export type Cable = {
@@ -19,6 +30,15 @@ export type Cable = {
     name: string;
     length: number;
     description?: string
+};
+export type NewCable = {
+    id: string;
+    name: string;
+    cableTypeId: string;
+    cores: number;
+    outerDiameter: number;
+    TU: string
+    length: number;
 };
 
 interface OKLCardProps {
@@ -30,6 +50,7 @@ interface OKLCardProps {
     onRemoveCable: (oklId: string, cableId: string) => void;
     onAddCable: (oklId: string) => void;
     onCopy: (oklId: string) => void;
+    capacityInfo?: CapacityInfo | null; // Добавляем capacityInfo
 }
 
 export const OKLCard: React.FC<OKLCardProps> = ({
@@ -39,10 +60,16 @@ export const OKLCard: React.FC<OKLCardProps> = ({
                                                     onEdit,
                                                     onDelete,
                                                     onRemoveCable,
-                                                    onCopy
+                                                    onCopy,
+                                                    capacityInfo,
+                                                    onAddCable
                                                 }) => {
     const handleCardClick = () => {
         onSelect(okl.id);
+    };
+    const handleAddCableClick = (e: React.MouseEvent) => {
+        e.stopPropagation(); // Предотвращаем всплытие
+        onAddCable(okl.id);
     };
 
     return (
@@ -78,7 +105,11 @@ export const OKLCard: React.FC<OKLCardProps> = ({
             </div>
 
             {/* Остальной код без изменений */}
-            <CapacityIndicator cableCount={okl.cables.length}/>
+            <CapacityStatus
+                capacityInfo={capacityInfo}
+                compact={true}
+                className={styles.capacityStatus}
+            />
 
             <CableList
                 cables={okl.cables}
@@ -110,19 +141,3 @@ export const OKLCard: React.FC<OKLCardProps> = ({
     );
 };
 
-{/* Кнопка добавления кабеля */}
-{/*  {okl.cables.length < 8 && (
-               <button
-                    className={styles.addCableBtn}
-                    onClick={handleAddCableClick}
-                    title="Добавить кабель"
-                > Нажмите на кнопку для добавления кабеля в ОКЛ
-                </button>
-
-
-            )}*/}
-
-/*  const handleAddCableClick = (e: React.MouseEvent) => {
-        e.stopPropagation();
-        onAddCable(okl.id);
-    };*/
