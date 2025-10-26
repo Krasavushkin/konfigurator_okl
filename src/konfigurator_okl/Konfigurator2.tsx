@@ -171,10 +171,7 @@ export const Konfigurator2 = () => {
         if (!selectedOKL) return;
         addOKL(selectedOKL, meter);
     };
-    // добавленные
-    const handleSelectOKL = (oklType: string) => {
-        const cables = getCompatibleCables(oklType);
-    };
+
 
     const handleShowTime = (oklType: string, cableTypeId: string) => {
         const time = getMaxFireTime(oklType, cableTypeId);
@@ -367,10 +364,8 @@ export const Konfigurator2 = () => {
                 onAddCable={handleAddCable}
                 onCopyOKL={handleCopyOKL}
                 getOKLCapacityInfo={getOKLCapacityInfo}
-
-                selectedOKL={selectedOKL} // 🔧 ПЕРЕДАЕМ ВЫБРАННУЮ ОКЛ
-                onSelectOKL={setSelectedOKL} // 🔧 ПЕРЕДАЕМ ФУНКЦИЮ ВЫБОРА
-
+                selectedOKL={selectedOKL}
+                onSelectOKL={setSelectedOKL}
                 onDeleteAllOKL={handleDeleteAllOKL}
             />
         </>
