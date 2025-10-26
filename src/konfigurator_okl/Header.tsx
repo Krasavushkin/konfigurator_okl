@@ -34,7 +34,7 @@ export const Header = () => {
                 </div>
 
                 <div className={styles.badge}>
-                    <span>v1.0</span>
+                    <span>v 0.9</span>
                 </div>
             </div>
         </header>

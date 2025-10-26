@@ -316,3 +316,89 @@
         gap: 8px;
     }
 }
+/*
+пагинация*/
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 32px 0;
+    padding: 0 16px;
+}
+
+.pagination button {
+    padding: 10px 16px;
+    border: 1px solid #d1d5db;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+    transition: all 0.2s ease;
+    min-width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination button:hover:not(:disabled) {
+    background: #f8fafc;
+    border-color: #9ca3af;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pagination button:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.pagination button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    background: #f9fafb;
+    color: #9ca3af;
+}
+
+.pagination .pageInfo {
+    font-size: 14px;
+    color: #6b7280;
+    margin: 0 16px;
+    font-weight: 500;
+    min-width: 120px;
+    text-align: center;
+}
+
+/* Стили для кнопок вперед/назад */
+.pagination .navBtn {
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+/* Дополнительные стили для активной страницы, если нужно */
+.pagination .active {
+    background: #9E0929;
+    color: white;
+    border-color: #9E0929;
+}
+
+.pagination .active:hover {
+    background: #8a0824;
+    border-color: #8a0824;
+}
+
+
+/* Стили для кнопок */
+.actionButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+

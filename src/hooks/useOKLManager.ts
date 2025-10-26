@@ -178,7 +178,11 @@ export const useOKLManager = () => {
         };
         setOklList(prev => [...prev, copy]);
     };
-
+    // Удаление всех ОКЛ
+    const deleteAllOKL = () => {
+        setOklList([]);
+        setSelectedOKL('');
+    };
     return {
         oklList,
         selectedOKL,
@@ -191,7 +195,8 @@ export const useOKLManager = () => {
         canAddCableToOKL,
         getOKLCapacityInfo,
 
-        canAddAnyCable
+        canAddAnyCable,
+        deleteAllOKL
     };
 };
 

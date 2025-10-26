@@ -67,7 +67,7 @@ export const CapacityStatus: React.FC<CapacityStatusProps> = ({
             if (!canAddAnyCable) {
                 return {
                     status: 'full',
-                    reason: 'В ОКЛ недостаточно места для любого доступного кабеля',
+                    reason: 'В ОКЛ недостаточно места для любого доступного кабеля. Добавьте новую ОКЛ в конфигурацию или удалите кабель из выбранной.',
                     reasonType: 'no-space-for-cables'
                 };
             }

@@ -37,7 +37,8 @@ export const Konfigurator2 = () => {
         copyOKL,
 
         canAddCableToOKL,
-        getOKLCapacityInfo
+        getOKLCapacityInfo,
+        deleteAllOKL,
     } = useOKLManager();
 
     const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
@@ -204,20 +205,16 @@ export const Konfigurator2 = () => {
 
 
     const cableValidation = useMemo(() =>
-            selectedOKL && selectedCable ? canAddCableToOKL(selectedOKL, selectedCable) : { canAdd: false },
+            selectedOKL && selectedCable ? canAddCableToOKL(selectedOKL, selectedCable) : {canAdd: false},
         [selectedOKL, selectedCable, oklList]);
 
     const canAddCable = cableValidation.canAdd;
 
-
-
-    const handleSaveConfig = () => {
-        console.log('Сохраняем конфигурацию:', {
-            suspension: getSelectedName(SUSPENSIONS, selectedSuspension),
-            surface: getSelectedName(SURFACES, selectedSurface),
-            fitting: getSelectedName(FITTINGS, selectedFitting),
-            oklList,
-        });
+// Обработчик удаления всех ОКЛ
+    const handleDeleteAllOKL = () => {
+        if (window.confirm('Вы уверены, что хотите удалить все ОКЛ? Это действие нельзя отменить.')) {
+            deleteAllOKL();
+        }
     };
 
     return (
@@ -228,6 +225,7 @@ export const Konfigurator2 = () => {
 
                 <div className={styles.dropdowns}>
                     <h2>Фильтры для подбора ОКЛ</h2>
+
                     <Dropdown
                         id="dropdown-suspension"
                         title="Тип кабеленесущего элемента"
@@ -245,6 +243,7 @@ export const Konfigurator2 = () => {
                         onToggle={() => selectedSuspension && toggleDropdown('surface')}
                         onSelect={handleSelect('surface')}
                         disabled={!selectedSuspension}
+
                     />
                     <Dropdown
                         title="Тип крепежа"
@@ -255,6 +254,25 @@ export const Konfigurator2 = () => {
                         onSelect={handleSelect('fitting')}
                         disabled={!selectedSurface}
                     />
+
+                    {!selectedOKL && (<div className={`${styles.filterStatus} ${selectedSuspension && selectedSurface && selectedFitting ? styles.completed : styles.active}`}>
+                        {selectedSuspension && selectedSurface && selectedFitting ? (
+                            <div className={styles.statusMessage}>
+                                <span className={styles.successIcon}>✓</span>
+                                <span>Все фильтры выбраны! Теперь вы можете выбрать ОКЛ из доступных вариантов в карточке "Выбор марки ОКЛ"</span>
+                            </div>
+                        ) : (
+                            <div className={styles.statusMessage}>
+                                <span className={styles.infoIcon}>i</span>
+                                <span>
+                                    {!selectedSuspension && "Выберите тип кабеленесущего элемента чтобы начать подбор "}
+                                    {selectedSuspension && !selectedSurface && "Теперь выберите поверхность монтажа "}
+                                    {selectedSuspension && selectedSurface && !selectedFitting && "Осталось выбрать тип крепежа "}
+                                    {!selectedSuspension && "или воспользуйтесь поиском ОКЛ в карточке \"Выбор марки ОКЛ\", если знаете нужную марку"}
+                                </span>
+                            </div>
+                        )}
+                    </div>)}
                 </div>
                 <div className={styles.dropdowns}>
                     <h2>Выбор марки ОКЛ</h2>
@@ -280,9 +298,25 @@ export const Konfigurator2 = () => {
                         onClick={handleAddOKL}
                         disabled={!selectedOKL || meter < 1}
                     />
+                    {!selectedOKL &&  (<div className={`${styles.filterStatus} ${styles.active}`}>
+                        <div className={styles.statusMessage}>
+                            <span className={styles.infoIcon}>i</span>
+                            <span>После выбора ОКЛ введите длину в метрах и нажмите кнопку "+ Добавить ОКЛ".
+                                Затем перейдите к выбору и добавлению кабеля.
+                            </span>
+                        </div>
+                    </div>)}
                 </div>
                 <div className={styles.dropdowns}>
                     <h2>Подбор кабеля для ОКЛ</h2>
+                    {!selectedOKL && (
+                        <div className={`${styles.filterStatus} ${styles.active}`}>
+                            <div className={styles.statusMessage}>
+                                <span className={styles.infoIcon}>i</span>
+                                <span>Сначала добавьте ОКЛ в карточке "Выбор марки ОКЛ"</span>
+                            </div>
+                        </div>
+                    )}
                     <Dropdown
                         title="Назначение кабеля"
                         items={availableCableAppointments}
@@ -331,12 +365,13 @@ export const Konfigurator2 = () => {
                 onDeleteOKL={handleDeleteOKL}
                 onEditOKL={handleEditOKL}
                 onAddCable={handleAddCable}
-                onSave={handleSaveConfig}
                 onCopyOKL={handleCopyOKL}
                 getOKLCapacityInfo={getOKLCapacityInfo}
 
                 selectedOKL={selectedOKL} // 🔧 ПЕРЕДАЕМ ВЫБРАННУЮ ОКЛ
                 onSelectOKL={setSelectedOKL} // 🔧 ПЕРЕДАЕМ ФУНКЦИЮ ВЫБОРА
+
+                onDeleteAllOKL={handleDeleteAllOKL}
             />
         </>
 
