@@ -24,13 +24,33 @@
     transition: transform 0.3s ease;
 }
 
-.button:hover {
-    background-color: #9E0929;
-    color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(158, 9, 41, 0.3);
+
+.button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none !important;
+    box-shadow: none !important;
 }
 
-.button:hover::after {
-    transform: translateX(4px);
+/* Если используете отдельный класс .disabled */
+.button.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* Для hover эффектов */
+@media (hover: hover) {
+    .button:hover:not(:disabled) {
+        background-color: #9E0929;
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(158, 9, 41, 0.3);
+    }
+
+    .button:disabled:hover {
+        /* убрать все hover эффекты для disabled */
+        transform: none;
+        box-shadow: none;
+    }
 }

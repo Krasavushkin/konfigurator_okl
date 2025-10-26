@@ -21,7 +21,7 @@ export const ExportButtons: React.FC<ExportButtonsProps> = ({
 
     return (
         <div className={styles.exportButtons}>
-            <Button title={"Сохранить в PDF 📄"} onClick={() => handleExport(exportPDF)} disabled={isExporting || oklList.length === 0}/>
+            <Button title={"Сохранить в PDF 📄"} onClick={() => handleExport(exportPDF)} disabled={oklList.length === 0}/>
          {/*   <button
                 className={styles.exportBtn}
                 onClick={() => handleExport(exportPDF)}
