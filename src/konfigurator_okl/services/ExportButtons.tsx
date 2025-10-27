@@ -1,11 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from '../styles/ExportButtons.module.css';
-import {useExport} from "./useExport";
-import {OKL} from "../infoOKL/OKLCard";
+
 import {Button} from "../Button";
+import {newOKLItem} from "../data";
+import {ServiceExport} from "./ServiceExport";
 
 interface ExportButtonsProps {
-    oklList: OKL[];
+    oklList: newOKLItem[];
     fileName?: string;
 }
 
@@ -13,41 +14,31 @@ export const ExportButtons: React.FC<ExportButtonsProps> = ({
                                                                 oklList,
                                                                 fileName = 'OKL-Configuration'
                                                             }) => {
-    const { isExporting, exportPDF, exportExcel, exportWord } = useExport();
+    /*const { isExporting, exportPDF, exportExcel, exportWord } = useExport();*/
 
-    const handleExport = async (exportFunction: Function) => {
+    /*const handleExport = async (exportFunction: Function) => {
         await exportFunction(oklList, fileName);
-    };
+    };*/
 
+    const [isExporting, setIsExporting] = useState(false);
+    const exportService = new ServiceExport();
+
+    const handleExport = async (exportFunction: (list: newOKLItem[], name: string) => Promise<void>) => {
+        if (oklList.length === 0) return;
+        setIsExporting(true);
+        try {
+            await exportFunction(oklList, fileName);
+        } catch (error) {
+            console.error('Ошибка экспорта:', error);
+            alert('Не удалось экспортировать файл');
+        } finally {
+            setIsExporting(false);
+        }
+    };
     return (
         <div className={styles.exportButtons}>
-            <Button title={"Сохранить в PDF 📄"} onClick={() => handleExport(exportPDF)} disabled={oklList.length === 0}/>
-         {/*   <button
-                className={styles.exportBtn}
-                onClick={() => handleExport(exportPDF)}
-                disabled={isExporting || oklList.length === 0}
-                title="Сохранить в PDF"
-            >
-                {isExporting ? '⏳' : '📄'} Сохранить в PDF
-            </button>*/}
+            <Button title={"Сохранить в PDF 📄"} onClick={() => handleExport(exportService.exportToPDFService.bind(exportService))} disabled={oklList.length === 0}/>
 
-          {/*  <button
-                className={styles.exportBtn}
-                onClick={() => handleExport(exportExcel)}
-                disabled={isExporting || oklList.length === 0}
-                title="Сохранить в Excel"
-            >
-                {isExporting ? '⏳' : '📊'} Excel
-            </button>
-
-            <button
-                className={styles.exportBtn}
-                onClick={() => handleExport(exportWord)}
-                disabled={isExporting || oklList.length === 0}
-                title="Сохранить в Word"
-            >
-                {isExporting ? '⏳' : '📝'} Word
-            </button>*/}
         </div>
     );
 };
