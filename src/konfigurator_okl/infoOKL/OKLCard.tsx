@@ -7,6 +7,7 @@ import {Link} from "./Link";
 import {CapacityStatus} from "../CapacityStatus";
 import {useOKLData} from "../../hooks/useOKLData";
 import {useOKLLink} from "../../hooks/useOKLLink";
+import {newOKLItem} from "../data";
 
 export type OKL = {
     id: string;
@@ -43,7 +44,7 @@ export type NewCable = {
 };
 
 interface OKLCardProps {
-    okl: OKL;
+    okl: newOKLItem;
     isSelected: boolean;
     onSelect: (oklId: string) => void;
     onEdit: (oklId: string) => void;

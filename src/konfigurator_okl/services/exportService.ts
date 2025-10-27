@@ -1,13 +1,20 @@
 import * as XLSX from 'xlsx';
 import {Cable, OKL} from "../infoOKL/OKLCard";
 import html2pdf from 'html2pdf.js'
+import {newOKLItem, OKL_LINKS} from "../data";
 
 
 export class ExportService {
 
-    async exportToPDF(oklList: OKL[], fileName: string = 'OKL-Configuration'): Promise<void> {
+    async exportToPDF(oklList: newOKLItem[], fileName: string = 'OKL-Configuration'): Promise<void> {
         const container = document.createElement('div');
-
+        const uniqueOklTypes = Array.from(
+            new Set(oklList.map(okl => okl.type))
+        );
+        const generateFileName = (oklList: newOKLItem[]) =>
+            `Конфигурация_ОКЛ_${oklList.length}шт_${oklList.reduce((s, o) => s + o.length, 0)}м_${
+                new Date().toISOString().slice(0, 16).replace('T', '_').replace(':', '-')
+            }`;
         const styles = `
         <style>
             body { font-family: "Arial", sans-serif; font-size: 12px; color: #222; }
@@ -45,31 +52,49 @@ export class ExportService {
 
         // === 2. Собираем контент ===
         const content = `
-        <div class="footer">
-            © ООО НПП "Спецкабель", ${new Date().getFullYear()}
-        </div>
-        ${styles}
-        <h1>Конфигурация ОКЛ</h1>
-        ${oklList.map(okl => `
-            <div class="okl-block">
-              <div class="okl-title">
-  СПЕЦКАБЛАЙН-${okl.name}-${okl.length}м
-  (${okl.cables
-            .map((cable, index) =>
-                `${cable.name} - ${cable.length} м${index < okl.cables.length - 1 ? ' + ' : ''}`
-            )
+    <div class="footer">
+        © ООО НПП "Спецкабель", ${new Date().getFullYear()}
+    </div>
+    ${styles}
+    <h1>Конфигурация ОКЛ</h1>
+
+  
+
+    <!-- === Список ОКЛ === -->
+    ${oklList.map((okl, index) => `
+        <div class="okl-block">
+            <div class="okl-title">
+                ОКЛ №${index + 1}: СПЕЦКАБЛАЙН-${okl.name}-${okl.length}м
+                (${okl.cables
+            .map((c, i) => `${c.name} - ${c.length} м${i < okl.cables.length - 1 ? ' + ' : ''}`)
             .join('')}
-  )
-</div>
-
-                <p><b>Длина ОКЛ:</b> ${okl.length} м</p>
-                <p><b>Количество кабелей:</b> ${okl.cables.length}</p>
-                <p><b>Общая длина кабелей:</b> ${this.calculateTotalCableLength(okl.cables)} м</p>
-
+                )
             </div>
-        `).join('')}
-       
-    `;
+            <p><b>ТУ ОКЛ:</b> ${okl.TU}</p>
+            <p><b>Длина ОКЛ:</b> ${okl.length} м</p>
+            <p><b>Количество кабелей:</b> ${okl.cables.length}</p>
+            <p><b>Общая длина кабелей:</b> ${this.calculateTotalCableLength(okl.cables)} м</p>
+        </div>
+    `).join('')}
+      <!-- === Описания типов ОКЛ (по одному на тип) === -->
+    ${uniqueOklTypes.map(type => {
+            const linkData = OKL_LINKS.find(l => l.oklType === type);
+            if (!linkData) return '';
+            return `
+            <div style="margin: 20px 0; padding: 12px; border-left: 4px solid #8B0000; background: #fdf6f6; border-radius: 4px;">
+                <p style="font-size: 11px; color: #333; line-height: 1.5; margin: 0;">
+                    ${linkData.description.replace(/\n/g, '<br>')}
+                </p>
+                <p style="font-size: 10px; margin-top: 8px; color: #0066cc;">
+                    Подробнее: 
+                    <a href="${linkData.link}" target="_blank" style="color: #0066cc; text-decoration: underline;">
+                        ${linkData.link}
+                    </a>
+                </p>
+            </div>
+        `;
+        }).join('')}
+`;
 
         container.innerHTML = content;
         document.body.appendChild(container);
@@ -80,7 +105,7 @@ export class ExportService {
                 .from(container)
                 .set({
                     margin: 10,
-                    filename: `${fileName}-${this.getFormattedDate()}.pdf`,
+                    filename: `${generateFileName(oklList)}.pdf`,
                     image: {type: 'jpeg', quality: 1},
                     html2canvas: {scale: 2},
                     jsPDF: {unit: 'mm', format: 'a4', orientation: 'portrait'}

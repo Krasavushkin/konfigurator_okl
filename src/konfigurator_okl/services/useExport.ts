@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import { exportService } from '../services/exportService';
 import {OKL} from "../infoOKL/OKLCard";
+import {newOKLItem} from "../data";
 
 
 export const useExport = () => {
     const [isExporting, setIsExporting] = useState(false);
 
-    const exportPDF = async (oklList: OKL[], fileName?: string) => {
+    const exportPDF = async (oklList: newOKLItem[], fileName?: string) => {
         if (oklList.length === 0) {
             alert('Нет данных для экспорта');
             return;

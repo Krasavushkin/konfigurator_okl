@@ -3,10 +3,11 @@ import {CapacityInfo, OKL, OKLCard} from './OKLCard';
 import styles from '../styles/OKL.module.css';
 import {ExportButtons} from "../services/ExportButtons";
 import {Button} from "../Button";
+import {newOKLItem} from "../data";
 
 
 interface ConfigurationSummaryProps {
-    oklList: OKL[];
+    oklList: newOKLItem[];
     onRemoveCable: (oklId: string, cableId: string) => void;
     onDeleteOKL: (oklId: string) => void;
     onEditOKL: (oklId: string) => void;
@@ -52,7 +53,7 @@ export const OKLconfig: React.FC<ConfigurationSummaryProps> = ({
         const newSelected = internalSelectedOKL === oklId ? '' : oklId;
         setInternalSelectedOKL(newSelected);
 
-        // 🔧 УВЕДОМЛЯЕМ РОДИТЕЛЯ О ВЫБОРЕ
+        // УВЕДОМЛЯЕМ О ВЫБОРЕ
         if (onSelectOKL) {
             onSelectOKL(newSelected);
         }
@@ -114,26 +115,5 @@ export const OKLconfig: React.FC<ConfigurationSummaryProps> = ({
                 )}
             </div>
         </div>
-
-        /*<div className={styles.configContainer}>
-            <div className={styles.oklGrid}>
-                {oklList.map(okl => (
-                    <OKLCard
-                        key={okl.id}
-                        okl={okl}
-                        isSelected={internalSelectedOKL  === okl.id}
-                        onSelect={handleSelectOKL}
-                        onEdit={onEditOKL}
-                        onDelete={onDeleteOKL}
-                        onRemoveCable={onRemoveCable}
-                        onAddCable={onAddCable}
-                        onCopy={onCopyOKL}
-                        capacityInfo={getOKLCapacityInfo ? getOKLCapacityInfo(okl.id) : null}
-                    />
-                ))}
-
-            </div>
-            <ExportButtons oklList={oklList} fileName="Конфигурация-ОКЛ" />
-        </div>*/
     );
 };
