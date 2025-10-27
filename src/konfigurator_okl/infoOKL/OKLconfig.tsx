@@ -15,8 +15,8 @@ interface ConfigurationSummaryProps {
     onCopyOKL: (oklId: string) => void;
     getOKLCapacityInfo?: (oklId: string) => CapacityInfo | null;
 
-    selectedOKL?: string; // 🔧 ВНЕШНЕЕ СОСТОЯНИЕ ВЫБРАННОЙ ОКЛ
-    onSelectOKL?: (oklId: string) => void; // 🔧 КОЛБЭК ДЛЯ ВЫБОРА ОКЛ
+    selectedOKL?: string;
+    onSelectOKL?: (oklId: string) => void;
     onDeleteAllOKL: () => void
 }
 

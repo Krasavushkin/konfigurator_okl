@@ -37,7 +37,7 @@ export const useOKLManager = () => {
     const selectOKL = (oklId: string) => {
         setSelectedOKL(oklId);
     };
-    // 🔧 УПРОЩЕННОЕ добавление кабеля с проверкой вместимости
+    // добавление кабеля с проверкой вместимости
     const addCable = (oklId: string, cableId: string, length: number) => {
         const cableData = ALL_CABLES.find(c => c.id === cableId);
         const okl = oklList.find(o => o.id === oklId);
@@ -183,6 +183,23 @@ export const useOKLManager = () => {
         setOklList([]);
         setSelectedOKL('');
     };
+
+    const getAvailableCablesForOKL = (oklId: string, cables: any[]): any[] => {
+        const okl = oklList.find(o => o.id === oklId);
+        if (!okl || !okl.sectionOKL) return cables;
+
+        const usedArea = calculateUsedArea(okl.cables);
+        const freeArea = okl.sectionOKL - usedArea;
+
+        return cables.filter(cable => {
+            if (!cable.outerDiameter) return false;
+
+            // Проверяем, поместится ли кабель в свободное место
+            const cableArea = calculateCableArea(cable.outerDiameter);
+            return cableArea <= freeArea;
+        });
+    };
+
     return {
         oklList,
         selectedOKL,
@@ -196,7 +213,10 @@ export const useOKLManager = () => {
         getOKLCapacityInfo,
 
         canAddAnyCable,
-        deleteAllOKL
+        deleteAllOKL,
+
+        getAvailableCablesForOKL
+
     };
 };
 

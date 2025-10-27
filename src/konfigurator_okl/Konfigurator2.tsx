@@ -35,10 +35,10 @@ export const Konfigurator2 = () => {
         removeCable,
         deleteOKL,
         copyOKL,
-
         canAddCableToOKL,
         getOKLCapacityInfo,
         deleteAllOKL,
+        getAvailableCablesForOKL
     } = useOKLManager();
 
     const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
@@ -47,7 +47,7 @@ export const Konfigurator2 = () => {
     const [selectedSurface, setSelectedSurface] = useState<string>('');
     const [selectedFitting, setSelectedFitting] = useState<string>('');
 
-    const [selectedCableType, setSelectedCableType] = useState<string>('');
+    const [selectedCableType, setSelectedCableType] = useState<string>("cable_type:all");
     const [selectedCable, setSelectedCable] = useState<string>('');
 
     const [meter, setMeterOKL] = useState<number>(1);
@@ -69,9 +69,9 @@ export const Konfigurator2 = () => {
 
     // 🔧 ФУНКЦИЯ ДЛЯ СБРОСА ФИЛЬТРОВ КАБЕЛЕЙ
     const resetCableFilters = () => {
-        setSelectedCableType('');
+        setSelectedCableType("cable_type:all");
         setSelectedCable('');
-        setMeterCable(1);
+        setMeterCable(1)
     };
 
 
@@ -122,17 +122,42 @@ export const Konfigurator2 = () => {
     }, [selectedOKL, oklList]);
 
     const filteredCables = useMemo(() => {
+        let cables = [];
+
+        // Базовая фильтрация по типу и совместимости
         if (!selectedOKL) {
-            return selectedCableType
-                ? getCablesByType(selectedCableType)
-                : allCables;
+            // Если выбрано "Все кабели" - показываем все
+            cables = (selectedCableType === "cable_type:all" || !selectedCableType)
+                ? allCables
+                : getCablesByType(selectedCableType);
+        } else {
+            // Если выбрано "Все кабели" - показываем все совместимые
+            cables = (selectedCableType === "cable_type:all" || !selectedCableType)
+                ? getCompatibleCablesForOKL(selectedOKL, undefined, oklList)
+                : getCompatibleCablesForOKL(selectedOKL, selectedCableType, oklList);
         }
-        return getCompatibleCablesForOKL(selectedOKL, selectedCableType, oklList);
+
+        // ДОПОЛНИТЕЛЬНАЯ ФИЛЬТРАЦИЯ: оставляем только кабели, которые поместятся
+        if (selectedOKL) {
+            cables = getAvailableCablesForOKL(selectedOKL, cables);
+        }
+
+        return cables;
+    }, [selectedOKL, selectedCableType, oklList, allCables]);
+
+    const allCompatibleCables = useMemo(() => {
+        if (!selectedOKL) return [];
+
+        // Если выбрано "Все кабели" - возвращаем все совместимые
+        return (selectedCableType === "cable_type:all" || !selectedCableType)
+            ? getCompatibleCablesForOKL(selectedOKL, undefined, oklList)
+            : getCompatibleCablesForOKL(selectedOKL, selectedCableType, oklList);
     }, [selectedOKL, selectedCableType, oklList]);
 
     const toggleDropdown = (dropdownName: string) => {
         setActiveDropdown(activeDropdown === dropdownName ? null : dropdownName);
     };
+
 
     const handleSelect = (type: string) => (id: string, name: string) => {
         switch (type) {
@@ -353,7 +378,7 @@ export const Konfigurator2 = () => {
                             </div>
                         </div>
                     )}
-                    {capacityInfo && <CapacityStatus capacityInfo={capacityInfo} availableCables={filteredCables}/>}
+                    {capacityInfo && <CapacityStatus capacityInfo={capacityInfo} availableCables={allCompatibleCables}/>}
                 </div>
             </div>
             <OKLconfig

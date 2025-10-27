@@ -35,9 +35,8 @@ export const useOKLData = () => {
         }
 
         if (!okl) {
-            return allAppointments;
+            return allAppointments; // возвращаем все, включая "Все кабели"
         }
-
 
         // Ищем совместимые типы кабелей
         const compatibleMaps = allOKLCableMap.filter(map =>
@@ -45,9 +44,14 @@ export const useOKLData = () => {
         );
 
         const allowedCableTypeIds = compatibleMaps.map(map => map.cableTypeId);
-        return allAppointments.filter(a => allowedCableTypeIds.includes(a.id));
-    };
 
+        // Фильтруем назначения, но оставляем "Все кабели"
+        const filteredAppointments = allAppointments.filter(a =>
+            a.id === "cable_type:all" || allowedCableTypeIds.includes(a.id)
+        );
+
+        return filteredAppointments;
+    };
 
     const getCompatibleCablesForOKL = (oklId: string, cableTypeId?: string, oklList: any[] = []) => {
         // Ищем ОКЛ сначала в добавленных, потом в базе
@@ -76,10 +80,12 @@ export const useOKLData = () => {
 
         return compatibleCables;
     };
+
     // Получить кабели по типу (назначению)
     const getCablesByType = (cableTypeId: string) => {
         return allCables.filter(cable => cable.cableTypeId === cableTypeId);
     };
+
     // Найти максимальное время работы ОКЛ для конкретного типа кабеля
     const getMaxFireTime = (oklType: string, cableTypeId: string) => {
         const match = allOKLCableMap.find(

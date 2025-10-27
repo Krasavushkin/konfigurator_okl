@@ -114,9 +114,8 @@ export class ServiceExport {
                         return (
                             <View key={okl.id} style={styles.block}>
                                 <Text style={styles.blockTitle}>
-                                    ОКЛ №{index + 1}: СПЕЦКАБЛАЙН-{okl.name}-{okl.length}м
+                                    ОКЛ №{index + 1}: СПЕЦКАБЛАЙН-{okl.name}-{okl.length}м ({cablesText})
                                 </Text>
-                                <Text style={styles.smallText}>({cablesText})</Text>
                                 <Text style={styles.text}><Text style={{fontWeight: 'bold'}}>ТУ
                                     ОКЛ:</Text> {okl.TU || '—'}</Text>
                                 <Text style={styles.text}><Text style={{fontWeight: 'bold'}}>Длина

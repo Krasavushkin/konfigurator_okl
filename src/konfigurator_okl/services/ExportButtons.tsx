@@ -14,25 +14,16 @@ export const ExportButtons: React.FC<ExportButtonsProps> = ({
                                                                 oklList,
                                                                 fileName = 'OKL-Configuration'
                                                             }) => {
-    /*const { isExporting, exportPDF, exportExcel, exportWord } = useExport();*/
 
-    /*const handleExport = async (exportFunction: Function) => {
-        await exportFunction(oklList, fileName);
-    };*/
-
-    const [isExporting, setIsExporting] = useState(false);
     const exportService = new ServiceExport();
 
     const handleExport = async (exportFunction: (list: newOKLItem[], name: string) => Promise<void>) => {
         if (oklList.length === 0) return;
-        setIsExporting(true);
         try {
             await exportFunction(oklList, fileName);
         } catch (error) {
             console.error('Ошибка экспорта:', error);
             alert('Не удалось экспортировать файл');
-        } finally {
-            setIsExporting(false);
         }
     };
     return (
