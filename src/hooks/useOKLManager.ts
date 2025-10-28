@@ -200,6 +200,35 @@ export const useOKLManager = () => {
         });
     };
 
+    const canAddAnyCableFromList = (oklId: string, cables: any[]): boolean => {
+        const okl = oklList.find(o => o.id === oklId);
+        if (!okl || !okl.sectionOKL) return false;
+
+        const usedArea = calculateUsedArea(okl.cables);
+        const freeArea = okl.sectionOKL - usedArea;
+
+        return cables.some(cable => {
+            if (!cable.outerDiameter) return false;
+            const cableArea = Math.PI * Math.pow(cable.outerDiameter / 2, 2);
+            return cableArea <= freeArea;
+        });
+    };
+
+// функция для подсчета количества оставшегося кабеля после добавления в ОКЛ
+    const getAvailableCablesCount = (oklId: string, cables: any[]): number => {
+        const okl = oklList.find(o => o.id === oklId);
+        if (!okl || !okl.sectionOKL) return 0;
+
+        const usedArea = calculateUsedArea(okl.cables);
+        const freeArea = okl.sectionOKL - usedArea;
+
+        return cables.filter(cable => {
+            if (!cable.outerDiameter) return false;
+            const cableArea = Math.PI * Math.pow(cable.outerDiameter / 2, 2);
+            return cableArea <= freeArea;
+        }).length;
+    };
+
     return {
         oklList,
         selectedOKL,
@@ -215,8 +244,11 @@ export const useOKLManager = () => {
         canAddAnyCable,
         deleteAllOKL,
 
-        getAvailableCablesForOKL
+        getAvailableCablesForOKL,
 
+
+        canAddAnyCableFromList,
+        getAvailableCablesCount
     };
 };
 

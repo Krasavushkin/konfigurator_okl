@@ -38,7 +38,10 @@ export const Konfigurator2 = () => {
         canAddCableToOKL,
         getOKLCapacityInfo,
         deleteAllOKL,
-        getAvailableCablesForOKL
+        getAvailableCablesForOKL,
+
+        canAddAnyCableFromList,
+        getAvailableCablesCount
     } = useOKLManager();
 
     const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
@@ -239,6 +242,41 @@ export const Konfigurator2 = () => {
         }
     };
 
+
+    const capacityStatusData = useMemo(() => {
+        if (!selectedOKL || !capacityInfo) return null;
+
+        // 1. Кабели для дропдауна (без площади)
+        const cablesForDropdown = selectedOKL
+            ? (selectedCableType === "cable_type:all"
+                ? getCompatibleCablesForOKL(selectedOKL, undefined, oklList)
+                : getCompatibleCablesForOKL(selectedOKL, selectedCableType, oklList))
+            : (selectedCableType === "cable_type:all" ? allCables : getCablesByType(selectedCableType));
+
+        // 2. Все совместимые (без площади)
+        const allCompatibleCables = selectedOKL
+            ? getCompatibleCablesForOKL(selectedOKL, undefined, oklList)
+            : allCables;
+
+        // 3. Сколько помещается
+        const availableFromFilteredCount = getAvailableCablesCount(selectedOKL, cablesForDropdown);
+        const availableFromAllCount = getAvailableCablesCount(selectedOKL, allCompatibleCables);
+
+        // 4. Есть ли "другие" кабели, которые помещаются
+        const hasOtherCables = availableFromAllCount > availableFromFilteredCount;
+
+        return {
+            capacityInfo,
+            hasOtherCables,
+            filteredCablesCount: cablesForDropdown.length,
+            allCablesCount: allCompatibleCables.length,
+            availableFromFilteredCount,
+            availableFromAllCount
+        };
+    }, [selectedOKL, capacityInfo, selectedCableType, oklList]);
+
+
+
     return (
         <>
             <Header/>
@@ -378,7 +416,7 @@ export const Konfigurator2 = () => {
                             </div>
                         </div>
                     )}
-                    {capacityInfo && <CapacityStatus capacityInfo={capacityInfo} availableCables={allCompatibleCables}/>}
+                    {capacityInfo && <CapacityStatus capacityStatusData={capacityStatusData} compact={false}/>}
                 </div>
             </div>
             <OKLconfig
@@ -392,6 +430,8 @@ export const Konfigurator2 = () => {
                 selectedOKL={selectedOKL}
                 onSelectOKL={setSelectedOKL}
                 onDeleteAllOKL={handleDeleteAllOKL}
+                canAddAnyCableFromList={canAddAnyCableFromList}
+                getAvailableCablesCount={getAvailableCablesCount}
             />
         </>
 

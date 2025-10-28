@@ -1,29 +1,126 @@
 import React from 'react';
 import styles from './CapacityStatus.module.css';
 
-export interface CapacityInfo {
+export type CapacityInfo = {
     cableCount: number;
     usedArea: number;
     maxArea: number;
     freeArea: number;
     isFull: boolean;
+};
+
+export interface CapacityStatusData {
+    capacityInfo: CapacityInfo;
+    hasOtherCables: boolean;
+    filteredCablesCount: number;
+    allCablesCount: number;
+    availableFromFilteredCount: number;
+    availableFromAllCount: number;
 }
 
 interface CapacityStatusProps {
-    capacityInfo?: CapacityInfo | null;
+    capacityStatusData?: CapacityStatusData | null;
     className?: string;
     compact?: boolean;
-    availableCables?: any[];
 }
 
+// === СТАТУСЫ ===
+type Status = 'add-cable' | 'almost-full' | 'full';
+type StatusResult = {
+    status: Status;
+    reason?: string;
+    showFilterHint?: boolean;
+    availableCount?: number;
+};
 
+// === ПОМОЩНИКИ ===
+const isCableLimitReached = (info: CapacityInfo) => info.cableCount >= 8;
+const isVolumeFull = (info: CapacityInfo) => info.usedArea >= info.maxArea;
+const isNoSpaceForAnyCable = (data: CapacityStatusData) => data.availableFromAllCount === 0;
+const isNoSpaceForFiltered = (data: CapacityStatusData) =>
+    data.availableFromFilteredCount === 0 && data.hasOtherCables;
+const isFewFilteredCables = (data: CapacityStatusData) =>
+    data.availableFromFilteredCount > 0 && data.availableFromFilteredCount <= 2;
+const isAlmostFull = (info: CapacityInfo) =>
+    info.cableCount >= 6 || info.usedArea >= info.maxArea * 0.8;
+
+// === ПРАВИЛА (в порядке приоритета) ===
+const statusRules: ((data: CapacityStatusData) => StatusResult | null)[] = [
+    // 1. Лимит кабелей — full
+    (data) =>
+        isCableLimitReached(data.capacityInfo)
+            ? { status: 'full', reason: 'В выбранной ОКЛ достигнут лимит кабелей (8). Отсутствует возможность добавить новый кабель.' }
+            : null,
+
+    // 2. 100% по объёму — full
+    (data) =>
+        isVolumeFull(data.capacityInfo)
+            ? { status: 'full', reason: 'Объем выбранной ОКЛ полностью заполнен. Отсутствует возможность добавить новый кабель.' }
+            : null,
+
+    // 3. Нет места НИ ДЛЯ ОДНОГО кабеля (из всех) — full
+    (data) =>
+        isNoSpaceForAnyCable(data)
+            ? { status: 'full', reason: 'В ОКЛ недостаточно места для любого доступного кабеля. Отсутствует возможность добавить новый кабель.' }
+            : null,
+
+    // 4. Нет места в текущем фильтре, но есть другие → almost-full
+    (data) =>
+        isNoSpaceForFiltered(data)
+            ? {
+                status: 'almost-full',
+                reason: `Нет места для кабелей выбранного типа (доступно других кабелей: ${data.availableFromAllCount} шт.)`,
+                showFilterHint: true,
+                availableCount: data.availableFromAllCount
+            }
+            : null,
+
+    // 5. Нет кабелей в фильтре, но есть другие → add-cable
+    (data) =>
+        data.filteredCablesCount === 0 && data.hasOtherCables
+            ? {
+                status: 'add-cable',
+                reason: `Нет кабелей выбранного типа (доступно ${data.availableFromAllCount} других кабелей)`,
+                showFilterHint: true,
+                availableCount: data.availableFromAllCount
+            }
+            : null,
+
+    // 6. Мало кабелей в фильтре (1–2) → almost-full
+    (data) =>
+        isFewFilteredCables(data)
+            ? {
+                status: 'almost-full',
+                reason: `ОКЛ почти заполнена — доступно для добавления этого типа кабелей: ${data.availableFromFilteredCount} шт. `,
+                availableCount: data.availableFromFilteredCount
+            }
+            : null,
+
+    // 7. Почти заполнена по объёму/количеству → almost-full
+    (data) =>
+        isAlmostFull(data.capacityInfo)
+            ? {
+                status: 'almost-full',
+                reason: `ОКЛ почти заполнена${data.availableFromFilteredCount > 0 ? ` (доступно кабелей этого типа: ${data.availableFromFilteredCount} шт.)` : ''}`,
+                availableCount: data.availableFromFilteredCount > 0 ? data.availableFromFilteredCount : undefined
+            }
+            : null,
+
+    // 8. Можно добавлять → add-cable
+    (data) => ({
+        status: 'add-cable',
+        availableCount: data.availableFromFilteredCount > 0 ? data.availableFromFilteredCount : undefined
+    })
+
+];
+
+// === ОСНОВНОЙ КОМПОНЕНТ ===
 export const CapacityStatus: React.FC<CapacityStatusProps> = ({
-                                                                  capacityInfo,
+                                                                  capacityStatusData,
                                                                   className = '',
-                                                                  compact = false,
-                                                                  availableCables = []
+                                                                  compact = false
                                                               }) => {
-    if (!capacityInfo) {
+    if (!capacityStatusData) {
         return (
             <div className={`${styles.capacityInfo} ${className}`}>
                 <div className={styles.capacityRow}>
@@ -34,79 +131,24 @@ export const CapacityStatus: React.FC<CapacityStatusProps> = ({
         );
     }
 
-    // 🔧 УЛУЧШЕННАЯ ФУНКЦИЯ С ТИПАМИ ПРИЧИН
-    const getRealStatus = (): {
-        status: 'add-cable' | 'almost-full' | 'full';
-        reason?: string;
-        reasonType?: 'volume' | 'cable-count' | 'no-space-for-cables';
-    } => {
-        if (capacityInfo.cableCount >= 8) {
-            return {
-                status: 'full',
-                reason: 'Достигнут лимит кабелей',
-                reasonType: 'cable-count'
-            };
-        }
+    const { capacityInfo } = capacityStatusData;
+    // === Определяем статус по правилам ===
+    const realStatus = statusRules
+        .map(rule => rule(capacityStatusData))
+        .find(result => result !== null) as StatusResult; // ← безопасно
 
-        if (capacityInfo.usedArea >= capacityInfo.maxArea) {
-            return {
-                status: 'full',
-                reason: 'Объем полностью заполнен',
-                reasonType: 'volume'
-            };
-        }
+    const statusText = {
+        'full': 'ОКЛ заполнена',
+        'almost-full': 'Почти заполнена',
+        'add-cable': 'Готова к заполнению'
+    }[realStatus.status];
 
-        if (availableCables.length > 0) {
-            const freeArea = capacityInfo.maxArea - capacityInfo.usedArea;
-            const canAddAnyCable = availableCables.some(cable => {
-                if (!cable.outerDiameter) return false;
-                const cableArea = Math.PI * Math.pow(cable.outerDiameter / 2, 2);
-                return cableArea <= freeArea;
-            });
+    const displayPercentage = Math.min(
+        (capacityInfo.usedArea / capacityInfo.maxArea) * 100,
+        100
+    );
 
-            if (!canAddAnyCable) {
-                return {
-                    status: 'full',
-                    reason: 'В ОКЛ недостаточно места для любого доступного кабеля. Добавьте новую ОКЛ в конфигурацию или удалите кабель из выбранной.',
-                    reasonType: 'no-space-for-cables'
-                };
-            }
-        }
-
-        const isAlmostFull = capacityInfo.cableCount >= 6 || capacityInfo.usedArea >= capacityInfo.maxArea * 0.8;
-        return {
-            status: isAlmostFull ? 'almost-full' : 'add-cable',
-            reasonType: isAlmostFull ? 'volume' : undefined
-        };
-    };
-
-    const realStatus = getRealStatus();
-
-    const getStatusText = (): string => {
-        switch (realStatus.status) {
-            case 'full': return 'ОКЛ заполнена';
-            case 'almost-full': return 'Почти заполнена';
-            default: return 'Готова к заполнению';
-        }
-    };
-
-    // УМНАЯ ЛОГИКА ДЛЯ ОТОБРАЖЕНИЯ ПРОЦЕНТОВ
-    const getDisplayPercentage = (): number => {
-        if (realStatus.status === 'full') {
-            // Показываем 100% только при проблемах с объемом
-            if (realStatus.reasonType === 'volume' || realStatus.reasonType === 'no-space-for-cables') {
-                return 100;
-            }
-            // При лимите кабелей показываем реальный процент объема
-        }
-
-        return Math.min((capacityInfo.usedArea / capacityInfo.maxArea) * 100, 100);
-    };
-
-    const displayPercentage = getDisplayPercentage();
-    const statusText = getStatusText();
-
-    // 🔧 КОМПАКТНАЯ ВЕРСИЯ
+    // === КОМПАКТНАЯ ВЕРСИЯ ===
     if (compact) {
         return (
             <div className={`${styles.capacityInfo} ${styles.compact} ${className}`}>
@@ -114,7 +156,8 @@ export const CapacityStatus: React.FC<CapacityStatusProps> = ({
                     <span>Статус:</span>
                     <span className={
                         realStatus.status === 'full' ? styles.error :
-                            realStatus.status === 'almost-full' ? styles.warning : styles.success
+                            realStatus.status === 'almost-full' ? styles.warning :
+                                styles.success
                     }>
                         {statusText}
                     </span>
@@ -123,28 +166,48 @@ export const CapacityStatus: React.FC<CapacityStatusProps> = ({
         );
     }
 
-    // 🔧 ПОЛНАЯ ВЕРСИЯ
+    // === ПОЛНАЯ ВЕРСИЯ ===
     return (
         <div className={`${styles.capacityInfo} ${className}`}>
             <h3>Выбранная ОКЛ</h3>
+
             <div className={styles.capacityRow}>
                 <span>Статус:</span>
                 <span className={
                     realStatus.status === 'full' ? styles.error :
-                        realStatus.status === 'almost-full' ? styles.warning : styles.success
+                        realStatus.status === 'almost-full' ? styles.warning :
+                            styles.success
                 }>
                     {statusText}
                 </span>
             </div>
+
             <div className={styles.capacityRow}>
                 <span>Заполненность:</span>
-                <span>
-                    {displayPercentage.toFixed(0)}%
-                </span>
+                <span>{displayPercentage.toFixed(0)}%</span>
             </div>
-            {realStatus.status === 'full' && realStatus.reason && (
-                <div className={styles.fullReason}>
-                    <span>{realStatus.reason}</span>
+
+            {/* Доступно для добавления */}
+            {/*{realStatus.availableCount !== undefined && realStatus.availableCount > 0 && (
+                <div className={styles.capacityRow}>
+                    <span>Доступно для добавления: </span>
+                    <span> {realStatus.availableCount} шт.</span>
+                </div>
+            )}*/}
+            <div className={styles.capacityRow}>
+                <span>Доступно для добавления: </span>
+                <span> {realStatus.availableCount} шт.</span>
+            </div>
+            {/* Причина + подсказка */}
+            {realStatus.reason && (
+                <div className={`
+                    ${styles.fullReason}
+                    ${realStatus.status === 'full' ? styles.error :
+                    realStatus.status === 'almost-full' ? styles.warning :
+                        styles.info}
+                `}>
+                    <span>{realStatus.reason} </span>
+
                 </div>
             )}
 
@@ -156,7 +219,8 @@ export const CapacityStatus: React.FC<CapacityStatusProps> = ({
                         <div
                             className={`${styles.barFill} ${styles.cableBar} ${
                                 capacityInfo.cableCount >= 8 ? styles.danger :
-                                    capacityInfo.cableCount >= 6 ? styles.warning : styles.success
+                                    capacityInfo.cableCount >= 6 ? styles.warning :
+                                        styles.success
                             }`}
                             style={{ width: `${(capacityInfo.cableCount / 8) * 100}%` }}
                         >
@@ -171,7 +235,8 @@ export const CapacityStatus: React.FC<CapacityStatusProps> = ({
                         <div
                             className={`${styles.barFill} ${styles.volumeBar} ${
                                 realStatus.status === 'full' ? styles.danger :
-                                    realStatus.status === 'almost-full' ? styles.warning : styles.success
+                                    realStatus.status === 'almost-full' ? styles.warning :
+                                        styles.success
                             }`}
                             style={{ width: `${displayPercentage}%` }}
                         >
@@ -183,157 +248,3 @@ export const CapacityStatus: React.FC<CapacityStatusProps> = ({
         </div>
     );
 };
-
-/*
-export const CapacityStatus: React.FC<CapacityStatusProps> = ({
-                                                                  capacityInfo,
-                                                                  className = '',
-                                                                  compact = false,
-                                                                  availableCables = []
-                                                              }) => {
-    // 🔧 ЛОГИКА ВЫНЕСЕНА НЕПОСРЕДСТВЕННО В КОМПОНЕНТ
-    const getRealStatus = (): { status: 'add-cable' | 'almost-full' | 'full'; reason?: string } => {
-        if (!capacityInfo) return { status: 'add-cable' };
-
-        // Если достигнут лимит кабелей - точно заполнено
-        if (capacityInfo.cableCount >= 8) {
-            return { status: 'full', reason: 'Достигнут лимит кабелей' };
-        }
-
-        // Если объем полностью заполнен - точно заполнено
-        if (capacityInfo.usedArea >= capacityInfo.maxArea) {
-            return { status: 'full', reason: 'Объем полностью заполнен' };
-        }
-
-        // 🔧 ПРОВЕРКА: можно ли добавить ХОТЯ БЫ ОДИН кабель из доступных
-        if (availableCables.length > 0) {
-            const freeArea = capacityInfo.maxArea - capacityInfo.usedArea;
-            const canAddAnyCable = availableCables.some(cable => {
-                if (!cable.outerDiameter) return false;
-                const cableArea = Math.PI * Math.pow(cable.outerDiameter / 2, 2);
-                return cableArea <= freeArea;
-            });
-
-            if (!canAddAnyCable) {
-                return {
-                    status: 'full',
-                    reason: 'В ОКЛ недостаточно места для любого кабеля'
-                };
-            }
-        }
-
-        // Стандартная логика для почти заполненного состояния
-        const isAlmostFull = capacityInfo.cableCount >= 6 || capacityInfo.usedArea >= capacityInfo.maxArea * 0.8;
-        return { status: isAlmostFull ? 'almost-full' : 'add-cable' };
-    };
-
-    const realStatus = getRealStatus();
-
-    const getStatusText = (): string => {
-        switch (realStatus.status) {
-            case 'full': return 'ОКЛ заполнена';
-            case 'almost-full': return 'Почти заполнена';
-            default: return 'Готова к заполнению';
-        }
-    };
-
-    // 🔧 ЕСЛИ ОКЛ ЗАПОЛНЕНА - ПОКАЗЫВАЕМ 100% ЗАПОЛНЕННОСТЬ
-    if (!capacityInfo) {
-        return <div className={`${styles.capacityInfo} ${className}`}>Нет данных</div>;
-    }
-    const getDisplayPercentage = (): number => {
-        if (realStatus.status === 'full') return 100;
-        return Math.min((capacityInfo.usedArea / capacityInfo.maxArea) * 100, 100);
-    };
-
-
-
-    const displayPercentage = getDisplayPercentage();
-    const statusText = getStatusText();
-    const fillPercentage = (capacityInfo.usedArea / capacityInfo.maxArea) * 100;
-    const cablePercentage = (capacityInfo.cableCount / 8) * 100;
-
-
-    // 🔧 КОМПАКТНАЯ ВЕРСИЯ
-    if (compact) {
-        return (
-            <div className={`${styles.capacityInfo} ${styles.compact} ${className}`}>
-                <div className={styles.capacityRow}>
-                    <span>Заполненность ОКЛ кабелем:</span>
-                    <span className={
-                        realStatus.status === 'full' ? styles.error :
-                            realStatus.status === 'almost-full' ? styles.warning : styles.success
-                    }>
-                        {statusText}
-                    </span>
-                </div>
-            </div>
-        );
-    }
-
-    // 🔧 ПОЛНАЯ ВЕРСИЯ
-    return (
-        <div className={`${styles.capacityInfo} ${className}`}>
-            <div className={styles.capacityRow}>
-                <span>Выбранная ОКЛ:</span>
-                <span className={
-                    realStatus.status === 'full' ? styles.error :
-                        realStatus.status === 'almost-full' ? styles.warning : styles.success
-                }>
-                    {statusText}
-                </span>
-            </div>
-            <div className={styles.capacityRow}>
-                <span>Заполненность:</span>
-                <span>
-                    {displayPercentage.toFixed(1)}%
-                    {realStatus.status === 'full' && capacityInfo.usedArea < capacityInfo.maxArea}
-                </span>
-            </div>
-
-
-
-            {/!* 🔧 ПОЯСНЕНИЕ ЕСЛИ ОКЛ ЗАПОЛНЕНА *!/}
-            {realStatus.status === 'full' && realStatus.reason && (
-                <div className={styles.fullReason}>
-                    <span>{realStatus.reason}</span>
-                </div>
-            )}
-
-            {/!* Двойная шкала *!/}
-            <div className={styles.doubleBar}>
-                <div className={styles.barSection}>
-                    <div className={styles.barLabel}>Кабели в ОКЛ</div>
-                    <div className={styles.barContainer}>
-                        <div
-                            className={`${styles.barFill} ${styles.cableBar} ${
-                                capacityInfo.cableCount >= 8 ? styles.danger :
-                                    capacityInfo.cableCount >= 6 ? styles.warning : styles.success
-                            }`}
-                            style={{ width: `${cablePercentage}%` }}
-                        >
-                            <span className={styles.barText}>{capacityInfo.cableCount}/8</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div className={styles.barSection}>
-                    <div className={styles.barLabel}>Заполненность ОКЛ</div>
-                    <div className={styles.barContainer}>
-                        <div
-                            className={`${styles.barFill} ${styles.volumeBar} ${
-                                realStatus.status === 'full' ? styles.danger :
-                                    realStatus.status === 'almost-full' ? styles.warning : styles.success
-                            }`}
-                            style={{
-                                width: `${displayPercentage}%`
-                            }}
-                        >
-                            <span className={styles.barText}>{displayPercentage.toFixed(0)}%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
-};*/

@@ -2,10 +2,8 @@ import React from 'react';
 import {CableList} from './CableList';
 import {OKLActions} from './OKLActions';
 import styles from './OKLCard.module.css';
-
 import {Link} from "./Link";
-import {CapacityStatus} from "../CapacityStatus";
-import {useOKLData} from "../../hooks/useOKLData";
+import {CapacityStatus, CapacityStatusData} from "../CapacityStatus";
 import {useOKLLink} from "../../hooks/useOKLLink";
 import {newOKLItem} from "../data";
 
@@ -18,13 +16,6 @@ export type OKL = {
     type?: string;
 };
 
-export type CapacityInfo = {
-    cableCount: number;
-    usedArea: number;
-    maxArea: number;
-    freeArea: number;
-    isFull: boolean;
-};
 
 export type Cable = {
     id: string;
@@ -52,7 +43,7 @@ interface OKLCardProps {
     onRemoveCable: (oklId: string, cableId: string) => void;
     onAddCable: (oklId: string) => void;
     onCopy: (oklId: string) => void;
-    capacityInfo?: CapacityInfo | null; // Добавляем capacityInfo
+    capacityStatusData?: CapacityStatusData | null;
 }
 
 export const OKLCard: React.FC<OKLCardProps> = ({
@@ -63,30 +54,21 @@ export const OKLCard: React.FC<OKLCardProps> = ({
                                                     onDelete,
                                                     onRemoveCable,
                                                     onCopy,
-                                                    capacityInfo,
+                                                    capacityStatusData,
                                                     onAddCable
                                                 }) => {
     const handleCardClick = () => {
         onSelect(okl.id);
     };
-    const handleAddCableClick = (e: React.MouseEvent) => {
-        e.stopPropagation(); // Предотвращаем всплытие
-        onAddCable(okl.id);
-    };
-    const { getCompatibleCables } = useOKLData();
-    const availableCables = getCompatibleCables(okl.type || '');
+
     const oklLink = useOKLLink(okl.type);
 
 
     return (
         <div
-            className={`${styles.oklCard} ${isSelected ? styles.selected : ''}`}
-            onClick={handleCardClick}
-        >
+            className={`${styles.oklCard} ${isSelected ? styles.selected : ''}`} onClick={handleCardClick}>
 
             <h3>Наименование ОКЛ:</h3>
-
-            {/* Заголовок и действия */}
             <div className={styles.cardHeader}>
                 <div className={styles.oklLength}>
                     <h3 className={styles.oklTitle}>
@@ -105,8 +87,7 @@ export const OKLCard: React.FC<OKLCardProps> = ({
 
             {/* Остальной код без изменений */}
             <CapacityStatus
-                capacityInfo={capacityInfo}
-                availableCables={availableCables}
+                capacityStatusData={capacityStatusData}
                 compact={true}
             />
 

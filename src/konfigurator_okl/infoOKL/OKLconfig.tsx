@@ -1,9 +1,11 @@
 import React, {useEffect, useState} from 'react';
-import {CapacityInfo, OKL, OKLCard} from './OKLCard';
+import {OKLCard} from './OKLCard';
 import styles from '../styles/OKL.module.css';
 import {ExportButtons} from "../services/ExportButtons";
 import {Button} from "../Button";
 import {newOKLItem} from "../data";
+import {useOKLData} from "../../hooks/useOKLData";
+import {CapacityInfo} from "../CapacityStatus";
 
 
 interface ConfigurationSummaryProps {
@@ -17,7 +19,9 @@ interface ConfigurationSummaryProps {
 
     selectedOKL?: string;
     onSelectOKL?: (oklId: string) => void;
-    onDeleteAllOKL: () => void
+    onDeleteAllOKL: () => void;
+    canAddAnyCableFromList: (oklId: string, cables: any[]) => boolean;
+    getAvailableCablesCount: (oklId: string, cables: any[]) => number; // Добавляем новую функцию
 }
 
 export const OKLconfig: React.FC<ConfigurationSummaryProps> = ({
@@ -30,7 +34,9 @@ export const OKLconfig: React.FC<ConfigurationSummaryProps> = ({
                                                                    getOKLCapacityInfo,
                                                                    selectedOKL: externalSelectedOKL,
                                                                    onSelectOKL,
-                                                                   onDeleteAllOKL
+                                                                   onDeleteAllOKL,
+                                                                   canAddAnyCableFromList,
+                                                                   getAvailableCablesCount
                                                                }) => {
     const [currentPage, setCurrentPage] = useState(1);
     const cardsPerPage = 4;
@@ -60,22 +66,39 @@ export const OKLconfig: React.FC<ConfigurationSummaryProps> = ({
 
         onAddCable(oklId);
     };
+    const { getCompatibleCables } = useOKLData();
 
     return (
         <div className={styles.configContainer}>
             <div className={styles.oklGrid}>
-                {paginatedOKL.map(okl => (
-                    <OKLCard key={okl.id}
-                             okl={okl}
-                             isSelected={internalSelectedOKL  === okl.id}
-                             onSelect={handleSelectOKL}
-                             onEdit={onEditOKL}
-                             onDelete={onDeleteOKL}
-                             onRemoveCable={onRemoveCable}
-                             onAddCable={onAddCable}
-                             onCopy={onCopyOKL}
-                             capacityInfo={getOKLCapacityInfo ? getOKLCapacityInfo(okl.id) : null}/>
-                ))}
+                {paginatedOKL.map(okl => {
+                    const capacityInfo = getOKLCapacityInfo ? getOKLCapacityInfo(okl.id) : null;
+                    const allCompatibleCables = getCompatibleCables(okl.type || '');
+
+                    const capacityStatusData = capacityInfo ? {
+                        capacityInfo,
+                        hasOtherCables: false, // В карточках не показываем подсказки о фильтрах
+                        filteredCablesCount: allCompatibleCables.length,
+                        allCablesCount: allCompatibleCables.length,
+                        availableFromFilteredCount: getAvailableCablesCount(okl.id, allCompatibleCables),
+                        availableFromAllCount: getAvailableCablesCount(okl.id, allCompatibleCables)
+                    } : null;
+
+                    return (
+                        <OKLCard
+                            key={okl.id}
+                            okl={okl}
+                            isSelected={internalSelectedOKL === okl.id}
+                            onSelect={handleSelectOKL}
+                            onEdit={onEditOKL}
+                            onDelete={onDeleteOKL}
+                            onRemoveCable={onRemoveCable}
+                            onAddCable={onAddCable}
+                            onCopy={onCopyOKL}
+                            capacityStatusData={capacityStatusData}
+                        />
+                    );
+                })}
             </div>
 
             <div className={styles.pagination}>
