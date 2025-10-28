@@ -195,7 +195,7 @@ export const CapacityStatus: React.FC<CapacityStatusProps> = ({
                 </div>
             )}*/}
             <div className={styles.capacityRow}>
-                <span>Доступно для добавления: </span>
+                <span>Доступно кабелей для добавления: </span>
                 <span> {realStatus.availableCount} шт.</span>
             </div>
             {/* Причина + подсказка */}
