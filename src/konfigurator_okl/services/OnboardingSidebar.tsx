@@ -1,6 +1,6 @@
 // components/OnboardingSidebar.tsx
 import React, { useState } from "react";
-import styles from "./OnboardingSidebar.module.css";
+import styles from "../styles/OnboardingSidebar.module.css";
 
 interface Step {
     title: string;

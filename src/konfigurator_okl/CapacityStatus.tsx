@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './CapacityStatus.module.css';
+import styles from './styles/CapacityStatus.module.css';
 
 export type CapacityInfo = {
     cableCount: number;
