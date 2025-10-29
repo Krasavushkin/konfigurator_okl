@@ -22,6 +22,11 @@ interface CapacityStatusProps {
     capacityStatusData?: CapacityStatusData | null;
     className?: string;
     compact?: boolean;
+
+    selectedOKLInfo?: {
+        name: string;
+        index: number;
+    };
 }
 
 // === СТАТУСЫ ===
@@ -118,7 +123,8 @@ const statusRules: ((data: CapacityStatusData) => StatusResult | null)[] = [
 export const CapacityStatus: React.FC<CapacityStatusProps> = ({
                                                                   capacityStatusData,
                                                                   className = '',
-                                                                  compact = false
+                                                                  compact = false,
+                                                                  selectedOKLInfo
                                                               }) => {
     if (!capacityStatusData) {
         return (
@@ -184,7 +190,12 @@ export const CapacityStatus: React.FC<CapacityStatusProps> = ({
         ${className} 
         ${statusClass}
     `}>
-            <h3>Выбранная ОКЛ</h3>
+            <h3 className={styles.fixedTitle}>
+                {selectedOKLInfo && selectedOKLInfo.index > 0
+                    ? <>Выбрана ОКЛ: <span className={styles.highlightNumber}> №{selectedOKLInfo.index} {selectedOKLInfo.name}</span> </>
+                    : selectedOKLInfo?.name || 'ОКЛ не выбрана'
+                }
+            </h3>
 
             <div className={styles.capacityRow}>
                 <span>Статус:</span>
@@ -202,13 +213,7 @@ export const CapacityStatus: React.FC<CapacityStatusProps> = ({
                 <span>{displayPercentage.toFixed(0)}%</span>
             </div>
 
-            {/* Доступно для добавления */}
-            {/*{realStatus.availableCount !== undefined && realStatus.availableCount > 0 && (
-                <div className={styles.capacityRow}>
-                    <span>Доступно для добавления: </span>
-                    <span> {realStatus.availableCount} шт.</span>
-                </div>
-            )}*/}
+
             <div className={styles.capacityRow}>
                 <span>Доступно кабелей для добавления: </span>
                 <span> {realStatus.availableCount} шт.</span>

@@ -285,9 +285,25 @@ export const Konfigurator2 = () => {
         }
     }, [oklList.length]);
 
-    const isCurrentOKLAdded = useMemo(() => {
-        return selectedOKL && oklList.some(o => o.type === selectedOKL);
-    }, [selectedOKL, oklList]);
+
+
+    const selectedOKLInfo = useMemo(() => {
+        if (!selectedOKL) return { name: '', index: -1 };
+
+        const index = oklList.findIndex(okl => okl.id === selectedOKL) + 1;
+
+        // Ищем название
+        let name = '';
+        const oklFromList = oklList.find(o => o.id === selectedOKL);
+        if (oklFromList && oklFromList.name) {
+            name = oklFromList.name;
+        } else {
+            const oklFromDB = allOKL.find(o => o.id === selectedOKL);
+            name = oklFromDB?.name || 'Неизвестная ОКЛ';
+        }
+
+        return { name, index };
+    }, [selectedOKL, oklList, allOKL]);
 
     return (
         <>
@@ -363,7 +379,7 @@ export const Konfigurator2 = () => {
                     />
                     {isOKLAlreadyAdded && oklList.length > 0 && (
                         <StatusHint type="info">
-                            Выберите ОКЛ введите длину в метрах и нажмите "+ Добавить ОКЛ".
+                            Вы добавили ОКЛ в конфигурацию! Можете добавить в неё кабели или выберите новую ОКЛ, введите длину и нажмите "+ Добавить ОКЛ".
                         </StatusHint>
                     )}
                     <Button
@@ -426,7 +442,7 @@ export const Konfigurator2 = () => {
                     />
                     {selectedCable && !canAddCable && (
                         <StatusHint type="error">
-                            Нельзя добавить кабель в выбранную ОКЛ.
+                            Нельзя добавить кабель в выбранную ОКЛ. Можете добавить новую или удалить кабели из выбранной.
                         </StatusHint>
                     )}
                     {!selectedCable && selectedOKL && (
@@ -434,7 +450,7 @@ export const Konfigurator2 = () => {
                             Выберите кабель, чтобы добавить в ОКЛ.
                         </StatusHint>
                     )}
-                    {capacityInfo && <CapacityStatus capacityStatusData={capacityStatusData} compact={false}/>}
+                    {capacityInfo && <CapacityStatus capacityStatusData={capacityStatusData} compact={false} selectedOKLInfo={selectedOKLInfo}/>}
                 </div>
             </div>
             <OKLconfig

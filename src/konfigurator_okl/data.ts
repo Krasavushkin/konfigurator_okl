@@ -1,4 +1,3 @@
-import {nanoid} from "nanoid";
 import {NewCable} from "./infoOKL/OKLCard";
 
 export type BaseEntity = {
@@ -17,11 +16,6 @@ export type Surface = BaseEntity;
 
 export type Fitting = BaseEntity;
 
-export type CableType = BaseEntity;
-
-export type CableData = BaseEntity & {
-    cableTypeId: CableType['id'];
-};
 
 // types/config.ts
 

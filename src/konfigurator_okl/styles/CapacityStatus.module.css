@@ -63,6 +63,18 @@
     background: linear-gradient(90deg, #9E0929, #c41e3a);
     border-radius: 16px 16px 0 0;
 }
+/* Фиксированный стиль заголовка */
+.fixedTitle {
+    color: #333 !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+}
+
+.highlightNumber {
+    color: #c62828;
+    font-weight: 700;
+}
+
 
 /* === СТРОКИ === */
 .capacityRow {

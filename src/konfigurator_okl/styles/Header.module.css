@@ -115,21 +115,16 @@
 
 /* === БЕЙДЖ === */
 .badge {
-    background: linear-gradient(135deg, #9E0929, #c41e3a);
-    color: white;
+    color: #666;
     padding: 8px 14px;
     font-size: 13px;
     font-weight: 600;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(158, 9, 41, 0.25);
     letter-spacing: 0.5px;
-    transition: all 0.2s ease;
+
 }
 
-.badge:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 6px 16px rgba(158, 9, 41, 0.35);
-}
+
 
 /* === АДАПТИВ === */
 @media (max-width: 992px) {

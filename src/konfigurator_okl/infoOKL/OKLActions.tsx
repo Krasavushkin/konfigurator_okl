@@ -16,11 +16,6 @@ export const OKLActions: React.FC<OKLActionsProps> = ({
                                                           onDelete,
                                                           onCopy
                                                       }) => {
-    const handleEdit = (e: React.MouseEvent) => {
-        e.stopPropagation();
-        onEdit(oklId);
-    };
-
     const handleDelete = (e: React.MouseEvent) => {
         e.stopPropagation();
         if (window.confirm('Вы уверены, что хотите удалить эту ОКЛ?')) {
