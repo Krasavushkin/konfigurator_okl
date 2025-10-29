@@ -135,6 +135,7 @@
     color: #444;
     transition: all 0.2s;
     border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
 }
 
 .dropdownItem:hover {
@@ -258,5 +259,34 @@ button:disabled {
 
     .dropdowns h2 {
         font-size: 16px;
+    }
+}
+
+/* === СООБЩЕНИЕ "НИЧЕГО НЕ НАЙДЕНО" === */
+.noResults {
+    padding: 20px 16px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    font-style: italic;
+    background: #fafafa;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.noResults:last-child {
+    border-bottom: none;
+    border-radius: 0 0 12px 12px;
+}
+
+/* Если есть поиск и нет результатов, убираем нижний скругленный угол */
+.searchContainer + .noResults {
+    border-radius: 0;
+}
+
+/* Адаптив для сообщения */
+@media (max-width: 480px) {
+    .noResults {
+        padding: 16px 12px;
+        font-size: 13px;
     }
 }
