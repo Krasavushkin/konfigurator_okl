@@ -1,147 +1,215 @@
+/* === КАРТОЧКА ОКЛ === */
 .oklCard {
+    position: relative;
     background: white;
-    border-radius: 12px;
+    border-radius: 16px;
     padding: 24px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e1e8ed;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1.5px solid #eee;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.07);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 16px;
 }
 
 .oklCard:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+    border-color: #ffd4db;
 }
 
+/* === ПОЛОСА СТАТУСА СВЕРХУ === */
+.oklCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #9E0929, #c41e3a);
+    border-radius: 16px 16px 0 0;
+    transition: background 0.5s ease;
+}
 
+/* === СТАТУСЫ ПОЛОСЫ (синхронизация с CapacityStatus) === */
+.oklCard.ok::before {
+    background: linear-gradient(90deg, #4caf50, #8bc34a);
+}
+
+.oklCard.warning::before {
+    background: linear-gradient(90deg, #ff9800, #ffc107);
+}
+
+.oklCard.full::before {
+    background: linear-gradient(90deg, #f44336, #ef5350);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+/* === ВЫБРАННАЯ КАРТОЧКА === */
 .oklCard.selected {
-        border: 3px solid #9E0929;
-        background: #fbfdfb;
-        box-shadow: 0 6px 20px rgba(158, 9, 41, 0.1);
-        transform: translateY(-2px);
-
-    }
+    border: 2.5px solid #9E0929;
+    background: #fff5f7;
+    box-shadow: 0 12px 36px rgba(158, 9, 41, 0.15);
+    transform: translateY(-2px);
+}
 
 .oklCard.selected::after {
-        content: '✓ Выбрано';
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        background: #9E0929;
-        color: white;
-        padding: 4px 8px;
-        border-radius: 4px;
-        font-size: 11px;
-        font-weight: 600;
-    }
+    content: 'Выбрано';
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #9E0929;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 6px rgba(158, 9, 41, 0.2);
+    z-index: 10;
+}
 
+/* === ЗАГОЛОВОК === */
+.oklCard > h3:first-child {
+    margin: 0 0 16px 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
 
+/* === НОМЕР ОКЛ === */
+.cardNumber {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #9E0929;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    box-shadow: 0 3px 10px rgba(158, 9, 41, 0.3);
+}
+
+/* === ШАПКА КАРТОЧКИ === */
 .cardHeader {
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 16px;
-    border: 1px solid #e1e8ed;
+    padding: 14px 16px;
+    background: #f8f9fa;
     border-radius: 12px;
+    border: 1.5px solid #eee;
+    margin-bottom: 20px;
+    gap: 16px;
 }
 
-.oklInfo {
-    flex: 1;
-}
 .oklLength {
-    padding: 6px 24px;
-    border-radius: 5px;
-    font-size: 14px;
-    font-weight: 500;
+    background: #9E0929;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
 }
+
 .oklTitle {
     margin: 0;
     font-size: 18px;
+    font-weight: 700;
+    color: #444;
+    letter-spacing: -0.3px;
+}
+
+/* === ОПИСАНИЕ === */
+.descriptionText {
+    margin: 0;
+    font-size: 14.5px;
+    color: #444;
+    line-height: 1.6;
+    display: block;
+}
+
+.cableItem {
     font-weight: 600;
+    color: #9E0929;
 }
 
-.oklActions {
-    display: flex;
-    gap: 8px;
-}
-
-.actionBtn {
-    background: none;
-    border: none;
-    padding: 6px;
-    cursor: pointer;
-    border-radius: 4px;
-    font-size: 16px;
-    transition: background 0.2s ease;
-}
-
-.actionBtn:hover {
-    background: #f0f0f0;
-}
-
-.addCableBtn {
-    width: 80%;
-    padding: 12px;
-    background: #28a745;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-top: 12px;
-    font-size: 16px;
-    transition: background 0.2s ease;
-}
-
-.addCableBtn:hover {
-    background: #218838;
-}
-
-/* Состояния */
-.oklCard:active {
-    transform: translateY(0);
-}
-
-/* Рекомендуемый минималистичный стиль */
-.description {
-    margin-top: 20px;
-    padding: 16px;
-    background: #fafafa;
-    border-radius: 8px;
-    border: 1px solid #eee;
-}
-
-.description h3 {
-    margin: 0 0 12px 0;
-    color: #333;
-    font-size: 15px;
+/* === ВСТРОЕННАЯ ССЫЛКА === */
+.inlineLink {
+    color: #9E0929;
     font-weight: 600;
-}
-
-.description > span {
-    margin-bottom: 8px;
-    color: #666;
-    font-size: 14px;
-    line-height: 1.4;
-}
-
-
-
-.description a {
-    padding: 8px 16px;
-    background: #007bff;
-    color: white;
     text-decoration: none;
-    border-radius: 6px;
-    font-size: 14px;
-    font-weight: 500;
-    transition: background-color 0.2s ease;
+    border-bottom: 1.5px solid transparent;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
 }
 
-.description a:hover {
-    background: #0056b3;
+.inlineLink:hover {
+    color: #c41e3a;
+    border-bottom-color: #c41e3a;
 }
 
-.details{
-    margin-top: 20px;
+.inlineLink svg {
+    width: 13px;
+    height: 13px;
+    transition: transform 0.2s ease;
+}
+
+.inlineLink:hover svg {
+    transform: translateX(2px);
+}
+
+/* === АДАПТИВ === */
+@media (max-width: 768px) {
+    .cardHeader {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .oklLength {
+        align-self: center;
+        font-size: 14px;
+        padding: 7px 16px;
+    }
+
+    .oklTitle {
+        font-size: 17px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .oklCard {
+        padding: 20px;
+    }
+
+    .oklTitle {
+        font-size: 16px;
+    }
+
+    .oklLength {
+        font-size: 13px;
+        padding: 6px 14px;
+    }
+
+    .description {
+        font-size: 13.5px;
+    }
 }

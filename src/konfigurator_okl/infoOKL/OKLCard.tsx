@@ -44,6 +44,7 @@ interface OKLCardProps {
     onAddCable: (oklId: string) => void;
     onCopy: (oklId: string) => void;
     capacityStatusData?: CapacityStatusData | null;
+    index: number;
 }
 
 export const OKLCard: React.FC<OKLCardProps> = ({
@@ -55,6 +56,7 @@ export const OKLCard: React.FC<OKLCardProps> = ({
                                                     onRemoveCable,
                                                     onCopy,
                                                     capacityStatusData,
+                                                    index,
                                                     onAddCable
                                                 }) => {
     const handleCardClick = () => {
@@ -63,18 +65,20 @@ export const OKLCard: React.FC<OKLCardProps> = ({
 
     const oklLink = useOKLLink(okl.type);
 
-
     return (
         <div
-            className={`${styles.oklCard} ${isSelected ? styles.selected : ''}`} onClick={handleCardClick}>
+            className={`${styles.oklCard} ${isSelected ? styles.selected : ''}`}
+            onClick={handleCardClick}
+        >
+            <div className={styles.cardNumber}>
+            № {index}</div>
 
             <h3>Наименование ОКЛ:</h3>
+
             <div className={styles.cardHeader}>
-                <div className={styles.oklLength}>
-                    <h3 className={styles.oklTitle}>
-                        СПЕЦКАБЛАЙН-{okl.name} - {okl.length} м
-                    </h3>
-                </div>
+                <h3 className={styles.oklTitle}>
+                    СПЕЦКАБЛАЙН-{okl.name} - {okl.length} м
+                </h3>
 
                 <OKLActions
                     oklId={okl.id}
@@ -85,7 +89,7 @@ export const OKLCard: React.FC<OKLCardProps> = ({
                 />
             </div>
 
-            {/* Остальной код без изменений */}
+            {/* Статус — только в CapacityStatus */}
             <CapacityStatus
                 capacityStatusData={capacityStatusData}
                 compact={true}
@@ -99,25 +103,35 @@ export const OKLCard: React.FC<OKLCardProps> = ({
 
             <div className={styles.description}>
                 <h3>Описание:</h3>
-                <span>
+                <p className={styles.descriptionText}>
                     СПЕЦКАБЛАЙН-{okl.name}-{okl.length} м
-                </span>
-                ({okl.cables.map((cable, index) => (
-                <span key={cable.id} className={styles.cableItem}>
+                    {okl.cables.length > 0 && (
+                        <>
+                            {' ('}
+                            {okl.cables.map((cable, index) => (
+                                <span key={cable.id}>
                         {index > 0 && " + "}
-                    {cable.name} - {cable.length}м
+                                    {cable.name} - {cable.length}м
                     </span>
-            ))})
-
-                <Link
-                    href={oklLink.link}
-                    className={styles.details}
-                    title={"Информация об ОКЛ"}
-                >
-                    Подробнее
-                </Link>
+                            ))}
+                            {')'}
+                        </>
+                    )}
+                    {oklLink.link && (
+                        <>
+                            {' '}
+                            <Link
+                                href={oklLink.link}
+                                className={styles.inlineLink}
+                                title="Информация об ОКЛ"
+                            >
+                                Подробнее
+                            </Link>
+                        </>
+                    )}
+                </p>
             </div>
+
         </div>
     );
 };
-

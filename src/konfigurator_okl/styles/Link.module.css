@@ -1,0 +1,24 @@
+.link {
+    color: #9E0929;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.link:hover {
+    color: #c41e3a;
+}
+
+.link svg {
+    width: 14px;
+    height: 14px;
+    transition: transform 0.2s ease;
+}
+
+.link:hover svg {
+    transform: translateX(3px);
+}

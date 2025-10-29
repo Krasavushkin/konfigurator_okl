@@ -1,45 +1,93 @@
+/* === КОНТЕЙНЕР === */
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    margin-bottom: 16px;
+    background-color: #fafafa;
+    border-radius: 15px;
+}
+
+.inputContainer h3 {
+    font-size: 20px;
+    font-weight: 700;
+
+    margin-bottom: 10px;
+    padding: 0 4px;
+}
+
+/* === ИНПУТ === */
 .input {
-    /* Базовые стили */
+    width: 100%;
+    padding: 14px 16px;
     font-size: 15px;
-    text-align: center;
-    padding: 15px;
-    border: 1px solid #ccc; /* Серый */
-    border-radius: 4px;
-    background-color: white;
-    color: black;
-    transition: all 0.3s ease;
+    font-weight: 500;
+    color: #333;
+    background: #fafafa;
+    border: 2px solid #989898;
+    border-radius: 12px;
     outline: none;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    text-align: center;
 }
-.title {
-    font-size: 18px;
-    font-weight: bold;
-}
-/* Состояние при фокусе */
+
+/* Фокус */
 .input:focus {
     border-color: #9E0929;
-    box-shadow: 0 0 0 2px rgba(158, 9, 41, 0.2);
+    background: white;
+    box-shadow: 0 0 0 3px rgba(158, 9, 41, 0.15), 0 4px 12px rgba(158, 9, 41, 0.1);
+    transform: translateY(-1px);
 }
 
-/* Состояние disabled */
-.input:disabled {
-    background-color: #f5f5f5; /* Светло-серый */
-    color: #999; /* Серый */
-    cursor: not-allowed;
-}
-
-/* Ошибка (дополнительный вариант) */
+/* Ошибка */
 .input.error {
     border-color: #9E0929;
-    background-color: rgba(158, 9, 41, 0.05);
+    background: #fff5f7;
+    box-shadow: 0 0 0 3px rgba(158, 9, 41, 0.1);
 }
 
-/* Размеры (дополнительно) */
+.input.error:focus {
+    box-shadow: 0 0 0 3px rgba(158, 9, 41, 0.2), 0 4px 12px rgba(158, 9, 41, 0.15);
+}
+
+/* Disabled */
+.input:disabled {
+    background: #f5f5f5;
+    color: #999;
+    cursor: not-allowed;
+    border-color: #eee;
+    box-shadow: none;
+    transform: none;
+}
+
+/* === РАЗМЕРЫ === */
 .input.small {
-    padding: 8px 12px;
+    padding: 10px 14px;
     font-size: 14px;
 }
 
 .input.large {
     padding: 16px 20px;
-    font-size: 18px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* === СООБЩЕНИЕ ОБ ОШИБКЕ === */
+.errorMessage {
+    font-size: 13px;
+    color: #9E0929;
+    padding: 0 4px;
+    margin-top: 4px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.errorMessage::before {
+    content: "Warning";
+    font-size: 14px;
 }

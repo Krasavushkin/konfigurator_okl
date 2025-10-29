@@ -143,6 +143,11 @@ export const CapacityStatus: React.FC<CapacityStatusProps> = ({
         'add-cable': 'Готова к заполнению'
     }[realStatus.status];
 
+    const statusClass =
+        realStatus.status === 'full' ? styles.full :
+            realStatus.status === 'almost-full' ? styles.warning :
+                styles.ok; // 'add-cable'
+
     const displayPercentage = Math.min(
         (capacityInfo.usedArea / capacityInfo.maxArea) * 100,
         100
@@ -151,7 +156,12 @@ export const CapacityStatus: React.FC<CapacityStatusProps> = ({
     // === КОМПАКТНАЯ ВЕРСИЯ ===
     if (compact) {
         return (
-            <div className={`${styles.capacityInfo} ${styles.compact} ${className}`}>
+            <div className={`
+        ${styles.capacityInfo} 
+        ${compact ? styles.compact : ''} 
+        ${className} 
+        ${statusClass}
+    `}>
                 <div className={styles.capacityRow}>
                     <span>Статус:</span>
                     <span className={
@@ -168,7 +178,12 @@ export const CapacityStatus: React.FC<CapacityStatusProps> = ({
 
     // === ПОЛНАЯ ВЕРСИЯ ===
     return (
-        <div className={`${styles.capacityInfo} ${className}`}>
+        <div className={`
+        ${styles.capacityInfo} 
+        ${compact ? styles.compact : ''} 
+        ${className} 
+        ${statusClass}
+    `}>
             <h3>Выбранная ОКЛ</h3>
 
             <div className={styles.capacityRow}>

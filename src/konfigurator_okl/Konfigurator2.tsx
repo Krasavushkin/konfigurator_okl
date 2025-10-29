@@ -12,10 +12,11 @@ import {SURFACES} from "../data/SURFACES";
 import {SUSPENSIONS} from "../data/SUSPENSIONS";
 import {OKL_DB} from "../data";
 import {CapacityStatus} from "./CapacityStatus";
+import {CounterBadge} from "./services/CounterBadge";
+import {StatusHint} from "./services/StatusHint";
 
 
 export const Konfigurator2 = () => {
-
 
     const {
         allOKL,
@@ -148,14 +149,6 @@ export const Konfigurator2 = () => {
         return cables;
     }, [selectedOKL, selectedCableType, oklList, allCables]);
 
-    const allCompatibleCables = useMemo(() => {
-        if (!selectedOKL) return [];
-
-        // Если выбрано "Все кабели" - возвращаем все совместимые
-        return (selectedCableType === "cable_type:all" || !selectedCableType)
-            ? getCompatibleCablesForOKL(selectedOKL, undefined, oklList)
-            : getCompatibleCablesForOKL(selectedOKL, selectedCableType, oklList);
-    }, [selectedOKL, selectedCableType, oklList]);
 
     const toggleDropdown = (dropdownName: string) => {
         setActiveDropdown(activeDropdown === dropdownName ? null : dropdownName);
@@ -198,8 +191,15 @@ export const Konfigurator2 = () => {
     const handleAddOKL = () => {
         if (!selectedOKL) return;
         addOKL(selectedOKL, meter);
+
+        setMeterOKL(1);
+
     };
 
+    const isOKLAlreadyAdded = useMemo(() => {
+        if (!selectedOKL) return false;
+        return oklList.some(okl => okl.id === selectedOKL);
+    }, [selectedOKL, oklList]);
 
     const handleShowTime = (oklType: string, cableTypeId: string) => {
         const time = getMaxFireTime(oklType, cableTypeId);
@@ -275,7 +275,19 @@ export const Konfigurator2 = () => {
         };
     }, [selectedOKL, capacityInfo, selectedCableType, oklList]);
 
+    const [justAdded, setJustAdded] = useState(false);
 
+    useEffect(() => {
+        if (oklList.length > prevOKLCountRef.current) {
+            setJustAdded(true);
+            const timer = setTimeout(() => setJustAdded(false), 600);
+            return () => clearTimeout(timer);
+        }
+    }, [oklList.length]);
+
+    const isCurrentOKLAdded = useMemo(() => {
+        return selectedOKL && oklList.some(o => o.type === selectedOKL);
+    }, [selectedOKL, oklList]);
 
     return (
         <>
@@ -315,24 +327,20 @@ export const Konfigurator2 = () => {
                         disabled={!selectedSurface}
                     />
 
-                    {!selectedOKL && (<div className={`${styles.filterStatus} ${selectedSuspension && selectedSurface && selectedFitting ? styles.completed : styles.active}`}>
-                        {selectedSuspension && selectedSurface && selectedFitting ? (
-                            <div className={styles.statusMessage}>
-                                <span className={styles.successIcon}>✓</span>
-                                <span>Все фильтры выбраны! Теперь вы можете выбрать ОКЛ из доступных вариантов в карточке "Выбор марки ОКЛ"</span>
-                            </div>
-                        ) : (
-                            <div className={styles.statusMessage}>
-                                <span className={styles.infoIcon}>i</span>
-                                <span>
-                                    {!selectedSuspension && "Выберите тип кабеленесущего элемента чтобы начать подбор "}
-                                    {selectedSuspension && !selectedSurface && "Теперь выберите поверхность монтажа "}
-                                    {selectedSuspension && selectedSurface && !selectedFitting && "Осталось выбрать тип крепежа "}
-                                    {!selectedSuspension && "или воспользуйтесь поиском ОКЛ в карточке \"Выбор марки ОКЛ\", если знаете нужную марку"}
-                                </span>
-                            </div>
-                        )}
-                    </div>)}
+                    {!selectedOKL  && oklList.length === 0 && (
+                        <StatusHint
+                            type={selectedSuspension && selectedSurface && selectedFitting ? 'success' : 'info'}
+                        >
+                            {selectedSuspension && selectedSurface && selectedFitting
+                                ? "Все фильтры выбраны! Теперь выберите ОКЛ в поле 'Огнестойкая кабельная линия'."
+                                : !selectedSuspension
+                                    ? "Выберите тип кабеленесущего элемента. Если знаете марку ОКЛ — выберите сразу из списка 'Огнестойкая кабельная линия'."
+                                    : !selectedSurface
+                                        ? "Выберите поверхность монтажа"
+                                        : "Выберите тип крепежа"
+                            }
+                        </StatusHint>
+                    )}
                 </div>
                 <div className={styles.dropdowns}>
                     <h2>Выбор марки ОКЛ</h2>
@@ -353,29 +361,38 @@ export const Konfigurator2 = () => {
                         onChange={(e) => setMeterOKL(Number(e))}
                         placeholder="длина в метрах"
                     />
+                    {isOKLAlreadyAdded && oklList.length > 0 && (
+                        <StatusHint type="info">
+                            Выберите ОКЛ введите длину в метрах и нажмите "+ Добавить ОКЛ".
+                        </StatusHint>
+                    )}
                     <Button
-                        title="+ Добавить ОКЛ"
+                        title="Добавить ОКЛ"
                         onClick={handleAddOKL}
-                        disabled={!selectedOKL || meter < 1}
+                        disabled={!selectedOKL || meter < 1 || isOKLAlreadyAdded}
                     />
-                    {!selectedOKL &&  (<div className={`${styles.filterStatus} ${styles.active}`}>
-                        <div className={styles.statusMessage}>
-                            <span className={styles.infoIcon}>i</span>
-                            <span>После выбора ОКЛ введите длину в метрах и нажмите кнопку "+ Добавить ОКЛ".
-                                Затем перейдите к выбору и добавлению кабеля.
-                            </span>
-                        </div>
-                    </div>)}
+
+
+                    {/* СЧЁТЧИК ПОД КНОПКОЙ */}
+                    <CounterBadge
+                        label="Добавлено ОКЛ"
+                        value={oklList.length}
+                        highlight={justAdded}
+                    />
+
+                    {!selectedOKL  && oklList.length === 0 && (
+                        <StatusHint type="info">
+                            После выбора ОКЛ введите длину в метрах и нажмите "+ Добавить ОКЛ".
+                            Затем перейдите к выбору и добавлению кабеля.
+                        </StatusHint>
+                    )}
                 </div>
                 <div className={styles.dropdowns}>
                     <h2>Подбор кабеля для ОКЛ</h2>
-                    {!selectedOKL && (
-                        <div className={`${styles.filterStatus} ${styles.active}`}>
-                            <div className={styles.statusMessage}>
-                                <span className={styles.infoIcon}>i</span>
-                                <span>Сначала добавьте ОКЛ в карточке "Выбор марки ОКЛ"</span>
-                            </div>
-                        </div>
+                    {!selectedOKL  && oklList.length === 0 && (
+                        <StatusHint type="info">
+                            Сначала добавьте ОКЛ в карточке "Выбор марки ОКЛ"
+                        </StatusHint>
                     )}
                     <Dropdown
                         title="Назначение кабеля"
@@ -403,18 +420,19 @@ export const Konfigurator2 = () => {
                         placeholder="длина в метрах"
                     />
                     <Button
-                        title="+ Добавить кабель в ОКЛ"
+                        title="Добавить кабель в ОКЛ"
                         onClick={handleAddCableToOKL}
                         disabled={!canAddCable || meterCable < 1}
                     />
-                    {selectedCable && !canAddCable && cableValidation.reason && (
-                        <div className={styles.validationError}>
-                            <div className={styles.errorIcon}>⚠</div>
-                            <div className={styles.errorText}>
-                                <strong>Нельзя добавить кабель:</strong>
-                                <span>{cableValidation.reason}</span>
-                            </div>
-                        </div>
+                    {selectedCable && !canAddCable && (
+                        <StatusHint type="error">
+                            Нельзя добавить кабель в выбранную ОКЛ.
+                        </StatusHint>
+                    )}
+                    {!selectedCable && selectedOKL && (
+                        <StatusHint type="warning">
+                            Выберите кабель, чтобы добавить в ОКЛ.
+                        </StatusHint>
                     )}
                     {capacityInfo && <CapacityStatus capacityStatusData={capacityStatusData} compact={false}/>}
                 </div>

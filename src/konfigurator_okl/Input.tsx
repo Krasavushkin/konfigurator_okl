@@ -3,7 +3,7 @@ import styles from './styles/Input.module.css';
 
 interface InputProps {
     title: string;
-    value: number;
+    value: number | string;
     onChange: (value: string) => void;
     placeholder?: string;
     className?: string;
@@ -25,31 +25,30 @@ export const Input: React.FC<InputProps> = ({
                                                 min = 1,
                                             }) => {
     const sizeClass = {
-        'small': styles.small,
-        'large': styles.large,
-        'default': ''
+        small: styles.small,
+        large: styles.large,
+        default: ''
     }[size];
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
         const inputValue = e.target.value;
 
-        // Разрешаем только цифры и точку
-        if (!/^\d*\.?\d*$/.test(inputValue)) {
-            return;
-        }
+        if (!/^\d*\.?\d*$/.test(inputValue)) return;
 
         onChange(inputValue);
     };
 
     const handleBlur = () => {
-        // При потере фокуса проверяем и нормализуем
-        if (value < min) {
+        const numValue = parseFloat(value.toString()) || 0;
+        if (numValue < min) {
             onChange(min.toString());
         }
     };
 
+    const isError = error || (value !== '' && parseFloat(value.toString()) < min);
+
     return (
-        <div className={styles.inputContainer}>
+        <div className={`${styles.inputContainer} ${className}`}>
             <h3 className={styles.title}>{title}</h3>
             <input
                 type="text"
@@ -59,14 +58,13 @@ export const Input: React.FC<InputProps> = ({
                 onBlur={handleBlur}
                 placeholder={placeholder}
                 className={`
-                    ${styles.input} 
-                    ${sizeClass} 
-                    ${error ? styles.error : ''} 
-                    ${className}
-                `}
+                    ${styles.input}
+                    ${sizeClass}
+                    ${isError ? styles.error : ''}
+                `.trim()}
                 disabled={disabled}
             />
-            {error && value < min && (
+            {isError && (
                 <div className={styles.errorMessage}>
                     Значение не может быть меньше {min}
                 </div>

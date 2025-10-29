@@ -1,5 +1,4 @@
-import React, {useState} from 'react';
-import styles from '../styles/ExportButtons.module.css';
+import React from 'react';
 
 import {Button} from "../Button";
 import {newOKLItem} from "../data";
@@ -27,9 +26,6 @@ export const ExportButtons: React.FC<ExportButtonsProps> = ({
         }
     };
     return (
-        <div className={styles.exportButtons}>
-            <Button title={"Сохранить в PDF 📄"} onClick={() => handleExport(exportService.exportToPDFService.bind(exportService))} disabled={oklList.length === 0}/>
-
-        </div>
+            <Button title={"Сохранить в PDF"} onClick={() => handleExport(exportService.exportToPDFService.bind(exportService))} disabled={oklList.length === 0}/>
     );
 };

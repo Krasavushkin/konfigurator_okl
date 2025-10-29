@@ -71,10 +71,10 @@ export const OKLconfig: React.FC<ConfigurationSummaryProps> = ({
     return (
         <div className={styles.configContainer}>
             <div className={styles.oklGrid}>
-                {paginatedOKL.map(okl => {
+                {paginatedOKL.map((okl, index) => {
                     const capacityInfo = getOKLCapacityInfo ? getOKLCapacityInfo(okl.id) : null;
                     const allCompatibleCables = getCompatibleCables(okl.type || '');
-
+                    const globalIndex = (currentPage - 1) * cardsPerPage + index + 1;
                     const capacityStatusData = capacityInfo ? {
                         capacityInfo,
                         hasOtherCables: false, // В карточках не показываем подсказки о фильтрах
@@ -87,6 +87,7 @@ export const OKLconfig: React.FC<ConfigurationSummaryProps> = ({
                     return (
                         <OKLCard
                             key={okl.id}
+                            index={globalIndex}
                             okl={okl}
                             isSelected={internalSelectedOKL === okl.id}
                             onSelect={handleSelectOKL}
