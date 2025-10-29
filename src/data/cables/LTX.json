@@ -1,5 +1,149 @@
 [
   {
+    "id": "cable_ltx_30_281",
+    "name": "ЛОУТОКС 30нг(А)-FRLSLTx 1х2х0,52",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 1,
+    "coreDiameter": 0.52,
+    "outerDiameter": 4.7,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_31_284",
+    "name": "ЛОУТОКС 31нг(А)-FRLSLTx 1х2х0,52",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 1,
+    "coreDiameter": 0.52,
+    "outerDiameter": 5,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_29",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 1х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 2,
+    "coreSection": 0.2,
+    "outerDiameter": 5.2,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_47",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 1х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 2,
+    "coreSection": 0.35,
+    "outerDiameter": 5.9,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_65",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 1х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 2,
+    "coreSection": 0.5,
+    "outerDiameter": 6.2,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_83",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 1х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 2,
+    "coreSection": 0.75,
+    "outerDiameter": 6.6,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_101",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 1х2х1,0",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 2,
+    "coreSection": 1,
+    "outerDiameter": 7.1,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_119",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 1х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 2,
+    "coreSection": 1.5,
+    "outerDiameter": 7.6,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_137",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 1х2х2,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 2,
+    "coreSection": 2.5,
+    "outerDiameter": 8.6,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_155",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 1х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 2,
+    "coreSection": 0.2,
+    "outerDiameter": 5.4,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_173",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 1х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 2,
+    "coreSection": 0.35,
+    "outerDiameter": 6,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_191",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 1х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 2,
+    "coreSection": 0.5,
+    "outerDiameter": 6.4,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_209",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 1х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 2,
+    "coreSection": 0.75,
+    "outerDiameter": 6.7,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_227",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 1х2х1,0",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 2,
+    "coreSection": 1,
+    "outerDiameter": 7.2,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_245",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 1х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 2,
+    "coreSection": 1.5,
+    "outerDiameter": 7.7,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_263",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 1х2х2,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 2,
+    "coreSection": 2.5,
+    "outerDiameter": 8.7,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
     "id": "cable_ltx_1",
     "name": "ЛОУТОКС 20нг(А)-FRLSLTx 3х0,2",
     "cableTypeId": "cable_type:ltx",
@@ -60,69 +204,6 @@
     "cores": 3,
     "coreSection": 2.5,
     "outerDiameter": 8.9,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_8",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 4х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 4,
-    "coreSection": 0.2,
-    "outerDiameter": 5.8,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_9",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 4х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 4,
-    "coreSection": 0.35,
-    "outerDiameter": 6.6,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_10",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 4х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 4,
-    "coreSection": 0.5,
-    "outerDiameter": 6.9,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_11",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 4х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 4,
-    "coreSection": 0.75,
-    "outerDiameter": 7.3,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_12",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 4х1",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 4,
-    "coreSection": 1,
-    "outerDiameter": 7.9,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_13",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 4х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 4,
-    "coreSection": 1.5,
-    "outerDiameter": 8.5,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_14",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 4х2,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 4,
-    "coreSection": 2.5,
-    "outerDiameter": 9.7,
     "TU": "ТУ 16.К99-049-2012"
   },
   {
@@ -189,6 +270,69 @@
     "TU": "ТУ 16.К99-049-2012"
   },
   {
+    "id": "cable_ltx_8",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 4х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 4,
+    "coreSection": 0.2,
+    "outerDiameter": 5.8,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_9",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 4х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 4,
+    "coreSection": 0.35,
+    "outerDiameter": 6.6,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_10",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 4х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 4,
+    "coreSection": 0.5,
+    "outerDiameter": 6.9,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_11",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 4х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 4,
+    "coreSection": 0.75,
+    "outerDiameter": 7.3,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_12",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 4х1",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 4,
+    "coreSection": 1,
+    "outerDiameter": 7.9,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_13",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 4х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 4,
+    "coreSection": 1.5,
+    "outerDiameter": 8.5,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_14",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 4х2,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 4,
+    "coreSection": 2.5,
+    "outerDiameter": 9.7,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
     "id": "cable_ltx_22",
     "name": "ЛОУТОКС 21нг(А)-FRLSLTx 4х0,2",
     "cableTypeId": "cable_type:ltx",
@@ -252,174 +396,12 @@
     "TU": "ТУ 16.К99-049-2012"
   },
   {
-    "id": "cable_ltx_29",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 1х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 2,
-    "coreSection": 0.2,
-    "outerDiameter": 5.2,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
     "id": "cable_ltx_30",
     "name": "ЛОУТОКС 20нг(А)-FRLSLTx 2х2х0,2",
     "cableTypeId": "cable_type:ltx",
     "cores": 4,
     "coreSection": 0.2,
     "outerDiameter": 8.3,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_31",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 3х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 6,
-    "coreSection": 0.2,
-    "outerDiameter": 8.7,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_32",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 4х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 8,
-    "coreSection": 0.2,
-    "outerDiameter": 9,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_33",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 5х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 10,
-    "coreSection": 0.2,
-    "outerDiameter": 9.9,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_34",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 6х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 12,
-    "coreSection": 0.2,
-    "outerDiameter": 10.7,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_35",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 7х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 14,
-    "coreSection": 0.2,
-    "outerDiameter": 10.7,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_36",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 8х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 16,
-    "coreSection": 0.2,
-    "outerDiameter": 11.6,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_37",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 9х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 18,
-    "coreSection": 0.2,
-    "outerDiameter": 12.7,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_38",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 10х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 20,
-    "coreSection": 0.2,
-    "outerDiameter": 14.4,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_39",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 12х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 24,
-    "coreSection": 0.2,
-    "outerDiameter": 14.8,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_40",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 16х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 32,
-    "coreSection": 0.2,
-    "outerDiameter": 16.3,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_41",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 20х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 40,
-    "coreSection": 0.2,
-    "outerDiameter": 18.1,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_42",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 24х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 48,
-    "coreSection": 0.2,
-    "outerDiameter": 20,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_43",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 28х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 56,
-    "coreSection": 0.2,
-    "outerDiameter": 21.2,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_44",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 32х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 64,
-    "coreSection": 0.2,
-    "outerDiameter": 22,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_45",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 36х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 72,
-    "coreSection": 0.2,
-    "outerDiameter": 22.9,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_46",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 40х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 80,
-    "coreSection": 0.2,
-    "outerDiameter": 23.7,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_47",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 1х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 2,
-    "coreSection": 0.35,
-    "outerDiameter": 5.9,
     "TU": "ТУ 16.К99-049-2012"
   },
   {
@@ -432,318 +414,12 @@
     "TU": "ТУ 16.К99-049-2012"
   },
   {
-    "id": "cable_ltx_49",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 3х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 6,
-    "coreSection": 0.35,
-    "outerDiameter": 10.1,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_50",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 4х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 8,
-    "coreSection": 0.35,
-    "outerDiameter": 10.6,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_51",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 5х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 10,
-    "coreSection": 0.35,
-    "outerDiameter": 11.6,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_52",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 6х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 12,
-    "coreSection": 0.35,
-    "outerDiameter": 12.6,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_53",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 7х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 14,
-    "coreSection": 0.35,
-    "outerDiameter": 12.6,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_54",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 8х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 16,
-    "coreSection": 0.35,
-    "outerDiameter": 14.3,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_55",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 9х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 18,
-    "coreSection": 0.35,
-    "outerDiameter": 15.9,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_56",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 10х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 20,
-    "coreSection": 0.35,
-    "outerDiameter": 16.9,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_57",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 12х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 24,
-    "coreSection": 0.35,
-    "outerDiameter": 17.4,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_58",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 16х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 32,
-    "coreSection": 0.35,
-    "outerDiameter": 19.4,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_59",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 20х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 40,
-    "coreSection": 0.35,
-    "outerDiameter": 21.4,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_60",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 24х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 48,
-    "coreSection": 0.35,
-    "outerDiameter": 23.9,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_61",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 28х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 56,
-    "coreSection": 0.35,
-    "outerDiameter": 26.5,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_62",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 32х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 64,
-    "coreSection": 0.35,
-    "outerDiameter": 27.5,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_63",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 36х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 72,
-    "coreSection": 0.35,
-    "outerDiameter": 28.6,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_64",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 40х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 80,
-    "coreSection": 0.35,
-    "outerDiameter": 29.6,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_65",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 1х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 2,
-    "coreSection": 0.5,
-    "outerDiameter": 6.2,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
     "id": "cable_ltx_66",
     "name": "ЛОУТОКС 20нг(А)-FRLSLTx 2х2х0,5",
     "cableTypeId": "cable_type:ltx",
     "cores": 4,
     "coreSection": 0.5,
     "outerDiameter": 10.2,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_67",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 3х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 6,
-    "coreSection": 0.5,
-    "outerDiameter": 10.8,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_68",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 4х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 8,
-    "coreSection": 0.5,
-    "outerDiameter": 11.4,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_69",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 5х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 10,
-    "coreSection": 0.5,
-    "outerDiameter": 12.5,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_70",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 6х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 12,
-    "coreSection": 0.5,
-    "outerDiameter": 14.4,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_71",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 7х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 14,
-    "coreSection": 0.5,
-    "outerDiameter": 14.4,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_72",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 8х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 16,
-    "coreSection": 0.5,
-    "outerDiameter": 15.5,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_73",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 9х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 18,
-    "coreSection": 0.5,
-    "outerDiameter": 17.1,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_74",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 10х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 20,
-    "coreSection": 0.5,
-    "outerDiameter": 18.2,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_75",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 12х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 24,
-    "coreSection": 0.5,
-    "outerDiameter": 18.8,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_76",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 16х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 32,
-    "coreSection": 0.5,
-    "outerDiameter": 20.9,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_77",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 20х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 40,
-    "coreSection": 0.5,
-    "outerDiameter": 23.1,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_78",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 24х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 48,
-    "coreSection": 0.5,
-    "outerDiameter": 27,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_79",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 28х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 56,
-    "coreSection": 0.5,
-    "outerDiameter": 28.6,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_80",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 32х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 64,
-    "coreSection": 0.5,
-    "outerDiameter": 29.7,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_81",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 36х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 72,
-    "coreSection": 0.5,
-    "outerDiameter": 30.8,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_82",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 40х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 80,
-    "coreSection": 0.5,
-    "outerDiameter": 31.9,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_83",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 1х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 2,
-    "coreSection": 0.75,
-    "outerDiameter": 6.6,
     "TU": "ТУ 16.К99-049-2012"
   },
   {
@@ -756,165 +432,147 @@
     "TU": "ТУ 16.К99-049-2012"
   },
   {
-    "id": "cable_ltx_85",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 3х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 6,
-    "coreSection": 0.75,
-    "outerDiameter": 11.6,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_86",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 4х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 8,
-    "coreSection": 0.75,
-    "outerDiameter": 12.2,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_87",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 5х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 10,
-    "coreSection": 0.75,
-    "outerDiameter": 14.2,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_88",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 6х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 12,
-    "coreSection": 0.75,
-    "outerDiameter": 15.5,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_89",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 7х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 14,
-    "coreSection": 0.75,
-    "outerDiameter": 15.5,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_90",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 8х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 16,
-    "coreSection": 0.75,
-    "outerDiameter": 16.7,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_91",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 9х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 18,
-    "coreSection": 0.75,
-    "outerDiameter": 18.4,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_92",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 10х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 20,
-    "coreSection": 0.75,
-    "outerDiameter": 19.6,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_93",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 12х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 24,
-    "coreSection": 0.75,
-    "outerDiameter": 20.3,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_94",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 16х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 32,
-    "coreSection": 0.75,
-    "outerDiameter": 22.6,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_95",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 20х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 40,
-    "coreSection": 0.75,
-    "outerDiameter": 26.2,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_96",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 24х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 48,
-    "coreSection": 0.75,
-    "outerDiameter": 29.2,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_97",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 28х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 56,
-    "coreSection": 0.75,
-    "outerDiameter": 30.9,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_98",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 32х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 64,
-    "coreSection": 0.75,
-    "outerDiameter": 32.1,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_99",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 36х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 72,
-    "coreSection": 0.75,
-    "outerDiameter": 33.3,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_100",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 40х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 80,
-    "coreSection": 0.75,
-    "outerDiameter": 34.6,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_101",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 1х2х1,0",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 2,
-    "coreSection": 1,
-    "outerDiameter": 7.1,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
     "id": "cable_ltx_102",
     "name": "ЛОУТОКС 20нг(А)-FRLSLTx 2х2х1,0",
     "cableTypeId": "cable_type:ltx",
     "cores": 4,
     "coreSection": 1,
     "outerDiameter": 11.9,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_120",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 2х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 4,
+    "coreSection": 1.5,
+    "outerDiameter": 12.9,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_138",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 2х2х2,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 4,
+    "coreSection": 2.5,
+    "outerDiameter": 15.7,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_156",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 2х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 4,
+    "coreSection": 0.2,
+    "outerDiameter": 8.4,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_174",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 2х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 4,
+    "coreSection": 0.35,
+    "outerDiameter": 9.7,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_192",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 2х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 4,
+    "coreSection": 0.5,
+    "outerDiameter": 10.4,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_210",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 2х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 4,
+    "coreSection": 0.75,
+    "outerDiameter": 11.1,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_228",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 2х2х1,0",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 4,
+    "coreSection": 1,
+    "outerDiameter": 12.1,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_246",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 2х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 4,
+    "coreSection": 1.5,
+    "outerDiameter": 13.1,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_264",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 2х2х2,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 4,
+    "coreSection": 2.5,
+    "outerDiameter": 15.9,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_30_282",
+    "name": "ЛОУТОКС 30нг(А)-FRLSLTx 2х2х0,52",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 4,
+    "coreDiameter": 0.52,
+    "outerDiameter": 6,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_31_285",
+    "name": "ЛОУТОКС 31нг(А)-FRLSLTx 2х2х0,52",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 4,
+    "coreDiameter": 0.52,
+    "outerDiameter": 6.3,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_31",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 3х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 6,
+    "coreSection": 0.2,
+    "outerDiameter": 8.7,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_49",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 3х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 6,
+    "coreSection": 0.35,
+    "outerDiameter": 10.1,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_67",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 3х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 6,
+    "coreSection": 0.5,
+    "outerDiameter": 10.8,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_85",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 3х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 6,
+    "coreSection": 0.75,
+    "outerDiameter": 11.6,
     "TU": "ТУ 16.К99-049-2012"
   },
   {
@@ -927,11 +585,263 @@
     "TU": "ТУ 16.К99-049-2012"
   },
   {
+    "id": "cable_ltx_121",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 3х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 6,
+    "coreSection": 1.5,
+    "outerDiameter": 14.5,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_139",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 3х2х2,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 6,
+    "coreSection": 2.5,
+    "outerDiameter": 16.7,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_157",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 3х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 6,
+    "coreSection": 0.2,
+    "outerDiameter": 8.9,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_175",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 3х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 6,
+    "coreSection": 0.35,
+    "outerDiameter": 10.3,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_193",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 3х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 6,
+    "coreSection": 0.5,
+    "outerDiameter": 11,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_211",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 3х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 6,
+    "coreSection": 0.75,
+    "outerDiameter": 11.7,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_229",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 3х2х1,0",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 6,
+    "coreSection": 1,
+    "outerDiameter": 12.8,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_247",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 3х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 6,
+    "coreSection": 1.5,
+    "outerDiameter": 14.7,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_265",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 3х2х2,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 6,
+    "coreSection": 2.5,
+    "outerDiameter": 16.8,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_30_283",
+    "name": "ЛОУТОКС 30нг(А)-FRLSLTx 3х2х0,52",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 6,
+    "coreDiameter": 0.52,
+    "outerDiameter": 7.5,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_31_286",
+    "name": "ЛОУТОКС 31нг(А)-FRLSLTx 3х2х0,52",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 6,
+    "coreDiameter": 0.52,
+    "outerDiameter": 7.8,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_32",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 4х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 8,
+    "coreSection": 0.2,
+    "outerDiameter": 9,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_50",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 4х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 8,
+    "coreSection": 0.35,
+    "outerDiameter": 10.6,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_68",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 4х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 8,
+    "coreSection": 0.5,
+    "outerDiameter": 11.4,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_86",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 4х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 8,
+    "coreSection": 0.75,
+    "outerDiameter": 12.2,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
     "id": "cable_ltx_104",
     "name": "ЛОУТОКС 20нг(А)-FRLSLTx 4х2х1,0",
     "cableTypeId": "cable_type:ltx",
     "cores": 8,
     "coreSection": 1,
+    "outerDiameter": 14.2,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_122",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 4х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 8,
+    "coreSection": 1.5,
+    "outerDiameter": 15.4,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_140",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 4х2х2,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 8,
+    "coreSection": 2.5,
+    "outerDiameter": 17.8,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_158",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 4х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 8,
+    "coreSection": 0.2,
+    "outerDiameter": 9.2,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_176",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 4х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 8,
+    "coreSection": 0.35,
+    "outerDiameter": 10.7,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_194",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 4х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 8,
+    "coreSection": 0.5,
+    "outerDiameter": 11.5,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_212",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 4х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 8,
+    "coreSection": 0.75,
+    "outerDiameter": 12.4,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_230",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 4х2х1,0",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 8,
+    "coreSection": 1,
+    "outerDiameter": 14.4,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_248",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 4х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 8,
+    "coreSection": 1.5,
+    "outerDiameter": 15.6,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_266",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 4х2х2,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 8,
+    "coreSection": 2.5,
+    "outerDiameter": 18,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_33",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 5х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 10,
+    "coreSection": 0.2,
+    "outerDiameter": 9.9,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_51",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 5х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 10,
+    "coreSection": 0.35,
+    "outerDiameter": 11.6,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_69",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 5х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 10,
+    "coreSection": 0.5,
+    "outerDiameter": 12.5,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_87",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 5х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 10,
+    "coreSection": 0.75,
     "outerDiameter": 14.2,
     "TU": "ТУ 16.К99-049-2012"
   },
@@ -945,318 +855,12 @@
     "TU": "ТУ 16.К99-049-2012"
   },
   {
-    "id": "cable_ltx_106",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 6х2х1,0",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 12,
-    "coreSection": 1,
-    "outerDiameter": 17,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_107",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 7х2х1,0",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 14,
-    "coreSection": 1,
-    "outerDiameter": 17,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_108",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 8х2х1,0",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 16,
-    "coreSection": 1,
-    "outerDiameter": 18.4,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_109",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 9х2х1,0",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 18,
-    "coreSection": 1,
-    "outerDiameter": 20.2,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_110",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 10х2х1,0",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 20,
-    "coreSection": 1,
-    "outerDiameter": 21.6,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_111",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 12х2х1,0",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 24,
-    "coreSection": 1,
-    "outerDiameter": 22.3,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_112",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 16х2х1,0",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 32,
-    "coreSection": 1,
-    "outerDiameter": 26.1,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_113",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 20х2х1,0",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 40,
-    "coreSection": 1,
-    "outerDiameter": 28.9,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_114",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 24х2х1,0",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 48,
-    "coreSection": 1,
-    "outerDiameter": 32.2,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_115",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 28х2х1,0",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 56,
-    "coreSection": 1,
-    "outerDiameter": 34.1,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_116",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 32х2х1,0",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 64,
-    "coreSection": 1,
-    "outerDiameter": 35.4,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_117",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 36х2х1,0",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 72,
-    "coreSection": 1,
-    "outerDiameter": 36.8,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_118",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 40х2х1,0",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 80,
-    "coreSection": 1,
-    "outerDiameter": 38.2,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_119",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 1х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 2,
-    "coreSection": 1.5,
-    "outerDiameter": 7.6,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_120",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 2х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 4,
-    "coreSection": 1.5,
-    "outerDiameter": 12.9,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_121",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 3х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 6,
-    "coreSection": 1.5,
-    "outerDiameter": 14.5,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_122",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 4х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 8,
-    "coreSection": 1.5,
-    "outerDiameter": 15.4,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
     "id": "cable_ltx_123",
     "name": "ЛОУТОКС 20нг(А)-FRLSLTx 5х2х1,5",
     "cableTypeId": "cable_type:ltx",
     "cores": 10,
     "coreSection": 1.5,
     "outerDiameter": 16.9,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_124",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 6х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 12,
-    "coreSection": 1.5,
-    "outerDiameter": 18.5,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_125",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 7х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 14,
-    "coreSection": 1.5,
-    "outerDiameter": 18.5,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_126",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 8х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 16,
-    "coreSection": 1.5,
-    "outerDiameter": 20,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_127",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 9х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 18,
-    "coreSection": 1.5,
-    "outerDiameter": 22.1,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_128",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 10х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 20,
-    "coreSection": 1.5,
-    "outerDiameter": 23.6,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_129",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 12х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 24,
-    "coreSection": 1.5,
-    "outerDiameter": 25.6,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_130",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 16х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 32,
-    "coreSection": 1.5,
-    "outerDiameter": 28.5,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_131",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 20х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 40,
-    "coreSection": 1.5,
-    "outerDiameter": 31.5,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_132",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 24х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 48,
-    "coreSection": 1.5,
-    "outerDiameter": 35.2,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_133",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 28х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 56,
-    "coreSection": 1.5,
-    "outerDiameter": 37.3,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_134",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 32х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 64,
-    "coreSection": 1.5,
-    "outerDiameter": 38.8,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_135",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 36х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 72,
-    "coreSection": 1.5,
-    "outerDiameter": 41.3,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_136",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 40х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 80,
-    "coreSection": 1.5,
-    "outerDiameter": 42.9,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_137",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 1х2х2,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 2,
-    "coreSection": 2.5,
-    "outerDiameter": 8.6,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_138",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 2х2х2,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 4,
-    "coreSection": 2.5,
-    "outerDiameter": 15.7,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_139",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 3х2х2,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 6,
-    "coreSection": 2.5,
-    "outerDiameter": 16.7,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_140",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 4х2х2,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 8,
-    "coreSection": 2.5,
-    "outerDiameter": 17.8,
     "TU": "ТУ 16.К99-049-2012"
   },
   {
@@ -1269,318 +873,12 @@
     "TU": "ТУ 16.К99-049-2012"
   },
   {
-    "id": "cable_ltx_142",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 6х2х2,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 12,
-    "coreSection": 2.5,
-    "outerDiameter": 21.5,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_143",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 7х2х2,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 14,
-    "coreSection": 2.5,
-    "outerDiameter": 21.5,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_144",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 8х2х2,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 16,
-    "coreSection": 2.5,
-    "outerDiameter": 23.3,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_145",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 9х2х2,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 18,
-    "coreSection": 2.5,
-    "outerDiameter": 27,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_146",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 10х2х2,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 20,
-    "coreSection": 2.5,
-    "outerDiameter": 28.8,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_147",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 12х2х2,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 24,
-    "coreSection": 2.5,
-    "outerDiameter": 29.8,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_148",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 16х2х2,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 32,
-    "coreSection": 2.5,
-    "outerDiameter": 33.2,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_149",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 20х2х2,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 40,
-    "coreSection": 2.5,
-    "outerDiameter": 36.8,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_150",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 24х2х2,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 48,
-    "coreSection": 2.5,
-    "outerDiameter": 42.2,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_151",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 28х2х2,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 56,
-    "coreSection": 2.5,
-    "outerDiameter": 44.7,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_152",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 32х2х2,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 64,
-    "coreSection": 2.5,
-    "outerDiameter": 46.5,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_153",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 36х2х2,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 72,
-    "coreSection": 2.5,
-    "outerDiameter": 48.3,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_154",
-    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 40х2х2,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 80,
-    "coreSection": 2.5,
-    "outerDiameter": 50.2,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_155",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 1х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 2,
-    "coreSection": 0.2,
-    "outerDiameter": 5.4,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_156",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 2х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 4,
-    "coreSection": 0.2,
-    "outerDiameter": 8.4,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_157",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 3х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 6,
-    "coreSection": 0.2,
-    "outerDiameter": 8.9,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_158",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 4х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 8,
-    "coreSection": 0.2,
-    "outerDiameter": 9.2,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
     "id": "cable_ltx_159",
     "name": "ЛОУТОКС 21нг(А)-FRLSLTx 5х2х0,2",
     "cableTypeId": "cable_type:ltx",
     "cores": 10,
     "coreSection": 0.2,
     "outerDiameter": 10,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_160",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 6х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 12,
-    "coreSection": 0.2,
-    "outerDiameter": 10.9,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_161",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 7х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 14,
-    "coreSection": 0.2,
-    "outerDiameter": 10.9,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_162",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 8х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 16,
-    "coreSection": 0.2,
-    "outerDiameter": 11.7,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_163",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 9х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 18,
-    "coreSection": 0.2,
-    "outerDiameter": 12.9,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_164",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 10х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 20,
-    "coreSection": 0.2,
-    "outerDiameter": 14.5,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_165",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 12х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 24,
-    "coreSection": 0.2,
-    "outerDiameter": 14.9,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_166",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 16х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 32,
-    "coreSection": 0.2,
-    "outerDiameter": 16.5,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_167",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 20х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 40,
-    "coreSection": 0.2,
-    "outerDiameter": 18.2,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_168",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 24х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 48,
-    "coreSection": 0.2,
-    "outerDiameter": 20.2,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_169",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 28х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 56,
-    "coreSection": 0.2,
-    "outerDiameter": 21.4,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_170",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 32х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 64,
-    "coreSection": 0.2,
-    "outerDiameter": 22.2,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_171",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 36х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 72,
-    "coreSection": 0.2,
-    "outerDiameter": 23,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_172",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 40х2х0,2",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 80,
-    "coreSection": 0.2,
-    "outerDiameter": 23.9,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_173",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 1х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 2,
-    "coreSection": 0.35,
-    "outerDiameter": 6,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_174",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 2х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 4,
-    "coreSection": 0.35,
-    "outerDiameter": 9.7,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_175",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 3х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 6,
-    "coreSection": 0.35,
-    "outerDiameter": 10.3,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_176",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 4х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 8,
-    "coreSection": 0.35,
-    "outerDiameter": 10.7,
     "TU": "ТУ 16.К99-049-2012"
   },
   {
@@ -1593,159 +891,6 @@
     "TU": "ТУ 16.К99-049-2012"
   },
   {
-    "id": "cable_ltx_178",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 6х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 12,
-    "coreSection": 0.35,
-    "outerDiameter": 12.8,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_179",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 7х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 14,
-    "coreSection": 0.35,
-    "outerDiameter": 12.8,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_180",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 8х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 16,
-    "coreSection": 0.35,
-    "outerDiameter": 14.6,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_181",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 9х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 18,
-    "coreSection": 0.35,
-    "outerDiameter": 16,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_182",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 10х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 20,
-    "coreSection": 0.35,
-    "outerDiameter": 17.1,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_183",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 12х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 24,
-    "coreSection": 0.35,
-    "outerDiameter": 17.6,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_184",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 16х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 32,
-    "coreSection": 0.35,
-    "outerDiameter": 19.5,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_185",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 20х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 40,
-    "coreSection": 0.35,
-    "outerDiameter": 21.6,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_186",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 24х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 48,
-    "coreSection": 0.35,
-    "outerDiameter": 25.2,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_187",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 28х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 56,
-    "coreSection": 0.35,
-    "outerDiameter": 26.7,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_188",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 32х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 64,
-    "coreSection": 0.35,
-    "outerDiameter": 27.7,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_189",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 36х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 72,
-    "coreSection": 0.35,
-    "outerDiameter": 28.7,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_190",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 40х2х0,35",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 80,
-    "coreSection": 0.35,
-    "outerDiameter": 29.8,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_191",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 1х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 2,
-    "coreSection": 0.5,
-    "outerDiameter": 6.4,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_192",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 2х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 4,
-    "coreSection": 0.5,
-    "outerDiameter": 10.4,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_193",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 3х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 6,
-    "coreSection": 0.5,
-    "outerDiameter": 11,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_194",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 4х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 8,
-    "coreSection": 0.5,
-    "outerDiameter": 11.5,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
     "id": "cable_ltx_195",
     "name": "ЛОУТОКС 21нг(А)-FRLSLTx 5х2х0,5",
     "cableTypeId": "cable_type:ltx",
@@ -1755,317 +900,11 @@
     "TU": "ТУ 16.К99-049-2012"
   },
   {
-    "id": "cable_ltx_196",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 6х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 12,
-    "coreSection": 0.5,
-    "outerDiameter": 14.6,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_197",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 7х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 14,
-    "coreSection": 0.5,
-    "outerDiameter": 14.6,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_198",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 8х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 16,
-    "coreSection": 0.5,
-    "outerDiameter": 15.7,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_199",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 9х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 18,
-    "coreSection": 0.5,
-    "outerDiameter": 17.2,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_200",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 10х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 20,
-    "coreSection": 0.5,
-    "outerDiameter": 18.4,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_201",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 12х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 24,
-    "coreSection": 0.5,
-    "outerDiameter": 18.9,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_202",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 16х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 32,
-    "coreSection": 0.5,
-    "outerDiameter": 21,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_203",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 20х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 40,
-    "coreSection": 0.5,
-    "outerDiameter": 23.3,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_204",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 24х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 48,
-    "coreSection": 0.5,
-    "outerDiameter": 27.2,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_205",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 28х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 56,
-    "coreSection": 0.5,
-    "outerDiameter": 28.7,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_206",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 32х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 64,
-    "coreSection": 0.5,
-    "outerDiameter": 29.8,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_207",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 36х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 72,
-    "coreSection": 0.5,
-    "outerDiameter": 31,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_208",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 40х2х0,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 80,
-    "coreSection": 0.5,
-    "outerDiameter": 32.1,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_209",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 1х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 2,
-    "coreSection": 0.75,
-    "outerDiameter": 6.7,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_210",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 2х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 4,
-    "coreSection": 0.75,
-    "outerDiameter": 11.1,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_211",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 3х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 6,
-    "coreSection": 0.75,
-    "outerDiameter": 11.7,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_212",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 4х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 8,
-    "coreSection": 0.75,
-    "outerDiameter": 12.4,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
     "id": "cable_ltx_213",
     "name": "ЛОУТОКС 21нг(А)-FRLSLTx 5х2х0,75",
     "cableTypeId": "cable_type:ltx",
     "cores": 10,
     "coreSection": 0.75,
-    "outerDiameter": 14.4,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_214",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 6х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 12,
-    "coreSection": 0.75,
-    "outerDiameter": 15.6,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_215",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 7х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 14,
-    "coreSection": 0.75,
-    "outerDiameter": 15.6,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_216",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 8х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 16,
-    "coreSection": 0.75,
-    "outerDiameter": 16.9,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_217",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 9х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 18,
-    "coreSection": 0.75,
-    "outerDiameter": 18.5,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_218",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 10х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 20,
-    "coreSection": 0.75,
-    "outerDiameter": 19.8,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_219",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 12х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 24,
-    "coreSection": 0.75,
-    "outerDiameter": 20.4,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_220",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 16х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 32,
-    "coreSection": 0.75,
-    "outerDiameter": 22.7,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_221",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 20х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 40,
-    "coreSection": 0.75,
-    "outerDiameter": 26.4,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_222",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 24х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 48,
-    "coreSection": 0.75,
-    "outerDiameter": 29.3,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_223",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 28х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 56,
-    "coreSection": 0.75,
-    "outerDiameter": 31,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_224",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 32х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 64,
-    "coreSection": 0.75,
-    "outerDiameter": 32.2,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_225",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 36х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 72,
-    "coreSection": 0.75,
-    "outerDiameter": 33.5,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_226",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 40х2х0,75",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 80,
-    "coreSection": 0.75,
-    "outerDiameter": 34.7,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_227",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 1х2х1,0",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 2,
-    "coreSection": 1,
-    "outerDiameter": 7.2,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_228",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 2х2х1,0",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 4,
-    "coreSection": 1,
-    "outerDiameter": 12.1,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_229",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 3х2х1,0",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 6,
-    "coreSection": 1,
-    "outerDiameter": 12.8,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_230",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 4х2х1,0",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 8,
-    "coreSection": 1,
     "outerDiameter": 14.4,
     "TU": "ТУ 16.К99-049-2012"
   },
@@ -2079,164 +918,128 @@
     "TU": "ТУ 16.К99-049-2012"
   },
   {
-    "id": "cable_ltx_232",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 6х2х1,0",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 12,
-    "coreSection": 1,
-    "outerDiameter": 17.1,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_233",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 7х2х1,0",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 14,
-    "coreSection": 1,
-    "outerDiameter": 17.1,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_234",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 8х2х1,0",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 16,
-    "coreSection": 1,
-    "outerDiameter": 18.5,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_235",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 9х2х1,0",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 18,
-    "coreSection": 1,
-    "outerDiameter": 20.4,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_236",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 10х2х1,0",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 20,
-    "coreSection": 1,
-    "outerDiameter": 21.8,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_237",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 12х2х1,0",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 24,
-    "coreSection": 1,
-    "outerDiameter": 22.5,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_238",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 16х2х1,0",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 32,
-    "coreSection": 1,
-    "outerDiameter": 26.3,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_239",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 20х2х1,0",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 40,
-    "coreSection": 1,
-    "outerDiameter": 29,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_240",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 24х2х1,0",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 48,
-    "coreSection": 1,
-    "outerDiameter": 32.3,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_241",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 28х2х1,0",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 56,
-    "coreSection": 1,
-    "outerDiameter": 34.2,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_242",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 32х2х1,0",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 64,
-    "coreSection": 1,
-    "outerDiameter": 35.6,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_243",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 36х2х1,0",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 72,
-    "coreSection": 1,
-    "outerDiameter": 37,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_244",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 40х2х1,0",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 80,
-    "coreSection": 1,
-    "outerDiameter": 38.4,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_245",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 1х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 2,
-    "coreSection": 1.5,
-    "outerDiameter": 7.7,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_246",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 2х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 4,
-    "coreSection": 1.5,
-    "outerDiameter": 13.1,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_247",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 3х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 6,
-    "coreSection": 1.5,
-    "outerDiameter": 14.7,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_248",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 4х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 8,
-    "coreSection": 1.5,
-    "outerDiameter": 15.6,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
     "id": "cable_ltx_249",
     "name": "ЛОУТОКС 21нг(А)-FRLSLTx 5х2х1,5",
     "cableTypeId": "cable_type:ltx",
     "cores": 10,
     "coreSection": 1.5,
+    "outerDiameter": 17.1,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_267",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 5х2х2,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 10,
+    "coreSection": 2.5,
+    "outerDiameter": 19.8,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_34",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 6х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 12,
+    "coreSection": 0.2,
+    "outerDiameter": 10.7,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_52",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 6х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 12,
+    "coreSection": 0.35,
+    "outerDiameter": 12.6,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_70",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 6х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 12,
+    "coreSection": 0.5,
+    "outerDiameter": 14.4,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_88",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 6х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 12,
+    "coreSection": 0.75,
+    "outerDiameter": 15.5,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_106",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 6х2х1,0",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 12,
+    "coreSection": 1,
+    "outerDiameter": 17,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_124",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 6х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 12,
+    "coreSection": 1.5,
+    "outerDiameter": 18.5,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_142",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 6х2х2,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 12,
+    "coreSection": 2.5,
+    "outerDiameter": 21.5,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_160",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 6х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 12,
+    "coreSection": 0.2,
+    "outerDiameter": 10.9,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_178",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 6х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 12,
+    "coreSection": 0.35,
+    "outerDiameter": 12.8,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_196",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 6х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 12,
+    "coreSection": 0.5,
+    "outerDiameter": 14.6,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_214",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 6х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 12,
+    "coreSection": 0.75,
+    "outerDiameter": 15.6,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_232",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 6х2х1,0",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 12,
+    "coreSection": 1,
     "outerDiameter": 17.1,
     "TU": "ТУ 16.К99-049-2012"
   },
@@ -2250,165 +1053,129 @@
     "TU": "ТУ 16.К99-049-2012"
   },
   {
-    "id": "cable_ltx_251",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 7х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 14,
-    "coreSection": 1.5,
-    "outerDiameter": 18.6,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_252",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 8х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 16,
-    "coreSection": 1.5,
-    "outerDiameter": 20.2,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_253",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 9х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 18,
-    "coreSection": 1.5,
-    "outerDiameter": 22.2,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_254",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 10х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 20,
-    "coreSection": 1.5,
-    "outerDiameter": 23.8,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_255",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 12х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 24,
-    "coreSection": 1.5,
-    "outerDiameter": 25.8,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_256",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 16х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 32,
-    "coreSection": 1.5,
-    "outerDiameter": 28.6,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_257",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 20х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 40,
-    "coreSection": 1.5,
-    "outerDiameter": 31.7,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_258",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 24х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 48,
-    "coreSection": 1.5,
-    "outerDiameter": 35.3,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_259",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 28х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 56,
-    "coreSection": 1.5,
-    "outerDiameter": 37.4,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_260",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 32х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 64,
-    "coreSection": 1.5,
-    "outerDiameter": 38.9,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_261",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 36х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 72,
-    "coreSection": 1.5,
-    "outerDiameter": 41.5,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_262",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 40х2х1,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 80,
-    "coreSection": 1.5,
-    "outerDiameter": 43,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_263",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 1х2х2,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 2,
-    "coreSection": 2.5,
-    "outerDiameter": 8.7,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_264",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 2х2х2,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 4,
-    "coreSection": 2.5,
-    "outerDiameter": 15.9,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_265",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 3х2х2,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 6,
-    "coreSection": 2.5,
-    "outerDiameter": 16.8,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_266",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 4х2х2,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 8,
-    "coreSection": 2.5,
-    "outerDiameter": 18,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_267",
-    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 5х2х2,5",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 10,
-    "coreSection": 2.5,
-    "outerDiameter": 19.8,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
     "id": "cable_ltx_268",
     "name": "ЛОУТОКС 21нг(А)-FRLSLTx 6х2х2,5",
     "cableTypeId": "cable_type:ltx",
     "cores": 12,
     "coreSection": 2.5,
     "outerDiameter": 21.6,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_35",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 7х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 14,
+    "coreSection": 0.2,
+    "outerDiameter": 10.7,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_53",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 7х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 14,
+    "coreSection": 0.35,
+    "outerDiameter": 12.6,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_71",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 7х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 14,
+    "coreSection": 0.5,
+    "outerDiameter": 14.4,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_89",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 7х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 14,
+    "coreSection": 0.75,
+    "outerDiameter": 15.5,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_107",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 7х2х1,0",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 14,
+    "coreSection": 1,
+    "outerDiameter": 17,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_125",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 7х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 14,
+    "coreSection": 1.5,
+    "outerDiameter": 18.5,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_143",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 7х2х2,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 14,
+    "coreSection": 2.5,
+    "outerDiameter": 21.5,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_161",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 7х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 14,
+    "coreSection": 0.2,
+    "outerDiameter": 10.9,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_179",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 7х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 14,
+    "coreSection": 0.35,
+    "outerDiameter": 12.8,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_197",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 7х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 14,
+    "coreSection": 0.5,
+    "outerDiameter": 14.6,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_215",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 7х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 14,
+    "coreSection": 0.75,
+    "outerDiameter": 15.6,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_233",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 7х2х1,0",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 14,
+    "coreSection": 1,
+    "outerDiameter": 17.1,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_251",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 7х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 14,
+    "coreSection": 1.5,
+    "outerDiameter": 18.6,
     "TU": "ТУ 16.К99-049-2012"
   },
   {
@@ -2421,12 +1188,246 @@
     "TU": "ТУ 16.К99-049-2012"
   },
   {
+    "id": "cable_ltx_36",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 8х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 16,
+    "coreSection": 0.2,
+    "outerDiameter": 11.6,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_54",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 8х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 16,
+    "coreSection": 0.35,
+    "outerDiameter": 14.3,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_72",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 8х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 16,
+    "coreSection": 0.5,
+    "outerDiameter": 15.5,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_90",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 8х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 16,
+    "coreSection": 0.75,
+    "outerDiameter": 16.7,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_108",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 8х2х1,0",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 16,
+    "coreSection": 1,
+    "outerDiameter": 18.4,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_126",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 8х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 16,
+    "coreSection": 1.5,
+    "outerDiameter": 20,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_144",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 8х2х2,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 16,
+    "coreSection": 2.5,
+    "outerDiameter": 23.3,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_162",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 8х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 16,
+    "coreSection": 0.2,
+    "outerDiameter": 11.7,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_180",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 8х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 16,
+    "coreSection": 0.35,
+    "outerDiameter": 14.6,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_198",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 8х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 16,
+    "coreSection": 0.5,
+    "outerDiameter": 15.7,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_216",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 8х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 16,
+    "coreSection": 0.75,
+    "outerDiameter": 16.9,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_234",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 8х2х1,0",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 16,
+    "coreSection": 1,
+    "outerDiameter": 18.5,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_252",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 8х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 16,
+    "coreSection": 1.5,
+    "outerDiameter": 20.2,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
     "id": "cable_ltx_270",
     "name": "ЛОУТОКС 21нг(А)-FRLSLTx 8х2х2,5",
     "cableTypeId": "cable_type:ltx",
     "cores": 16,
     "coreSection": 2.5,
     "outerDiameter": 23.5,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_37",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 9х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 18,
+    "coreSection": 0.2,
+    "outerDiameter": 12.7,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_55",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 9х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 18,
+    "coreSection": 0.35,
+    "outerDiameter": 15.9,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_73",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 9х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 18,
+    "coreSection": 0.5,
+    "outerDiameter": 17.1,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_91",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 9х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 18,
+    "coreSection": 0.75,
+    "outerDiameter": 18.4,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_109",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 9х2х1,0",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 18,
+    "coreSection": 1,
+    "outerDiameter": 20.2,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_127",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 9х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 18,
+    "coreSection": 1.5,
+    "outerDiameter": 22.1,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_145",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 9х2х2,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 18,
+    "coreSection": 2.5,
+    "outerDiameter": 27,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_163",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 9х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 18,
+    "coreSection": 0.2,
+    "outerDiameter": 12.9,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_181",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 9х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 18,
+    "coreSection": 0.35,
+    "outerDiameter": 16,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_199",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 9х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 18,
+    "coreSection": 0.5,
+    "outerDiameter": 17.2,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_217",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 9х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 18,
+    "coreSection": 0.75,
+    "outerDiameter": 18.5,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_235",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 9х2х1,0",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 18,
+    "coreSection": 1,
+    "outerDiameter": 20.4,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_253",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 9х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 18,
+    "coreSection": 1.5,
+    "outerDiameter": 22.2,
     "TU": "ТУ 16.К99-049-2012"
   },
   {
@@ -2439,12 +1440,246 @@
     "TU": "ТУ 16.К99-049-2012"
   },
   {
+    "id": "cable_ltx_38",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 10х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 20,
+    "coreSection": 0.2,
+    "outerDiameter": 14.4,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_56",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 10х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 20,
+    "coreSection": 0.35,
+    "outerDiameter": 16.9,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_74",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 10х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 20,
+    "coreSection": 0.5,
+    "outerDiameter": 18.2,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_92",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 10х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 20,
+    "coreSection": 0.75,
+    "outerDiameter": 19.6,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_110",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 10х2х1,0",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 20,
+    "coreSection": 1,
+    "outerDiameter": 21.6,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_128",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 10х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 20,
+    "coreSection": 1.5,
+    "outerDiameter": 23.6,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_146",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 10х2х2,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 20,
+    "coreSection": 2.5,
+    "outerDiameter": 28.8,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_164",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 10х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 20,
+    "coreSection": 0.2,
+    "outerDiameter": 14.5,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_182",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 10х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 20,
+    "coreSection": 0.35,
+    "outerDiameter": 17.1,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_200",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 10х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 20,
+    "coreSection": 0.5,
+    "outerDiameter": 18.4,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_218",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 10х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 20,
+    "coreSection": 0.75,
+    "outerDiameter": 19.8,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_236",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 10х2х1,0",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 20,
+    "coreSection": 1,
+    "outerDiameter": 21.8,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_254",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 10х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 20,
+    "coreSection": 1.5,
+    "outerDiameter": 23.8,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
     "id": "cable_ltx_272",
     "name": "ЛОУТОКС 21нг(А)-FRLSLTx 10х2х2,5",
     "cableTypeId": "cable_type:ltx",
     "cores": 20,
     "coreSection": 2.5,
     "outerDiameter": 29,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_39",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 12х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 24,
+    "coreSection": 0.2,
+    "outerDiameter": 14.8,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_57",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 12х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 24,
+    "coreSection": 0.35,
+    "outerDiameter": 17.4,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_75",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 12х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 24,
+    "coreSection": 0.5,
+    "outerDiameter": 18.8,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_93",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 12х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 24,
+    "coreSection": 0.75,
+    "outerDiameter": 20.3,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_111",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 12х2х1,0",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 24,
+    "coreSection": 1,
+    "outerDiameter": 22.3,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_129",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 12х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 24,
+    "coreSection": 1.5,
+    "outerDiameter": 25.6,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_147",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 12х2х2,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 24,
+    "coreSection": 2.5,
+    "outerDiameter": 29.8,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_165",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 12х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 24,
+    "coreSection": 0.2,
+    "outerDiameter": 14.9,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_183",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 12х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 24,
+    "coreSection": 0.35,
+    "outerDiameter": 17.6,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_201",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 12х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 24,
+    "coreSection": 0.5,
+    "outerDiameter": 18.9,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_219",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 12х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 24,
+    "coreSection": 0.75,
+    "outerDiameter": 20.4,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_237",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 12х2х1,0",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 24,
+    "coreSection": 1,
+    "outerDiameter": 22.5,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_255",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 12х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 24,
+    "coreSection": 1.5,
+    "outerDiameter": 25.8,
     "TU": "ТУ 16.К99-049-2012"
   },
   {
@@ -2457,12 +1692,246 @@
     "TU": "ТУ 16.К99-049-2012"
   },
   {
+    "id": "cable_ltx_40",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 16х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 32,
+    "coreSection": 0.2,
+    "outerDiameter": 16.3,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_58",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 16х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 32,
+    "coreSection": 0.35,
+    "outerDiameter": 19.4,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_76",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 16х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 32,
+    "coreSection": 0.5,
+    "outerDiameter": 20.9,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_94",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 16х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 32,
+    "coreSection": 0.75,
+    "outerDiameter": 22.6,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_112",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 16х2х1,0",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 32,
+    "coreSection": 1,
+    "outerDiameter": 26.1,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_130",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 16х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 32,
+    "coreSection": 1.5,
+    "outerDiameter": 28.5,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_148",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 16х2х2,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 32,
+    "coreSection": 2.5,
+    "outerDiameter": 33.2,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_166",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 16х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 32,
+    "coreSection": 0.2,
+    "outerDiameter": 16.5,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_184",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 16х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 32,
+    "coreSection": 0.35,
+    "outerDiameter": 19.5,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_202",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 16х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 32,
+    "coreSection": 0.5,
+    "outerDiameter": 21,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_220",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 16х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 32,
+    "coreSection": 0.75,
+    "outerDiameter": 22.7,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_238",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 16х2х1,0",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 32,
+    "coreSection": 1,
+    "outerDiameter": 26.3,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_256",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 16х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 32,
+    "coreSection": 1.5,
+    "outerDiameter": 28.6,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
     "id": "cable_ltx_274",
     "name": "ЛОУТОКС 21нг(А)-FRLSLTx 16х2х2,5",
     "cableTypeId": "cable_type:ltx",
     "cores": 32,
     "coreSection": 2.5,
     "outerDiameter": 33.3,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_41",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 20х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 40,
+    "coreSection": 0.2,
+    "outerDiameter": 18.1,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_59",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 20х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 40,
+    "coreSection": 0.35,
+    "outerDiameter": 21.4,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_77",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 20х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 40,
+    "coreSection": 0.5,
+    "outerDiameter": 23.1,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_95",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 20х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 40,
+    "coreSection": 0.75,
+    "outerDiameter": 26.2,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_113",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 20х2х1,0",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 40,
+    "coreSection": 1,
+    "outerDiameter": 28.9,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_131",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 20х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 40,
+    "coreSection": 1.5,
+    "outerDiameter": 31.5,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_149",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 20х2х2,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 40,
+    "coreSection": 2.5,
+    "outerDiameter": 36.8,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_167",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 20х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 40,
+    "coreSection": 0.2,
+    "outerDiameter": 18.2,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_185",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 20х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 40,
+    "coreSection": 0.35,
+    "outerDiameter": 21.6,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_203",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 20х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 40,
+    "coreSection": 0.5,
+    "outerDiameter": 23.3,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_221",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 20х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 40,
+    "coreSection": 0.75,
+    "outerDiameter": 26.4,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_239",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 20х2х1,0",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 40,
+    "coreSection": 1,
+    "outerDiameter": 29,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_257",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 20х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 40,
+    "coreSection": 1.5,
+    "outerDiameter": 31.7,
     "TU": "ТУ 16.К99-049-2012"
   },
   {
@@ -2475,12 +1944,246 @@
     "TU": "ТУ 16.К99-049-2012"
   },
   {
+    "id": "cable_ltx_42",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 24х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 48,
+    "coreSection": 0.2,
+    "outerDiameter": 20,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_60",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 24х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 48,
+    "coreSection": 0.35,
+    "outerDiameter": 23.9,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_78",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 24х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 48,
+    "coreSection": 0.5,
+    "outerDiameter": 27,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_96",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 24х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 48,
+    "coreSection": 0.75,
+    "outerDiameter": 29.2,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_114",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 24х2х1,0",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 48,
+    "coreSection": 1,
+    "outerDiameter": 32.2,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_132",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 24х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 48,
+    "coreSection": 1.5,
+    "outerDiameter": 35.2,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_150",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 24х2х2,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 48,
+    "coreSection": 2.5,
+    "outerDiameter": 42.2,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_168",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 24х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 48,
+    "coreSection": 0.2,
+    "outerDiameter": 20.2,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_186",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 24х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 48,
+    "coreSection": 0.35,
+    "outerDiameter": 25.2,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_204",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 24х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 48,
+    "coreSection": 0.5,
+    "outerDiameter": 27.2,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_222",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 24х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 48,
+    "coreSection": 0.75,
+    "outerDiameter": 29.3,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_240",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 24х2х1,0",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 48,
+    "coreSection": 1,
+    "outerDiameter": 32.3,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_258",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 24х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 48,
+    "coreSection": 1.5,
+    "outerDiameter": 35.3,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
     "id": "cable_ltx_276",
     "name": "ЛОУТОКС 21нг(А)-FRLSLTx 24х2х2,5",
     "cableTypeId": "cable_type:ltx",
     "cores": 48,
     "coreSection": 2.5,
     "outerDiameter": 42.3,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_43",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 28х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 56,
+    "coreSection": 0.2,
+    "outerDiameter": 21.2,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_61",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 28х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 56,
+    "coreSection": 0.35,
+    "outerDiameter": 26.5,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_79",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 28х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 56,
+    "coreSection": 0.5,
+    "outerDiameter": 28.6,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_97",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 28х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 56,
+    "coreSection": 0.75,
+    "outerDiameter": 30.9,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_115",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 28х2х1,0",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 56,
+    "coreSection": 1,
+    "outerDiameter": 34.1,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_133",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 28х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 56,
+    "coreSection": 1.5,
+    "outerDiameter": 37.3,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_151",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 28х2х2,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 56,
+    "coreSection": 2.5,
+    "outerDiameter": 44.7,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_169",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 28х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 56,
+    "coreSection": 0.2,
+    "outerDiameter": 21.4,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_187",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 28х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 56,
+    "coreSection": 0.35,
+    "outerDiameter": 26.7,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_205",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 28х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 56,
+    "coreSection": 0.5,
+    "outerDiameter": 28.7,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_223",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 28х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 56,
+    "coreSection": 0.75,
+    "outerDiameter": 31,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_241",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 28х2х1,0",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 56,
+    "coreSection": 1,
+    "outerDiameter": 34.2,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_259",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 28х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 56,
+    "coreSection": 1.5,
+    "outerDiameter": 37.4,
     "TU": "ТУ 16.К99-049-2012"
   },
   {
@@ -2493,12 +2196,246 @@
     "TU": "ТУ 16.К99-049-2012"
   },
   {
+    "id": "cable_ltx_44",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 32х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 64,
+    "coreSection": 0.2,
+    "outerDiameter": 22,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_62",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 32х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 64,
+    "coreSection": 0.35,
+    "outerDiameter": 27.5,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_80",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 32х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 64,
+    "coreSection": 0.5,
+    "outerDiameter": 29.7,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_98",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 32х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 64,
+    "coreSection": 0.75,
+    "outerDiameter": 32.1,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_116",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 32х2х1,0",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 64,
+    "coreSection": 1,
+    "outerDiameter": 35.4,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_134",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 32х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 64,
+    "coreSection": 1.5,
+    "outerDiameter": 38.8,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_152",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 32х2х2,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 64,
+    "coreSection": 2.5,
+    "outerDiameter": 46.5,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_170",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 32х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 64,
+    "coreSection": 0.2,
+    "outerDiameter": 22.2,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_188",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 32х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 64,
+    "coreSection": 0.35,
+    "outerDiameter": 27.7,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_206",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 32х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 64,
+    "coreSection": 0.5,
+    "outerDiameter": 29.8,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_224",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 32х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 64,
+    "coreSection": 0.75,
+    "outerDiameter": 32.2,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_242",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 32х2х1,0",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 64,
+    "coreSection": 1,
+    "outerDiameter": 35.6,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_260",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 32х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 64,
+    "coreSection": 1.5,
+    "outerDiameter": 38.9,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
     "id": "cable_ltx_278",
     "name": "ЛОУТОКС 21нг(А)-FRLSLTx 32х2х2,5",
     "cableTypeId": "cable_type:ltx",
     "cores": 64,
     "coreSection": 2.5,
     "outerDiameter": 46.6,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_45",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 36х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 72,
+    "coreSection": 0.2,
+    "outerDiameter": 22.9,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_63",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 36х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 72,
+    "coreSection": 0.35,
+    "outerDiameter": 28.6,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_81",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 36х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 72,
+    "coreSection": 0.5,
+    "outerDiameter": 30.8,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_99",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 36х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 72,
+    "coreSection": 0.75,
+    "outerDiameter": 33.3,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_117",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 36х2х1,0",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 72,
+    "coreSection": 1,
+    "outerDiameter": 36.8,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_135",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 36х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 72,
+    "coreSection": 1.5,
+    "outerDiameter": 41.3,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_153",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 36х2х2,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 72,
+    "coreSection": 2.5,
+    "outerDiameter": 48.3,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_171",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 36х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 72,
+    "coreSection": 0.2,
+    "outerDiameter": 23,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_189",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 36х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 72,
+    "coreSection": 0.35,
+    "outerDiameter": 28.7,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_207",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 36х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 72,
+    "coreSection": 0.5,
+    "outerDiameter": 31,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_225",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 36х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 72,
+    "coreSection": 0.75,
+    "outerDiameter": 33.5,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_243",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 36х2х1,0",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 72,
+    "coreSection": 1,
+    "outerDiameter": 37,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_261",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 36х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 72,
+    "coreSection": 1.5,
+    "outerDiameter": 41.5,
     "TU": "ТУ 16.К99-049-2012"
   },
   {
@@ -2511,66 +2448,129 @@
     "TU": "ТУ 16.К99-049-2012"
   },
   {
+    "id": "cable_ltx_46",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 40х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 80,
+    "coreSection": 0.2,
+    "outerDiameter": 23.7,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_64",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 40х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 80,
+    "coreSection": 0.35,
+    "outerDiameter": 29.6,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_82",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 40х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 80,
+    "coreSection": 0.5,
+    "outerDiameter": 31.9,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_100",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 40х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 80,
+    "coreSection": 0.75,
+    "outerDiameter": 34.6,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_118",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 40х2х1,0",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 80,
+    "coreSection": 1,
+    "outerDiameter": 38.2,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_136",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 40х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 80,
+    "coreSection": 1.5,
+    "outerDiameter": 42.9,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_154",
+    "name": "ЛОУТОКС 20нг(А)-FRLSLTx 40х2х2,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 80,
+    "coreSection": 2.5,
+    "outerDiameter": 50.2,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_172",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 40х2х0,2",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 80,
+    "coreSection": 0.2,
+    "outerDiameter": 23.9,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_190",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 40х2х0,35",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 80,
+    "coreSection": 0.35,
+    "outerDiameter": 29.8,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_208",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 40х2х0,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 80,
+    "coreSection": 0.5,
+    "outerDiameter": 32.1,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_226",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 40х2х0,75",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 80,
+    "coreSection": 0.75,
+    "outerDiameter": 34.7,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_244",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 40х2х1,0",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 80,
+    "coreSection": 1,
+    "outerDiameter": 38.4,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
+    "id": "cable_ltx_262",
+    "name": "ЛОУТОКС 21нг(А)-FRLSLTx 40х2х1,5",
+    "cableTypeId": "cable_type:ltx",
+    "cores": 80,
+    "coreSection": 1.5,
+    "outerDiameter": 43,
+    "TU": "ТУ 16.К99-049-2012"
+  },
+  {
     "id": "cable_ltx_280",
     "name": "ЛОУТОКС 21нг(А)-FRLSLTx 40х2х2,5",
     "cableTypeId": "cable_type:ltx",
     "cores": 80,
     "coreSection": 2.5,
     "outerDiameter": 50.3,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_30_281",
-    "name": "ЛОУТОКС 30нг(А)-FRLSLTx 1х2х0,52",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 1,
-    "coreDiameter": 0.52,
-    "outerDiameter": 4.7,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_30_282",
-    "name": "ЛОУТОКС 30нг(А)-FRLSLTx 2х2х0,52",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 4,
-    "coreDiameter": 0.52,
-    "outerDiameter": 6,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_30_283",
-    "name": "ЛОУТОКС 30нг(А)-FRLSLTx 3х2х0,52",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 6,
-    "coreDiameter": 0.52,
-    "outerDiameter": 7.5,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_31_284",
-    "name": "ЛОУТОКС 31нг(А)-FRLSLTx 1х2х0,52",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 1,
-    "coreDiameter": 0.52,
-    "outerDiameter": 5,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_31_285",
-    "name": "ЛОУТОКС 31нг(А)-FRLSLTx 2х2х0,52",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 4,
-    "coreDiameter": 0.52,
-    "outerDiameter": 6.3,
-    "TU": "ТУ 16.К99-049-2012"
-  },
-  {
-    "id": "cable_ltx_31_286",
-    "name": "ЛОУТОКС 31нг(А)-FRLSLTx 3х2х0,52",
-    "cableTypeId": "cable_type:ltx",
-    "cores": 6,
-    "coreDiameter": 0.52,
-    "outerDiameter": 7.8,
     "TU": "ТУ 16.К99-049-2012"
   }
 ]

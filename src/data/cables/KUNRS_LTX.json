@@ -9,282 +9,12 @@
     "TU": "ТУ 16.К99-050-2012"
   },
   {
-    "id": "cable_kunrs_v_ltx_2",
-    "name": "КУНРС Внг(A)-FRLSLTx 3х0,75",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 3,
-    "coreSection": 0.75,
-    "outerDiameter": 12.6,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_3",
-    "name": "КУНРС Внг(A)-FRLSLTx 4х0,75",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 4,
-    "coreSection": 0.75,
-    "outerDiameter": 13.4,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_4",
-    "name": "КУНРС Внг(A)-FRLSLTx 5х0,75",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 5,
-    "coreSection": 0.75,
-    "outerDiameter": 14.4,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_5",
-    "name": "КУНРС Внг(A)-FRLSLTx 6х0,75",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 6,
-    "coreSection": 0.75,
-    "outerDiameter": 15.3,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_6",
-    "name": "КУНРС Внг(A)-FRLSLTx 7х0,75",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 7,
-    "coreSection": 0.75,
-    "outerDiameter": 15.3,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_7",
-    "name": "КУНРС Внг(A)-FRLSLTx 8х0,75",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 8,
-    "coreSection": 0.75,
-    "outerDiameter": 16.3,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_8",
-    "name": "КУНРС Внг(A)-FRLSLTx 10х0,75",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 10,
-    "coreSection": 0.75,
-    "outerDiameter": 18.5,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_9",
-    "name": "КУНРС Внг(A)-FRLSLTx 12х0,75",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 12,
-    "coreSection": 0.75,
-    "outerDiameter": 19,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_10",
-    "name": "КУНРС Внг(A)-FRLSLTx 14х0,75",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 14,
-    "coreSection": 0.75,
-    "outerDiameter": 19.8,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_11",
-    "name": "КУНРС Внг(A)-FRLSLTx 19х0,75",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 19,
-    "coreSection": 0.75,
-    "outerDiameter": 22.2,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_12",
-    "name": "КУНРС Внг(A)-FRLSLTx 24х0,75",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 24,
-    "coreSection": 0.75,
-    "outerDiameter": 25.4,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_13",
-    "name": "КУНРС Внг(A)-FRLSLTx 27х0,75",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 27,
-    "coreSection": 0.75,
-    "outerDiameter": 25.8,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_14",
-    "name": "КУНРС Внг(A)-FRLSLTx 30х0,75",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 30,
-    "coreSection": 0.75,
-    "outerDiameter": 27.1,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_15",
-    "name": "КУНРС Внг(A)-FRLSLTx 37х0,75",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 37,
-    "coreSection": 0.75,
-    "outerDiameter": 29,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_16",
-    "name": "КУНРС Внг(A)-FRLSLTx 40х0,75",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 40,
-    "coreSection": 0.75,
-    "outerDiameter": 30,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
     "id": "cable_kunrs_v_ltx_17",
     "name": "КУНРС Внг(A)-FRLSLTx 2х1,0",
     "cableTypeId": "cable_type:power450_750_ltx",
     "cores": 2,
-    "coreSection": "1,0",
+    "coreSection": null,
     "outerDiameter": 12.5,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_18",
-    "name": "КУНРС Внг(A)-FRLSLTx 3х1,0",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 3,
-    "coreSection": "1,0",
-    "outerDiameter": 13,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_19",
-    "name": "КУНРС Внг(A)-FRLSLTx 4х1,0",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 4,
-    "coreSection": "1,0",
-    "outerDiameter": 13.9,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_20",
-    "name": "КУНРС Внг(A)-FRLSLTx 5х1,0",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 5,
-    "coreSection": "1,0",
-    "outerDiameter": 14.9,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_21",
-    "name": "КУНРС Внг(A)-FRLSLTx 6х1,0",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 6,
-    "coreSection": "1,0",
-    "outerDiameter": 15.9,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_22",
-    "name": "КУНРС Внг(A)-FRLSLTx 7х1,0",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 7,
-    "coreSection": "1,0",
-    "outerDiameter": 15.9,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_23",
-    "name": "КУНРС Внг(A)-FRLSLTx 8х1,0",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 8,
-    "coreSection": "1,0",
-    "outerDiameter": 16.9,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_24",
-    "name": "КУНРС Внг(A)-FRLSLTx 10х1,0",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 10,
-    "coreSection": "1,0",
-    "outerDiameter": 19.3,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_25",
-    "name": "КУНРС Внг(A)-FRLSLTx 12х1,0",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 12,
-    "coreSection": "1,0",
-    "outerDiameter": 19.8,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_26",
-    "name": "КУНРС Внг(A)-FRLSLTx 14х1,0",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 14,
-    "coreSection": "1,0",
-    "outerDiameter": 21.1,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_27",
-    "name": "КУНРС Внг(A)-FRLSLTx 19х1,0",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 19,
-    "coreSection": "1,0",
-    "outerDiameter": 23.2,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_28",
-    "name": "КУНРС Внг(A)-FRLSLTx 24х1,0",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 24,
-    "coreSection": "1,0",
-    "outerDiameter": 27,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_29",
-    "name": "КУНРС Внг(A)-FRLSLTx 27х1,0",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 27,
-    "coreSection": "1,0",
-    "outerDiameter": 27.5,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_30",
-    "name": "КУНРС Внг(A)-FRLSLTx 30х1,0",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 30,
-    "coreSection": "1,0",
-    "outerDiameter": 28.4,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_31",
-    "name": "КУНРС Внг(A)-FRLSLTx 37х1,0",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 37,
-    "coreSection": "1,0",
-    "outerDiameter": 30.4,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_32",
-    "name": "КУНРС Внг(A)-FRLSLTx 40х1,0",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 40,
-    "coreSection": "1,0",
-    "outerDiameter": 31.4,
     "TU": "ТУ 16.К99-050-2012"
   },
   {
@@ -297,141 +27,6 @@
     "TU": "ТУ 16.К99-050-2012"
   },
   {
-    "id": "cable_kunrs_v_ltx_34",
-    "name": "КУНРС Внг(A)-FRLSLTx 3х1,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 3,
-    "coreSection": 1.5,
-    "outerDiameter": 13.7,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_35",
-    "name": "КУНРС Внг(A)-FRLSLTx 4х1,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 4,
-    "coreSection": 1.5,
-    "outerDiameter": 14.7,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_36",
-    "name": "КУНРС Внг(A)-FRLSLTx 5х1,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 5,
-    "coreSection": 1.5,
-    "outerDiameter": 15.8,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_37",
-    "name": "КУНРС Внг(A)-FRLSLTx 6х1,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 6,
-    "coreSection": 1.5,
-    "outerDiameter": 16.9,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_38",
-    "name": "КУНРС Внг(A)-FRLSLTx 7х1,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 7,
-    "coreSection": 1.5,
-    "outerDiameter": 16.9,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_39",
-    "name": "КУНРС Внг(A)-FRLSLTx 8х1,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 8,
-    "coreSection": 1.5,
-    "outerDiameter": 18,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_40",
-    "name": "КУНРС Внг(A)-FRLSLTx 10х1,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 10,
-    "coreSection": 1.5,
-    "outerDiameter": 21.1,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_41",
-    "name": "КУНРС Внг(A)-FRLSLTx 12х1,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 12,
-    "coreSection": 1.5,
-    "outerDiameter": 21.6,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_42",
-    "name": "КУНРС Внг(A)-FRLSLTx 14х1,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 14,
-    "coreSection": 1.5,
-    "outerDiameter": 22.6,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_43",
-    "name": "КУНРС Внг(A)-FRLSLTx 19х1,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 19,
-    "coreSection": 1.5,
-    "outerDiameter": 24.8,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_44",
-    "name": "КУНРС Внг(A)-FRLSLTx 24х1,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 24,
-    "coreSection": 1.5,
-    "outerDiameter": 29,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_45",
-    "name": "КУНРС Внг(A)-FRLSLTx 27х1,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 27,
-    "coreSection": 1.5,
-    "outerDiameter": 29.5,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_46",
-    "name": "КУНРС Внг(A)-FRLSLTx 30х1,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 30,
-    "coreSection": 1.5,
-    "outerDiameter": 30.5,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_47",
-    "name": "КУНРС Внг(A)-FRLSLTx 37х1,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 37,
-    "coreSection": 1.5,
-    "outerDiameter": 32.7,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_48",
-    "name": "КУНРС Внг(A)-FRLSLTx 40х1,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 40,
-    "coreSection": 1.5,
-    "outerDiameter": 33.8,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
     "id": "cable_kunrs_v_ltx_49",
     "name": "КУНРС Внг(A)-FRLSLTx 2х2,5",
     "cableTypeId": "cable_type:power450_750_ltx",
@@ -441,11 +36,281 @@
     "TU": "ТУ 16.К99-050-2012"
   },
   {
+    "id": "cable_kunrs_v_ltx_65",
+    "name": "КУНРС Внг(A)-FRLSLTx 2х4",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 2,
+    "coreSection": 4,
+    "outerDiameter": 15.7,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_81",
+    "name": "КУНРС Внг(A)-FRLSLTx 2х6",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 2,
+    "coreSection": 6,
+    "outerDiameter": 17.1,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_97",
+    "name": "КУНРС Внг(A)-FRLSLTx 2х10",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 2,
+    "coreSection": 10,
+    "outerDiameter": 19.5,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_113",
+    "name": "КУНРС Внг(A)-FRLSLTx 2х16",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 2,
+    "coreSection": 16,
+    "outerDiameter": 22.7,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_129",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 2х0,75",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 2,
+    "coreSection": 0.75,
+    "outerDiameter": 12.1,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_145",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 2х1,0",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 2,
+    "coreSection": null,
+    "outerDiameter": 12.5,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_161",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 2х1,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 2,
+    "coreSection": 1.5,
+    "outerDiameter": 13.2,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_177",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 2х2,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 2,
+    "coreSection": 2.5,
+    "outerDiameter": 14.1,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_193",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 2х4",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 2,
+    "coreSection": 4,
+    "outerDiameter": 15.7,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_209",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 2х6",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 2,
+    "coreSection": 6,
+    "outerDiameter": 17.1,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_225",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 2х10",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 2,
+    "coreSection": 10,
+    "outerDiameter": 19.5,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_241",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 2х16",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 2,
+    "coreSection": 16,
+    "outerDiameter": 22.7,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_2",
+    "name": "КУНРС Внг(A)-FRLSLTx 3х0,75",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 3,
+    "coreSection": 0.75,
+    "outerDiameter": 12.6,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_18",
+    "name": "КУНРС Внг(A)-FRLSLTx 3х1,0",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 3,
+    "coreSection": null,
+    "outerDiameter": 13,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_34",
+    "name": "КУНРС Внг(A)-FRLSLTx 3х1,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 3,
+    "coreSection": 1.5,
+    "outerDiameter": 13.7,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
     "id": "cable_kunrs_v_ltx_50",
     "name": "КУНРС Внг(A)-FRLSLTx 3х2,5",
     "cableTypeId": "cable_type:power450_750_ltx",
     "cores": 3,
     "coreSection": 2.5,
+    "outerDiameter": 14.7,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_66",
+    "name": "КУНРС Внг(A)-FRLSLTx 3х4",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 3,
+    "coreSection": 4,
+    "outerDiameter": 16.5,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_82",
+    "name": "КУНРС Внг(A)-FRLSLTx 3х6",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 3,
+    "coreSection": 6,
+    "outerDiameter": 17.9,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_98",
+    "name": "КУНРС Внг(A)-FRLSLTx 3х10",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 3,
+    "coreSection": 10,
+    "outerDiameter": 20.9,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_114",
+    "name": "КУНРС Внг(A)-FRLSLTx 3х16",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 3,
+    "coreSection": 16,
+    "outerDiameter": 24,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_130",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 3х0,75",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 3,
+    "coreSection": 0.75,
+    "outerDiameter": 12.6,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_146",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 3х1,0",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 3,
+    "coreSection": null,
+    "outerDiameter": 13,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_162",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 3х1,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 3,
+    "coreSection": 1.5,
+    "outerDiameter": 13.7,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_178",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 3х2,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 3,
+    "coreSection": 2.5,
+    "outerDiameter": 14.7,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_194",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 3х4",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 3,
+    "coreSection": 4,
+    "outerDiameter": 16.5,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_210",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 3х6",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 3,
+    "coreSection": 6,
+    "outerDiameter": 17.9,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_226",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 3х10",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 3,
+    "coreSection": 10,
+    "outerDiameter": 20.9,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_242",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 3х16",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 3,
+    "coreSection": 16,
+    "outerDiameter": 24,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_3",
+    "name": "КУНРС Внг(A)-FRLSLTx 4х0,75",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 4,
+    "coreSection": 0.75,
+    "outerDiameter": 13.4,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_19",
+    "name": "КУНРС Внг(A)-FRLSLTx 4х1,0",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 4,
+    "coreSection": null,
+    "outerDiameter": 13.9,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_35",
+    "name": "КУНРС Внг(A)-FRLSLTx 4х1,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 4,
+    "coreSection": 1.5,
     "outerDiameter": 14.7,
     "TU": "ТУ 16.К99-050-2012"
   },
@@ -459,282 +324,12 @@
     "TU": "ТУ 16.К99-050-2012"
   },
   {
-    "id": "cable_kunrs_v_ltx_52",
-    "name": "КУНРС Внг(A)-FRLSLTx 5х2,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 5,
-    "coreSection": 2.5,
-    "outerDiameter": 17,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_53",
-    "name": "КУНРС Внг(A)-FRLSLTx 6х2,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 6,
-    "coreSection": 2.5,
-    "outerDiameter": 18.3,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_54",
-    "name": "КУНРС Внг(A)-FRLSLTx 7х2,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 7,
-    "coreSection": 2.5,
-    "outerDiameter": 18.3,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_55",
-    "name": "КУНРС Внг(A)-FRLSLTx 8х2,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 8,
-    "coreSection": 2.5,
-    "outerDiameter": 19.6,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_56",
-    "name": "КУНРС Внг(A)-FRLSLTx 10х2,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 10,
-    "coreSection": 2.5,
-    "outerDiameter": 22.9,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_57",
-    "name": "КУНРС Внг(A)-FRLSLTx 12х2,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 12,
-    "coreSection": 2.5,
-    "outerDiameter": 23.6,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_58",
-    "name": "КУНРС Внг(A)-FRLSLTx 14х2,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 14,
-    "coreSection": 2.5,
-    "outerDiameter": 24.6,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_59",
-    "name": "КУНРС Внг(A)-FRLSLTx 19х2,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 19,
-    "coreSection": 2.5,
-    "outerDiameter": 27.6,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_60",
-    "name": "КУНРС Внг(A)-FRLSLTx 24х2,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 24,
-    "coreSection": 2.5,
-    "outerDiameter": 31.7,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_61",
-    "name": "КУНРС Внг(A)-FRLSLTx 27х2,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 27,
-    "coreSection": 2.5,
-    "outerDiameter": 32.4,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_62",
-    "name": "КУНРС Внг(A)-FRLSLTx 30х2,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 30,
-    "coreSection": 2.5,
-    "outerDiameter": 33.5,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_63",
-    "name": "КУНРС Внг(A)-FRLSLTx 37х2,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 37,
-    "coreSection": 2.5,
-    "outerDiameter": 35.9,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_64",
-    "name": "КУНРС Внг(A)-FRLSLTx 40х2,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 40,
-    "coreSection": 2.5,
-    "outerDiameter": 37.2,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_65",
-    "name": "КУНРС Внг(A)-FRLSLTx 2х4",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 2,
-    "coreSection": 4,
-    "outerDiameter": 15.7,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_66",
-    "name": "КУНРС Внг(A)-FRLSLTx 3х4",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 3,
-    "coreSection": 4,
-    "outerDiameter": 16.5,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
     "id": "cable_kunrs_v_ltx_67",
     "name": "КУНРС Внг(A)-FRLSLTx 4х4",
     "cableTypeId": "cable_type:power450_750_ltx",
     "cores": 4,
     "coreSection": 4,
     "outerDiameter": 17.8,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_68",
-    "name": "КУНРС Внг(A)-FRLSLTx 5х4",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 5,
-    "coreSection": 4,
-    "outerDiameter": 19.2,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_69",
-    "name": "КУНРС Внг(A)-FRLSLTx 6х4",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 6,
-    "coreSection": 4,
-    "outerDiameter": 21.2,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_70",
-    "name": "КУНРС Внг(A)-FRLSLTx 7х4",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 7,
-    "coreSection": 4,
-    "outerDiameter": 21.2,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_71",
-    "name": "КУНРС Внг(A)-FRLSLTx 8х4",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 8,
-    "coreSection": 4,
-    "outerDiameter": 22.7,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_72",
-    "name": "КУНРС Внг(A)-FRLSLTx 10х4",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 10,
-    "coreSection": 4,
-    "outerDiameter": 26.6,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_73",
-    "name": "КУНРС Внг(A)-FRLSLTx 12х4",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 12,
-    "coreSection": 4,
-    "outerDiameter": 27.4,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_74",
-    "name": "КУНРС Внг(A)-FRLSLTx 14х4",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 14,
-    "coreSection": 4,
-    "outerDiameter": 28.7,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_75",
-    "name": "КУНРС Внг(A)-FRLSLTx 19х4",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 19,
-    "coreSection": 4,
-    "outerDiameter": 31.6,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_76",
-    "name": "КУНРС Внг(A)-FRLSLTx 24х4",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 24,
-    "coreSection": 4,
-    "outerDiameter": 36.6,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_77",
-    "name": "КУНРС Внг(A)-FRLSLTx 27х4",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 27,
-    "coreSection": 4,
-    "outerDiameter": 37.4,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_78",
-    "name": "КУНРС Внг(A)-FRLSLTx 30х4",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 30,
-    "coreSection": 4,
-    "outerDiameter": 39.1,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_79",
-    "name": "КУНРС Внг(A)-FRLSLTx 37х4",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 37,
-    "coreSection": 4,
-    "outerDiameter": 42.1,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_80",
-    "name": "КУНРС Внг(A)-FRLSLTx 40х4",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 40,
-    "coreSection": 4,
-    "outerDiameter": 43.6,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_81",
-    "name": "КУНРС Внг(A)-FRLSLTx 2х6",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 2,
-    "coreSection": 6,
-    "outerDiameter": 17.1,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_82",
-    "name": "КУНРС Внг(A)-FRLSLTx 3х6",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 3,
-    "coreSection": 6,
-    "outerDiameter": 17.9,
     "TU": "ТУ 16.К99-050-2012"
   },
   {
@@ -747,282 +342,12 @@
     "TU": "ТУ 16.К99-050-2012"
   },
   {
-    "id": "cable_kunrs_v_ltx_84",
-    "name": "КУНРС Внг(A)-FRLSLTx 5х6",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 5,
-    "coreSection": 6,
-    "outerDiameter": 21.5,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_85",
-    "name": "КУНРС Внг(A)-FRLSLTx 6х6",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 6,
-    "coreSection": 6,
-    "outerDiameter": 23.2,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_86",
-    "name": "КУНРС Внг(A)-FRLSLTx 7х6",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 7,
-    "coreSection": 6,
-    "outerDiameter": 23.2,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_87",
-    "name": "КУНРС Внг(A)-FRLSLTx 8х6",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 8,
-    "coreSection": 6,
-    "outerDiameter": 24.9,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_88",
-    "name": "КУНРС Внг(A)-FRLSLTx 10х6",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 10,
-    "coreSection": 6,
-    "outerDiameter": 29.3,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_89",
-    "name": "КУНРС Внг(A)-FRLSLTx 12х6",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 12,
-    "coreSection": 6,
-    "outerDiameter": 30.1,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_90",
-    "name": "КУНРС Внг(A)-FRLSLTx 14х6",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 14,
-    "coreSection": 6,
-    "outerDiameter": 31.6,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_91",
-    "name": "КУНРС Внг(A)-FRLSLTx 19х6",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 19,
-    "coreSection": 6,
-    "outerDiameter": 34.9,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_92",
-    "name": "КУНРС Внг(A)-FRLSLTx 24х6",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 24,
-    "coreSection": 6,
-    "outerDiameter": 41,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_93",
-    "name": "КУНРС Внг(A)-FRLSLTx 27х6",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 27,
-    "coreSection": 6,
-    "outerDiameter": 41.9,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_94",
-    "name": "КУНРС Внг(A)-FRLSLTx 30х6",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 30,
-    "coreSection": 6,
-    "outerDiameter": 43.4,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_95",
-    "name": "КУНРС Внг(A)-FRLSLTx 37х6",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 37,
-    "coreSection": 6,
-    "outerDiameter": 46.7,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_96",
-    "name": "КУНРС Внг(A)-FRLSLTx 40х6",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 40,
-    "coreSection": 6,
-    "outerDiameter": 48.4,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_97",
-    "name": "КУНРС Внг(A)-FRLSLTx 2х10",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 2,
-    "coreSection": 10,
-    "outerDiameter": 19.5,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_98",
-    "name": "КУНРС Внг(A)-FRLSLTx 3х10",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 3,
-    "coreSection": 10,
-    "outerDiameter": 20.9,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
     "id": "cable_kunrs_v_ltx_99",
     "name": "КУНРС Внг(A)-FRLSLTx 4х10",
     "cableTypeId": "cable_type:power450_750_ltx",
     "cores": 4,
     "coreSection": 10,
     "outerDiameter": 22.7,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_100",
-    "name": "КУНРС Внг(A)-FRLSLTx 5х10",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 5,
-    "coreSection": 10,
-    "outerDiameter": 24.7,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_101",
-    "name": "КУНРС Внг(A)-FRLSLTx 6х10",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 6,
-    "coreSection": 10,
-    "outerDiameter": 27.2,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_102",
-    "name": "КУНРС Внг(A)-FRLSLTx 7х10",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 7,
-    "coreSection": 10,
-    "outerDiameter": 27.2,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_103",
-    "name": "КУНРС Внг(A)-FRLSLTx 8х10",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 8,
-    "coreSection": 10,
-    "outerDiameter": 29.3,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_104",
-    "name": "КУНРС Внг(A)-FRLSLTx 10х10",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 10,
-    "coreSection": 10,
-    "outerDiameter": 34.1,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_105",
-    "name": "КУНРС Внг(A)-FRLSLTx 12х10",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 12,
-    "coreSection": 10,
-    "outerDiameter": 35.1,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_106",
-    "name": "КУНРС Внг(A)-FRLSLTx 14х10",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 14,
-    "coreSection": 10,
-    "outerDiameter": 36.9,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_107",
-    "name": "КУНРС Внг(A)-FRLSLTx 19х10",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 19,
-    "coreSection": 10,
-    "outerDiameter": 41.4,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_108",
-    "name": "КУНРС Внг(A)-FRLSLTx 24х10",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 24,
-    "coreSection": 10,
-    "outerDiameter": 48.3,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_109",
-    "name": "КУНРС Внг(A)-FRLSLTx 27х10",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 27,
-    "coreSection": 10,
-    "outerDiameter": 49.8,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_110",
-    "name": "КУНРС Внг(A)-FRLSLTx 30х10",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 30,
-    "coreSection": 10,
-    "outerDiameter": 51.5,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_111",
-    "name": "КУНРС Внг(A)-FRLSLTx 37х10",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 37,
-    "coreSection": 10,
-    "outerDiameter": 55.6,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_112",
-    "name": "КУНРС Внг(A)-FRLSLTx 40х10",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 40,
-    "coreSection": 10,
-    "outerDiameter": 57.7,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_113",
-    "name": "КУНРС Внг(A)-FRLSLTx 2х16",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 2,
-    "coreSection": 16,
-    "outerDiameter": 22.7,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_114",
-    "name": "КУНРС Внг(A)-FRLSLTx 3х16",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 3,
-    "coreSection": 16,
-    "outerDiameter": 24,
     "TU": "ТУ 16.К99-050-2012"
   },
   {
@@ -1035,141 +360,6 @@
     "TU": "ТУ 16.К99-050-2012"
   },
   {
-    "id": "cable_kunrs_v_ltx_116",
-    "name": "КУНРС Внг(A)-FRLSLTx 5х16",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 5,
-    "coreSection": 16,
-    "outerDiameter": 29,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_117",
-    "name": "КУНРС Внг(A)-FRLSLTx 6х16",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 6,
-    "coreSection": 16,
-    "outerDiameter": 31.5,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_118",
-    "name": "КУНРС Внг(A)-FRLSLTx 7х16",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 7,
-    "coreSection": 16,
-    "outerDiameter": 31.5,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_119",
-    "name": "КУНРС Внг(A)-FRLSLTx 8х16",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 8,
-    "coreSection": 16,
-    "outerDiameter": 34,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_120",
-    "name": "КУНРС Внг(A)-FRLSLTx 10х16",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 10,
-    "coreSection": 16,
-    "outerDiameter": 40.2,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_121",
-    "name": "КУНРС Внг(A)-FRLSLTx 12х16",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 12,
-    "coreSection": 16,
-    "outerDiameter": 41.5,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_122",
-    "name": "КУНРС Внг(A)-FRLSLTx 14х16",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 14,
-    "coreSection": 16,
-    "outerDiameter": 43.6,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_123",
-    "name": "КУНРС Внг(A)-FRLSLTx 19х16",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 19,
-    "coreSection": 16,
-    "outerDiameter": 48.5,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_124",
-    "name": "КУНРС Внг(A)-FRLSLTx 24х16",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 24,
-    "coreSection": 16,
-    "outerDiameter": 57.2,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_125",
-    "name": "КУНРС Внг(A)-FRLSLTx 27х16",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 27,
-    "coreSection": 16,
-    "outerDiameter": 58.5,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_126",
-    "name": "КУНРС Внг(A)-FRLSLTx 30х16",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 30,
-    "coreSection": 16,
-    "outerDiameter": 61.1,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_127",
-    "name": "КУНРС Внг(A)-FRLSLTx 37х16",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 37,
-    "coreSection": 16,
-    "outerDiameter": 66,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_v_ltx_128",
-    "name": "КУНРС Внг(A)-FRLSLTx 40х16",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 40,
-    "coreSection": 16,
-    "outerDiameter": 68.5,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_129",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 2х0,75",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 2,
-    "coreSection": 0.75,
-    "outerDiameter": 12.1,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_130",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 3х0,75",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 3,
-    "coreSection": 0.75,
-    "outerDiameter": 12.6,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
     "id": "cable_kunrs_av_ltx_131",
     "name": "КУНРС ЭВнг(A)-FRLSLTx 4х0,75",
     "cableTypeId": "cable_type:power450_750_ltx",
@@ -1179,282 +369,12 @@
     "TU": "ТУ 16.К99-050-2012"
   },
   {
-    "id": "cable_kunrs_av_ltx_132",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 5х0,75",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 5,
-    "coreSection": 0.75,
-    "outerDiameter": 14.4,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_133",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 6х0,75",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 6,
-    "coreSection": 0.75,
-    "outerDiameter": 15.3,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_134",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 7х0,75",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 7,
-    "coreSection": 0.75,
-    "outerDiameter": 15.3,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_135",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 8х0,75",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 8,
-    "coreSection": 0.75,
-    "outerDiameter": 16.3,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_136",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 10х0,75",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 10,
-    "coreSection": 0.75,
-    "outerDiameter": 18.5,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_137",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 12х0,75",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 12,
-    "coreSection": 0.75,
-    "outerDiameter": 19,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_138",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 14х0,75",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 14,
-    "coreSection": 0.75,
-    "outerDiameter": 19.8,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_139",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 19х0,75",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 19,
-    "coreSection": 0.75,
-    "outerDiameter": 22.2,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_140",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 24х0,75",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 24,
-    "coreSection": 0.75,
-    "outerDiameter": 25.4,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_141",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 27х0,75",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 27,
-    "coreSection": 0.75,
-    "outerDiameter": 25.8,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_142",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 30х0,75",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 30,
-    "coreSection": 0.75,
-    "outerDiameter": 27.1,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_143",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 37х0,75",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 37,
-    "coreSection": 0.75,
-    "outerDiameter": 29,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_144",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 40х0,75",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 40,
-    "coreSection": 0.75,
-    "outerDiameter": 30,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_145",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 2х1,0",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 2,
-    "coreSection": "1,0",
-    "outerDiameter": 12.5,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_146",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 3х1,0",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 3,
-    "coreSection": "1,0",
-    "outerDiameter": 13,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
     "id": "cable_kunrs_av_ltx_147",
     "name": "КУНРС ЭВнг(A)-FRLSLTx 4х1,0",
     "cableTypeId": "cable_type:power450_750_ltx",
     "cores": 4,
-    "coreSection": "1,0",
+    "coreSection": null,
     "outerDiameter": 13.9,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_148",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 5х1,0",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 5,
-    "coreSection": "1,0",
-    "outerDiameter": 14.9,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_149",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 6х1,0",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 6,
-    "coreSection": "1,0",
-    "outerDiameter": 15.9,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_150",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 7х1,0",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 7,
-    "coreSection": "1,0",
-    "outerDiameter": 15.9,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_151",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 8х1,0",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 8,
-    "coreSection": "1,0",
-    "outerDiameter": 16.9,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_152",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 10х1,0",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 10,
-    "coreSection": "1,0",
-    "outerDiameter": 19.3,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_153",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 12х1,0",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 12,
-    "coreSection": "1,0",
-    "outerDiameter": 19.8,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_154",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 14х1,0",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 14,
-    "coreSection": "1,0",
-    "outerDiameter": 21.1,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_155",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 19х1,0",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 19,
-    "coreSection": "1,0",
-    "outerDiameter": 23.2,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_156",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 24х1,0",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 24,
-    "coreSection": "1,0",
-    "outerDiameter": 27,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_157",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 27х1,0",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 27,
-    "coreSection": "1,0",
-    "outerDiameter": 27.5,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_158",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 30х1,0",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 30,
-    "coreSection": "1,0",
-    "outerDiameter": 28.4,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_159",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 37х1,0",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 37,
-    "coreSection": "1,0",
-    "outerDiameter": 30.4,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_160",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 40х1,0",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 40,
-    "coreSection": "1,0",
-    "outerDiameter": 31.4,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_161",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 2х1,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 2,
-    "coreSection": 1.5,
-    "outerDiameter": 13.2,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_162",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 3х1,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 3,
-    "coreSection": 1.5,
-    "outerDiameter": 13.7,
     "TU": "ТУ 16.К99-050-2012"
   },
   {
@@ -1463,141 +383,6 @@
     "cableTypeId": "cable_type:power450_750_ltx",
     "cores": 4,
     "coreSection": 1.5,
-    "outerDiameter": 14.7,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_164",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 5х1,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 5,
-    "coreSection": 1.5,
-    "outerDiameter": 15.8,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_165",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 6х1,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 6,
-    "coreSection": 1.5,
-    "outerDiameter": 16.9,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_166",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 7х1,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 7,
-    "coreSection": 1.5,
-    "outerDiameter": 16.9,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_167",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 8х1,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 8,
-    "coreSection": 1.5,
-    "outerDiameter": 18,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_168",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 10х1,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 10,
-    "coreSection": 1.5,
-    "outerDiameter": 21.1,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_169",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 12х1,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 12,
-    "coreSection": 1.5,
-    "outerDiameter": 21.6,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_170",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 14х1,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 14,
-    "coreSection": 1.5,
-    "outerDiameter": 22.6,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_171",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 19х1,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 19,
-    "coreSection": 1.5,
-    "outerDiameter": 24.8,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_172",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 24х1,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 24,
-    "coreSection": 1.5,
-    "outerDiameter": 29,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_173",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 27х1,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 27,
-    "coreSection": 1.5,
-    "outerDiameter": 29.5,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_174",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 30х1,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 30,
-    "coreSection": 1.5,
-    "outerDiameter": 30.5,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_175",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 37х1,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 37,
-    "coreSection": 1.5,
-    "outerDiameter": 32.7,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_176",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 40х1,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 40,
-    "coreSection": 1.5,
-    "outerDiameter": 33.8,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_177",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 2х2,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 2,
-    "coreSection": 2.5,
-    "outerDiameter": 14.1,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_178",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 3х2,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 3,
-    "coreSection": 2.5,
     "outerDiameter": 14.7,
     "TU": "ТУ 16.К99-050-2012"
   },
@@ -1611,282 +396,12 @@
     "TU": "ТУ 16.К99-050-2012"
   },
   {
-    "id": "cable_kunrs_av_ltx_180",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 5х2,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 5,
-    "coreSection": 2.5,
-    "outerDiameter": 17,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_181",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 6х2,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 6,
-    "coreSection": 2.5,
-    "outerDiameter": 18.3,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_182",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 7х2,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 7,
-    "coreSection": 2.5,
-    "outerDiameter": 18.3,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_183",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 8х2,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 8,
-    "coreSection": 2.5,
-    "outerDiameter": 19.6,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_184",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 10х2,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 10,
-    "coreSection": 2.5,
-    "outerDiameter": 22.9,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_185",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 12х2,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 12,
-    "coreSection": 2.5,
-    "outerDiameter": 23.6,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_186",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 14х2,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 14,
-    "coreSection": 2.5,
-    "outerDiameter": 24.6,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_187",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 19х2,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 19,
-    "coreSection": 2.5,
-    "outerDiameter": 27.6,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_188",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 24х2,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 24,
-    "coreSection": 2.5,
-    "outerDiameter": 31.7,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_189",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 27х2,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 27,
-    "coreSection": 2.5,
-    "outerDiameter": 32.4,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_190",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 30х2,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 30,
-    "coreSection": 2.5,
-    "outerDiameter": 33.5,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_191",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 37х2,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 37,
-    "coreSection": 2.5,
-    "outerDiameter": 35.9,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_192",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 40х2,5",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 40,
-    "coreSection": 2.5,
-    "outerDiameter": 37.2,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_193",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 2х4",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 2,
-    "coreSection": 4,
-    "outerDiameter": 15.7,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_194",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 3х4",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 3,
-    "coreSection": 4,
-    "outerDiameter": 16.5,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
     "id": "cable_kunrs_av_ltx_195",
     "name": "КУНРС ЭВнг(A)-FRLSLTx 4х4",
     "cableTypeId": "cable_type:power450_750_ltx",
     "cores": 4,
     "coreSection": 4,
     "outerDiameter": 17.8,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_196",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 5х4",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 5,
-    "coreSection": 4,
-    "outerDiameter": 19.2,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_197",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 6х4",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 6,
-    "coreSection": 4,
-    "outerDiameter": 21.2,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_198",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 7х4",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 7,
-    "coreSection": 4,
-    "outerDiameter": 21.2,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_199",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 8х4",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 8,
-    "coreSection": 4,
-    "outerDiameter": 22.7,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_200",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 10х4",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 10,
-    "coreSection": 4,
-    "outerDiameter": 26.6,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_201",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 12х4",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 12,
-    "coreSection": 4,
-    "outerDiameter": 27.4,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_202",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 14х4",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 14,
-    "coreSection": 4,
-    "outerDiameter": 28.7,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_203",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 19х4",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 19,
-    "coreSection": 4,
-    "outerDiameter": 31.6,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_204",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 24х4",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 24,
-    "coreSection": 4,
-    "outerDiameter": 36.6,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_205",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 27х4",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 27,
-    "coreSection": 4,
-    "outerDiameter": 37.4,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_206",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 30х4",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 30,
-    "coreSection": 4,
-    "outerDiameter": 39.1,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_207",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 37х4",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 37,
-    "coreSection": 4,
-    "outerDiameter": 42.1,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_208",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 40х4",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 40,
-    "coreSection": 4,
-    "outerDiameter": 43.6,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_209",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 2х6",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 2,
-    "coreSection": 6,
-    "outerDiameter": 17.1,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_210",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 3х6",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 3,
-    "coreSection": 6,
-    "outerDiameter": 17.9,
     "TU": "ТУ 16.К99-050-2012"
   },
   {
@@ -1899,8 +414,71 @@
     "TU": "ТУ 16.К99-050-2012"
   },
   {
-    "id": "cable_kunrs_av_ltx_212",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 5х6",
+    "id": "cable_kunrs_av_ltx_227",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 4х10",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 4,
+    "coreSection": 10,
+    "outerDiameter": 22.7,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_243",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 4х16",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 4,
+    "coreSection": 16,
+    "outerDiameter": 26.6,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_4",
+    "name": "КУНРС Внг(A)-FRLSLTx 5х0,75",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 5,
+    "coreSection": 0.75,
+    "outerDiameter": 14.4,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_20",
+    "name": "КУНРС Внг(A)-FRLSLTx 5х1,0",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 5,
+    "coreSection": null,
+    "outerDiameter": 14.9,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_36",
+    "name": "КУНРС Внг(A)-FRLSLTx 5х1,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 5,
+    "coreSection": 1.5,
+    "outerDiameter": 15.8,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_52",
+    "name": "КУНРС Внг(A)-FRLSLTx 5х2,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 5,
+    "coreSection": 2.5,
+    "outerDiameter": 17,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_68",
+    "name": "КУНРС Внг(A)-FRLSLTx 5х4",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 5,
+    "coreSection": 4,
+    "outerDiameter": 19.2,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_84",
+    "name": "КУНРС Внг(A)-FRLSLTx 5х6",
     "cableTypeId": "cable_type:power450_750_ltx",
     "cores": 5,
     "coreSection": 6,
@@ -1908,138 +486,75 @@
     "TU": "ТУ 16.К99-050-2012"
   },
   {
-    "id": "cable_kunrs_av_ltx_213",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 6х6",
+    "id": "cable_kunrs_v_ltx_100",
+    "name": "КУНРС Внг(A)-FRLSLTx 5х10",
     "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 6,
-    "coreSection": 6,
-    "outerDiameter": 23.2,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_214",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 7х6",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 7,
-    "coreSection": 6,
-    "outerDiameter": 23.2,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_215",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 8х6",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 8,
-    "coreSection": 6,
-    "outerDiameter": 24.9,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_216",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 10х6",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 10,
-    "coreSection": 6,
-    "outerDiameter": 29.3,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_217",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 12х6",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 12,
-    "coreSection": 6,
-    "outerDiameter": 30.1,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_218",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 14х6",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 14,
-    "coreSection": 6,
-    "outerDiameter": 31.6,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_219",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 19х6",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 19,
-    "coreSection": 6,
-    "outerDiameter": 34.9,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_220",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 24х6",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 24,
-    "coreSection": 6,
-    "outerDiameter": 41,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_221",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 27х6",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 27,
-    "coreSection": 6,
-    "outerDiameter": 41.9,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_222",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 30х6",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 30,
-    "coreSection": 6,
-    "outerDiameter": 43.4,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_223",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 37х6",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 37,
-    "coreSection": 6,
-    "outerDiameter": 46.7,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_224",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 40х6",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 40,
-    "coreSection": 6,
-    "outerDiameter": 48.4,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_225",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 2х10",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 2,
+    "cores": 5,
     "coreSection": 10,
-    "outerDiameter": 19.5,
+    "outerDiameter": 24.7,
     "TU": "ТУ 16.К99-050-2012"
   },
   {
-    "id": "cable_kunrs_av_ltx_226",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 3х10",
+    "id": "cable_kunrs_v_ltx_116",
+    "name": "КУНРС Внг(A)-FRLSLTx 5х16",
     "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 3,
-    "coreSection": 10,
-    "outerDiameter": 20.9,
+    "cores": 5,
+    "coreSection": 16,
+    "outerDiameter": 29,
     "TU": "ТУ 16.К99-050-2012"
   },
   {
-    "id": "cable_kunrs_av_ltx_227",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 4х10",
+    "id": "cable_kunrs_av_ltx_132",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 5х0,75",
     "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 4,
-    "coreSection": 10,
-    "outerDiameter": 22.7,
+    "cores": 5,
+    "coreSection": 0.75,
+    "outerDiameter": 14.4,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_148",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 5х1,0",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 5,
+    "coreSection": null,
+    "outerDiameter": 14.9,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_164",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 5х1,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 5,
+    "coreSection": 1.5,
+    "outerDiameter": 15.8,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_180",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 5х2,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 5,
+    "coreSection": 2.5,
+    "outerDiameter": 17,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_196",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 5х4",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 5,
+    "coreSection": 4,
+    "outerDiameter": 19.2,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_212",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 5х6",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 5,
+    "coreSection": 6,
+    "outerDiameter": 21.5,
     "TU": "ТУ 16.К99-050-2012"
   },
   {
@@ -2052,12 +567,282 @@
     "TU": "ТУ 16.К99-050-2012"
   },
   {
+    "id": "cable_kunrs_av_ltx_244",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 5х16",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 5,
+    "coreSection": 16,
+    "outerDiameter": 29,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_5",
+    "name": "КУНРС Внг(A)-FRLSLTx 6х0,75",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 6,
+    "coreSection": 0.75,
+    "outerDiameter": 15.3,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_21",
+    "name": "КУНРС Внг(A)-FRLSLTx 6х1,0",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 6,
+    "coreSection": null,
+    "outerDiameter": 15.9,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_37",
+    "name": "КУНРС Внг(A)-FRLSLTx 6х1,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 6,
+    "coreSection": 1.5,
+    "outerDiameter": 16.9,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_53",
+    "name": "КУНРС Внг(A)-FRLSLTx 6х2,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 6,
+    "coreSection": 2.5,
+    "outerDiameter": 18.3,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_69",
+    "name": "КУНРС Внг(A)-FRLSLTx 6х4",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 6,
+    "coreSection": 4,
+    "outerDiameter": 21.2,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_85",
+    "name": "КУНРС Внг(A)-FRLSLTx 6х6",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 6,
+    "coreSection": 6,
+    "outerDiameter": 23.2,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_101",
+    "name": "КУНРС Внг(A)-FRLSLTx 6х10",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 6,
+    "coreSection": 10,
+    "outerDiameter": 27.2,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_117",
+    "name": "КУНРС Внг(A)-FRLSLTx 6х16",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 6,
+    "coreSection": 16,
+    "outerDiameter": 31.5,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_133",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 6х0,75",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 6,
+    "coreSection": 0.75,
+    "outerDiameter": 15.3,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_149",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 6х1,0",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 6,
+    "coreSection": null,
+    "outerDiameter": 15.9,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_165",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 6х1,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 6,
+    "coreSection": 1.5,
+    "outerDiameter": 16.9,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_181",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 6х2,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 6,
+    "coreSection": 2.5,
+    "outerDiameter": 18.3,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_197",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 6х4",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 6,
+    "coreSection": 4,
+    "outerDiameter": 21.2,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_213",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 6х6",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 6,
+    "coreSection": 6,
+    "outerDiameter": 23.2,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
     "id": "cable_kunrs_av_ltx_229",
     "name": "КУНРС ЭВнг(A)-FRLSLTx 6х10",
     "cableTypeId": "cable_type:power450_750_ltx",
     "cores": 6,
     "coreSection": 10,
     "outerDiameter": 27.2,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_245",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 6х16",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 6,
+    "coreSection": 16,
+    "outerDiameter": 31.5,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_6",
+    "name": "КУНРС Внг(A)-FRLSLTx 7х0,75",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 7,
+    "coreSection": 0.75,
+    "outerDiameter": 15.3,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_22",
+    "name": "КУНРС Внг(A)-FRLSLTx 7х1,0",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 7,
+    "coreSection": null,
+    "outerDiameter": 15.9,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_38",
+    "name": "КУНРС Внг(A)-FRLSLTx 7х1,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 7,
+    "coreSection": 1.5,
+    "outerDiameter": 16.9,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_54",
+    "name": "КУНРС Внг(A)-FRLSLTx 7х2,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 7,
+    "coreSection": 2.5,
+    "outerDiameter": 18.3,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_70",
+    "name": "КУНРС Внг(A)-FRLSLTx 7х4",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 7,
+    "coreSection": 4,
+    "outerDiameter": 21.2,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_86",
+    "name": "КУНРС Внг(A)-FRLSLTx 7х6",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 7,
+    "coreSection": 6,
+    "outerDiameter": 23.2,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_102",
+    "name": "КУНРС Внг(A)-FRLSLTx 7х10",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 7,
+    "coreSection": 10,
+    "outerDiameter": 27.2,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_118",
+    "name": "КУНРС Внг(A)-FRLSLTx 7х16",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 7,
+    "coreSection": 16,
+    "outerDiameter": 31.5,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_134",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 7х0,75",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 7,
+    "coreSection": 0.75,
+    "outerDiameter": 15.3,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_150",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 7х1,0",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 7,
+    "coreSection": null,
+    "outerDiameter": 15.9,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_166",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 7х1,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 7,
+    "coreSection": 1.5,
+    "outerDiameter": 16.9,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_182",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 7х2,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 7,
+    "coreSection": 2.5,
+    "outerDiameter": 18.3,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_198",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 7х4",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 7,
+    "coreSection": 4,
+    "outerDiameter": 21.2,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_214",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 7х6",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 7,
+    "coreSection": 6,
+    "outerDiameter": 23.2,
     "TU": "ТУ 16.К99-050-2012"
   },
   {
@@ -2070,11 +855,281 @@
     "TU": "ТУ 16.К99-050-2012"
   },
   {
+    "id": "cable_kunrs_av_ltx_246",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 7х16",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 7,
+    "coreSection": 16,
+    "outerDiameter": 31.5,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_7",
+    "name": "КУНРС Внг(A)-FRLSLTx 8х0,75",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 8,
+    "coreSection": 0.75,
+    "outerDiameter": 16.3,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_23",
+    "name": "КУНРС Внг(A)-FRLSLTx 8х1,0",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 8,
+    "coreSection": null,
+    "outerDiameter": 16.9,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_39",
+    "name": "КУНРС Внг(A)-FRLSLTx 8х1,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 8,
+    "coreSection": 1.5,
+    "outerDiameter": 18,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_55",
+    "name": "КУНРС Внг(A)-FRLSLTx 8х2,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 8,
+    "coreSection": 2.5,
+    "outerDiameter": 19.6,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_71",
+    "name": "КУНРС Внг(A)-FRLSLTx 8х4",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 8,
+    "coreSection": 4,
+    "outerDiameter": 22.7,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_87",
+    "name": "КУНРС Внг(A)-FRLSLTx 8х6",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 8,
+    "coreSection": 6,
+    "outerDiameter": 24.9,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_103",
+    "name": "КУНРС Внг(A)-FRLSLTx 8х10",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 8,
+    "coreSection": 10,
+    "outerDiameter": 29.3,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_119",
+    "name": "КУНРС Внг(A)-FRLSLTx 8х16",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 8,
+    "coreSection": 16,
+    "outerDiameter": 34,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_135",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 8х0,75",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 8,
+    "coreSection": 0.75,
+    "outerDiameter": 16.3,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_151",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 8х1,0",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 8,
+    "coreSection": null,
+    "outerDiameter": 16.9,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_167",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 8х1,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 8,
+    "coreSection": 1.5,
+    "outerDiameter": 18,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_183",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 8х2,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 8,
+    "coreSection": 2.5,
+    "outerDiameter": 19.6,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_199",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 8х4",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 8,
+    "coreSection": 4,
+    "outerDiameter": 22.7,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_215",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 8х6",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 8,
+    "coreSection": 6,
+    "outerDiameter": 24.9,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
     "id": "cable_kunrs_av_ltx_231",
     "name": "КУНРС ЭВнг(A)-FRLSLTx 8х10",
     "cableTypeId": "cable_type:power450_750_ltx",
     "cores": 8,
     "coreSection": 10,
+    "outerDiameter": 29.3,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_247",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 8х16",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 8,
+    "coreSection": 16,
+    "outerDiameter": 34,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_8",
+    "name": "КУНРС Внг(A)-FRLSLTx 10х0,75",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 10,
+    "coreSection": 0.75,
+    "outerDiameter": 18.5,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_24",
+    "name": "КУНРС Внг(A)-FRLSLTx 10х1,0",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 10,
+    "coreSection": null,
+    "outerDiameter": 19.3,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_40",
+    "name": "КУНРС Внг(A)-FRLSLTx 10х1,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 10,
+    "coreSection": 1.5,
+    "outerDiameter": 21.1,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_56",
+    "name": "КУНРС Внг(A)-FRLSLTx 10х2,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 10,
+    "coreSection": 2.5,
+    "outerDiameter": 22.9,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_72",
+    "name": "КУНРС Внг(A)-FRLSLTx 10х4",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 10,
+    "coreSection": 4,
+    "outerDiameter": 26.6,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_88",
+    "name": "КУНРС Внг(A)-FRLSLTx 10х6",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 10,
+    "coreSection": 6,
+    "outerDiameter": 29.3,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_104",
+    "name": "КУНРС Внг(A)-FRLSLTx 10х10",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 10,
+    "coreSection": 10,
+    "outerDiameter": 34.1,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_120",
+    "name": "КУНРС Внг(A)-FRLSLTx 10х16",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 10,
+    "coreSection": 16,
+    "outerDiameter": 40.2,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_136",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 10х0,75",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 10,
+    "coreSection": 0.75,
+    "outerDiameter": 18.5,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_152",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 10х1,0",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 10,
+    "coreSection": null,
+    "outerDiameter": 19.3,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_168",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 10х1,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 10,
+    "coreSection": 1.5,
+    "outerDiameter": 21.1,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_184",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 10х2,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 10,
+    "coreSection": 2.5,
+    "outerDiameter": 22.9,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_200",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 10х4",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 10,
+    "coreSection": 4,
+    "outerDiameter": 26.6,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_216",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 10х6",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 10,
+    "coreSection": 6,
     "outerDiameter": 29.3,
     "TU": "ТУ 16.К99-050-2012"
   },
@@ -2088,8 +1143,71 @@
     "TU": "ТУ 16.К99-050-2012"
   },
   {
-    "id": "cable_kunrs_av_ltx_233",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 12х10",
+    "id": "cable_kunrs_av_ltx_248",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 10х16",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 10,
+    "coreSection": 16,
+    "outerDiameter": 40.2,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_9",
+    "name": "КУНРС Внг(A)-FRLSLTx 12х0,75",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 12,
+    "coreSection": 0.75,
+    "outerDiameter": 19,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_25",
+    "name": "КУНРС Внг(A)-FRLSLTx 12х1,0",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 12,
+    "coreSection": null,
+    "outerDiameter": 19.8,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_41",
+    "name": "КУНРС Внг(A)-FRLSLTx 12х1,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 12,
+    "coreSection": 1.5,
+    "outerDiameter": 21.6,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_57",
+    "name": "КУНРС Внг(A)-FRLSLTx 12х2,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 12,
+    "coreSection": 2.5,
+    "outerDiameter": 23.6,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_73",
+    "name": "КУНРС Внг(A)-FRLSLTx 12х4",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 12,
+    "coreSection": 4,
+    "outerDiameter": 27.4,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_89",
+    "name": "КУНРС Внг(A)-FRLSLTx 12х6",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 12,
+    "coreSection": 6,
+    "outerDiameter": 30.1,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_105",
+    "name": "КУНРС Внг(A)-FRLSLTx 12х10",
     "cableTypeId": "cable_type:power450_750_ltx",
     "cores": 12,
     "coreSection": 10,
@@ -2097,138 +1215,75 @@
     "TU": "ТУ 16.К99-050-2012"
   },
   {
-    "id": "cable_kunrs_av_ltx_234",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 14х10",
+    "id": "cable_kunrs_v_ltx_121",
+    "name": "КУНРС Внг(A)-FRLSLTx 12х16",
     "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 14,
+    "cores": 12,
+    "coreSection": 16,
+    "outerDiameter": 41.5,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_137",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 12х0,75",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 12,
+    "coreSection": 0.75,
+    "outerDiameter": 19,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_153",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 12х1,0",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 12,
+    "coreSection": null,
+    "outerDiameter": 19.8,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_169",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 12х1,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 12,
+    "coreSection": 1.5,
+    "outerDiameter": 21.6,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_185",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 12х2,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 12,
+    "coreSection": 2.5,
+    "outerDiameter": 23.6,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_201",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 12х4",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 12,
+    "coreSection": 4,
+    "outerDiameter": 27.4,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_217",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 12х6",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 12,
+    "coreSection": 6,
+    "outerDiameter": 30.1,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_233",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 12х10",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 12,
     "coreSection": 10,
-    "outerDiameter": 36.9,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_235",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 19х10",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 19,
-    "coreSection": 10,
-    "outerDiameter": 41.4,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_236",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 24х10",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 24,
-    "coreSection": 10,
-    "outerDiameter": 48.3,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_237",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 27х10",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 27,
-    "coreSection": 10,
-    "outerDiameter": 49.8,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_238",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 30х10",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 30,
-    "coreSection": 10,
-    "outerDiameter": 51.5,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_239",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 37х10",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 37,
-    "coreSection": 10,
-    "outerDiameter": 55.6,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_240",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 40х10",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 40,
-    "coreSection": 10,
-    "outerDiameter": 57.7,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_241",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 2х16",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 2,
-    "coreSection": 16,
-    "outerDiameter": 22.7,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_242",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 3х16",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 3,
-    "coreSection": 16,
-    "outerDiameter": 24,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_243",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 4х16",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 4,
-    "coreSection": 16,
-    "outerDiameter": 26.6,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_244",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 5х16",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 5,
-    "coreSection": 16,
-    "outerDiameter": 29,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_245",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 6х16",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 6,
-    "coreSection": 16,
-    "outerDiameter": 31.5,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_246",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 7х16",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 7,
-    "coreSection": 16,
-    "outerDiameter": 31.5,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_247",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 8х16",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 8,
-    "coreSection": 16,
-    "outerDiameter": 34,
-    "TU": "ТУ 16.К99-050-2012"
-  },
-  {
-    "id": "cable_kunrs_av_ltx_248",
-    "name": "КУНРС ЭВнг(A)-FRLSLTx 10х16",
-    "cableTypeId": "cable_type:power450_750_ltx",
-    "cores": 10,
-    "coreSection": 16,
-    "outerDiameter": 40.2,
+    "outerDiameter": 35.1,
     "TU": "ТУ 16.К99-050-2012"
   },
   {
@@ -2241,12 +1296,282 @@
     "TU": "ТУ 16.К99-050-2012"
   },
   {
+    "id": "cable_kunrs_v_ltx_10",
+    "name": "КУНРС Внг(A)-FRLSLTx 14х0,75",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 14,
+    "coreSection": 0.75,
+    "outerDiameter": 19.8,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_26",
+    "name": "КУНРС Внг(A)-FRLSLTx 14х1,0",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 14,
+    "coreSection": null,
+    "outerDiameter": 21.1,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_42",
+    "name": "КУНРС Внг(A)-FRLSLTx 14х1,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 14,
+    "coreSection": 1.5,
+    "outerDiameter": 22.6,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_58",
+    "name": "КУНРС Внг(A)-FRLSLTx 14х2,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 14,
+    "coreSection": 2.5,
+    "outerDiameter": 24.6,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_74",
+    "name": "КУНРС Внг(A)-FRLSLTx 14х4",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 14,
+    "coreSection": 4,
+    "outerDiameter": 28.7,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_90",
+    "name": "КУНРС Внг(A)-FRLSLTx 14х6",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 14,
+    "coreSection": 6,
+    "outerDiameter": 31.6,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_106",
+    "name": "КУНРС Внг(A)-FRLSLTx 14х10",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 14,
+    "coreSection": 10,
+    "outerDiameter": 36.9,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_122",
+    "name": "КУНРС Внг(A)-FRLSLTx 14х16",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 14,
+    "coreSection": 16,
+    "outerDiameter": 43.6,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_138",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 14х0,75",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 14,
+    "coreSection": 0.75,
+    "outerDiameter": 19.8,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_154",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 14х1,0",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 14,
+    "coreSection": null,
+    "outerDiameter": 21.1,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_170",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 14х1,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 14,
+    "coreSection": 1.5,
+    "outerDiameter": 22.6,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_186",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 14х2,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 14,
+    "coreSection": 2.5,
+    "outerDiameter": 24.6,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_202",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 14х4",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 14,
+    "coreSection": 4,
+    "outerDiameter": 28.7,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_218",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 14х6",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 14,
+    "coreSection": 6,
+    "outerDiameter": 31.6,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_234",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 14х10",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 14,
+    "coreSection": 10,
+    "outerDiameter": 36.9,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
     "id": "cable_kunrs_av_ltx_250",
     "name": "КУНРС ЭВнг(A)-FRLSLTx 14х16",
     "cableTypeId": "cable_type:power450_750_ltx",
     "cores": 14,
     "coreSection": 16,
     "outerDiameter": 43.6,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_11",
+    "name": "КУНРС Внг(A)-FRLSLTx 19х0,75",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 19,
+    "coreSection": 0.75,
+    "outerDiameter": 22.2,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_27",
+    "name": "КУНРС Внг(A)-FRLSLTx 19х1,0",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 19,
+    "coreSection": null,
+    "outerDiameter": 23.2,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_43",
+    "name": "КУНРС Внг(A)-FRLSLTx 19х1,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 19,
+    "coreSection": 1.5,
+    "outerDiameter": 24.8,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_59",
+    "name": "КУНРС Внг(A)-FRLSLTx 19х2,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 19,
+    "coreSection": 2.5,
+    "outerDiameter": 27.6,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_75",
+    "name": "КУНРС Внг(A)-FRLSLTx 19х4",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 19,
+    "coreSection": 4,
+    "outerDiameter": 31.6,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_91",
+    "name": "КУНРС Внг(A)-FRLSLTx 19х6",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 19,
+    "coreSection": 6,
+    "outerDiameter": 34.9,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_107",
+    "name": "КУНРС Внг(A)-FRLSLTx 19х10",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 19,
+    "coreSection": 10,
+    "outerDiameter": 41.4,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_123",
+    "name": "КУНРС Внг(A)-FRLSLTx 19х16",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 19,
+    "coreSection": 16,
+    "outerDiameter": 48.5,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_139",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 19х0,75",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 19,
+    "coreSection": 0.75,
+    "outerDiameter": 22.2,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_155",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 19х1,0",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 19,
+    "coreSection": null,
+    "outerDiameter": 23.2,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_171",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 19х1,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 19,
+    "coreSection": 1.5,
+    "outerDiameter": 24.8,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_187",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 19х2,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 19,
+    "coreSection": 2.5,
+    "outerDiameter": 27.6,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_203",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 19х4",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 19,
+    "coreSection": 4,
+    "outerDiameter": 31.6,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_219",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 19х6",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 19,
+    "coreSection": 6,
+    "outerDiameter": 34.9,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_235",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 19х10",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 19,
+    "coreSection": 10,
+    "outerDiameter": 41.4,
     "TU": "ТУ 16.К99-050-2012"
   },
   {
@@ -2259,12 +1584,282 @@
     "TU": "ТУ 16.К99-050-2012"
   },
   {
+    "id": "cable_kunrs_v_ltx_12",
+    "name": "КУНРС Внг(A)-FRLSLTx 24х0,75",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 24,
+    "coreSection": 0.75,
+    "outerDiameter": 25.4,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_28",
+    "name": "КУНРС Внг(A)-FRLSLTx 24х1,0",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 24,
+    "coreSection": null,
+    "outerDiameter": 27,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_44",
+    "name": "КУНРС Внг(A)-FRLSLTx 24х1,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 24,
+    "coreSection": 1.5,
+    "outerDiameter": 29,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_60",
+    "name": "КУНРС Внг(A)-FRLSLTx 24х2,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 24,
+    "coreSection": 2.5,
+    "outerDiameter": 31.7,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_76",
+    "name": "КУНРС Внг(A)-FRLSLTx 24х4",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 24,
+    "coreSection": 4,
+    "outerDiameter": 36.6,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_92",
+    "name": "КУНРС Внг(A)-FRLSLTx 24х6",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 24,
+    "coreSection": 6,
+    "outerDiameter": 41,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_108",
+    "name": "КУНРС Внг(A)-FRLSLTx 24х10",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 24,
+    "coreSection": 10,
+    "outerDiameter": 48.3,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_124",
+    "name": "КУНРС Внг(A)-FRLSLTx 24х16",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 24,
+    "coreSection": 16,
+    "outerDiameter": 57.2,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_140",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 24х0,75",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 24,
+    "coreSection": 0.75,
+    "outerDiameter": 25.4,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_156",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 24х1,0",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 24,
+    "coreSection": null,
+    "outerDiameter": 27,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_172",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 24х1,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 24,
+    "coreSection": 1.5,
+    "outerDiameter": 29,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_188",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 24х2,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 24,
+    "coreSection": 2.5,
+    "outerDiameter": 31.7,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_204",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 24х4",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 24,
+    "coreSection": 4,
+    "outerDiameter": 36.6,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_220",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 24х6",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 24,
+    "coreSection": 6,
+    "outerDiameter": 41,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_236",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 24х10",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 24,
+    "coreSection": 10,
+    "outerDiameter": 48.3,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
     "id": "cable_kunrs_av_ltx_252",
     "name": "КУНРС ЭВнг(A)-FRLSLTx 24х16",
     "cableTypeId": "cable_type:power450_750_ltx",
     "cores": 24,
     "coreSection": 16,
     "outerDiameter": 57.2,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_13",
+    "name": "КУНРС Внг(A)-FRLSLTx 27х0,75",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 27,
+    "coreSection": 0.75,
+    "outerDiameter": 25.8,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_29",
+    "name": "КУНРС Внг(A)-FRLSLTx 27х1,0",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 27,
+    "coreSection": null,
+    "outerDiameter": 27.5,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_45",
+    "name": "КУНРС Внг(A)-FRLSLTx 27х1,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 27,
+    "coreSection": 1.5,
+    "outerDiameter": 29.5,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_61",
+    "name": "КУНРС Внг(A)-FRLSLTx 27х2,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 27,
+    "coreSection": 2.5,
+    "outerDiameter": 32.4,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_77",
+    "name": "КУНРС Внг(A)-FRLSLTx 27х4",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 27,
+    "coreSection": 4,
+    "outerDiameter": 37.4,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_93",
+    "name": "КУНРС Внг(A)-FRLSLTx 27х6",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 27,
+    "coreSection": 6,
+    "outerDiameter": 41.9,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_109",
+    "name": "КУНРС Внг(A)-FRLSLTx 27х10",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 27,
+    "coreSection": 10,
+    "outerDiameter": 49.8,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_125",
+    "name": "КУНРС Внг(A)-FRLSLTx 27х16",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 27,
+    "coreSection": 16,
+    "outerDiameter": 58.5,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_141",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 27х0,75",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 27,
+    "coreSection": 0.75,
+    "outerDiameter": 25.8,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_157",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 27х1,0",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 27,
+    "coreSection": null,
+    "outerDiameter": 27.5,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_173",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 27х1,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 27,
+    "coreSection": 1.5,
+    "outerDiameter": 29.5,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_189",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 27х2,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 27,
+    "coreSection": 2.5,
+    "outerDiameter": 32.4,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_205",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 27х4",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 27,
+    "coreSection": 4,
+    "outerDiameter": 37.4,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_221",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 27х6",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 27,
+    "coreSection": 6,
+    "outerDiameter": 41.9,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_237",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 27х10",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 27,
+    "coreSection": 10,
+    "outerDiameter": 49.8,
     "TU": "ТУ 16.К99-050-2012"
   },
   {
@@ -2277,6 +1872,141 @@
     "TU": "ТУ 16.К99-050-2012"
   },
   {
+    "id": "cable_kunrs_v_ltx_14",
+    "name": "КУНРС Внг(A)-FRLSLTx 30х0,75",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 30,
+    "coreSection": 0.75,
+    "outerDiameter": 27.1,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_30",
+    "name": "КУНРС Внг(A)-FRLSLTx 30х1,0",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 30,
+    "coreSection": null,
+    "outerDiameter": 28.4,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_46",
+    "name": "КУНРС Внг(A)-FRLSLTx 30х1,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 30,
+    "coreSection": 1.5,
+    "outerDiameter": 30.5,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_62",
+    "name": "КУНРС Внг(A)-FRLSLTx 30х2,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 30,
+    "coreSection": 2.5,
+    "outerDiameter": 33.5,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_78",
+    "name": "КУНРС Внг(A)-FRLSLTx 30х4",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 30,
+    "coreSection": 4,
+    "outerDiameter": 39.1,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_94",
+    "name": "КУНРС Внг(A)-FRLSLTx 30х6",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 30,
+    "coreSection": 6,
+    "outerDiameter": 43.4,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_110",
+    "name": "КУНРС Внг(A)-FRLSLTx 30х10",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 30,
+    "coreSection": 10,
+    "outerDiameter": 51.5,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_126",
+    "name": "КУНРС Внг(A)-FRLSLTx 30х16",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 30,
+    "coreSection": 16,
+    "outerDiameter": 61.1,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_142",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 30х0,75",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 30,
+    "coreSection": 0.75,
+    "outerDiameter": 27.1,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_158",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 30х1,0",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 30,
+    "coreSection": null,
+    "outerDiameter": 28.4,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_174",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 30х1,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 30,
+    "coreSection": 1.5,
+    "outerDiameter": 30.5,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_190",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 30х2,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 30,
+    "coreSection": 2.5,
+    "outerDiameter": 33.5,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_206",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 30х4",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 30,
+    "coreSection": 4,
+    "outerDiameter": 39.1,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_222",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 30х6",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 30,
+    "coreSection": 6,
+    "outerDiameter": 43.4,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_238",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 30х10",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 30,
+    "coreSection": 10,
+    "outerDiameter": 51.5,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
     "id": "cable_kunrs_av_ltx_254",
     "name": "КУНРС ЭВнг(A)-FRLSLTx 30х16",
     "cableTypeId": "cable_type:power450_750_ltx",
@@ -2286,12 +2016,282 @@
     "TU": "ТУ 16.К99-050-2012"
   },
   {
+    "id": "cable_kunrs_v_ltx_15",
+    "name": "КУНРС Внг(A)-FRLSLTx 37х0,75",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 37,
+    "coreSection": 0.75,
+    "outerDiameter": 29,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_31",
+    "name": "КУНРС Внг(A)-FRLSLTx 37х1,0",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 37,
+    "coreSection": null,
+    "outerDiameter": 30.4,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_47",
+    "name": "КУНРС Внг(A)-FRLSLTx 37х1,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 37,
+    "coreSection": 1.5,
+    "outerDiameter": 32.7,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_63",
+    "name": "КУНРС Внг(A)-FRLSLTx 37х2,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 37,
+    "coreSection": 2.5,
+    "outerDiameter": 35.9,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_79",
+    "name": "КУНРС Внг(A)-FRLSLTx 37х4",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 37,
+    "coreSection": 4,
+    "outerDiameter": 42.1,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_95",
+    "name": "КУНРС Внг(A)-FRLSLTx 37х6",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 37,
+    "coreSection": 6,
+    "outerDiameter": 46.7,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_111",
+    "name": "КУНРС Внг(A)-FRLSLTx 37х10",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 37,
+    "coreSection": 10,
+    "outerDiameter": 55.6,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_127",
+    "name": "КУНРС Внг(A)-FRLSLTx 37х16",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 37,
+    "coreSection": 16,
+    "outerDiameter": 66,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_143",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 37х0,75",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 37,
+    "coreSection": 0.75,
+    "outerDiameter": 29,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_159",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 37х1,0",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 37,
+    "coreSection": null,
+    "outerDiameter": 30.4,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_175",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 37х1,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 37,
+    "coreSection": 1.5,
+    "outerDiameter": 32.7,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_191",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 37х2,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 37,
+    "coreSection": 2.5,
+    "outerDiameter": 35.9,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_207",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 37х4",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 37,
+    "coreSection": 4,
+    "outerDiameter": 42.1,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_223",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 37х6",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 37,
+    "coreSection": 6,
+    "outerDiameter": 46.7,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_239",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 37х10",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 37,
+    "coreSection": 10,
+    "outerDiameter": 55.6,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
     "id": "cable_kunrs_av_ltx_255",
     "name": "КУНРС ЭВнг(A)-FRLSLTx 37х16",
     "cableTypeId": "cable_type:power450_750_ltx",
     "cores": 37,
     "coreSection": 16,
     "outerDiameter": 66,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_16",
+    "name": "КУНРС Внг(A)-FRLSLTx 40х0,75",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 40,
+    "coreSection": 0.75,
+    "outerDiameter": 30,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_32",
+    "name": "КУНРС Внг(A)-FRLSLTx 40х1,0",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 40,
+    "coreSection": null,
+    "outerDiameter": 31.4,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_48",
+    "name": "КУНРС Внг(A)-FRLSLTx 40х1,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 40,
+    "coreSection": 1.5,
+    "outerDiameter": 33.8,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_64",
+    "name": "КУНРС Внг(A)-FRLSLTx 40х2,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 40,
+    "coreSection": 2.5,
+    "outerDiameter": 37.2,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_80",
+    "name": "КУНРС Внг(A)-FRLSLTx 40х4",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 40,
+    "coreSection": 4,
+    "outerDiameter": 43.6,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_96",
+    "name": "КУНРС Внг(A)-FRLSLTx 40х6",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 40,
+    "coreSection": 6,
+    "outerDiameter": 48.4,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_112",
+    "name": "КУНРС Внг(A)-FRLSLTx 40х10",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 40,
+    "coreSection": 10,
+    "outerDiameter": 57.7,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_v_ltx_128",
+    "name": "КУНРС Внг(A)-FRLSLTx 40х16",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 40,
+    "coreSection": 16,
+    "outerDiameter": 68.5,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_144",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 40х0,75",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 40,
+    "coreSection": 0.75,
+    "outerDiameter": 30,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_160",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 40х1,0",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 40,
+    "coreSection": null,
+    "outerDiameter": 31.4,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_176",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 40х1,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 40,
+    "coreSection": 1.5,
+    "outerDiameter": 33.8,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_192",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 40х2,5",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 40,
+    "coreSection": 2.5,
+    "outerDiameter": 37.2,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_208",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 40х4",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 40,
+    "coreSection": 4,
+    "outerDiameter": 43.6,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_224",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 40х6",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 40,
+    "coreSection": 6,
+    "outerDiameter": 48.4,
+    "TU": "ТУ 16.К99-050-2012"
+  },
+  {
+    "id": "cable_kunrs_av_ltx_240",
+    "name": "КУНРС ЭВнг(A)-FRLSLTx 40х10",
+    "cableTypeId": "cable_type:power450_750_ltx",
+    "cores": 40,
+    "coreSection": 10,
+    "outerDiameter": 57.7,
     "TU": "ТУ 16.К99-050-2012"
   },
   {
