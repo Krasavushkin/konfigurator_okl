@@ -448,8 +448,6 @@ export const Konfigurator2 = () => {
                             disabled={!selectedOKL || meter < 1 || isOKLAlreadyAdded}
                         />
 
-
-                         СЧЁТЧИК ПОД КНОПКОЙ
                         <CounterBadge
                             label="Добавлено ОКЛ"
                             value={oklList.length}
