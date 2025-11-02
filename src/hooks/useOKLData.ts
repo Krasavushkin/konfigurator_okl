@@ -94,6 +94,17 @@ export const useOKLData = () => {
         return match?.maxFireWorkTime || null;
     };
 
+    // 🔄 В хук useOKLData добавляем функцию
+    const getCompatibleOKLForCable = (cableId: string) => {
+        const cableData = allCables.find(c => c.id === cableId);
+        if (!cableData) return [];
+
+        return allOKL.filter(okl => {
+            const compatibleCables = getCompatibleCablesForOKL(okl.id, undefined, []);
+            return compatibleCables.some(cable => cable.id === cableId);
+        });
+    };
+
     return {
         allOKL,
         allCables,
@@ -102,6 +113,7 @@ export const useOKLData = () => {
         getMaxFireTime,
         getCablesByType,
         getCompatibleCableAppointments,
-        getCompatibleCablesForOKL
+        getCompatibleCablesForOKL,
+        getCompatibleOKLForCable
     };
 };

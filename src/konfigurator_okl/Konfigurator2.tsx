@@ -21,7 +21,7 @@ export const Konfigurator2 = () => {
     const {
         allOKL,
         allCables,
-        getCompatibleCables,
+
         getMaxFireTime,
         getCablesByType,
         getCompatibleCableAppointments,
@@ -305,153 +305,483 @@ export const Konfigurator2 = () => {
         return { name, index };
     }, [selectedOKL, oklList, allOKL]);
 
+
+    // 🔄 ФУНКЦИЯ ПЕРЕКЛЮЧЕНИЯ РЕЖИМА
+    const [selectionMode, setSelectionMode] = useState<'okl-first' | 'cable-first'>('okl-first');
+    const [selectedCableForOKL, setSelectedCableForOKL] = useState<string>('');
+
+    // 🔄 ФУНКЦИЯ ПЕРЕКЛЮЧЕНИЯ РЕЖИМА
+    const toggleSelectionMode = () => {
+        setSelectionMode(prev => prev === 'okl-first' ? 'cable-first' : 'okl-first');
+        // Сброс выбранных значений при переключении
+        setSelectedOKL('');
+        setSelectedCable('');
+        setSelectedCableForOKL('');
+    };
+
+    // 🔄 ПОЛУЧЕНИЕ ДОСТУПНЫХ ОКЛ ДЛЯ ВЫБРАННОГО КАБЕЛЯ
+    const availableOKLForCable = useMemo(() => {
+        if (!selectedCableForOKL) return [];
+
+        const cableData = allCables.find(c => c.id === selectedCableForOKL);
+        if (!cableData) return [];
+
+        // Фильтруем ОКЛ, которые совместимы с выбранным кабелем
+        return allOKL.filter(okl => {
+            // Проверяем совместимость по типу кабеля
+            const compatibleCables = getCompatibleCablesForOKL(okl.id, undefined, []);
+            return compatibleCables.some(cable => cable.id === selectedCableForOKL);
+        });
+    }, [selectedCableForOKL, allOKL, allCables]);
+
+    // 🔄 ОБНОВЛЕННАЯ ЛОГИКА ДОБАВЛЕНИЯ
+    const handleAddOKLWithCable = () => {
+        if (!selectedOKL || !selectedCableForOKL) return;
+
+        // Сначала добавляем ОКЛ
+        const newOKLId = addOKL(selectedOKL, meter);
+        if (newOKLId) {
+            // Затем добавляем кабель
+            addCable(newOKLId, selectedCableForOKL, meterCable);
+
+            // Сброс
+            setSelectedCableForOKL('');
+            setMeterOKL(1);
+            setMeterCable(1);
+        }
+    };
+
     return (
         <>
             <Header/>
+            {/* 🔄 ПЕРЕКЛЮЧАТЕЛЬ РЕЖИМОВ */}
+            {/*<div className={styles.modeSwitch}>
+                <button
+                    className={`${styles.modeButton} ${selectionMode === 'okl-first' ? styles.active : ''}`}
+                    onClick={() => setSelectionMode('okl-first')}
+                >
+                    Сначала ОКЛ → потом кабель
+                </button>
+                <button
+                    className={`${styles.modeButton} ${selectionMode === 'cable-first' ? styles.active : ''}`}
+                    onClick={() => setSelectionMode('cable-first')}
+                >
+                    Сначала кабель → потом ОКЛ
+                </button>
+            </div>*/}
             <div className={styles.container}>
+                <>
+                    <div className={styles.dropdowns}>
+                        <h2>Фильтры для подбора ОКЛ</h2>
+
+                        <Dropdown
+                            id="dropdown-suspension"
+                            title="Тип кабеленесущего элемента"
+                            items={SUSPENSIONS}
+                            selectedId={selectedSuspension}
+                            isOpen={activeDropdown === 'suspension'}
+                            onToggle={() => toggleDropdown('suspension')}
+                            onSelect={handleSelect('suspension')}
+                        />
+                        <Dropdown
+                            title="Поверхность монтажа"
+                            items={availableSurfaces}
+                            selectedId={selectedSurface}
+                            isOpen={activeDropdown === 'surface'}
+                            onToggle={() => selectedSuspension && toggleDropdown('surface')}
+                            onSelect={handleSelect('surface')}
+                            disabled={!selectedSuspension}
+
+                        />
+                        <Dropdown
+                            title="Тип крепежа"
+                            items={availableFittings}
+                            selectedId={selectedFitting}
+                            isOpen={activeDropdown === 'fitting'}
+                            onToggle={() => selectedSurface && toggleDropdown('fitting')}
+                            onSelect={handleSelect('fitting')}
+                            disabled={!selectedSurface}
+                        />
+
+                        {!selectedOKL  && oklList.length === 0 && (
+                            <StatusHint
+                                type={selectedSuspension && selectedSurface && selectedFitting ? 'success' : 'info'}
+                            >
+                                {selectedSuspension && selectedSurface && selectedFitting
+                                    ? "Все фильтры выбраны! Теперь выберите ОКЛ в поле 'Огнестойкая кабельная линия'."
+                                    : !selectedSuspension
+                                        ? "Выберите тип кабеленесущего элемента. Если знаете марку ОКЛ — выберите сразу из списка 'Огнестойкая кабельная линия'."
+                                        : !selectedSurface
+                                            ? "Выберите поверхность монтажа"
+                                            : "Выберите тип крепежа"
+                                }
+                            </StatusHint>
+                        )}
+                    </div>
+                    <div className={styles.dropdowns}>
+                        <h2>Выбор марки ОКЛ</h2>
+                        <Dropdown
+                            title="Огнестойкая кабельная линия"
+                            items={availableOKL}
+                            selectedId={selectedOKL}
+                            isOpen={activeDropdown === 'OKL'}
+                            onToggle={() => toggleDropdown('OKL')}
+                            onSelect={handleSelect('OKL')}
+                            disabled={false}
+                            searchable={true}
+                            placeholder="Поиск ОКЛ..."
+                        />
+                        <Input
+                            title="Длина в метрах"
+                            value={meter}
+                            onChange={(e) => setMeterOKL(Number(e))}
+                            placeholder="длина в метрах"
+                        />
+                        {isOKLAlreadyAdded && oklList.length > 0 && (
+                            <StatusHint type="info">
+                                Вы добавили ОКЛ в конфигурацию! Можете добавить в неё кабели или выберите новую ОКЛ, введите длину и нажмите "+ Добавить ОКЛ".
+                            </StatusHint>
+                        )}
+                        <Button
+                            title="Добавить ОКЛ"
+                            onClick={handleAddOKL}
+                            disabled={!selectedOKL || meter < 1 || isOKLAlreadyAdded}
+                        />
 
 
-                <div className={styles.dropdowns}>
-                    <h2>Фильтры для подбора ОКЛ</h2>
+                         СЧЁТЧИК ПОД КНОПКОЙ
+                        <CounterBadge
+                            label="Добавлено ОКЛ"
+                            value={oklList.length}
+                            highlight={justAdded}
+                        />
 
-                    <Dropdown
-                        id="dropdown-suspension"
-                        title="Тип кабеленесущего элемента"
-                        items={SUSPENSIONS}
-                        selectedId={selectedSuspension}
-                        isOpen={activeDropdown === 'suspension'}
-                        onToggle={() => toggleDropdown('suspension')}
-                        onSelect={handleSelect('suspension')}
-                    />
-                    <Dropdown
-                        title="Поверхность монтажа"
-                        items={availableSurfaces}
-                        selectedId={selectedSurface}
-                        isOpen={activeDropdown === 'surface'}
-                        onToggle={() => selectedSuspension && toggleDropdown('surface')}
-                        onSelect={handleSelect('surface')}
-                        disabled={!selectedSuspension}
+                        {!selectedOKL  && oklList.length === 0 && (
+                            <StatusHint type="info">
+                                После выбора ОКЛ введите длину в метрах и нажмите "+ Добавить ОКЛ".
+                                Затем перейдите к выбору и добавлению кабеля.
+                            </StatusHint>
+                        )}
+                    </div>
+                    <div className={styles.dropdowns}>
+                        <h2>Подбор кабеля для ОКЛ</h2>
+                        {!selectedOKL  && oklList.length === 0 && (
+                            <StatusHint type="info">
+                                Сначала добавьте ОКЛ в карточке "Выбор марки ОКЛ"
+                            </StatusHint>
+                        )}
+                        <Dropdown
+                            title="Назначение кабеля"
+                            items={availableCableAppointments}
+                            selectedId={selectedCableType}
+                            isOpen={activeDropdown === 'cableType'}
+                            onToggle={() => toggleDropdown('cableType')}
+                            onSelect={handleSelect('cableType')}
+                        />
 
-                    />
-                    <Dropdown
-                        title="Тип крепежа"
-                        items={availableFittings}
-                        selectedId={selectedFitting}
-                        isOpen={activeDropdown === 'fitting'}
-                        onToggle={() => selectedSurface && toggleDropdown('fitting')}
-                        onSelect={handleSelect('fitting')}
-                        disabled={!selectedSurface}
-                    />
+                        <Dropdown
+                            title="Марка кабеля"
+                            items={filteredCables}
+                            selectedId={selectedCable}
+                            isOpen={activeDropdown === 'cable'}
+                            onToggle={() => toggleDropdown('cable')}
+                            onSelect={handleSelect('cable')}
+                            searchable={true}
+                            placeholder="Поиск кабеля..."
+                        />
+                        <Input
+                            title="Длина в метрах"
+                            value={meterCable}
+                            onChange={(e) => setMeterCable(Number(e))}
+                            placeholder="длина в метрах"
+                        />
+                        <Button
+                            title="Добавить кабель в ОКЛ"
+                            onClick={handleAddCableToOKL}
+                            disabled={!canAddCable || meterCable < 1}
+                        />
+                        {selectedCable && !canAddCable && (
+                            <StatusHint type="error">
+                                Нельзя добавить кабель в выбранную ОКЛ. Можете добавить новую или удалить кабели из выбранной.
+                            </StatusHint>
+                        )}
+                        {!selectedCable && selectedOKL && (
+                            <StatusHint type="warning">
+                                Выберите кабель, чтобы добавить в ОКЛ.
+                            </StatusHint>
+                        )}
+                        {capacityInfo && <CapacityStatus capacityStatusData={capacityStatusData} compact={false} selectedOKLInfo={selectedOKLInfo}/>}
+                    </div>
+                </>
+              {/*  {selectionMode === 'okl-first' && (
+                    <>
+                        <div className={styles.dropdowns}>
+                            <h2>Фильтры для подбора ОКЛ</h2>
 
-                    {!selectedOKL  && oklList.length === 0 && (
-                        <StatusHint
-                            type={selectedSuspension && selectedSurface && selectedFitting ? 'success' : 'info'}
-                        >
-                            {selectedSuspension && selectedSurface && selectedFitting
-                                ? "Все фильтры выбраны! Теперь выберите ОКЛ в поле 'Огнестойкая кабельная линия'."
-                                : !selectedSuspension
-                                    ? "Выберите тип кабеленесущего элемента. Если знаете марку ОКЛ — выберите сразу из списка 'Огнестойкая кабельная линия'."
-                                    : !selectedSurface
-                                        ? "Выберите поверхность монтажа"
-                                        : "Выберите тип крепежа"
-                            }
-                        </StatusHint>
-                    )}
-                </div>
-                <div className={styles.dropdowns}>
-                    <h2>Выбор марки ОКЛ</h2>
-                    <Dropdown
-                        title="Огнестойкая кабельная линия"
-                        items={availableOKL}
-                        selectedId={selectedOKL}
-                        isOpen={activeDropdown === 'OKL'}
-                        onToggle={() => toggleDropdown('OKL')}
-                        onSelect={handleSelect('OKL')}
-                        disabled={false}
-                        searchable={true}
-                        placeholder="Поиск ОКЛ..."
-                    />
-                    <Input
-                        title="Длина в метрах"
-                        value={meter}
-                        onChange={(e) => setMeterOKL(Number(e))}
-                        placeholder="длина в метрах"
-                    />
-                    {isOKLAlreadyAdded && oklList.length > 0 && (
-                        <StatusHint type="info">
-                            Вы добавили ОКЛ в конфигурацию! Можете добавить в неё кабели или выберите новую ОКЛ, введите длину и нажмите "+ Добавить ОКЛ".
-                        </StatusHint>
-                    )}
-                    <Button
-                        title="Добавить ОКЛ"
-                        onClick={handleAddOKL}
-                        disabled={!selectedOKL || meter < 1 || isOKLAlreadyAdded}
-                    />
+                            <Dropdown
+                                id="dropdown-suspension"
+                                title="Тип кабеленесущего элемента"
+                                items={SUSPENSIONS}
+                                selectedId={selectedSuspension}
+                                isOpen={activeDropdown === 'suspension'}
+                                onToggle={() => toggleDropdown('suspension')}
+                                onSelect={handleSelect('suspension')}
+                            />
+                            <Dropdown
+                                title="Поверхность монтажа"
+                                items={availableSurfaces}
+                                selectedId={selectedSurface}
+                                isOpen={activeDropdown === 'surface'}
+                                onToggle={() => selectedSuspension && toggleDropdown('surface')}
+                                onSelect={handleSelect('surface')}
+                                disabled={!selectedSuspension}
+
+                            />
+                            <Dropdown
+                                title="Тип крепежа"
+                                items={availableFittings}
+                                selectedId={selectedFitting}
+                                isOpen={activeDropdown === 'fitting'}
+                                onToggle={() => selectedSurface && toggleDropdown('fitting')}
+                                onSelect={handleSelect('fitting')}
+                                disabled={!selectedSurface}
+                            />
+
+                            {!selectedOKL  && oklList.length === 0 && (
+                                <StatusHint
+                                    type={selectedSuspension && selectedSurface && selectedFitting ? 'success' : 'info'}
+                                >
+                                    {selectedSuspension && selectedSurface && selectedFitting
+                                        ? "Все фильтры выбраны! Теперь выберите ОКЛ в поле 'Огнестойкая кабельная линия'."
+                                        : !selectedSuspension
+                                            ? "Выберите тип кабеленесущего элемента. Если знаете марку ОКЛ — выберите сразу из списка 'Огнестойкая кабельная линия'."
+                                            : !selectedSurface
+                                                ? "Выберите поверхность монтажа"
+                                                : "Выберите тип крепежа"
+                                    }
+                                </StatusHint>
+                            )}
+                        </div>
+                        <div className={styles.dropdowns}>
+                            <h2>Выбор марки ОКЛ</h2>
+                            <Dropdown
+                                title="Огнестойкая кабельная линия"
+                                items={availableOKL}
+                                selectedId={selectedOKL}
+                                isOpen={activeDropdown === 'OKL'}
+                                onToggle={() => toggleDropdown('OKL')}
+                                onSelect={handleSelect('OKL')}
+                                disabled={false}
+                                searchable={true}
+                                placeholder="Поиск ОКЛ..."
+                            />
+                            <Input
+                                title="Длина в метрах"
+                                value={meter}
+                                onChange={(e) => setMeterOKL(Number(e))}
+                                placeholder="длина в метрах"
+                            />
+                            {isOKLAlreadyAdded && oklList.length > 0 && (
+                                <StatusHint type="info">
+                                    Вы добавили ОКЛ в конфигурацию! Можете добавить в неё кабели или выберите новую ОКЛ, введите длину и нажмите "+ Добавить ОКЛ".
+                                </StatusHint>
+                            )}
+                            <Button
+                                title="Добавить ОКЛ"
+                                onClick={handleAddOKL}
+                                disabled={!selectedOKL || meter < 1 || isOKLAlreadyAdded}
+                            />
 
 
-                    {/* СЧЁТЧИК ПОД КНОПКОЙ */}
-                    <CounterBadge
-                        label="Добавлено ОКЛ"
-                        value={oklList.length}
-                        highlight={justAdded}
-                    />
+                             СЧЁТЧИК ПОД КНОПКОЙ
+                            <CounterBadge
+                                label="Добавлено ОКЛ"
+                                value={oklList.length}
+                                highlight={justAdded}
+                            />
 
-                    {!selectedOKL  && oklList.length === 0 && (
-                        <StatusHint type="info">
-                            После выбора ОКЛ введите длину в метрах и нажмите "+ Добавить ОКЛ".
-                            Затем перейдите к выбору и добавлению кабеля.
-                        </StatusHint>
-                    )}
-                </div>
-                <div className={styles.dropdowns}>
-                    <h2>Подбор кабеля для ОКЛ</h2>
-                    {!selectedOKL  && oklList.length === 0 && (
-                        <StatusHint type="info">
-                            Сначала добавьте ОКЛ в карточке "Выбор марки ОКЛ"
-                        </StatusHint>
-                    )}
-                    <Dropdown
-                        title="Назначение кабеля"
-                        items={availableCableAppointments}
-                        selectedId={selectedCableType}
-                        isOpen={activeDropdown === 'cableType'}
-                        onToggle={() => toggleDropdown('cableType')}
-                        onSelect={handleSelect('cableType')}
-                    />
+                            {!selectedOKL  && oklList.length === 0 && (
+                                <StatusHint type="info">
+                                    После выбора ОКЛ введите длину в метрах и нажмите "+ Добавить ОКЛ".
+                                    Затем перейдите к выбору и добавлению кабеля.
+                                </StatusHint>
+                            )}
+                        </div>
+                        <div className={styles.dropdowns}>
+                            <h2>Подбор кабеля для ОКЛ</h2>
+                            {!selectedOKL  && oklList.length === 0 && (
+                                <StatusHint type="info">
+                                    Сначала добавьте ОКЛ в карточке "Выбор марки ОКЛ"
+                                </StatusHint>
+                            )}
+                            <Dropdown
+                                title="Назначение кабеля"
+                                items={availableCableAppointments}
+                                selectedId={selectedCableType}
+                                isOpen={activeDropdown === 'cableType'}
+                                onToggle={() => toggleDropdown('cableType')}
+                                onSelect={handleSelect('cableType')}
+                            />
 
-                    <Dropdown
-                        title="Марка кабеля"
-                        items={filteredCables}
-                        selectedId={selectedCable}
-                        isOpen={activeDropdown === 'cable'}
-                        onToggle={() => toggleDropdown('cable')}
-                        onSelect={handleSelect('cable')}
-                        searchable={true}
-                        placeholder="Поиск кабеля..."
-                    />
-                    <Input
-                        title="Длина в метрах"
-                        value={meterCable}
-                        onChange={(e) => setMeterCable(Number(e))}
-                        placeholder="длина в метрах"
-                    />
-                    <Button
-                        title="Добавить кабель в ОКЛ"
-                        onClick={handleAddCableToOKL}
-                        disabled={!canAddCable || meterCable < 1}
-                    />
-                    {selectedCable && !canAddCable && (
-                        <StatusHint type="error">
-                            Нельзя добавить кабель в выбранную ОКЛ. Можете добавить новую или удалить кабели из выбранной.
-                        </StatusHint>
-                    )}
-                    {!selectedCable && selectedOKL && (
-                        <StatusHint type="warning">
-                            Выберите кабель, чтобы добавить в ОКЛ.
-                        </StatusHint>
-                    )}
-                    {capacityInfo && <CapacityStatus capacityStatusData={capacityStatusData} compact={false} selectedOKLInfo={selectedOKLInfo}/>}
-                </div>
+                            <Dropdown
+                                title="Марка кабеля"
+                                items={filteredCables}
+                                selectedId={selectedCable}
+                                isOpen={activeDropdown === 'cable'}
+                                onToggle={() => toggleDropdown('cable')}
+                                onSelect={handleSelect('cable')}
+                                searchable={true}
+                                placeholder="Поиск кабеля..."
+                            />
+                            <Input
+                                title="Длина в метрах"
+                                value={meterCable}
+                                onChange={(e) => setMeterCable(Number(e))}
+                                placeholder="длина в метрах"
+                            />
+                            <Button
+                                title="Добавить кабель в ОКЛ"
+                                onClick={handleAddCableToOKL}
+                                disabled={!canAddCable || meterCable < 1}
+                            />
+                            {selectedCable && !canAddCable && (
+                                <StatusHint type="error">
+                                    Нельзя добавить кабель в выбранную ОКЛ. Можете добавить новую или удалить кабели из выбранной.
+                                </StatusHint>
+                            )}
+                            {!selectedCable && selectedOKL && (
+                                <StatusHint type="warning">
+                                    Выберите кабель, чтобы добавить в ОКЛ.
+                                </StatusHint>
+                            )}
+                            {capacityInfo && <CapacityStatus capacityStatusData={capacityStatusData} compact={false} selectedOKLInfo={selectedOKLInfo}/>}
+                        </div>
+                    </>)}
+                 🔄 РЕЖИМ 2: СНАЧАЛА КАБЕЛЬ
+                {selectionMode === 'cable-first' && (
+                    <>
+                        <div className={styles.dropdowns}>
+                            <h2>Выбор кабеля</h2>
+                            <Dropdown
+                                title="Назначение кабеля"
+                                items={CABLE_APPOINTMENT}
+                                selectedId={selectedCableType}
+                                isOpen={activeDropdown === 'cableType'}
+                                onToggle={() => toggleDropdown('cableType')}
+                                onSelect={handleSelect('cableType')}
+                            />
+                            <Dropdown
+                                title="Марка кабеля"
+                                items={filteredCables}
+                                selectedId={selectedCableForOKL}
+                                isOpen={activeDropdown === 'cableForOKL'}
+                                onToggle={() => toggleDropdown('cableForOKL')}
+                                onSelect={(id, name) => {
+                                    setSelectedCableForOKL(id);
+                                    setActiveDropdown(null);
+                                }}
+                                searchable={true}
+                                placeholder="Поиск кабеля..."
+                            />
+                            {selectedOKL && (
+                                <Input
+                                    title="Длина кабеля в метрах"
+                                    value={meterCable}
+                                    onChange={(e) => setMeterCable(Number(e))}
+                                    placeholder="длина в метрах"
+                                />
+                            )}
+
+                            {selectedCableForOKL && (
+                                <StatusHint type="success">
+                                    Кабель выбран! Теперь подберите подходящую ОКЛ.
+                                </StatusHint>
+                            )}
+                        </div>
+                        <div className={styles.dropdowns}>
+                            <h2>Фильтры для подбора ОКЛ</h2>
+
+                            <Dropdown
+                                id="dropdown-suspension"
+                                title="Тип кабеленесущего элемента"
+                                items={SUSPENSIONS}
+                                selectedId={selectedSuspension}
+                                isOpen={activeDropdown === 'suspension'}
+                                onToggle={() => toggleDropdown('suspension')}
+                                onSelect={handleSelect('suspension')}
+                            />
+                            <Dropdown
+                                title="Поверхность монтажа"
+                                items={availableSurfaces}
+                                selectedId={selectedSurface}
+                                isOpen={activeDropdown === 'surface'}
+                                onToggle={() => selectedSuspension && toggleDropdown('surface')}
+                                onSelect={handleSelect('surface')}
+                                disabled={!selectedSuspension}
+
+                            />
+                            <Dropdown
+                                title="Тип крепежа"
+                                items={availableFittings}
+                                selectedId={selectedFitting}
+                                isOpen={activeDropdown === 'fitting'}
+                                onToggle={() => selectedSurface && toggleDropdown('fitting')}
+                                onSelect={handleSelect('fitting')}
+                                disabled={!selectedSurface}
+                            />
+
+                            {!selectedOKL  && oklList.length === 0 && (
+                                <StatusHint
+                                    type={selectedSuspension && selectedSurface && selectedFitting ? 'success' : 'info'}
+                                >
+                                    {selectedSuspension && selectedSurface && selectedFitting
+                                        ? "Все фильтры выбраны! Теперь выберите ОКЛ в поле 'Огнестойкая кабельная линия'."
+                                        : !selectedSuspension
+                                            ? "Выберите тип кабеленесущего элемента. Если знаете марку ОКЛ — выберите сразу из списка 'Огнестойкая кабельная линия'."
+                                            : !selectedSurface
+                                                ? "Выберите поверхность монтажа"
+                                                : "Выберите тип крепежа"
+                                    }
+                                </StatusHint>
+                            )}
+                        </div>
+                        <div className={styles.dropdowns}>
+                            <h2>Подбор ОКЛ для кабеля</h2>
+                            <Dropdown
+                                title="Огнестойкая кабельная линия"
+                                items={availableOKLForCable}
+                                selectedId={selectedOKL}
+                                isOpen={activeDropdown === 'OKLForCable'}
+                                onToggle={() => selectedCableForOKL && toggleDropdown('OKLForCable')}
+                                onSelect={handleSelect('OKL')}
+                                disabled={!selectedCableForOKL}
+                                searchable={true}
+                                placeholder="Поиск ОКЛ..."
+                            />
+                            <Input
+                                title="Длина ОКЛ в метрах"
+                                value={meter}
+                                onChange={(e) => setMeterOKL(Number(e))}
+                                placeholder="длина в метрах"
+                            />
+                            <Button
+                                title="Добавить ОКЛ с кабелем"
+                                onClick={handleAddOKLWithCable}
+                                disabled={!selectedOKL || !selectedCableForOKL || meter < 1 || meterCable < 1}
+                            />
+                            {!selectedCableForOKL && (
+                                <StatusHint type="info">
+                                    Сначала выберите кабель в карточке "Выбор кабеля"
+                                </StatusHint>
+                            )}
+                            <CounterBadge
+                                label="Добавлено ОКЛ"
+                                value={oklList.length}
+                                highlight={justAdded}
+                            />
+                        </div>
+                    </>
+                )}*/}
             </div>
             <OKLconfig
                 oklList={oklList}

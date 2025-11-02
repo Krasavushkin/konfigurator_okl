@@ -228,7 +228,14 @@ export const useOKLManager = () => {
             return cableArea <= freeArea;
         }).length;
     };
-
+// 🔄 В хук useOKLManager добавляем функцию
+    const addOKLWithCable = (oklId: string, cableId: string, oklLength: number, cableLength: number) => {
+        const newOKLId = addOKL(oklId, oklLength);
+        if (newOKLId) {
+            addCable(newOKLId, cableId, cableLength);
+        }
+        return newOKLId;
+    };
     return {
         oklList,
         selectedOKL,

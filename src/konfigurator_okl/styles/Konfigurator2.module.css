@@ -97,6 +97,95 @@
 .infoIcon { color: #2196f3; }
 .successIcon { color: #4caf50; }
 
+
+/* === ПЕРЕКЛЮЧАТЕЛЬ РЕЖИМОВ === */
+.modeSwitch {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    margin: 24px 0;
+    background: #f8f9fa;
+    border-radius: 25px;
+    padding: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1.5px solid #eee;
+}
+
+.modeButton {
+    flex: 1;
+    padding: 12px 24px;
+    border: none;
+    background: transparent;
+    border-radius: 20px;
+    font-size: 14.5px;
+    font-weight: 600;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+}
+
+.modeButton:hover {
+    color: #9E0929;
+    background: rgba(158, 9, 41, 0.05);
+}
+
+.modeButton.active {
+    background: #9E0929;
+    color: white;
+    box-shadow: 0 0 0 0 rgba(158, 9, 41, 0.2);
+    transform: translateY(-1px);
+}
+
+.modeButton.active::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.2), transparent);
+    z-index: 0;
+}
+
+/* === АДАПТИВ === */
+@media (max-width: 768px) {
+    .modeSwitch {
+        margin: 20px 0;
+        padding: 3px;
+        border-radius: 20px;
+    }
+
+    .modeButton {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modeButton {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+}
+/* Адаптив */
+@media (max-width: 768px) {
+    .modeSwitch {
+        flex-direction: column;
+        border-radius: 16px;
+        padding: 12px;
+        gap: 8px;
+    }
+
+    .modeButton {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+}
 /* === КНОПКИ === */
 .dropdowns button {
     width: 100%;
