@@ -84,40 +84,69 @@ export const Konfigurator2 = () => {
 
 //1.получение доступной поверхности для выбора ОКЛ из БД
     const availableSurfaces = useMemo(() => {
-        if (!selectedSuspension) return [];
-        const oklWithSuspension = OKL_DB.filter(okl =>
-            okl.compatibleSuspensions.includes(selectedSuspension)
+        if (!selectedSuspension) return SURFACES; // Показываем все, если подвесная система не выбрана
+
+        // Получаем поверхности, совместимые с выбранной подвесной системой
+        const surfacesForSuspension = new Set<string>();
+
+        allOKL.forEach(okl => {
+            if (okl.compatibleSuspensions.includes(selectedSuspension)) {
+                okl.compatibleSurfaces.forEach(surface => {
+                    surfacesForSuspension.add(surface);
+                });
+            }
+        });
+
+        return SURFACES.filter(surface =>
+            surfacesForSuspension.has(surface.id)
         );
-        const surfacesFromOKL = new Set(
-            oklWithSuspension.flatMap(okl => okl.compatibleSurfaces)
-        );
-        return SURFACES.filter(surface => surfacesFromOKL.has(surface.id));
-    }, [selectedSuspension]);
+    }, [selectedSuspension, allOKL]);
 
 //2. выбор доступных креплений
-    const availableFittings = useMemo(
-        () => selectedSuspension && selectedSurface ?
-            FITTINGS.filter((f) =>
-                SUSPENSIONS.find(
-                    (s) => s.id === selectedSuspension
-                )?.defaultFittings[selectedSurface]?.includes(f.id)
-            )
-            : FITTINGS,
-        [selectedSuspension, selectedSurface]
-    );
+    const availableFittings = useMemo(() => {
+        if (!selectedSuspension || !selectedSurface) return FITTINGS;
+
+        const suspension = SUSPENSIONS.find(s => s.id === selectedSuspension);
+        const fittingIds = suspension?.defaultFittings[selectedSurface] || [];
+
+        return FITTINGS.filter(fitting =>
+            fittingIds.includes(fitting.id)
+        );
+    }, [selectedSuspension, selectedSurface]);
 
 //3. Выбор доступой ОКЛ
-    const availableOKL = useMemo(
-        () =>
-            selectedSuspension && selectedSurface
-                ? allOKL.filter(
-                    (o) =>
-                        o.compatibleSuspensions.includes(selectedSuspension) &&
-                        o.compatibleSurfaces.includes(selectedSurface)
-                )
-                : allOKL,
-        [selectedSuspension, selectedSurface, allOKL]
-    );
+    //3. Выбор доступных ОКЛ (простая последовательная фильтрация)
+    const availableOKL = useMemo(() => {
+        let filtered = allOKL;
+
+        // Фильтр 1: по подвесной системе
+        if (selectedSuspension) {
+            filtered = filtered.filter(o =>
+                o.compatibleSuspensions.includes(selectedSuspension)
+            );
+        }
+
+        // Фильтр 2: по поверхности (после подвесной системы)
+        if (selectedSurface) {
+            filtered = filtered.filter(o =>
+                o.compatibleSurfaces.includes(selectedSurface)
+            );
+        }
+
+        // Фильтр 3: по креплению (опционально, если есть связь с ОКЛ)
+        if (selectedFitting && selectedSuspension && selectedSurface) {
+            // Проверяем, что выбранное крепление совместимо с выбранной комбинацией
+            const suspension = SUSPENSIONS.find(s => s.id === selectedSuspension);
+            const fittingsForSurface = suspension?.defaultFittings[selectedSurface] || [];
+
+            if (!fittingsForSurface.includes(selectedFitting)) {
+                // Если крепление не совместимо, очищаем список
+                filtered = [];
+            }
+        }
+
+        return filtered;
+    }, [selectedSuspension, selectedSurface, selectedFitting, allOKL]);
 
 //... Выбор доступных типов кабелей
     const availableCableAppointments = useMemo(() => {
@@ -403,17 +432,17 @@ export const Konfigurator2 = () => {
                             disabled={!selectedSurface}
                         />
 
-                        {!selectedOKL  && oklList.length === 0 && (
+                        {!selectedOKL && oklList.length === 0 && (
                             <StatusHint
                                 type={selectedSuspension && selectedSurface && selectedFitting ? 'success' : 'info'}
                             >
                                 {selectedSuspension && selectedSurface && selectedFitting
-                                    ? "Все фильтры выбраны! Теперь выберите ОКЛ в поле 'Огнестойкая кабельная линия'."
+                                    ? `Все фильтры выбраны! Найдено ${availableOKL.length} ОКЛ. Теперь выберите ОКЛ в поле 'Огнестойкая кабельная линия'.`
                                     : !selectedSuspension
-                                        ? "Выберите тип кабеленесущего элемента. Если знаете марку ОКЛ — выберите сразу из списка 'Огнестойкая кабельная линия'."
+                                        ? `Выберите тип кабеленесущего элемента. Всего ${allOKL.length} ОКЛ в базе.`
                                         : !selectedSurface
-                                            ? "Выберите поверхность монтажа"
-                                            : "Выберите тип крепежа"
+                                            ? `Выберите поверхность монтажа. Доступно ${availableOKL.length} ОКЛ.`
+                                            : `Выберите тип крепежа. Доступно ${availableOKL.length} ОКЛ.`
                                 }
                             </StatusHint>
                         )}
