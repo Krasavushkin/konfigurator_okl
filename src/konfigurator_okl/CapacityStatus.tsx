@@ -54,19 +54,19 @@ const statusRules: ((data: CapacityStatusData) => StatusResult | null)[] = [
     // 1. Лимит кабелей — full
     (data) =>
         isCableLimitReached(data.capacityInfo)
-            ? { status: 'full', reason: 'В выбранной ОКЛ достигнут лимит кабелей (8). Отсутствует возможность добавить новый кабель.' }
+            ? { status: 'full', reason: 'В выбранной ОКЛ достигнут лимит кабелей (8), отсутствует возможность добавить новый кабель.' }
             : null,
 
     // 2. 100% по объёму — full
     (data) =>
         isVolumeFull(data.capacityInfo)
-            ? { status: 'full', reason: 'Объем выбранной ОКЛ полностью заполнен. Отсутствует возможность добавить новый кабель.' }
+            ? { status: 'full', reason: 'Выбранная ОКЛ полностью заполнена, отсутствует возможность добавить новый кабель.' }
             : null,
 
     // 3. Нет места НИ ДЛЯ ОДНОГО кабеля (из всех) — full
     (data) =>
         isNoSpaceForAnyCable(data)
-            ? { status: 'full', reason: 'В ОКЛ недостаточно места для любого доступного кабеля. Отсутствует возможность добавить новый кабель.' }
+            ? { status: 'full', reason: 'Выбранная ОКЛ заполнена, отсутствует возможность добавить новый кабель любого типа.' }
             : null,
 
     // 4. Нет места в текущем фильтре, но есть другие → almost-full
@@ -74,7 +74,8 @@ const statusRules: ((data: CapacityStatusData) => StatusResult | null)[] = [
         isNoSpaceForFiltered(data)
             ? {
                 status: 'almost-full',
-                reason: `Нет места для кабелей выбранного типа (доступно других кабелей: ${data.availableFromAllCount} шт.)`,
+                reason: `Нет места для кабелей выбранного типа (доступно других кабелей: ${data.availableFromAllCount} шт.). 
+                Пожалуйста, выберите "Все кабели" в поле "Назначение кабеля" и посмотрите доступные для добавления кабели в поле "Марка кабеля"`,
                 showFilterHint: true,
                 availableCount: data.availableFromAllCount
             }

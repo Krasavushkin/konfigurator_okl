@@ -498,11 +498,11 @@ export const Konfigurator2 = () => {
                             onClick={handleAddCableToOKL}
                             disabled={!canAddCable || meterCable < 1}
                         />
-                        {selectedCable && !canAddCable && (
+                      {/*  {selectedCable && !canAddCable && (
                             <StatusHint type="error">
                                 Нельзя добавить кабель в выбранную ОКЛ. Можете добавить новую или удалить кабели из выбранной.
                             </StatusHint>
-                        )}
+                        )}*/}
                         {!selectedCable && selectedOKL && (
                             <StatusHint type="warning">
                                 Выберите кабель, чтобы добавить в ОКЛ.

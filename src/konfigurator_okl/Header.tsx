@@ -1,7 +1,7 @@
 // components/Header.tsx
 import React from 'react';
 import styles from './styles/Header.module.css';
-import logo from '../logo.png'; // Путь к вашему логотипу
+import logo from '../MainLogo.jpg'; // Путь к вашему логотипу
 
 // Header с акцентной полосой
 export const Header = () => {
@@ -18,10 +18,7 @@ export const Header = () => {
                     className={styles.logoSection}
                 >
                     <img src={logo} alt="СПЕЦКАБЕЛЬ" className={styles.logoImg} />
-                    <div className={styles.logoText}>
-                        <span className={styles.companyLine}>Кабельный завод</span>
-                        <span className={styles.brandName}>СПЕЦКАБЕЛЬ</span>
-                    </div>
+
                 </a>
 
                 {/* ЗАГОЛОВОК */}
@@ -32,7 +29,7 @@ export const Header = () => {
 
                 {/* БЕЙДЖ */}
                 <div className={styles.badge}>
-                    v 0.9
+                    v 1.0
                 </div>
             </div>
         </header>

@@ -31,37 +31,16 @@
 }
 
 /* === ЛОГО === */
-.logoSection {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    text-decoration: none;
-    color: inherit;
-    padding: 12px 20px;
-    border-radius: 16px;
-    background: linear-gradient(135deg, #ffffff 0%, #fdfbfb 100%);
-    border: 1.5px solid #eee;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
-    min-width: 260px;
-    backdrop-filter: blur(8px);
-}
 
-.logoSection:hover {
-    background: white;
-    border-color: #9E0929;
-    box-shadow: 0 8px 28px rgba(158, 9, 41, 0.18);
-    transform: translateY(-3px);
-}
 
 .logoImg {
-    height: 52px;
+    height: 70px;
     width: auto;
     transition: transform 0.3s ease;
 }
 
 .logoSection:hover .logoImg {
-    transform: scale(1.08) rotate(2deg);
+    transform: scale(1.08) ;
 }
 
 .logoText {
@@ -115,7 +94,7 @@
 
 /* === БЕЙДЖ === */
 .badge {
-    color: #666;
+    color: #efefef;
     padding: 8px 14px;
     font-size: 13px;
     font-weight: 600;

@@ -13,6 +13,7 @@
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "docx": "^7.8.0",
+    "exceljs": "^4.4.0",
     "file-saver": "^2.0.5",
     "html2canvas": "^1.4.1",
     "html2pdf.js": "^0.12.1",

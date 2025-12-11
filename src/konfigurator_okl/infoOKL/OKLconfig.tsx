@@ -54,7 +54,17 @@ export const OKLconfig: React.FC<ConfigurationSummaryProps> = ({
             setInternalSelectedOKL(externalSelectedOKL);
         }
     }, [externalSelectedOKL]);
+    useEffect(() => {
+        if (oklList.length === 0) {
+            setCurrentPage(1);
+            return;
+        }
 
+        const maxPage = Math.ceil(oklList.length / cardsPerPage);
+        if (currentPage > maxPage && maxPage >= 1) {
+            setCurrentPage(maxPage);
+        }
+    }, [oklList.length, currentPage, cardsPerPage]);
     const handleSelectOKL = (oklId: string) => {
         const newSelected = internalSelectedOKL === oklId ? '' : oklId;
         setInternalSelectedOKL(newSelected);

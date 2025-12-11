@@ -12,6 +12,7 @@ export const Button: React.FC<ButtonProps> = ({ title, onClick, disabled }) => {
     const isDelete = title.includes('Удалить');
     const isPDF = title.includes('PDF');
     const isAddCable = title.includes('кабель') || title.includes('Добавить');
+    const isExcel = title.includes('Excel');
 
     return (
         <button
@@ -26,7 +27,18 @@ export const Button: React.FC<ButtonProps> = ({ title, onClick, disabled }) => {
                     <polyline points="14 2 14 8 20 8"/>
                 </svg>
             )}
-
+            {/* Excel */}
+            {isExcel && (
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    {/* Фон */}
+                    <rect x="3" y="3" width="18" height="18" rx="2" fill="#217346"/>
+                    {/* Буква X */}
+                    <path d="M15 9L12 12L15 15M9 9L12 12L9 15"
+                          stroke="white" strokeWidth="2" strokeLinecap="round" fill="none"/>
+                    {/* Лист */}
+                    <rect x="6" y="6" width="12" height="12" rx="1" fill="none" stroke="white" strokeWidth="1"/>
+                </svg>
+            )}
             {/* Удалить */}
             {isDelete && (
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
