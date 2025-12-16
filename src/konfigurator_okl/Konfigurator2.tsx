@@ -382,7 +382,7 @@ export const Konfigurator2 = () => {
 
     return (
         <>
-            <Header/>
+           {/* <Header/>*/}
             {/* 🔄 ПЕРЕКЛЮЧАТЕЛЬ РЕЖИМОВ */}
             {/*<div className={styles.modeSwitch}>
                 <button
