@@ -4,7 +4,6 @@ import styles from '../styles/OKL.module.css';
 import {ExportButtons} from "../services/ExportButtons";
 import {Button} from "../Button";
 import {Cable, newOKLItem} from "../../data/data";
-import {useOKLData} from "../../hooks/useOKLData";
 import {CapacityInfo} from "../CapacityStatus";
 
 

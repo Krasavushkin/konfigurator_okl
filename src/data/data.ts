@@ -61,6 +61,11 @@ export type OKLBaseType = {
     type: string;
 }
 
+export interface SpecificationType {
+    suspension?: string | null,
+    surface?: string | null,
+    fitting?: string | null ,
+}
 
 export interface newOKLItem {
     id: string;
@@ -71,6 +76,7 @@ export interface newOKLItem {
     type: string;
     TU: string;
     description?: string;
+    specification?: SpecificationType
 }
 export interface OKLLink {
     oklType: string;

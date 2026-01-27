@@ -1,5 +1,5 @@
 import {pdf, Document, Page, Text, View, StyleSheet, Font} from '@react-pdf/renderer';
-import {OKL_LINKS} from "../../data/data";
+import {newOKLItem, OKL_LINKS} from "../../data/data";
 import ExcelJS from 'exceljs';
 // === Регистрация шрифта (для кириллицы) ===
 Font.register({
@@ -67,18 +67,7 @@ const styles = StyleSheet.create({
     },
 });
 
-interface newOKLItem {
-    id: string;
-    type: string;
-    name: string;
-    length: number;
-    cables: Array<{
-        id: string;
-        name: string;
-        length: number;
-    }>;
-    TU?: string;
-}
+
 
 export class ServiceExport {
     private calculateTotalCableLength(cables: Array<{ length: number }>): number {
@@ -119,12 +108,15 @@ export class ServiceExport {
                                     ОКЛ:</Text> {okl.TU || '—'}</Text>
                                 <Text style={styles.text}><Text style={{fontWeight: 'bold'}}>Длина
                                     ОКЛ:</Text> {okl.length} м</Text>
-                                <Text style={styles.text}><Text
-                                    style={{fontWeight: 'bold'}}>Кабелей:</Text> {okl.cables.length}</Text>
+                                <Text style={styles.text}><Text style={{fontWeight: 'bold'}}>Крепёж:
+                                </Text> {okl.specification?.fitting} </Text>
+                                <Text style={styles.text}>
+                                    <Text style={{fontWeight: 'bold'}}>Кабелей:</Text> {okl.cables.length}</Text>
                                 <Text style={styles.text}>
                                     <Text style={{fontWeight: 'bold'}}>Общая длина
                                         кабелей:</Text> {this.calculateTotalCableLength(okl.cables)} м
                                 </Text>
+
                             </View>
                         );
                     })}
@@ -179,15 +171,15 @@ export class ServiceExport {
         titleRow.getCell(1).value = 'КОНФИГУРАЦИЯ ОГНЕСТОЙКИХ КАБЕЛЬНЫХ ЛИНИЙ';
         titleRow.getCell(1).font = { size: 16, bold: true, color: { argb: 'FF8B0000' } };
         titleRow.getCell(1).alignment = { horizontal: 'center' };
-        worksheet.mergeCells('A1:F1');
+        worksheet.mergeCells('A1:G1');
 
         // Дата создания
         worksheet.getRow(3).getCell(1).value = `Дата создания: ${new Date().toLocaleDateString('ru-RU')}`;
         worksheet.getRow(3).getCell(1).font = { italic: true };
 
         // Заголовки таблицы
-        const headers = ['№', 'Наименование ОКЛ', 'Длина ОКЛ, м', 'Кабели', 'Общая длина кабелей, м', 'ТУ ОКЛ'];
-        const headerRow = worksheet.getRow(5);
+        const headers = ['№', 'Наименование ОКЛ', 'Длина ОКЛ, м','Крепёж', 'Кабели', 'Общая длина кабелей, м', 'ТУ ОКЛ'];
+        const headerRow = worksheet.getRow(7);
         headers.forEach((header, index) => {
             const cell = headerRow.getCell(index + 1);
             cell.value = header;
@@ -204,9 +196,9 @@ export class ServiceExport {
                 right: { style: 'thin' }
             };
         });
-
+        headerRow.commit();
         // Данные ОКЛ
-        let currentRow = 6;
+        let currentRow = 8;
         oklList.forEach((okl, index) => {
             const row = worksheet.getRow(currentRow);
             const cablesList = okl.cables
@@ -220,20 +212,22 @@ export class ServiceExport {
             row.getCell(1).value = index + 1; // №
             row.getCell(2).value = `СПЕЦКАБЛАЙН-${okl.name} - ${okl.length} м (${cablesText})`;
             row.getCell(3).value = okl.length;
-            row.getCell(4).value = cablesList;
-            row.getCell(5).value = totalCableLength;
-            row.getCell(6).value = okl.TU || '—';
+            row.getCell(4).value = okl.specification?.fitting || '-';
+            row.getCell(5).value = cablesList;
+            row.getCell(6).value = totalCableLength;
+            row.getCell(7).value = okl.TU || '—';
 
             // Настройка переноса текста для колонки с кабелями
             row.getCell(1).alignment = { vertical: 'top' };
             row.getCell(2).alignment = { wrapText: true, vertical: 'top' };
             row.getCell(3).alignment = { vertical: 'top' };
-            row.getCell(4).alignment = { wrapText: true, vertical: 'top' };
-            row.getCell(5).alignment = { vertical: 'top' };
+            row.getCell(4).alignment = { vertical: 'top' };
+            row.getCell(5).alignment = { wrapText: true, vertical: 'top' };
             row.getCell(6).alignment = { vertical: 'top' };
+            row.getCell(7).alignment = { vertical: 'top' };
 
             // Границы ячеек
-            for (let i = 1; i <= 6; i++) {
+            for (let i = 1; i <= 7; i++) {
                 row.getCell(i).border = {
                     top: { style: 'thin' },
                     left: { style: 'thin' },
@@ -250,6 +244,7 @@ export class ServiceExport {
             { width: 15 },   // №
             { width: 60 },  // Марка ОКЛ
             { width: 15 },  // Длина
+            { width: 30 },  // Крепеж
             { width: 50 },  // Кабели
             { width: 25 },  // Общая длина кабелей
             { width: 40 },  // ТУ
@@ -270,7 +265,7 @@ export class ServiceExport {
 
                 worksheet.getRow(currentRow).getCell(2).value = linkData.description;
                 worksheet.getRow(currentRow).getCell(2).alignment = { wrapText: true, vertical: 'top' };
-                worksheet.mergeCells(`B${currentRow}:F${currentRow}`);
+                worksheet.mergeCells(`B${currentRow}:G${currentRow}`);
                 currentRow++;
 
                 worksheet.getRow(currentRow).getCell(1).value = 'Ссылка:';

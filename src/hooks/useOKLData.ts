@@ -1,7 +1,7 @@
 import { OKL_DB, OKL_CABLE_MAP, ALL_CABLES } from "../data";
 import {CABLE_APPOINTMENT} from "../data/CABLE_APPOINTMENT";
 import {normalizeCable} from "./normalizeCable";
-import {useMemo} from "react";
+import {useCallback, useMemo} from "react";
 import {Cable, OKLCableMapItem} from "../data/data";
 
 export const useOKLData = () => {
@@ -22,86 +22,82 @@ export const useOKLData = () => {
 
 
 
-    const isCableAllowedByRule = (cable: Cable, rule: OKLCableMapItem): boolean => {
-        if (cable.cableTypeId !== rule.cableTypeId) return false;
+    const isCableAllowedByRule = useCallback(
+        (cable: Cable, rule: OKLCableMapItem): boolean => {
+            if (cable.cableTypeId !== rule.cableTypeId) return false;
 
-        // Проверка по сечению
-        if (cable.coreSection !== undefined) {
-            if (rule.minSection !== undefined && cable.coreSection < rule.minSection) return false;
-            if (rule.maxSection !== undefined && cable.coreSection > rule.maxSection) return false;
-            return true;
-        }
+            if (cable.coreSection !== undefined) {
+                if (rule.minSection !== undefined && cable.coreSection < rule.minSection) return false;
+                if (rule.maxSection !== undefined && cable.coreSection > rule.maxSection) return false;
+                return true;
+            }
 
-        // Проверка по диаметру
-        if (cable.coreDiameter !== undefined) {
-            if (rule.minDiameter !== undefined && cable.coreDiameter < rule.minDiameter) return false;
-            if (rule.maxDiameter !== undefined && cable.coreDiameter > rule.maxDiameter) return false;
-            return true;
-        }
+            if (cable.coreDiameter !== undefined) {
+                if (rule.minDiameter !== undefined && cable.coreDiameter < rule.minDiameter) return false;
+                if (rule.maxDiameter !== undefined && cable.coreDiameter > rule.maxDiameter) return false;
+                return true;
+            }
 
-        return false;
-    };
+            return false;
+        },
+        []
+    );
 
-    const getCompatibleCableAppointments = (
-        oklId: string,
-        oklList: any[] = []
-    ): string[] => {
-        const okl = oklList.find(o => o.id === oklId) || allOKL.find(o => o.id === oklId);
-        if (!okl) return allAppointments.map(a => a.id);
 
-        const rules = allOKLCableMap.filter(rule =>
-            rule.oklType.includes(okl.type!)
-        );
+    const getCompatibleCableAppointments = useCallback(
+        (oklId: string, oklList: any[] = []): string[] => {
+            const okl =
+                oklList.find(o => o.id === oklId) ||
+                allOKL.find(o => o.id === oklId);
 
-        return Array.from(
-            new Set([
-                'cable_type:all',
-                ...rules.map(r => r.cableTypeId),
-            ])
-        );
-    };
+            if (!okl) return allAppointments.map(a => a.id);
 
-    const getCompatibleCablesForOKL = (
-        oklId: string,
-        cableTypeId?: string,
-        oklList: any[] = []
-    ): Cable[] => {
-        const okl = oklList.find(o => o.id === oklId) || allOKL.find(o => o.id === oklId);
-        if (!okl) {
-            return cableTypeId ? getCablesByType(cableTypeId) : allCables;
-        }
+            const rules = allOKLCableMap.filter(rule =>
+                rule.oklType.includes(okl.type!)
+            );
 
-        // 1️⃣ Берём правила для этого типа ОКЛ
-        const rules = allOKLCableMap.filter(rule =>
-            rule.oklType.includes(okl.type!)
-        );
+            return Array.from(
+                new Set([
+                    "cable_type:all",
+                    ...rules.map(r => r.cableTypeId),
+                ])
+            );
+        },
+        [allOKL, allAppointments, allOKLCableMap]
+    );
 
-        // 2️⃣ Если выбран тип кабеля — сужаем правила
-        const filteredRules = cableTypeId
-            ? rules.filter(r => r.cableTypeId === cableTypeId)
-            : rules;
 
-        // 3️⃣ Фильтруем кабели по правилам
-        return allCables.filter(cable =>
-            filteredRules.some(rule => isCableAllowedByRule(cable, rule))
-        );
-    };
+
+
 
     // Найти, какие типы кабелей совместимы с данной ОКЛ
-    const getCompatibleCableTypes = (oklType: string) => {
-        return allOKLCableMap.filter(map => map.oklType.includes(oklType));
-    };
+    const getCompatibleCableTypes = useCallback(
+        (oklType: string) => {
+            return allOKLCableMap.filter(map =>
+                map.oklType.includes(oklType)
+            );
+        },
+        [allOKLCableMap]
+    );
 
     // Найти все кабели, которые подходят для конкретной ОКЛ
-    const getCompatibleCables = (oklType: string) => {
-        const compatibleTypes = getCompatibleCableTypes(oklType);
-        const types = compatibleTypes.map(t => t.cableTypeId);
-        return allCables.filter(cable => types.includes(cable.cableTypeId));
-    };
+    const getCompatibleCables = useCallback(
+        (oklType: string) => {
+            const compatibleTypes = getCompatibleCableTypes(oklType);
+            const types = compatibleTypes.map(t => t.cableTypeId);
+            return allCables.filter(cable =>
+                types.includes(cable.cableTypeId)
+            );
+        },
+        [allCables, getCompatibleCableTypes]
+    );
     // Получить кабели по типу (назначению)
-    const getCablesByType = (cableTypeId: string) => {
-        return allCables.filter(cable => cable.cableTypeId === cableTypeId);
-    };
+    const getCablesByType = useCallback(
+        (cableTypeId: string) => {
+            return allCables.filter(cable => cable.cableTypeId === cableTypeId);
+        },
+        [allCables]
+    );
 
 
     // В хук useOKLData добавляем функцию
@@ -115,7 +111,38 @@ export const useOKLData = () => {
         });
     };
 
+    const getCompatibleCablesForOKL = useCallback(
+        (
+            oklId: string,
+            cableTypeId?: string,
+            oklList: any[] = []
+        ): Cable[] => {
+            const okl =
+                oklList.find(o => o.id === oklId) ||
+                allOKL.find(o => o.id === oklId);
 
+            if (!okl) {
+                return cableTypeId
+                    ? getCablesByType(cableTypeId)
+                    : allCables;
+            }
+
+            const rules = allOKLCableMap.filter(rule =>
+                rule.oklType.includes(okl.type!)
+            );
+
+            const filteredRules = cableTypeId
+                ? rules.filter(r => r.cableTypeId === cableTypeId)
+                : rules;
+
+            return allCables.filter(cable =>
+                filteredRules.some(rule =>
+                    isCableAllowedByRule(cable, rule)
+                )
+            );
+        },
+        [allOKL, allCables, allOKLCableMap, getCablesByType, isCableAllowedByRule]
+    );
     return {
         allOKL,
         allCables,

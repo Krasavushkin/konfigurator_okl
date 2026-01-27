@@ -9,6 +9,7 @@ import {CableSelector} from "./CableSelector";
 import {useOKLFilters} from "../hooks/useOKLFilters";
 import {useCableSelection} from "../hooks/useCableSelection";
 import {useOKLCapacity} from "../hooks/useOKLCapacity";
+import {FITTINGS} from "../data/data";
 
 
 export const Konfigurator2 = () => {
@@ -101,22 +102,6 @@ export const Konfigurator2 = () => {
     const prevOKLCountRef = useRef(oklList.length);
     const [justAdded, setJustAdded] = useState(false);
 
-    /*  useEffect(() => {
-          const added = oklList.length > prevOKLCountRef.current;
-
-          if (added) {
-              resetCableFilters();
-              setJustAdded(true);
-
-              const timer = setTimeout(() => setJustAdded(false), 600);
-              prevOKLCountRef.current = oklList.length;
-
-              return () => clearTimeout(timer);
-          }
-
-          prevOKLCountRef.current = oklList.length;
-      }, [oklList.length]);*/
-
 
     useEffect(() => {
         if (oklList.length <= prevOKLCountRef.current) return;
@@ -128,12 +113,19 @@ export const Konfigurator2 = () => {
         prevOKLCountRef.current = oklList.length;
 
         return () => clearTimeout(timer);
-    }, [oklList.length]);
+    }, [oklList.length, resetCableFilters]); // <-- добавили resetCableFilters
+
 
 
     const handleAddOKL = () => {
         if (!selectedOKL) return;
-        addOKL(selectedOKL, meter);
+        const specification = {
+            suspension: selectedSuspension || " ",
+            surface: selectedSurface || " ",
+            fitting: selectedFitting ?
+                FITTINGS.find(f => f.id === selectedFitting)?.name : undefined,
+        };
+        addOKL(selectedOKL, meter, specification);
         setMeterOKL(1);
     };
 
@@ -157,7 +149,7 @@ export const Konfigurator2 = () => {
 
     const handleSelectOKL = (id: string) => {
         setSelectedOKL(id);
-        syncFiltersWithOKL(id);
+        syncFiltersWithOKL(id, selectedFitting);
     };
 
     return (

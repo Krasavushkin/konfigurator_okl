@@ -96,11 +96,12 @@ export const useOKLFilters = (allOKL: OKLBaseType[]) => {
         return filtered;
     }, [selectedSuspension, selectedSurface, selectedFitting, allOKL]);
 
-    const syncFiltersWithOKL = (oklId: string | null) => {
+    const syncFiltersWithOKL = (oklId: string | null, preservedFitting?: string | null) => {
         if (!oklId) {
+            // если ОКЛ не выбран — сбрасываем только подвеску и поверхность
             setSelectedSuspension(null);
             setSelectedSurface(null);
-            setSelectedFitting(null);
+            setSelectedFitting(preservedFitting ?? null); // сохраняем крепеж
             return;
         }
 
@@ -109,8 +110,22 @@ export const useOKLFilters = (allOKL: OKLBaseType[]) => {
 
         setSelectedSuspension(okl.compatibleSuspensions?.[0] ?? null);
         setSelectedSurface(okl.compatibleSurfaces?.[0] ?? null);
-        setSelectedFitting(null);
+
+        // сохраняем выбранный крепеж только если он совместим с новой подвеской и поверхностью
+        if (preservedFitting) {
+            const suspension = SUSPENSIONS.find(s => s.id === okl.compatibleSuspensions?.[0]);
+            const fittingsForSurface = suspension?.defaultFittings[okl.compatibleSurfaces?.[0]] || [];
+
+            if (fittingsForSurface.includes(preservedFitting)) {
+                setSelectedFitting(preservedFitting);
+            } else {
+                setSelectedFitting(null);
+            }
+        } else {
+            setSelectedFitting(null);
+        }
     };
+
 
     const resetFilters = () => {
         setSelectedSuspension(null);

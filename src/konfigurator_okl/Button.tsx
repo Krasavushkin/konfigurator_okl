@@ -10,7 +10,6 @@ type ButtonProps = {
 
 export const Button: React.FC<ButtonProps> = ({ title, onClick, disabled }) => {
     const isDelete = title.includes('Удалить') ;
-    const isReset = title.includes('Сбросить');
     const isPDF = title.includes('PDF');
     const isAddCable = title.includes('кабель') || title.includes('Добавить');
     const isExcel = title.includes('Excel');

@@ -13,7 +13,11 @@ export const useOKLManager = (
         Date.now().toString(36) + Math.random().toString(36).slice(2);
 
     // добавление ОКЛ
-    const addOKL = (oklId: string, length: number) => {
+    const addOKL = (oklId: string, length: number, specification?: {
+        suspension?: string;
+        surface?: string;
+        fitting?: string;
+    }) => {
         const oklData = OKL_DB.find(o => o.id === oklId);
         if (!oklData) {
             return null;
@@ -28,6 +32,7 @@ export const useOKLManager = (
             type: oklData.type,
             TU: oklData.TU,
 
+            specification: specification || {},
         };
         setOklList(prev => [...prev, newOKL]);
         setSelectedOKL(newOKL.id);
@@ -120,7 +125,7 @@ export const useOKLManager = (
 
             if (!canFitAnyCable) {
                 return {canAdd: false,}
-            };
+            }
         }
 
         return { canAdd: true };

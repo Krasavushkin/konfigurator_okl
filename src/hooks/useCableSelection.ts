@@ -1,4 +1,4 @@
-import {useMemo, useState} from "react";
+import {useCallback, useMemo, useState} from "react";
 import {CABLE_APPOINTMENT} from "../data/CABLE_APPOINTMENT";
 import {BaseEntity, Cable} from "../data/data";
 
@@ -76,7 +76,8 @@ export const useCableSelection = (
         return CABLE_APPOINTMENT.filter(a =>
             allowedTypeIds.includes(a.id)
         );
-    }, [selectedOKL, oklList]);
+    }, [selectedOKL, oklList, getCompatibleCableAppointments]);
+
 
     const filteredCables = useMemo(() => {
         let cables: Cable[];
@@ -93,18 +94,29 @@ export const useCableSelection = (
                 oklList
             );
         }
-        // 🔒 учитываем уже добавленные кабели
+
         if (selectedOKL) {
             cables = getAvailableCablesForOKL(selectedOKL, cables);
         }
-        return cables;
-    }, [selectedOKL, selectedCableType, oklList, allCables]);
 
-    const resetCableFilters = () => {
+        return cables;
+    }, [
+        selectedOKL,
+        selectedCableType,
+        oklList,
+        allCables,
+        getCablesByType,
+        getCompatibleCablesForOKL,
+        getAvailableCablesForOKL
+    ]);
+
+
+    const resetCableFilters = useCallback(() => {
         setSelectedCableType("cable_type:all");
         setSelectedCable('');
-        setMeterCable(1)
-    };
+        setMeterCable(1);
+    }, []);
+
 
     const selectCableType = (id: string) => {
         setSelectedCableType(id);

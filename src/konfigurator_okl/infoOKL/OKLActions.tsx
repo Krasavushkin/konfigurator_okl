@@ -21,10 +21,10 @@ export const OKLActions: React.FC<OKLActionsProps> = ({
             onDelete(oklId);
         }
     };
-    const handleCopy = (e: React.MouseEvent) => {
+ /*   const handleCopy = (e: React.MouseEvent) => {
         e.stopPropagation();
         onCopy(oklId);
-    };
+    };*/
     return (
         <div className={styles.oklActions}>
            {/* <button

@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import {Cable, NewCable, newOKLItem} from "../data/data";
+import { Cable, newOKLItem } from "../data/data";
 
 export const useOKLCapacity = (
     selectedOKL: string | null,
@@ -21,10 +21,10 @@ export const useOKLCapacity = (
     } | null,
     canAddCableToOKL: (oklId: string, cableId: string) => { canAdd: boolean }
 ) => {
-
+    // ✅ добавляем функцию в deps
     const capacityInfo = useMemo(
         () => (selectedOKL ? getOKLCapacityInfo(selectedOKL) : null),
-        [selectedOKL, oklList]
+        [selectedOKL, getOKLCapacityInfo] // <--- исправлено
     );
 
     const capacityStatusData = useMemo(() => {
@@ -52,12 +52,19 @@ export const useOKLCapacity = (
             availableFromFilteredCount,
             availableFromAllCount,
         };
-    }, [selectedOKL, selectedCableType, oklList, capacityInfo]);
+    }, [
+        selectedOKL,
+        selectedCableType,
+        oklList,
+        capacityInfo,
+        getCompatibleCablesForOKL, // <--- добавлено
+        getAvailableCablesCount   // <--- добавлено
+    ]);
 
     const canAddCable = useMemo(() => {
         if (!selectedOKL || !selectedCable) return false;
         return canAddCableToOKL(selectedOKL, selectedCable).canAdd;
-    }, [selectedOKL, selectedCable, oklList]);
+    }, [selectedOKL, selectedCable, canAddCableToOKL]); // <--- добавлено
 
     return {
         capacityInfo,

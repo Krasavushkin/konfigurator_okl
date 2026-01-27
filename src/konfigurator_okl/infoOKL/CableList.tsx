@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../styles/OKL.module.css';
-import {Cable, NewCable} from "../../data/data";
+import {NewCable} from "../../data/data";
 
 interface CableListProps {
     cables: NewCable[];
