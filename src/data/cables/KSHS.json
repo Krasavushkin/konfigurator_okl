@@ -1,0 +1,218 @@
+[
+  {
+    "id": "cable_kshs_1",
+    "name": "КШСнг(A)-FRHF 1х2х0,52",
+    "cableTypeId": "cable_type:kshs",
+    "cores": 2,
+    "coreDiameter": 0.52,
+    "outerDiameter": 4.7,
+    "TU": "ТУ 16.К99–044–2010"
+  },
+  {
+    "id": "cable_kshs_2",
+    "name": "КШСнг(A)-FRHF 2х2х0,52",
+    "cableTypeId": "cable_type:kshs",
+    "cores": 4,
+    "coreDiameter": 0.52,
+    "outerDiameter": 6,
+    "TU": "ТУ 16.К99–044–2010"
+  },
+  {
+    "id": "cable_kshs_3",
+    "name": "КШСнг(A)-FRHF 3х2х0,52",
+    "cableTypeId": "cable_type:kshs",
+    "cores": 6,
+    "coreDiameter": 0.52,
+    "outerDiameter": 7.5,
+    "TU": "ТУ 16.К99–044–2010"
+  },
+  {
+    "id": "cable_kshs_4",
+    "name": "КШСнг(A)-FRLS 1х2х0,52",
+    "cableTypeId": "cable_type:kshs",
+    "cores": 2,
+    "coreDiameter": 0.52,
+    "outerDiameter": 4.7,
+    "TU": "ТУ 16.К99–044–2010"
+  },
+  {
+    "id": "cable_kshs_5",
+    "name": "КШСнг(A)-FRLS 2х2х0,52",
+    "cableTypeId": "cable_type:kshs",
+    "cores": 4,
+    "coreDiameter": 0.52,
+    "outerDiameter": 6,
+    "TU": "ТУ 16.К99–044–2010"
+  },
+  {
+    "id": "cable_kshs_6",
+    "name": "КШСнг(A)-FRLS 3х2х0,52",
+    "cableTypeId": "cable_type:kshs",
+    "cores": 6,
+    "coreDiameter": 0.52,
+    "outerDiameter": 7.5,
+    "TU": "ТУ 16.К99–044–2010"
+  },
+  {
+    "id": "cable_kshs_7",
+    "name": "КШСЭнг(A)-FRHF 1х2х0,52",
+    "cableTypeId": "cable_type:kshs",
+    "cores": 2,
+    "coreDiameter": 0.52,
+    "outerDiameter": 5,
+    "TU": "ТУ 16.К99–044–2010"
+  },
+  {
+    "id": "cable_kshs_8",
+    "name": "КШСЭнг(A)-FRHF 2х2х0,52",
+    "cableTypeId": "cable_type:kshs",
+    "cores": 4,
+    "coreDiameter": 0.52,
+    "outerDiameter": 6.3,
+    "TU": "ТУ 16.К99–044–2010"
+  },
+  {
+    "id": "cable_kshs_9",
+    "name": "КШСЭнг(A)-FRHF 3х2х0,52",
+    "cableTypeId": "cable_type:kshs",
+    "cores": 6,
+    "coreDiameter": 0.52,
+    "outerDiameter": 7.8,
+    "TU": "ТУ 16.К99–044–2010"
+  },
+  {
+    "id": "cable_kshs_10",
+    "name": "КШСЭнг(A)-FRLS 1х2х0,52",
+    "cableTypeId": "cable_type:kshs",
+    "cores": 2,
+    "coreDiameter": 0.52,
+    "outerDiameter": 5,
+    "TU": "ТУ 16.К99–044–2010"
+  },
+  {
+    "id": "cable_kshs_11",
+    "name": "КШСЭнг(A)-FRLS 2х2х0,52",
+    "cableTypeId": "cable_type:kshs",
+    "cores": 4,
+    "coreDiameter": 0.52,
+    "outerDiameter": 6.3,
+    "TU": "ТУ 16.К99–044–2010"
+  },
+  {
+    "id": "cable_kshs_12",
+    "name": "КШСЭнг(A)-FRLS 3х2х0,52",
+    "cableTypeId": "cable_type:kshs",
+    "cores": 6,
+    "coreDiameter": 0.52,
+    "outerDiameter": 7.8,
+    "TU": "ТУ 16.К99–044–2010"
+  },
+  {
+    "id": "cable_kshs_13",
+    "name": "КШСГнг(A)-FRHF 1х2х0,6",
+    "cableTypeId": "cable_type:kshs",
+    "cores": 2,
+    "coreDiameter": 0.6,
+    "outerDiameter": 4.8,
+    "TU": "ТУ 16.К99–044–2010"
+  },
+  {
+    "id": "cable_kshs_14",
+    "name": "КШСГнг(A)-FRHF 2х2х0,6",
+    "cableTypeId": "cable_type:kshs",
+    "cores": 4,
+    "coreDiameter": 0.6,
+    "outerDiameter": 6.2,
+    "TU": "ТУ 16.К99–044–2010"
+  },
+  {
+    "id": "cable_kshs_15",
+    "name": "КШСГнг(A)-FRHF 3х2х0,6",
+    "cableTypeId": "cable_type:kshs",
+    "cores": 6,
+    "coreDiameter": 0.6,
+    "outerDiameter": 7.8,
+    "TU": "ТУ 16.К99–044–2010"
+  },
+  {
+    "id": "cable_kshs_16",
+    "name": "КШСГнг(A)-FRLS 1х2х0,6",
+    "cableTypeId": "cable_type:kshs",
+    "cores": 2,
+    "coreDiameter": 0.6,
+    "outerDiameter": 4.8,
+    "TU": "ТУ 16.К99–044–2010"
+  },
+  {
+    "id": "cable_kshs_17",
+    "name": "КШСГнг(A)-FRLS 2х2х0,6",
+    "cableTypeId": "cable_type:kshs",
+    "cores": 4,
+    "coreDiameter": 0.6,
+    "outerDiameter": 6.2,
+    "TU": "ТУ 16.К99–044–2010"
+  },
+  {
+    "id": "cable_kshs_18",
+    "name": "КШСГнг(A)-FRLS 3х2х0,6",
+    "cableTypeId": "cable_type:kshs",
+    "cores": 6,
+    "coreDiameter": 0.6,
+    "outerDiameter": 7.8,
+    "TU": "ТУ 16.К99–044–2010"
+  },
+  {
+    "id": "cable_kshs_19",
+    "name": "КШСГЭнг(A)-FRHF 1х2х0,6",
+    "cableTypeId": "cable_type:kshs",
+    "cores": 2,
+    "coreDiameter": 0.6,
+    "outerDiameter": 5.1,
+    "TU": "ТУ 16.К99–044–2010"
+  },
+  {
+    "id": "cable_kshs_20",
+    "name": "КШСГЭнг(A)-FRHF 2х2х0,6",
+    "cableTypeId": "cable_type:kshs",
+    "cores": 4,
+    "coreDiameter": 0.6,
+    "outerDiameter": 6.5,
+    "TU": "ТУ 16.К99–044–2010"
+  },
+  {
+    "id": "cable_kshs_21",
+    "name": "КШСГЭнг(A)-FRHF 3х2х0,6",
+    "cableTypeId": "cable_type:kshs",
+    "cores": 6,
+    "coreDiameter": 0.6,
+    "outerDiameter": 8.1,
+    "TU": "ТУ 16.К99–044–2010"
+  },
+  {
+    "id": "cable_kshs_22",
+    "name": "КШСГЭнг(A)-FRLS 1х2х0,6",
+    "cableTypeId": "cable_type:kshs",
+    "cores": 2,
+    "coreDiameter": 0.6,
+    "outerDiameter": 5.1,
+    "TU": "ТУ 16.К99–044–2010"
+  },
+  {
+    "id": "cable_kshs_23",
+    "name": "КШСГЭнг(A)-FRLS 2х2х0,6",
+    "cableTypeId": "cable_type:kshs",
+    "cores": 4,
+    "coreDiameter": 0.6,
+    "outerDiameter": 6.5,
+    "TU": "ТУ 16.К99–044–2010"
+  },
+  {
+    "id": "cable_kshs_24",
+    "name": "КШСГЭнг(A)-FRLS 3х2х0,6",
+    "cableTypeId": "cable_type:kshs",
+    "cores": 6,
+    "coreDiameter": 0.6,
+    "outerDiameter": 8.1,
+    "TU": "ТУ 16.К99–044–2010"
+  }
+]

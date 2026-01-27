@@ -4,9 +4,9 @@ import styles from '../styles/CounterBadge.module.css';
 interface CounterBadgeProps {
     label: string;
     value: number;
-    max?: number;           // для прогресса (например, 8 кабелей)
-    icon?: React.ReactNode; // SVG или иконка
-    highlight?: boolean;    // анимация при изменении
+    max?: number;
+    icon?: React.ReactNode;
+    highlight?: boolean;
     color?: 'default' | 'success' | 'warning' | 'error';
 }
 

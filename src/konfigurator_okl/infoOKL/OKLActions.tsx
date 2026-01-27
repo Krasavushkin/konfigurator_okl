@@ -4,7 +4,7 @@ import styles from '../styles/OKL.module.css';
 interface OKLActionsProps {
     oklId: string;
     isSelected: boolean;
-    onEdit: (oklId: string) => void;
+
     onDelete: (oklId: string) => void;
     onCopy: (oklId: string) => void;
 }
@@ -12,7 +12,6 @@ interface OKLActionsProps {
 export const OKLActions: React.FC<OKLActionsProps> = ({
                                                           oklId,
                                                           isSelected,
-                                                          onEdit,
                                                           onDelete,
                                                           onCopy
                                                       }) => {

@@ -1,5 +1,5 @@
 import {useMemo} from "react";
-import {OKL_LINKS, OKLLink} from "../konfigurator_okl/data";
+import {OKL_LINKS, OKLLink} from "../data/data";
 
 export const getOKLLink = (oklType: string | undefined): OKLLink => {
     if (!oklType) {

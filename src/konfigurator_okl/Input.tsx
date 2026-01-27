@@ -11,6 +11,7 @@ interface InputProps {
     size?: 'default' | 'small' | 'large';
     error?: boolean;
     min?: number;
+    autoFocus?: boolean;
 }
 
 export const Input: React.FC<InputProps> = ({
@@ -23,6 +24,7 @@ export const Input: React.FC<InputProps> = ({
                                                 size = 'default',
                                                 error = false,
                                                 min = 1,
+                                                autoFocus = false,
                                             }) => {
     const sizeClass = {
         small: styles.small,
@@ -63,6 +65,7 @@ export const Input: React.FC<InputProps> = ({
                     ${isError ? styles.error : ''}
                 `.trim()}
                 disabled={disabled}
+                autoFocus={autoFocus}
             />
             {isError && (
                 <div className={styles.errorMessage}>

@@ -7,10 +7,10 @@ interface DropdownProps {
     id?: string
     title: string;
     items: Item[];
-    selectedId: string;
+    selectedId: string | null;
     isOpen: boolean;
     onToggle: () => void;
-    onSelect: (id: string, name: string) => void;
+    onSelect: (id: string) => void;
     disabled?: boolean;
     searchable?: boolean; // Новое свойство для включения поиска
     placeholder?: string; // Плейсхолдер для поиска
@@ -91,8 +91,8 @@ export const Dropdown: React.FC<DropdownProps> = ({
         });
     }, [items, searchTerm, searchable]);
 
-    const handleItemSelect = (id: string, name: string) => {
-        onSelect(id, name);
+    const handleItemSelect = (id: string) => {
+        onSelect(id);
         setSearchTerm('');
     };
 
@@ -129,7 +129,7 @@ export const Dropdown: React.FC<DropdownProps> = ({
                             <div
                                 key={item.id}
                                 className={`${styles.dropdownItem} ${item.id === selectedId ? styles.selected : ''}`}
-                                onClick={() => handleItemSelect(item.id, item.name)}
+                                onClick={() => handleItemSelect(item.id)}
                             >
                                 {item.name}
                             </div>

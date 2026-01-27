@@ -1,0 +1,2918 @@
+[
+  {
+    "id": "cable_rs485ltx_1",
+    "name": "КСБ нг(А)-FRLSLTx 1х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 2,
+    "coreDiameter": 0.64,
+    "outerDiameter": 6.4,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_2",
+    "name": "КСБ нг(А)-FRLSLTx 1х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 2,
+    "coreDiameter": 0.8,
+    "outerDiameter": 7.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_3",
+    "name": "КСБ нг(А)-FRLSLTx 1х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 2,
+    "coreDiameter": 0.98,
+    "outerDiameter": 8.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_4",
+    "name": "КСБ нг(А)-FRLSLTx 1х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 2,
+    "coreDiameter": 1.13,
+    "outerDiameter": 8.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_5",
+    "name": "КСБ нг(А)-FRLSLTx 1х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 2,
+    "coreDiameter": 1.38,
+    "outerDiameter": 9.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_6",
+    "name": "КСБ нг(А)-FRLSLTx 1х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 2,
+    "coreDiameter": 1.78,
+    "outerDiameter": 9.7,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_7",
+    "name": "КСБ нг(А)-FRLSLTx 2х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 4,
+    "coreDiameter": 0.64,
+    "outerDiameter": 10.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_8",
+    "name": "КСБ нг(А)-FRLSLTx 2х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 4,
+    "coreDiameter": 0.8,
+    "outerDiameter": 12.1,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_9",
+    "name": "КСБ нг(А)-FRLSLTx 2х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 4,
+    "coreDiameter": 0.98,
+    "outerDiameter": 14,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_10",
+    "name": "КСБ нг(А)-FRLSLTx 2х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 4,
+    "coreDiameter": 1.13,
+    "outerDiameter": 14,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_11",
+    "name": "КСБ нг(А)-FRLSLTx 2х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 4,
+    "coreDiameter": 1.38,
+    "outerDiameter": 15.8,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_12",
+    "name": "КСБ нг(А)-FRLSLTx 2х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 4,
+    "coreDiameter": 1.78,
+    "outerDiameter": 16.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_13",
+    "name": "КСБ нг(А)-FRLSLTx 3х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 6,
+    "coreDiameter": 0.64,
+    "outerDiameter": 10.8,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_14",
+    "name": "КСБ нг(А)-FRLSLTx 3х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 6,
+    "coreDiameter": 0.8,
+    "outerDiameter": 12.8,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_15",
+    "name": "КСБ нг(А)-FRLSLTx 3х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 6,
+    "coreDiameter": 0.98,
+    "outerDiameter": 14.8,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_16",
+    "name": "КСБ нг(А)-FRLSLTx 3х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 6,
+    "coreDiameter": 1.13,
+    "outerDiameter": 14.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_17",
+    "name": "КСБ нг(А)-FRLSLTx 3х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 6,
+    "coreDiameter": 1.38,
+    "outerDiameter": 16.7,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_18",
+    "name": "КСБ нг(А)-FRLSLTx 3х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 6,
+    "coreDiameter": 1.78,
+    "outerDiameter": 17.1,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_19",
+    "name": "КСБ нг(А)-FRLSLTx 4х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 8,
+    "coreDiameter": 0.64,
+    "outerDiameter": 11.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_20",
+    "name": "КСБ нг(А)-FRLSLTx 4х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 8,
+    "coreDiameter": 0.8,
+    "outerDiameter": 14.1,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_21",
+    "name": "КСБ нг(А)-FRLSLTx 4х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 8,
+    "coreDiameter": 0.98,
+    "outerDiameter": 16.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_22",
+    "name": "КСБ нг(А)-FRLSLTx 4х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 8,
+    "coreDiameter": 1.13,
+    "outerDiameter": 16.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_23",
+    "name": "КСБ нг(А)-FRLSLTx 4х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 8,
+    "coreDiameter": 1.38,
+    "outerDiameter": 18.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_24",
+    "name": "КСБ нг(А)-FRLSLTx 4х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 8,
+    "coreDiameter": 1.78,
+    "outerDiameter": 19,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_25",
+    "name": "КСБ нг(А)-FRLSLTx 5х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 10,
+    "coreDiameter": 0.64,
+    "outerDiameter": 13,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_26",
+    "name": "КСБ нг(А)-FRLSLTx 5х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 10,
+    "coreDiameter": 0.8,
+    "outerDiameter": 15.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_27",
+    "name": "КСБ нг(А)-FRLSLTx 5х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 10,
+    "coreDiameter": 0.98,
+    "outerDiameter": 18.1,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_28",
+    "name": "КСБ нг(А)-FRLSLTx 5х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 10,
+    "coreDiameter": 1.13,
+    "outerDiameter": 18.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_29",
+    "name": "КСБ нг(А)-FRLSLTx 5х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 10,
+    "coreDiameter": 1.38,
+    "outerDiameter": 20.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_30",
+    "name": "КСБ нг(А)-FRLSLTx 5х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 10,
+    "coreDiameter": 1.78,
+    "outerDiameter": 20.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_31",
+    "name": "КСБ нг(А)-FRLSLTx 6х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 12,
+    "coreDiameter": 0.64,
+    "outerDiameter": 14.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_32",
+    "name": "КСБ нг(А)-FRLSLTx 6х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 12,
+    "coreDiameter": 0.8,
+    "outerDiameter": 17,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_33",
+    "name": "КСБ нг(А)-FRLSLTx 6х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 12,
+    "coreDiameter": 0.98,
+    "outerDiameter": 19.8,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_34",
+    "name": "КСБ нг(А)-FRLSLTx 6х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 12,
+    "coreDiameter": 1.13,
+    "outerDiameter": 20,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_35",
+    "name": "КСБ нг(А)-FRLSLTx 6х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 12,
+    "coreDiameter": 1.38,
+    "outerDiameter": 22.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_36",
+    "name": "КСБ нг(А)-FRLSLTx 6х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 12,
+    "coreDiameter": 1.78,
+    "outerDiameter": 22.8,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_37",
+    "name": "КСБ нг(А)-FRLSLTx 7х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 14,
+    "coreDiameter": 0.64,
+    "outerDiameter": 14.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_38",
+    "name": "КСБ нг(А)-FRLSLTx 7х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 14,
+    "coreDiameter": 0.8,
+    "outerDiameter": 17,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_39",
+    "name": "КСБ нг(А)-FRLSLTx 7х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 14,
+    "coreDiameter": 0.98,
+    "outerDiameter": 19.8,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_40",
+    "name": "КСБ нг(А)-FRLSLTx 7х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 14,
+    "coreDiameter": 1.13,
+    "outerDiameter": 20,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_41",
+    "name": "КСБ нг(А)-FRLSLTx 7х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 14,
+    "coreDiameter": 1.38,
+    "outerDiameter": 22.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_42",
+    "name": "КСБ нг(А)-FRLSLTx 7х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 14,
+    "coreDiameter": 1.78,
+    "outerDiameter": 22.8,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_43",
+    "name": "КСБ нг(А)-FRLSLTx 8х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 16,
+    "coreDiameter": 0.64,
+    "outerDiameter": 15.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_44",
+    "name": "КСБ нг(А)-FRLSLTx 8х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 16,
+    "coreDiameter": 0.8,
+    "outerDiameter": 18.4,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_45",
+    "name": "КСБ нг(А)-FRLSLTx 8х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 16,
+    "coreDiameter": 0.98,
+    "outerDiameter": 21.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_46",
+    "name": "КСБ нг(А)-FRLSLTx 8х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 16,
+    "coreDiameter": 1.13,
+    "outerDiameter": 21.7,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_47",
+    "name": "КСБ нг(А)-FRLSLTx 8х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 16,
+    "coreDiameter": 1.38,
+    "outerDiameter": 24.1,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_48",
+    "name": "КСБ нг(А)-FRLSLTx 8х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 16,
+    "coreDiameter": 1.78,
+    "outerDiameter": 24.8,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_49",
+    "name": "КСБ нг(А)-FRLSLTx 9х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 18,
+    "coreDiameter": 0.64,
+    "outerDiameter": 16.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_50",
+    "name": "КСБ нг(А)-FRLSLTx 9х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 18,
+    "coreDiameter": 0.8,
+    "outerDiameter": 20.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_51",
+    "name": "КСБ нг(А)-FRLSLTx 9х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 18,
+    "coreDiameter": 0.98,
+    "outerDiameter": 23.8,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_52",
+    "name": "КСБ нг(А)-FRLSLTx 9х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 18,
+    "coreDiameter": 1.13,
+    "outerDiameter": 24,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_53",
+    "name": "КСБ нг(А)-FRLSLTx 9х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 18,
+    "coreDiameter": 1.38,
+    "outerDiameter": 26.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_54",
+    "name": "КСБ нг(А)-FRLSLTx 9х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 18,
+    "coreDiameter": 1.78,
+    "outerDiameter": 27.4,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_55",
+    "name": "КСБ нг(А)-FRLSLTx 10х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 20,
+    "coreDiameter": 0.64,
+    "outerDiameter": 18,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_56",
+    "name": "КСБ нг(А)-FRLSLTx 10х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 20,
+    "coreDiameter": 0.8,
+    "outerDiameter": 21.7,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_57",
+    "name": "КСБ нг(А)-FRLSLTx 10х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 20,
+    "coreDiameter": 0.98,
+    "outerDiameter": 25.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_58",
+    "name": "КСБ нг(А)-FRLSLTx 10х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 20,
+    "coreDiameter": 1.13,
+    "outerDiameter": 25.7,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_59",
+    "name": "КСБ нг(А)-FRLSLTx 10х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 20,
+    "coreDiameter": 1.38,
+    "outerDiameter": 28.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_60",
+    "name": "КСБ нг(А)-FRLSLTx 10х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 20,
+    "coreDiameter": 1.78,
+    "outerDiameter": 29.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_61",
+    "name": "КСБ нг(А)-FRLSLTx 12х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 24,
+    "coreDiameter": 0.64,
+    "outerDiameter": 19.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_62",
+    "name": "КСБ нг(А)-FRLSLTx 12х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 24,
+    "coreDiameter": 0.8,
+    "outerDiameter": 23,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_63",
+    "name": "КСБ нг(А)-FRLSLTx 12х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 24,
+    "coreDiameter": 0.98,
+    "outerDiameter": 27,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_64",
+    "name": "КСБ нг(А)-FRLSLTx 12х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 24,
+    "coreDiameter": 1.13,
+    "outerDiameter": 27.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_65",
+    "name": "КСБ нг(А)-FRLSLTx 12х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 24,
+    "coreDiameter": 1.38,
+    "outerDiameter": 30.1,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_66",
+    "name": "КСБ нг(А)-FRLSLTx 12х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 24,
+    "coreDiameter": 1.78,
+    "outerDiameter": 30.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_67",
+    "name": "КСБ нг(А)-FRLSLTx 16х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 32,
+    "coreDiameter": 0.64,
+    "outerDiameter": 21.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_68",
+    "name": "КСБ нг(А)-FRLSLTx 16х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 32,
+    "coreDiameter": 0.8,
+    "outerDiameter": 25.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_69",
+    "name": "КСБ нг(А)-FRLSLTx 16х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 32,
+    "coreDiameter": 0.98,
+    "outerDiameter": 30.1,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_70",
+    "name": "КСБ нг(А)-FRLSLTx 16х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 32,
+    "coreDiameter": 1.13,
+    "outerDiameter": 30.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_71",
+    "name": "КСБ нг(А)-FRLSLTx 16х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 32,
+    "coreDiameter": 1.38,
+    "outerDiameter": 33.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_72",
+    "name": "КСБ нг(А)-FRLSLTx 16х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 32,
+    "coreDiameter": 1.78,
+    "outerDiameter": 34.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_73",
+    "name": "КСБ нг(А)-FRLSLTx 20х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 40,
+    "coreDiameter": 0.64,
+    "outerDiameter": 23.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_74",
+    "name": "КСБ нг(А)-FRLSLTx 20х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 40,
+    "coreDiameter": 0.8,
+    "outerDiameter": 28.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_75",
+    "name": "КСБ нг(А)-FRLSLTx 20х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 40,
+    "coreDiameter": 0.98,
+    "outerDiameter": 33.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_76",
+    "name": "КСБ нг(А)-FRLSLTx 20х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 40,
+    "coreDiameter": 1.13,
+    "outerDiameter": 33.8,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_77",
+    "name": "КСБ нг(А)-FRLSLTx 20х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 40,
+    "coreDiameter": 1.38,
+    "outerDiameter": 37.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_78",
+    "name": "КСБ нг(А)-FRLSLTx 20х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 40,
+    "coreDiameter": 1.78,
+    "outerDiameter": 38.4,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_79",
+    "name": "КСБ нг(А)-FRLSLTx 24х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 48,
+    "coreDiameter": 0.64,
+    "outerDiameter": 26.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_80",
+    "name": "КСБ нг(А)-FRLSLTx 24х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 48,
+    "coreDiameter": 0.8,
+    "outerDiameter": 31.8,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_81",
+    "name": "КСБ нг(А)-FRLSLTx 24х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 48,
+    "coreDiameter": 0.98,
+    "outerDiameter": 37.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_82",
+    "name": "КСБ нг(А)-FRLSLTx 24х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 48,
+    "coreDiameter": 1.13,
+    "outerDiameter": 37.8,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_83",
+    "name": "КСБ нг(А)-FRLSLTx 24х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 48,
+    "coreDiameter": 1.38,
+    "outerDiameter": 41.8,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_84",
+    "name": "КСБ нг(А)-FRLSLTx 24х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 48,
+    "coreDiameter": 1.78,
+    "outerDiameter": 43,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_85",
+    "name": "КСБ нг(А)-FRLSLTx 28х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 56,
+    "coreDiameter": 0.64,
+    "outerDiameter": 27.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_86",
+    "name": "КСБ нг(А)-FRLSLTx 28х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 56,
+    "coreDiameter": 0.8,
+    "outerDiameter": 33.7,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_87",
+    "name": "КСБ нг(А)-FRLSLTx 28х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 56,
+    "coreDiameter": 0.98,
+    "outerDiameter": 39.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_88",
+    "name": "КСБ нг(А)-FRLSLTx 28х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 56,
+    "coreDiameter": 1.13,
+    "outerDiameter": 40.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_89",
+    "name": "КСБ нг(А)-FRLSLTx 28х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 56,
+    "coreDiameter": 1.38,
+    "outerDiameter": 44.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_90",
+    "name": "КСБ нг(А)-FRLSLTx 28х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 56,
+    "coreDiameter": 1.78,
+    "outerDiameter": 45.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_91",
+    "name": "КСБ нг(А)-FRLSLTx 32х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 64,
+    "coreDiameter": 0.64,
+    "outerDiameter": 29,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_92",
+    "name": "КСБ нг(А)-FRLSLTx 32х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 64,
+    "coreDiameter": 0.8,
+    "outerDiameter": 35.1,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_93",
+    "name": "КСБ нг(А)-FRLSLTx 32х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 64,
+    "coreDiameter": 0.98,
+    "outerDiameter": 41.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_94",
+    "name": "КСБ нг(А)-FRLSLTx 32х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 64,
+    "coreDiameter": 1.13,
+    "outerDiameter": 41.8,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_95",
+    "name": "КСБ нг(А)-FRLSLTx 32х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 64,
+    "coreDiameter": 1.38,
+    "outerDiameter": 46.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_96",
+    "name": "КСБ нг(А)-FRLSLTx 32х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 64,
+    "coreDiameter": 1.78,
+    "outerDiameter": 47.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_97",
+    "name": "КСБ нг(А)-FRLSLTx 36х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 72,
+    "coreDiameter": 0.64,
+    "outerDiameter": 30.1,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_98",
+    "name": "КСБ нг(А)-FRLSLTx 36х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 72,
+    "coreDiameter": 0.8,
+    "outerDiameter": 36.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_99",
+    "name": "КСБ нг(А)-FRLSLTx 36х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 72,
+    "coreDiameter": 0.98,
+    "outerDiameter": 43.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_100",
+    "name": "КСБ нг(А)-FRLSLTx 36х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 72,
+    "coreDiameter": 1.13,
+    "outerDiameter": 43.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_101",
+    "name": "КСБ нг(А)-FRLSLTx 36х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 72,
+    "coreDiameter": 1.38,
+    "outerDiameter": 48.1,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_102",
+    "name": "КСБ нг(А)-FRLSLTx 36х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 72,
+    "coreDiameter": 1.78,
+    "outerDiameter": 49.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_103",
+    "name": "КСБ нг(А)-FRLSLTx 40х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 80,
+    "coreDiameter": 0.64,
+    "outerDiameter": 31.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_104",
+    "name": "КСБ нг(А)-FRLSLTx 40х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 80,
+    "coreDiameter": 0.8,
+    "outerDiameter": 38,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_105",
+    "name": "КСБ нг(А)-FRLSLTx 40х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 80,
+    "coreDiameter": 0.98,
+    "outerDiameter": 45,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_106",
+    "name": "КСБ нг(А)-FRLSLTx 40х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 80,
+    "coreDiameter": 1.13,
+    "outerDiameter": 45.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_107",
+    "name": "КСБ нг(А)-FRLSLTx 40х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 80,
+    "coreDiameter": 1.38,
+    "outerDiameter": 50,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_108",
+    "name": "КСБ нг(А)-FRLSLTx 40х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 80,
+    "coreDiameter": 1.78,
+    "outerDiameter": 51.4,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_109",
+    "name": "КСБ КГнг(А)-FRLSLTx 1х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 2,
+    "coreDiameter": 0.64,
+    "outerDiameter": 7.7,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_110",
+    "name": "КСБ КГнг(А)-FRLSLTx 1х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 2,
+    "coreDiameter": 0.8,
+    "outerDiameter": 8.7,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_111",
+    "name": "КСБ КГнг(А)-FRLSLTx 1х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 2,
+    "coreDiameter": 0.98,
+    "outerDiameter": 9.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_112",
+    "name": "КСБ КГнг(А)-FRLSLTx 1х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 2,
+    "coreDiameter": 1.13,
+    "outerDiameter": 9.7,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_113",
+    "name": "КСБ КГнг(А)-FRLSLTx 1х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 2,
+    "coreDiameter": 1.38,
+    "outerDiameter": 10.8,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_114",
+    "name": "КСБ КГнг(А)-FRLSLTx 1х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 2,
+    "coreDiameter": 1.78,
+    "outerDiameter": 11,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_115",
+    "name": "КСБ КГнг(А)-FRLSLTx 2х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 4,
+    "coreDiameter": 0.64,
+    "outerDiameter": 11.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_116",
+    "name": "КСБ КГнг(А)-FRLSLTx 2х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 4,
+    "coreDiameter": 0.8,
+    "outerDiameter": 13.4,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_117",
+    "name": "КСБ КГнг(А)-FRLSLTx 2х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 4,
+    "coreDiameter": 0.98,
+    "outerDiameter": 15.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_118",
+    "name": "КСБ КГнг(А)-FRLSLTx 2х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 4,
+    "coreDiameter": 1.13,
+    "outerDiameter": 15.4,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_119",
+    "name": "КСБ КГнг(А)-FRLSLTx 2х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 4,
+    "coreDiameter": 1.38,
+    "outerDiameter": 17.1,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_120",
+    "name": "КСБ КГнг(А)-FRLSLTx 2х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 4,
+    "coreDiameter": 1.78,
+    "outerDiameter": 17.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_121",
+    "name": "КСБ КГнг(А)-FRLSLTx 3х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 6,
+    "coreDiameter": 0.64,
+    "outerDiameter": 12.1,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_122",
+    "name": "КСБ КГнг(А)-FRLSLTx 3х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 6,
+    "coreDiameter": 0.8,
+    "outerDiameter": 14.1,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_123",
+    "name": "КСБ КГнг(А)-FRLSLTx 3х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 6,
+    "coreDiameter": 0.98,
+    "outerDiameter": 16.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_124",
+    "name": "КСБ КГнг(А)-FRLSLTx 3х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 6,
+    "coreDiameter": 1.13,
+    "outerDiameter": 16.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_125",
+    "name": "КСБ КГнг(А)-FRLSLTx 3х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 6,
+    "coreDiameter": 1.38,
+    "outerDiameter": 18.1,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_126",
+    "name": "КСБ КГнг(А)-FRLSLTx 3х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 6,
+    "coreDiameter": 1.78,
+    "outerDiameter": 18.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_127",
+    "name": "КСБ КГнг(А)-FRLSLTx 4х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 8,
+    "coreDiameter": 0.64,
+    "outerDiameter": 13.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_128",
+    "name": "КСБ КГнг(А)-FRLSLTx 4х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 8,
+    "coreDiameter": 0.8,
+    "outerDiameter": 15.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_129",
+    "name": "КСБ КГнг(А)-FRLSLTx 4х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 8,
+    "coreDiameter": 0.98,
+    "outerDiameter": 17.8,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_130",
+    "name": "КСБ КГнг(А)-FRLSLTx 4х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 8,
+    "coreDiameter": 1.13,
+    "outerDiameter": 17.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_131",
+    "name": "КСБ КГнг(А)-FRLSLTx 4х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 8,
+    "coreDiameter": 1.38,
+    "outerDiameter": 19.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_132",
+    "name": "КСБ КГнг(А)-FRLSLTx 4х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 8,
+    "coreDiameter": 1.78,
+    "outerDiameter": 20.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_133",
+    "name": "КСБ КГнг(А)-FRLSLTx 5х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 10,
+    "coreDiameter": 0.64,
+    "outerDiameter": 14.4,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_134",
+    "name": "КСБ КГнг(А)-FRLSLTx 5х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 10,
+    "coreDiameter": 0.8,
+    "outerDiameter": 16.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_135",
+    "name": "КСБ КГнг(А)-FRLSLTx 5х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 10,
+    "coreDiameter": 0.98,
+    "outerDiameter": 19.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_136",
+    "name": "КСБ КГнг(А)-FRLSLTx 5х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 10,
+    "coreDiameter": 1.13,
+    "outerDiameter": 19.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_137",
+    "name": "КСБ КГнг(А)-FRLSLTx 5х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 10,
+    "coreDiameter": 1.38,
+    "outerDiameter": 21.7,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_138",
+    "name": "КСБ КГнг(А)-FRLSLTx 5х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 10,
+    "coreDiameter": 1.78,
+    "outerDiameter": 22.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_139",
+    "name": "КСБ КГнг(А)-FRLSLTx 6х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 12,
+    "coreDiameter": 0.64,
+    "outerDiameter": 15.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_140",
+    "name": "КСБ КГнг(А)-FRLSLTx 6х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 12,
+    "coreDiameter": 0.8,
+    "outerDiameter": 18.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_141",
+    "name": "КСБ КГнг(А)-FRLSLTx 6х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 12,
+    "coreDiameter": 0.98,
+    "outerDiameter": 21.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_142",
+    "name": "КСБ КГнг(А)-FRLSLTx 6х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 12,
+    "coreDiameter": 1.13,
+    "outerDiameter": 21.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_143",
+    "name": "КСБ КГнг(А)-FRLSLTx 6х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 12,
+    "coreDiameter": 1.38,
+    "outerDiameter": 23.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_144",
+    "name": "КСБ КГнг(А)-FRLSLTx 6х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 12,
+    "coreDiameter": 1.78,
+    "outerDiameter": 24.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_145",
+    "name": "КСБ КГнг(А)-FRLSLTx 7х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 14,
+    "coreDiameter": 0.64,
+    "outerDiameter": 15.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_146",
+    "name": "КСБ КГнг(А)-FRLSLTx 7х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 14,
+    "coreDiameter": 0.8,
+    "outerDiameter": 18.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_147",
+    "name": "КСБ КГнг(А)-FRLSLTx 7х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 14,
+    "coreDiameter": 0.98,
+    "outerDiameter": 21.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_148",
+    "name": "КСБ КГнг(А)-FRLSLTx 7х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 14,
+    "coreDiameter": 1.13,
+    "outerDiameter": 21.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_149",
+    "name": "КСБ КГнг(А)-FRLSLTx 7х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 14,
+    "coreDiameter": 1.38,
+    "outerDiameter": 23.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_150",
+    "name": "КСБ КГнг(А)-FRLSLTx 7х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 14,
+    "coreDiameter": 1.78,
+    "outerDiameter": 24.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_151",
+    "name": "КСБ КГнг(А)-FRLSLTx 8х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 16,
+    "coreDiameter": 0.64,
+    "outerDiameter": 16.7,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_152",
+    "name": "КСБ КГнг(А)-FRLSLTx 8х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 16,
+    "coreDiameter": 0.8,
+    "outerDiameter": 19.7,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_153",
+    "name": "КСБ КГнг(А)-FRLSLTx 8х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 16,
+    "coreDiameter": 0.98,
+    "outerDiameter": 22.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_154",
+    "name": "КСБ КГнг(А)-FRLSLTx 8х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 16,
+    "coreDiameter": 1.13,
+    "outerDiameter": 23,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_155",
+    "name": "КСБ КГнг(А)-FRLSLTx 8х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 16,
+    "coreDiameter": 1.38,
+    "outerDiameter": 25.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_156",
+    "name": "КСБ КГнг(А)-FRLSLTx 8х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 16,
+    "coreDiameter": 1.78,
+    "outerDiameter": 26.1,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_157",
+    "name": "КСБ КГнг(А)-FRLSLTx 9х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 18,
+    "coreDiameter": 0.64,
+    "outerDiameter": 18.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_158",
+    "name": "КСБ КГнг(А)-FRLSLTx 9х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 18,
+    "coreDiameter": 0.8,
+    "outerDiameter": 21.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_159",
+    "name": "КСБ КГнг(А)-FRLSLTx 9х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 18,
+    "coreDiameter": 0.98,
+    "outerDiameter": 25.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_160",
+    "name": "КСБ КГнг(А)-FRLSLTx 9х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 18,
+    "coreDiameter": 1.13,
+    "outerDiameter": 25.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_161",
+    "name": "КСБ КГнг(А)-FRLSLTx 9х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 18,
+    "coreDiameter": 1.38,
+    "outerDiameter": 28,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_162",
+    "name": "КСБ КГнг(А)-FRLSLTx 9х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 18,
+    "coreDiameter": 1.78,
+    "outerDiameter": 28.7,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_163",
+    "name": "КСБ КГнг(А)-FRLSLTx 10х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 20,
+    "coreDiameter": 0.64,
+    "outerDiameter": 19.4,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_164",
+    "name": "КСБ КГнг(А)-FRLSLTx 10х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 20,
+    "coreDiameter": 0.8,
+    "outerDiameter": 23.1,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_165",
+    "name": "КСБ КГнг(А)-FRLSLTx 10х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 20,
+    "coreDiameter": 0.98,
+    "outerDiameter": 26.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_166",
+    "name": "КСБ КГнг(А)-FRLSLTx 10х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 20,
+    "coreDiameter": 1.13,
+    "outerDiameter": 27.1,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_167",
+    "name": "КСБ КГнг(А)-FRLSLTx 10х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 20,
+    "coreDiameter": 1.38,
+    "outerDiameter": 29.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_168",
+    "name": "КСБ КГнг(А)-FRLSLTx 10х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 20,
+    "coreDiameter": 1.78,
+    "outerDiameter": 30.7,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_169",
+    "name": "КСБ КГнг(А)-FRLSLTx 12х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 24,
+    "coreDiameter": 0.64,
+    "outerDiameter": 20.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_170",
+    "name": "КСБ КГнг(А)-FRLSLTx 12х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 24,
+    "coreDiameter": 0.8,
+    "outerDiameter": 24.4,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_171",
+    "name": "КСБ КГнг(А)-FRLSLTx 12х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 24,
+    "coreDiameter": 0.98,
+    "outerDiameter": 28.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_172",
+    "name": "КСБ КГнг(А)-FRLSLTx 12х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 24,
+    "coreDiameter": 1.13,
+    "outerDiameter": 28.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_173",
+    "name": "КСБ КГнг(А)-FRLSLTx 12х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 24,
+    "coreDiameter": 1.38,
+    "outerDiameter": 31.4,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_174",
+    "name": "КСБ КГнг(А)-FRLSLTx 12х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 24,
+    "coreDiameter": 1.78,
+    "outerDiameter": 32.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_175",
+    "name": "КСБ КГнг(А)-FRLSLTx 16х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 32,
+    "coreDiameter": 0.64,
+    "outerDiameter": 22.7,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_176",
+    "name": "КСБ КГнг(А)-FRLSLTx 16х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 32,
+    "coreDiameter": 0.8,
+    "outerDiameter": 27,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_177",
+    "name": "КСБ КГнг(А)-FRLSLTx 16х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 32,
+    "coreDiameter": 0.98,
+    "outerDiameter": 31.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_178",
+    "name": "КСБ КГнг(А)-FRLSLTx 16х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 32,
+    "coreDiameter": 1.13,
+    "outerDiameter": 31.7,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_179",
+    "name": "КСБ КГнг(А)-FRLSLTx 16х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 32,
+    "coreDiameter": 1.38,
+    "outerDiameter": 34.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_180",
+    "name": "КСБ КГнг(А)-FRLSLTx 16х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 32,
+    "coreDiameter": 1.78,
+    "outerDiameter": 35.8,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_181",
+    "name": "КСБ КГнг(А)-FRLSLTx 20х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 40,
+    "coreDiameter": 0.64,
+    "outerDiameter": 24.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_182",
+    "name": "КСБ КГнг(А)-FRLSLTx 20х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 40,
+    "coreDiameter": 0.8,
+    "outerDiameter": 29.8,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_183",
+    "name": "КСБ КГнг(А)-FRLSLTx 20х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 40,
+    "coreDiameter": 0.98,
+    "outerDiameter": 34.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_184",
+    "name": "КСБ КГнг(А)-FRLSLTx 20х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 40,
+    "coreDiameter": 1.13,
+    "outerDiameter": 35.1,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_185",
+    "name": "КСБ КГнг(А)-FRLSLTx 20х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 40,
+    "coreDiameter": 1.38,
+    "outerDiameter": 38.7,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_186",
+    "name": "КСБ КГнг(А)-FRLSLTx 20х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 40,
+    "coreDiameter": 1.78,
+    "outerDiameter": 39.8,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_187",
+    "name": "КСБ КГнг(А)-FRLSLTx 24х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 48,
+    "coreDiameter": 0.64,
+    "outerDiameter": 27.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_188",
+    "name": "КСБ КГнг(А)-FRLSLTx 24х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 48,
+    "coreDiameter": 0.8,
+    "outerDiameter": 33.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_189",
+    "name": "КСБ КГнг(А)-FRLSLTx 24х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 48,
+    "coreDiameter": 0.98,
+    "outerDiameter": 38.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_190",
+    "name": "КСБ КГнг(А)-FRLSLTx 24х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 48,
+    "coreDiameter": 1.13,
+    "outerDiameter": 39.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_191",
+    "name": "КСБ КГнг(А)-FRLSLTx 24х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 48,
+    "coreDiameter": 1.38,
+    "outerDiameter": 43.1,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_192",
+    "name": "КСБ КГнг(А)-FRLSLTx 24х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 48,
+    "coreDiameter": 1.78,
+    "outerDiameter": 44.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_193",
+    "name": "КСБ КГнг(А)-FRLSLTx 28х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 56,
+    "coreDiameter": 0.64,
+    "outerDiameter": 29.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_194",
+    "name": "КСБ КГнг(А)-FRLSLTx 28х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 56,
+    "coreDiameter": 0.8,
+    "outerDiameter": 35.1,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_195",
+    "name": "КСБ КГнг(А)-FRLSLTx 28х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 56,
+    "coreDiameter": 0.98,
+    "outerDiameter": 41.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_196",
+    "name": "КСБ КГнг(А)-FRLSLTx 28х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 56,
+    "coreDiameter": 1.13,
+    "outerDiameter": 41.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_197",
+    "name": "КСБ КГнг(А)-FRLSLTx 28х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 56,
+    "coreDiameter": 1.38,
+    "outerDiameter": 45.7,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_198",
+    "name": "КСБ КГнг(А)-FRLSLTx 28х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 56,
+    "coreDiameter": 1.78,
+    "outerDiameter": 47,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_199",
+    "name": "КСБ КГнг(А)-FRLSLTx 32х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 64,
+    "coreDiameter": 0.64,
+    "outerDiameter": 30.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_200",
+    "name": "КСБ КГнг(А)-FRLSLTx 32х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 64,
+    "coreDiameter": 0.8,
+    "outerDiameter": 36.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_201",
+    "name": "КСБ КГнг(А)-FRLSLTx 32х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 64,
+    "coreDiameter": 0.98,
+    "outerDiameter": 42.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_202",
+    "name": "КСБ КГнг(А)-FRLSLTx 32х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 64,
+    "coreDiameter": 1.13,
+    "outerDiameter": 43.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_203",
+    "name": "КСБ КГнг(А)-FRLSLTx 32х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 64,
+    "coreDiameter": 1.38,
+    "outerDiameter": 47.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_204",
+    "name": "КСБ КГнг(А)-FRLSLTx 32х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 64,
+    "coreDiameter": 1.78,
+    "outerDiameter": 48.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_205",
+    "name": "КСБ КГнг(А)-FRLSLTx 36х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 72,
+    "coreDiameter": 0.64,
+    "outerDiameter": 31.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_206",
+    "name": "КСБ КГнг(А)-FRLSLTx 36х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 72,
+    "coreDiameter": 0.8,
+    "outerDiameter": 37.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_207",
+    "name": "КСБ КГнг(А)-FRLSLTx 36х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 72,
+    "coreDiameter": 0.98,
+    "outerDiameter": 44.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_208",
+    "name": "КСБ КГнг(А)-FRLSLTx 36х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 72,
+    "coreDiameter": 1.13,
+    "outerDiameter": 44.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_209",
+    "name": "КСБ КГнг(А)-FRLSLTx 36х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 72,
+    "coreDiameter": 1.38,
+    "outerDiameter": 49.4,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_210",
+    "name": "КСБ КГнг(А)-FRLSLTx 36х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 72,
+    "coreDiameter": 1.78,
+    "outerDiameter": 50.8,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_211",
+    "name": "КСБ КГнг(А)-FRLSLTx 40х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 80,
+    "coreDiameter": 0.64,
+    "outerDiameter": 32.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_212",
+    "name": "КСБ КГнг(А)-FRLSLTx 40х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 80,
+    "coreDiameter": 0.8,
+    "outerDiameter": 39.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_213",
+    "name": "КСБ КГнг(А)-FRLSLTx 40х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 80,
+    "coreDiameter": 0.98,
+    "outerDiameter": 46.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_214",
+    "name": "КСБ КГнг(А)-FRLSLTx 40х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 80,
+    "coreDiameter": 1.13,
+    "outerDiameter": 46.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_215",
+    "name": "КСБ КГнг(А)-FRLSLTx 40х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 80,
+    "coreDiameter": 1.38,
+    "outerDiameter": 51.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_216",
+    "name": "КСБ КГнг(А)-FRLSLTx 40х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 80,
+    "coreDiameter": 1.78,
+    "outerDiameter": 52.8,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_217",
+    "name": "КСБ Кнг(А)-FRLSLTx 1х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 2,
+    "coreDiameter": 0.64,
+    "outerDiameter": 12.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_218",
+    "name": "КСБ Кнг(А)-FRLSLTx 1х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 2,
+    "coreDiameter": 0.8,
+    "outerDiameter": 13.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_219",
+    "name": "КСБ Кнг(А)-FRLSLTx 1х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 2,
+    "coreDiameter": 0.98,
+    "outerDiameter": 14.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_220",
+    "name": "КСБ Кнг(А)-FRLSLTx 1х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 2,
+    "coreDiameter": 1.13,
+    "outerDiameter": 14.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_221",
+    "name": "КСБ Кнг(А)-FRLSLTx 1х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 2,
+    "coreDiameter": 1.38,
+    "outerDiameter": 15.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_222",
+    "name": "КСБ Кнг(А)-FRLSLTx 1х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 2,
+    "coreDiameter": 1.78,
+    "outerDiameter": 15.4,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_223",
+    "name": "КСБ Кнг(А)-FRLSLTx 2х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 4,
+    "coreDiameter": 0.64,
+    "outerDiameter": 16.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_224",
+    "name": "КСБ Кнг(А)-FRLSLTx 2х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 4,
+    "coreDiameter": 0.8,
+    "outerDiameter": 18,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_225",
+    "name": "КСБ Кнг(А)-FRLSLTx 2х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 4,
+    "coreDiameter": 0.98,
+    "outerDiameter": 19.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_226",
+    "name": "КСБ Кнг(А)-FRLSLTx 2х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 4,
+    "coreDiameter": 1.13,
+    "outerDiameter": 20,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_227",
+    "name": "КСБ Кнг(А)-FRLSLTx 2х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 4,
+    "coreDiameter": 1.38,
+    "outerDiameter": 21.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_228",
+    "name": "КСБ Кнг(А)-FRLSLTx 2х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 4,
+    "coreDiameter": 1.78,
+    "outerDiameter": 21.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_229",
+    "name": "КСБ Кнг(А)-FRLSLTx 3х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 6,
+    "coreDiameter": 0.64,
+    "outerDiameter": 16.7,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_230",
+    "name": "КСБ Кнг(А)-FRLSLTx 3х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 6,
+    "coreDiameter": 0.8,
+    "outerDiameter": 18.7,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_231",
+    "name": "КСБ Кнг(А)-FRLSLTx 3х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 6,
+    "coreDiameter": 0.98,
+    "outerDiameter": 20.8,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_232",
+    "name": "КСБ Кнг(А)-FRLSLTx 3х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 6,
+    "coreDiameter": 1.13,
+    "outerDiameter": 20.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_233",
+    "name": "КСБ Кнг(А)-FRLSLTx 3х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 6,
+    "coreDiameter": 1.38,
+    "outerDiameter": 22.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_234",
+    "name": "КСБ Кнг(А)-FRLSLTx 3х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 6,
+    "coreDiameter": 1.78,
+    "outerDiameter": 22.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_235",
+    "name": "КСБ Кнг(А)-FRLSLTx 4х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 8,
+    "coreDiameter": 0.64,
+    "outerDiameter": 17.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_236",
+    "name": "КСБ Кнг(А)-FRLSLTx 4х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 8,
+    "coreDiameter": 0.8,
+    "outerDiameter": 20.1,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_237",
+    "name": "КСБ Кнг(А)-FRLSLTx 4х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 8,
+    "coreDiameter": 0.98,
+    "outerDiameter": 22.4,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_238",
+    "name": "КСБ Кнг(А)-FRLSLTx 4х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 8,
+    "coreDiameter": 1.13,
+    "outerDiameter": 22.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_239",
+    "name": "КСБ Кнг(А)-FRLSLTx 4х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 8,
+    "coreDiameter": 1.38,
+    "outerDiameter": 24.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_240",
+    "name": "КСБ Кнг(А)-FRLSLTx 4х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 8,
+    "coreDiameter": 1.78,
+    "outerDiameter": 24.7,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_241",
+    "name": "КСБ Кнг(А)-FRLSLTx 5х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 10,
+    "coreDiameter": 0.64,
+    "outerDiameter": 19,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_242",
+    "name": "КСБ Кнг(А)-FRLSLTx 5х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 10,
+    "coreDiameter": 0.8,
+    "outerDiameter": 21.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_243",
+    "name": "КСБ Кнг(А)-FRLSLTx 5х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 10,
+    "coreDiameter": 0.98,
+    "outerDiameter": 24.1,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_244",
+    "name": "КСБ Кнг(А)-FRLSLTx 5х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 10,
+    "coreDiameter": 1.13,
+    "outerDiameter": 24.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_245",
+    "name": "КСБ Кнг(А)-FRLSLTx 5х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 10,
+    "coreDiameter": 1.38,
+    "outerDiameter": 26.1,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_246",
+    "name": "КСБ Кнг(А)-FRLSLTx 5х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 10,
+    "coreDiameter": 1.78,
+    "outerDiameter": 26.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_247",
+    "name": "КСБ Кнг(А)-FRLSLTx 6х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 12,
+    "coreDiameter": 0.64,
+    "outerDiameter": 20.1,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_248",
+    "name": "КСБ Кнг(А)-FRLSLTx 6х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 12,
+    "coreDiameter": 0.8,
+    "outerDiameter": 22.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_249",
+    "name": "КСБ Кнг(А)-FRLSLTx 6х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 12,
+    "coreDiameter": 0.98,
+    "outerDiameter": 25.8,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_250",
+    "name": "КСБ Кнг(А)-FRLSLTx 6х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 12,
+    "coreDiameter": 1.13,
+    "outerDiameter": 25.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_251",
+    "name": "КСБ Кнг(А)-FRLSLTx 6х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 12,
+    "coreDiameter": 1.38,
+    "outerDiameter": 28,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_252",
+    "name": "КСБ Кнг(А)-FRLSLTx 6х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 12,
+    "coreDiameter": 1.78,
+    "outerDiameter": 28.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_253",
+    "name": "КСБ Кнг(А)-FRLSLTx 7х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 14,
+    "coreDiameter": 0.64,
+    "outerDiameter": 20.1,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_254",
+    "name": "КСБ Кнг(А)-FRLSLTx 7х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 14,
+    "coreDiameter": 0.8,
+    "outerDiameter": 22.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_255",
+    "name": "КСБ Кнг(А)-FRLSLTx 7х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 14,
+    "coreDiameter": 0.98,
+    "outerDiameter": 25.8,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_256",
+    "name": "КСБ Кнг(А)-FRLSLTx 7х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 14,
+    "coreDiameter": 1.13,
+    "outerDiameter": 25.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_257",
+    "name": "КСБ Кнг(А)-FRLSLTx 7х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 14,
+    "coreDiameter": 1.38,
+    "outerDiameter": 28,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_258",
+    "name": "КСБ Кнг(А)-FRLSLTx 7х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 14,
+    "coreDiameter": 1.78,
+    "outerDiameter": 28.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_259",
+    "name": "КСБ Кнг(А)-FRLSLTx 8х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 16,
+    "coreDiameter": 0.64,
+    "outerDiameter": 21.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_260",
+    "name": "КСБ Кнг(А)-FRLSLTx 8х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 16,
+    "coreDiameter": 0.8,
+    "outerDiameter": 24.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_261",
+    "name": "КСБ Кнг(А)-FRLSLTx 8х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 16,
+    "coreDiameter": 0.98,
+    "outerDiameter": 27.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_262",
+    "name": "КСБ Кнг(А)-FRLSLTx 8х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 16,
+    "coreDiameter": 1.13,
+    "outerDiameter": 27.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_263",
+    "name": "КСБ Кнг(А)-FRLSLTx 8х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 16,
+    "coreDiameter": 1.38,
+    "outerDiameter": 29.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_264",
+    "name": "КСБ Кнг(А)-FRLSLTx 8х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 16,
+    "coreDiameter": 1.78,
+    "outerDiameter": 30.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_265",
+    "name": "КСБ Кнг(А)-FRLSLTx 9х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 18,
+    "coreDiameter": 0.64,
+    "outerDiameter": 22.8,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_266",
+    "name": "КСБ Кнг(А)-FRLSLTx 9х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 18,
+    "coreDiameter": 0.8,
+    "outerDiameter": 26.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_267",
+    "name": "КСБ Кнг(А)-FRLSLTx 9х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 18,
+    "coreDiameter": 0.98,
+    "outerDiameter": 29.8,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_268",
+    "name": "КСБ Кнг(А)-FRLSLTx 9х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 18,
+    "coreDiameter": 1.13,
+    "outerDiameter": 30,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_269",
+    "name": "КСБ Кнг(А)-FRLSLTx 9х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 18,
+    "coreDiameter": 1.38,
+    "outerDiameter": 32.4,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_270",
+    "name": "КСБ Кнг(А)-FRLSLTx 9х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 18,
+    "coreDiameter": 1.78,
+    "outerDiameter": 33.1,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_271",
+    "name": "КСБ Кнг(А)-FRLSLTx 10х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 20,
+    "coreDiameter": 0.64,
+    "outerDiameter": 24,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_272",
+    "name": "КСБ Кнг(А)-FRLSLTx 10х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 20,
+    "coreDiameter": 0.8,
+    "outerDiameter": 27.7,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_273",
+    "name": "КСБ Кнг(А)-FRLSLTx 10х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 20,
+    "coreDiameter": 0.98,
+    "outerDiameter": 31.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_274",
+    "name": "КСБ Кнг(А)-FRLSLTx 10х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 20,
+    "coreDiameter": 1.13,
+    "outerDiameter": 31.7,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_275",
+    "name": "КСБ Кнг(А)-FRLSLTx 10х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 20,
+    "coreDiameter": 1.38,
+    "outerDiameter": 34.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_276",
+    "name": "КСБ Кнг(А)-FRLSLTx 10х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 20,
+    "coreDiameter": 1.78,
+    "outerDiameter": 35.1,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_277",
+    "name": "КСБ Кнг(А)-FRLSLTx 12х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 24,
+    "coreDiameter": 0.64,
+    "outerDiameter": 25.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_278",
+    "name": "КСБ Кнг(А)-FRLSLTx 12х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 24,
+    "coreDiameter": 0.8,
+    "outerDiameter": 29.4,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_279",
+    "name": "КСБ Кнг(А)-FRLSLTx 12х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 24,
+    "coreDiameter": 0.98,
+    "outerDiameter": 33.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_280",
+    "name": "КСБ Кнг(А)-FRLSLTx 12х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 24,
+    "coreDiameter": 1.13,
+    "outerDiameter": 33.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_281",
+    "name": "КСБ Кнг(А)-FRLSLTx 12х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 24,
+    "coreDiameter": 1.38,
+    "outerDiameter": 36.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_282",
+    "name": "КСБ Кнг(А)-FRLSLTx 12х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 24,
+    "coreDiameter": 1.78,
+    "outerDiameter": 37,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_283",
+    "name": "КСБ Кнг(А)-FRLSLTx 16х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 32,
+    "coreDiameter": 0.64,
+    "outerDiameter": 27.7,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_284",
+    "name": "КСБ Кнг(А)-FRLSLTx 16х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 32,
+    "coreDiameter": 0.8,
+    "outerDiameter": 32,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_285",
+    "name": "КСБ Кнг(А)-FRLSLTx 16х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 32,
+    "coreDiameter": 0.98,
+    "outerDiameter": 36.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_286",
+    "name": "КСБ Кнг(А)-FRLSLTx 16х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 32,
+    "coreDiameter": 1.13,
+    "outerDiameter": 36.7,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_287",
+    "name": "КСБ Кнг(А)-FRLSLTx 16х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 32,
+    "coreDiameter": 1.38,
+    "outerDiameter": 39.7,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_288",
+    "name": "КСБ Кнг(А)-FRLSLTx 16х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 32,
+    "coreDiameter": 1.78,
+    "outerDiameter": 40.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_289",
+    "name": "КСБ Кнг(А)-FRLSLTx 20х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 40,
+    "coreDiameter": 0.64,
+    "outerDiameter": 29.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_290",
+    "name": "КСБ Кнг(А)-FRLSLTx 20х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 40,
+    "coreDiameter": 0.8,
+    "outerDiameter": 34.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_291",
+    "name": "КСБ Кнг(А)-FRLSLTx 20х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 40,
+    "coreDiameter": 0.98,
+    "outerDiameter": 39.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_292",
+    "name": "КСБ Кнг(А)-FRLSLTx 20х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 40,
+    "coreDiameter": 1.13,
+    "outerDiameter": 40.1,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_293",
+    "name": "КСБ Кнг(А)-FRLSLTx 20х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 40,
+    "coreDiameter": 1.38,
+    "outerDiameter": 43.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_294",
+    "name": "КСБ Кнг(А)-FRLSLTx 20х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 40,
+    "coreDiameter": 1.78,
+    "outerDiameter": 44.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_295",
+    "name": "КСБ Кнг(А)-FRLSLTx 24х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 48,
+    "coreDiameter": 0.64,
+    "outerDiameter": 32.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_296",
+    "name": "КСБ Кнг(А)-FRLSLTx 24х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 48,
+    "coreDiameter": 0.8,
+    "outerDiameter": 38.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_297",
+    "name": "КСБ Кнг(А)-FRLSLTx 24х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 48,
+    "coreDiameter": 0.98,
+    "outerDiameter": 43.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_298",
+    "name": "КСБ Кнг(А)-FRLSLTx 24х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 48,
+    "coreDiameter": 1.13,
+    "outerDiameter": 44.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_299",
+    "name": "КСБ Кнг(А)-FRLSLTx 24х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 48,
+    "coreDiameter": 1.38,
+    "outerDiameter": 47.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_300",
+    "name": "КСБ Кнг(А)-FRLSLTx 24х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 48,
+    "coreDiameter": 1.78,
+    "outerDiameter": 49.1,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_301",
+    "name": "КСБ Кнг(А)-FRLSLTx 28х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 56,
+    "coreDiameter": 0.64,
+    "outerDiameter": 34.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_302",
+    "name": "КСБ Кнг(А)-FRLSLTx 28х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 56,
+    "coreDiameter": 0.8,
+    "outerDiameter": 40.1,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_303",
+    "name": "КСБ Кнг(А)-FRLSLTx 28х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 56,
+    "coreDiameter": 0.98,
+    "outerDiameter": 46.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_304",
+    "name": "КСБ Кнг(А)-FRLSLTx 28х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 56,
+    "coreDiameter": 1.13,
+    "outerDiameter": 46.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_305",
+    "name": "КСБ Кнг(А)-FRLSLTx 28х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 56,
+    "coreDiameter": 1.38,
+    "outerDiameter": 50.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_306",
+    "name": "КСБ Кнг(А)-FRLSLTx 28х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 56,
+    "coreDiameter": 1.78,
+    "outerDiameter": 51.8,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_307",
+    "name": "КСБ Кнг(А)-FRLSLTx 32х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 64,
+    "coreDiameter": 0.64,
+    "outerDiameter": 35.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_308",
+    "name": "КСБ Кнг(А)-FRLSLTx 32х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 64,
+    "coreDiameter": 0.8,
+    "outerDiameter": 41.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_309",
+    "name": "КСБ Кнг(А)-FRLSLTx 32х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 64,
+    "coreDiameter": 0.98,
+    "outerDiameter": 47.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_310",
+    "name": "КСБ Кнг(А)-FRLSLTx 32х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 64,
+    "coreDiameter": 1.13,
+    "outerDiameter": 48.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_311",
+    "name": "КСБ Кнг(А)-FRLSLTx 32х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 64,
+    "coreDiameter": 1.38,
+    "outerDiameter": 52.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_312",
+    "name": "КСБ Кнг(А)-FRLSLTx 32х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 64,
+    "coreDiameter": 1.78,
+    "outerDiameter": 53.7,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_313",
+    "name": "КСБ Кнг(А)-FRLSLTx 36х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 72,
+    "coreDiameter": 0.64,
+    "outerDiameter": 36.5,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_314",
+    "name": "КСБ Кнг(А)-FRLSLTx 36х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 72,
+    "coreDiameter": 0.8,
+    "outerDiameter": 42.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_315",
+    "name": "КСБ Кнг(А)-FRLSLTx 36х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 72,
+    "coreDiameter": 0.98,
+    "outerDiameter": 49.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_316",
+    "name": "КСБ Кнг(А)-FRLSLTx 36х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 72,
+    "coreDiameter": 1.13,
+    "outerDiameter": 49.9,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_317",
+    "name": "КСБ Кнг(А)-FRLSLTx 36х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 72,
+    "coreDiameter": 1.38,
+    "outerDiameter": 54.2,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_318",
+    "name": "КСБ Кнг(А)-FRLSLTx 36х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 72,
+    "coreDiameter": 1.78,
+    "outerDiameter": 55.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_319",
+    "name": "КСБ Кнг(А)-FRLSLTx 40х2х0,64",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 80,
+    "coreDiameter": 0.64,
+    "outerDiameter": 37.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_320",
+    "name": "КСБ Кнг(А)-FRLSLTx 40х2х0,8",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 80,
+    "coreDiameter": 0.8,
+    "outerDiameter": 44.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_321",
+    "name": "КСБ Кнг(А)-FRLSLTx 40х2х0,98",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 80,
+    "coreDiameter": 0.98,
+    "outerDiameter": 51.3,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_322",
+    "name": "КСБ Кнг(А)-FRLSLTx 40х2х1,13",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 80,
+    "coreDiameter": 1.13,
+    "outerDiameter": 51.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_323",
+    "name": "КСБ Кнг(А)-FRLSLTx 40х2х1,38",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 80,
+    "coreDiameter": 1.38,
+    "outerDiameter": 56.1,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  },
+  {
+    "id": "cable_rs485ltx_324",
+    "name": "КСБ Кнг(А)-FRLSLTx 40х2х1,78",
+    "cableTypeId": "cable_type:rs485ltx",
+    "cores": 80,
+    "coreDiameter": 1.78,
+    "outerDiameter": 57.6,
+    "TU": "ТУ 27.32.13-060-47273194-2017"
+  }
+]

@@ -1,0 +1,3026 @@
+[
+  {
+    "id": "cable_kers_1",
+    "name": "КЭРсПнг(А)-FRHF  1х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 1,
+    "coreSection": 0.2,
+    "outerDiameter": 2.7,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_2",
+    "name": "КЭРсПнг(А)-FRHF  2х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 2,
+    "coreSection": 0.2,
+    "outerDiameter": 4.2,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_3",
+    "name": "КЭРсПнг(А)-FRHF  3х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 3,
+    "coreSection": 0.2,
+    "outerDiameter": 4.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_4",
+    "name": "КЭРсПнг(А)-FRHF  4х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 4,
+    "coreSection": 0.2,
+    "outerDiameter": 4.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_5",
+    "name": "КЭРсПнг(А)-FRHF  5х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 5,
+    "coreSection": 0.2,
+    "outerDiameter": 5.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_6",
+    "name": "КЭРсПнг(А)-FRHF  6х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 6,
+    "coreSection": 0.2,
+    "outerDiameter": 5.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_7",
+    "name": "КЭРсПнг(А)-FRHF  7х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 7,
+    "coreSection": 0.2,
+    "outerDiameter": 5.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_8",
+    "name": "КЭРсПнг(А)-FRHF  8х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 8,
+    "coreSection": 0.2,
+    "outerDiameter": 6.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_9",
+    "name": "КЭРсПнг(А)-FRHF  10х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 10,
+    "coreSection": 0.2,
+    "outerDiameter": 7.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_10",
+    "name": "КЭРсПнг(А)-FRHF  12х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 12,
+    "coreSection": 0.2,
+    "outerDiameter": 7.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_11",
+    "name": "КЭРсПнг(А)-FRHF  14х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 14,
+    "coreSection": 0.2,
+    "outerDiameter": 8.2,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_12",
+    "name": "КЭРсПнг(А)-FRHF  19х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 19,
+    "coreSection": 0.2,
+    "outerDiameter": 9.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_13",
+    "name": "КЭРсПнг(А)-FRHF  24х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 24,
+    "coreSection": 0.2,
+    "outerDiameter": 10.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_14",
+    "name": "КЭРсПнг(А)-FRHF  27х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 27,
+    "coreSection": 0.2,
+    "outerDiameter": 11,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_15",
+    "name": "КЭРсПнг(А)-FRHF  30х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 30,
+    "coreSection": 0.2,
+    "outerDiameter": 11.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_16",
+    "name": "КЭРсПнг(А)-FRHF  37х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 37,
+    "coreSection": 0.2,
+    "outerDiameter": 12.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_17",
+    "name": "КЭРсПнг(А)-FRHF  1х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 1,
+    "coreSection": 0.35,
+    "outerDiameter": 3,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_18",
+    "name": "КЭРсПнг(А)-FRHF  2х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 2,
+    "coreSection": 0.35,
+    "outerDiameter": 4.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_19",
+    "name": "КЭРсПнг(А)-FRHF  3х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 3,
+    "coreSection": 0.35,
+    "outerDiameter": 5.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_20",
+    "name": "КЭРсПнг(А)-FRHF  4х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 4,
+    "coreSection": 0.35,
+    "outerDiameter": 5.7,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_21",
+    "name": "КЭРсПнг(А)-FRHF  5х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 5,
+    "coreSection": 0.35,
+    "outerDiameter": 6.3,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_22",
+    "name": "КЭРсПнг(А)-FRHF  6х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 6,
+    "coreSection": 0.35,
+    "outerDiameter": 6.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_23",
+    "name": "КЭРсПнг(А)-FRHF  7х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 7,
+    "coreSection": 0.35,
+    "outerDiameter": 6.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_24",
+    "name": "КЭРсПнг(А)-FRHF  8х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 8,
+    "coreSection": 0.35,
+    "outerDiameter": 7.3,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_25",
+    "name": "КЭРсПнг(А)-FRHF  10х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 10,
+    "coreSection": 0.35,
+    "outerDiameter": 8.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_26",
+    "name": "КЭРсПнг(А)-FRHF  12х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 12,
+    "coreSection": 0.35,
+    "outerDiameter": 9.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_27",
+    "name": "КЭРсПнг(А)-FRHF  14х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 14,
+    "coreSection": 0.35,
+    "outerDiameter": 9.7,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_28",
+    "name": "КЭРсПнг(А)-FRHF  19х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 19,
+    "coreSection": 0.35,
+    "outerDiameter": 10.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_29",
+    "name": "КЭРсПнг(А)-FRHF  24х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 24,
+    "coreSection": 0.35,
+    "outerDiameter": 12.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_30",
+    "name": "КЭРсПнг(А)-FRHF  27х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 27,
+    "coreSection": 0.35,
+    "outerDiameter": 13.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_31",
+    "name": "КЭРсПнг(А)-FRHF  30х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 30,
+    "coreSection": 0.35,
+    "outerDiameter": 13.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_32",
+    "name": "КЭРсПнг(А)-FRHF  37х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 37,
+    "coreSection": 0.35,
+    "outerDiameter": 15,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_33",
+    "name": "КЭРсПнг(А)-FRHF  1х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 1,
+    "coreSection": 0.5,
+    "outerDiameter": 3.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_34",
+    "name": "КЭРсПнг(А)-FRHF  2х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 2,
+    "coreSection": 0.5,
+    "outerDiameter": 5.6,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_35",
+    "name": "КЭРсПнг(А)-FRHF  3х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 3,
+    "coreSection": 0.5,
+    "outerDiameter": 5.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_36",
+    "name": "КЭРсПнг(А)-FRHF  4х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 4,
+    "coreSection": 0.5,
+    "outerDiameter": 6.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_37",
+    "name": "КЭРсПнг(А)-FRHF  5х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 5,
+    "coreSection": 0.5,
+    "outerDiameter": 7.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_38",
+    "name": "КЭРсПнг(А)-FRHF  6х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 6,
+    "coreSection": 0.5,
+    "outerDiameter": 7.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_39",
+    "name": "КЭРсПнг(А)-FRHF  7х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 7,
+    "coreSection": 0.5,
+    "outerDiameter": 7.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_40",
+    "name": "КЭРсПнг(А)-FRHF  8х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 8,
+    "coreSection": 0.5,
+    "outerDiameter": 8.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_41",
+    "name": "КЭРсПнг(А)-FRHF  10х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 10,
+    "coreSection": 0.5,
+    "outerDiameter": 10,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_42",
+    "name": "КЭРсПнг(А)-FRHF  12х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 12,
+    "coreSection": 0.5,
+    "outerDiameter": 10.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_43",
+    "name": "КЭРсПнг(А)-FRHF  14х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 14,
+    "coreSection": 0.5,
+    "outerDiameter": 11.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_44",
+    "name": "КЭРсПнг(А)-FRHF  19х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 19,
+    "coreSection": 0.5,
+    "outerDiameter": 12.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_45",
+    "name": "КЭРсПнг(А)-FRHF  24х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 24,
+    "coreSection": 0.5,
+    "outerDiameter": 14.6,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_46",
+    "name": "КЭРсПнг(А)-FRHF  27х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 27,
+    "coreSection": 0.5,
+    "outerDiameter": 14.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_47",
+    "name": "КЭРсПнг(А)-FRHF  30х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 30,
+    "coreSection": 0.5,
+    "outerDiameter": 15.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_48",
+    "name": "КЭРсПнг(А)-FRHF  37х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 37,
+    "coreSection": 0.5,
+    "outerDiameter": 17.3,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_49",
+    "name": "КЭРсПнг(А)-FRHF  1х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 1,
+    "coreSection": 0.75,
+    "outerDiameter": 3.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_50",
+    "name": "КЭРсПнг(А)-FRHF  2х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 2,
+    "coreSection": 0.75,
+    "outerDiameter": 6.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_51",
+    "name": "КЭРсПнг(А)-FRHF  3х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 3,
+    "coreSection": 0.75,
+    "outerDiameter": 6.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_52",
+    "name": "КЭРсПнг(А)-FRHF  4х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 4,
+    "coreSection": 0.75,
+    "outerDiameter": 7.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_53",
+    "name": "КЭРсПнг(А)-FRHF  5х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 5,
+    "coreSection": 0.75,
+    "outerDiameter": 8.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_54",
+    "name": "КЭРсПнг(А)-FRHF  6х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 6,
+    "coreSection": 0.75,
+    "outerDiameter": 9.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_55",
+    "name": "КЭРсПнг(А)-FRHF  7х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 7,
+    "coreSection": 0.75,
+    "outerDiameter": 9.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_56",
+    "name": "КЭРсПнг(А)-FRHF  8х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 8,
+    "coreSection": 0.75,
+    "outerDiameter": 9.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_57",
+    "name": "КЭРсПнг(А)-FRHF  10х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 10,
+    "coreSection": 0.75,
+    "outerDiameter": 11.6,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_58",
+    "name": "КЭРсПнг(А)-FRHF  12х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 12,
+    "coreSection": 0.75,
+    "outerDiameter": 12.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_59",
+    "name": "КЭРсПнг(А)-FRHF  14х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 14,
+    "coreSection": 0.75,
+    "outerDiameter": 13,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_60",
+    "name": "КЭРсПнг(А)-FRHF  19х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 19,
+    "coreSection": 0.75,
+    "outerDiameter": 14.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_61",
+    "name": "КЭРсПнг(А)-FRHF  24х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 24,
+    "coreSection": 0.75,
+    "outerDiameter": 17.6,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_62",
+    "name": "КЭРсПнг(А)-FRHF  27х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 27,
+    "coreSection": 0.75,
+    "outerDiameter": 18,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_63",
+    "name": "КЭРсПнг(А)-FRHF  30х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 30,
+    "coreSection": 0.75,
+    "outerDiameter": 18.6,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_64",
+    "name": "КЭРсПнг(А)-FRHF  37х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 37,
+    "coreSection": 0.75,
+    "outerDiameter": 20.3,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_65",
+    "name": "КЭРсПнг(А)-FRHF  1х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 1,
+    "coreSection": 1,
+    "outerDiameter": 4.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_66",
+    "name": "КЭРсПнг(А)-FRHF  2х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 2,
+    "coreSection": 1,
+    "outerDiameter": 6.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_67",
+    "name": "КЭРсПнг(А)-FRHF  3х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 3,
+    "coreSection": 1,
+    "outerDiameter": 7.2,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_68",
+    "name": "КЭРсПнг(А)-FRHF  4х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 4,
+    "coreSection": 1,
+    "outerDiameter": 8.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_69",
+    "name": "КЭРсПнг(А)-FRHF  5х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 5,
+    "coreSection": 1,
+    "outerDiameter": 8.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_70",
+    "name": "КЭРсПнг(А)-FRHF  6х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 6,
+    "coreSection": 1,
+    "outerDiameter": 9.7,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_71",
+    "name": "КЭРсПнг(А)-FRHF  7х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 7,
+    "coreSection": 1,
+    "outerDiameter": 9.7,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_72",
+    "name": "КЭРсПнг(А)-FRHF  8х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 8,
+    "coreSection": 1,
+    "outerDiameter": 10.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_73",
+    "name": "КЭРсПнг(А)-FRHF  10х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 10,
+    "coreSection": 1,
+    "outerDiameter": 12.6,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_74",
+    "name": "КЭРсПнг(А)-FRHF  12х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 12,
+    "coreSection": 1,
+    "outerDiameter": 13.2,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_75",
+    "name": "КЭРсПнг(А)-FRHF  14х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 14,
+    "coreSection": 1,
+    "outerDiameter": 13.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_76",
+    "name": "КЭРсПнг(А)-FRHF  19х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 19,
+    "coreSection": 1,
+    "outerDiameter": 15.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_77",
+    "name": "КЭРсПнг(А)-FRHF  24х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 24,
+    "coreSection": 1,
+    "outerDiameter": 18.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_78",
+    "name": "КЭРсПнг(А)-FRHF  27х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 27,
+    "coreSection": 1,
+    "outerDiameter": 19.2,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_79",
+    "name": "КЭРсПнг(А)-FRHF  30х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 30,
+    "coreSection": 1,
+    "outerDiameter": 20.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_80",
+    "name": "КЭРсПнг(А)-FRHF  37х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 37,
+    "coreSection": 1,
+    "outerDiameter": 21.7,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_81",
+    "name": "КЭРсПнг(А)-FRHF  1х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 1,
+    "coreSection": 1.5,
+    "outerDiameter": 4.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_82",
+    "name": "КЭРсПнг(А)-FRHF  2х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 2,
+    "coreSection": 1.5,
+    "outerDiameter": 8.2,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_83",
+    "name": "КЭРсПнг(А)-FRHF  3х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 3,
+    "coreSection": 1.5,
+    "outerDiameter": 8.7,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_84",
+    "name": "КЭРсПнг(А)-FRHF  4х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 4,
+    "coreSection": 1.5,
+    "outerDiameter": 9.6,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_85",
+    "name": "КЭРсПнг(А)-FRHF  5х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 5,
+    "coreSection": 1.5,
+    "outerDiameter": 10.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_86",
+    "name": "КЭРсПнг(А)-FRHF  6х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 6,
+    "coreSection": 1.5,
+    "outerDiameter": 11.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_87",
+    "name": "КЭРсПнг(А)-FRHF  7х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 7,
+    "coreSection": 1.5,
+    "outerDiameter": 11.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_88",
+    "name": "КЭРсПнг(А)-FRHF  8х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 8,
+    "coreSection": 1.5,
+    "outerDiameter": 12.7,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_89",
+    "name": "КЭРсПнг(А)-FRHF  10х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 10,
+    "coreSection": 1.5,
+    "outerDiameter": 15.2,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_90",
+    "name": "КЭРсПнг(А)-FRHF  12х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 12,
+    "coreSection": 1.5,
+    "outerDiameter": 16.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_91",
+    "name": "КЭРсПнг(А)-FRHF  14х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 14,
+    "coreSection": 1.5,
+    "outerDiameter": 17.2,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_92",
+    "name": "КЭРсПнг(А)-FRHF  19х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 19,
+    "coreSection": 1.5,
+    "outerDiameter": 19.3,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_93",
+    "name": "КЭРсПнг(А)-FRHF  24х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 24,
+    "coreSection": 1.5,
+    "outerDiameter": 22.6,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_94",
+    "name": "КЭРсПнг(А)-FRHF  27х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 27,
+    "coreSection": 1.5,
+    "outerDiameter": 23.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_95",
+    "name": "КЭРсПнг(А)-FRHF  30х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 30,
+    "coreSection": 1.5,
+    "outerDiameter": 24.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_96",
+    "name": "КЭРсПнг(А)-FRHF  37х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 37,
+    "coreSection": 1.5,
+    "outerDiameter": 26.3,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_97",
+    "name": "КЭРсПнг(А)-FRHF  1х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 1,
+    "coreSection": 2.5,
+    "outerDiameter": 5.3,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_98",
+    "name": "КЭРсПнг(А)-FRHF  2х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 2,
+    "coreSection": 2.5,
+    "outerDiameter": 9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_99",
+    "name": "КЭРсПнг(А)-FRHF  3х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 3,
+    "coreSection": 2.5,
+    "outerDiameter": 9.6,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_100",
+    "name": "КЭРсПнг(А)-FRHF  4х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 4,
+    "coreSection": 2.5,
+    "outerDiameter": 10.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_101",
+    "name": "КЭРсПнг(А)-FRHF  5х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 5,
+    "coreSection": 2.5,
+    "outerDiameter": 11.6,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_102",
+    "name": "КЭРсПнг(А)-FRHF  6х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 6,
+    "coreSection": 2.5,
+    "outerDiameter": 12.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_103",
+    "name": "КЭРсПнг(А)-FRHF  7х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 7,
+    "coreSection": 2.5,
+    "outerDiameter": 12.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_104",
+    "name": "КЭРсПнг(А)-FRHF  8х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 8,
+    "coreSection": 2.5,
+    "outerDiameter": 14,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_105",
+    "name": "КЭРсПнг(А)-FRHF  10х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 10,
+    "coreSection": 2.5,
+    "outerDiameter": 16.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_106",
+    "name": "КЭРсПнг(А)-FRHF  12х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 12,
+    "coreSection": 2.5,
+    "outerDiameter": 18,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_107",
+    "name": "КЭРсПнг(А)-FRHF  14х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 14,
+    "coreSection": 2.5,
+    "outerDiameter": 19.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_108",
+    "name": "КЭРсПнг(А)-FRHF  19х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 19,
+    "coreSection": 2.5,
+    "outerDiameter": 21.3,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_109",
+    "name": "КЭРсПнг(А)-FRHF  24х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 24,
+    "coreSection": 2.5,
+    "outerDiameter": 25.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_110",
+    "name": "КЭРсПнг(А)-FRHF  27х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 27,
+    "coreSection": 2.5,
+    "outerDiameter": 26,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_111",
+    "name": "КЭРсПнг(А)-FRHF  30х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 30,
+    "coreSection": 2.5,
+    "outerDiameter": 26.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_112",
+    "name": "КЭРсПнг(А)-FRHF  37х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 37,
+    "coreSection": 2.5,
+    "outerDiameter": 29.3,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_113",
+    "name": "КЭРсУнг(D)-FRHF  1х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 1,
+    "coreSection": 0.2,
+    "outerDiameter": 2.7,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_114",
+    "name": "КЭРсУнг(D)-FRHF  2х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 2,
+    "coreSection": 0.2,
+    "outerDiameter": 4.2,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_115",
+    "name": "КЭРсУнг(D)-FRHF  3х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 3,
+    "coreSection": 0.2,
+    "outerDiameter": 4.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_116",
+    "name": "КЭРсУнг(D)-FRHF  4х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 4,
+    "coreSection": 0.2,
+    "outerDiameter": 4.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_117",
+    "name": "КЭРсУнг(D)-FRHF  5х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 5,
+    "coreSection": 0.2,
+    "outerDiameter": 5.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_118",
+    "name": "КЭРсУнг(D)-FRHF  6х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 6,
+    "coreSection": 0.2,
+    "outerDiameter": 5.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_119",
+    "name": "КЭРсУнг(D)-FRHF  7х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 7,
+    "coreSection": 0.2,
+    "outerDiameter": 5.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_120",
+    "name": "КЭРсУнг(D)-FRHF  8х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 8,
+    "coreSection": 0.2,
+    "outerDiameter": 6.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_121",
+    "name": "КЭРсУнг(D)-FRHF  10х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 10,
+    "coreSection": 0.2,
+    "outerDiameter": 7.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_122",
+    "name": "КЭРсУнг(D)-FRHF  12х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 12,
+    "coreSection": 0.2,
+    "outerDiameter": 7.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_123",
+    "name": "КЭРсУнг(D)-FRHF  14х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 14,
+    "coreSection": 0.2,
+    "outerDiameter": 8.2,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_124",
+    "name": "КЭРсУнг(D)-FRHF  19х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 19,
+    "coreSection": 0.2,
+    "outerDiameter": 9.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_125",
+    "name": "КЭРсУнг(D)-FRHF  24х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 24,
+    "coreSection": 0.2,
+    "outerDiameter": 10.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_126",
+    "name": "КЭРсУнг(D)-FRHF  27х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 27,
+    "coreSection": 0.2,
+    "outerDiameter": 11,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_127",
+    "name": "КЭРсУнг(D)-FRHF  30х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 30,
+    "coreSection": 0.2,
+    "outerDiameter": 11.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_128",
+    "name": "КЭРсУнг(D)-FRHF  37х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 37,
+    "coreSection": 0.2,
+    "outerDiameter": 12.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_129",
+    "name": "КЭРсУнг(D)-FRHF  1х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 1,
+    "coreSection": 0.35,
+    "outerDiameter": 3,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_130",
+    "name": "КЭРсУнг(D)-FRHF  2х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 2,
+    "coreSection": 0.35,
+    "outerDiameter": 4.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_131",
+    "name": "КЭРсУнг(D)-FRHF  3х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 3,
+    "coreSection": 0.35,
+    "outerDiameter": 5.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_132",
+    "name": "КЭРсУнг(D)-FRHF  4х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 4,
+    "coreSection": 0.35,
+    "outerDiameter": 5.7,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_133",
+    "name": "КЭРсУнг(D)-FRHF  5х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 5,
+    "coreSection": 0.35,
+    "outerDiameter": 6.3,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_134",
+    "name": "КЭРсУнг(D)-FRHF  6х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 6,
+    "coreSection": 0.35,
+    "outerDiameter": 6.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_135",
+    "name": "КЭРсУнг(D)-FRHF  7х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 7,
+    "coreSection": 0.35,
+    "outerDiameter": 6.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_136",
+    "name": "КЭРсУнг(D)-FRHF  8х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 8,
+    "coreSection": 0.35,
+    "outerDiameter": 7.3,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_137",
+    "name": "КЭРсУнг(D)-FRHF  10х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 10,
+    "coreSection": 0.35,
+    "outerDiameter": 8.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_138",
+    "name": "КЭРсУнг(D)-FRHF  12х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 12,
+    "coreSection": 0.35,
+    "outerDiameter": 9.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_139",
+    "name": "КЭРсУнг(D)-FRHF  14х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 14,
+    "coreSection": 0.35,
+    "outerDiameter": 9.7,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_140",
+    "name": "КЭРсУнг(D)-FRHF  19х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 19,
+    "coreSection": 0.35,
+    "outerDiameter": 10.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_141",
+    "name": "КЭРсУнг(D)-FRHF  24х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 24,
+    "coreSection": 0.35,
+    "outerDiameter": 12.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_142",
+    "name": "КЭРсУнг(D)-FRHF  27х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 27,
+    "coreSection": 0.35,
+    "outerDiameter": 13.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_143",
+    "name": "КЭРсУнг(D)-FRHF  30х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 30,
+    "coreSection": 0.35,
+    "outerDiameter": 13.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_144",
+    "name": "КЭРсУнг(D)-FRHF  37х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 37,
+    "coreSection": 0.35,
+    "outerDiameter": 15,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_145",
+    "name": "КЭРсУнг(D)-FRHF  1х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 1,
+    "coreSection": 0.5,
+    "outerDiameter": 3.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_146",
+    "name": "КЭРсУнг(D)-FRHF  2х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 2,
+    "coreSection": 0.5,
+    "outerDiameter": 5.6,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_147",
+    "name": "КЭРсУнг(D)-FRHF  3х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 3,
+    "coreSection": 0.5,
+    "outerDiameter": 5.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_148",
+    "name": "КЭРсУнг(D)-FRHF  4х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 4,
+    "coreSection": 0.5,
+    "outerDiameter": 6.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_149",
+    "name": "КЭРсУнг(D)-FRHF  5х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 5,
+    "coreSection": 0.5,
+    "outerDiameter": 7.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_150",
+    "name": "КЭРсУнг(D)-FRHF  6х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 6,
+    "coreSection": 0.5,
+    "outerDiameter": 7.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_151",
+    "name": "КЭРсУнг(D)-FRHF  7х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 7,
+    "coreSection": 0.5,
+    "outerDiameter": 7.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_152",
+    "name": "КЭРсУнг(D)-FRHF  8х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 8,
+    "coreSection": 0.5,
+    "outerDiameter": 8.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_153",
+    "name": "КЭРсУнг(D)-FRHF  10х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 10,
+    "coreSection": 0.5,
+    "outerDiameter": 10,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_154",
+    "name": "КЭРсУнг(D)-FRHF  12х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 12,
+    "coreSection": 0.5,
+    "outerDiameter": 10.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_155",
+    "name": "КЭРсУнг(D)-FRHF  14х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 14,
+    "coreSection": 0.5,
+    "outerDiameter": 11.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_156",
+    "name": "КЭРсУнг(D)-FRHF  19х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 19,
+    "coreSection": 0.5,
+    "outerDiameter": 12.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_157",
+    "name": "КЭРсУнг(D)-FRHF  24х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 24,
+    "coreSection": 0.5,
+    "outerDiameter": 14.6,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_158",
+    "name": "КЭРсУнг(D)-FRHF  27х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 27,
+    "coreSection": 0.5,
+    "outerDiameter": 14.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_159",
+    "name": "КЭРсУнг(D)-FRHF  30х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 30,
+    "coreSection": 0.5,
+    "outerDiameter": 15.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_160",
+    "name": "КЭРсУнг(D)-FRHF  37х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 37,
+    "coreSection": 0.5,
+    "outerDiameter": 17.3,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_161",
+    "name": "КЭРсУнг(D)-FRHF  1х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 1,
+    "coreSection": 0.75,
+    "outerDiameter": 3.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_162",
+    "name": "КЭРсУнг(D)-FRHF  2х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 2,
+    "coreSection": 0.75,
+    "outerDiameter": 6.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_163",
+    "name": "КЭРсУнг(D)-FRHF  3х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 3,
+    "coreSection": 0.75,
+    "outerDiameter": 6.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_164",
+    "name": "КЭРсУнг(D)-FRHF  4х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 4,
+    "coreSection": 0.75,
+    "outerDiameter": 7.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_165",
+    "name": "КЭРсУнг(D)-FRHF  5х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 5,
+    "coreSection": 0.75,
+    "outerDiameter": 8.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_166",
+    "name": "КЭРсУнг(D)-FRHF  6х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 6,
+    "coreSection": 0.75,
+    "outerDiameter": 9.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_167",
+    "name": "КЭРсУнг(D)-FRHF  7х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 7,
+    "coreSection": 0.75,
+    "outerDiameter": 9.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_168",
+    "name": "КЭРсУнг(D)-FRHF  8х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 8,
+    "coreSection": 0.75,
+    "outerDiameter": 9.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_169",
+    "name": "КЭРсУнг(D)-FRHF  10х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 10,
+    "coreSection": 0.75,
+    "outerDiameter": 11.6,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_170",
+    "name": "КЭРсУнг(D)-FRHF  12х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 12,
+    "coreSection": 0.75,
+    "outerDiameter": 12.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_171",
+    "name": "КЭРсУнг(D)-FRHF  14х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 14,
+    "coreSection": 0.75,
+    "outerDiameter": 13,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_172",
+    "name": "КЭРсУнг(D)-FRHF  19х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 19,
+    "coreSection": 0.75,
+    "outerDiameter": 14.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_173",
+    "name": "КЭРсУнг(D)-FRHF  24х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 24,
+    "coreSection": 0.75,
+    "outerDiameter": 17.6,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_174",
+    "name": "КЭРсУнг(D)-FRHF  27х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 27,
+    "coreSection": 0.75,
+    "outerDiameter": 18,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_175",
+    "name": "КЭРсУнг(D)-FRHF  30х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 30,
+    "coreSection": 0.75,
+    "outerDiameter": 18.6,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_176",
+    "name": "КЭРсУнг(D)-FRHF  37х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 37,
+    "coreSection": 0.75,
+    "outerDiameter": 20.3,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_177",
+    "name": "КЭРсУнг(D)-FRHF  1х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 1,
+    "coreSection": 1,
+    "outerDiameter": 4.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_178",
+    "name": "КЭРсУнг(D)-FRHF  2х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 2,
+    "coreSection": 1,
+    "outerDiameter": 6.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_179",
+    "name": "КЭРсУнг(D)-FRHF  3х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 3,
+    "coreSection": 1,
+    "outerDiameter": 7.2,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_180",
+    "name": "КЭРсУнг(D)-FRHF  4х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 4,
+    "coreSection": 1,
+    "outerDiameter": 8.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_181",
+    "name": "КЭРсУнг(D)-FRHF  5х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 5,
+    "coreSection": 1,
+    "outerDiameter": 8.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_182",
+    "name": "КЭРсУнг(D)-FRHF  6х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 6,
+    "coreSection": 1,
+    "outerDiameter": 9.7,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_183",
+    "name": "КЭРсУнг(D)-FRHF  7х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 7,
+    "coreSection": 1,
+    "outerDiameter": 9.7,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_184",
+    "name": "КЭРсУнг(D)-FRHF  8х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 8,
+    "coreSection": 1,
+    "outerDiameter": 10.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_185",
+    "name": "КЭРсУнг(D)-FRHF  10х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 10,
+    "coreSection": 1,
+    "outerDiameter": 12.6,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_186",
+    "name": "КЭРсУнг(D)-FRHF  12х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 12,
+    "coreSection": 1,
+    "outerDiameter": 13.2,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_187",
+    "name": "КЭРсУнг(D)-FRHF  14х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 14,
+    "coreSection": 1,
+    "outerDiameter": 13.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_188",
+    "name": "КЭРсУнг(D)-FRHF  19х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 19,
+    "coreSection": 1,
+    "outerDiameter": 15.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_189",
+    "name": "КЭРсУнг(D)-FRHF  24х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 24,
+    "coreSection": 1,
+    "outerDiameter": 18.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_190",
+    "name": "КЭРсУнг(D)-FRHF  27х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 27,
+    "coreSection": 1,
+    "outerDiameter": 19.2,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_191",
+    "name": "КЭРсУнг(D)-FRHF  30х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 30,
+    "coreSection": 1,
+    "outerDiameter": 20.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_192",
+    "name": "КЭРсУнг(D)-FRHF  37х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 37,
+    "coreSection": 1,
+    "outerDiameter": 21.7,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_193",
+    "name": "КЭРсУнг(D)-FRHF  1х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 1,
+    "coreSection": 1.5,
+    "outerDiameter": 4.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_194",
+    "name": "КЭРсУнг(D)-FRHF  2х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 2,
+    "coreSection": 1.5,
+    "outerDiameter": 8.2,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_195",
+    "name": "КЭРсУнг(D)-FRHF  3х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 3,
+    "coreSection": 1.5,
+    "outerDiameter": 8.7,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_196",
+    "name": "КЭРсУнг(D)-FRHF  4х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 4,
+    "coreSection": 1.5,
+    "outerDiameter": 9.6,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_197",
+    "name": "КЭРсУнг(D)-FRHF  5х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 5,
+    "coreSection": 1.5,
+    "outerDiameter": 10.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_198",
+    "name": "КЭРсУнг(D)-FRHF  6х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 6,
+    "coreSection": 1.5,
+    "outerDiameter": 11.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_199",
+    "name": "КЭРсУнг(D)-FRHF  7х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 7,
+    "coreSection": 1.5,
+    "outerDiameter": 11.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_200",
+    "name": "КЭРсУнг(D)-FRHF  8х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 8,
+    "coreSection": 1.5,
+    "outerDiameter": 12.7,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_201",
+    "name": "КЭРсУнг(D)-FRHF  10х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 10,
+    "coreSection": 1.5,
+    "outerDiameter": 15.2,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_202",
+    "name": "КЭРсУнг(D)-FRHF  12х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 12,
+    "coreSection": 1.5,
+    "outerDiameter": 16.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_203",
+    "name": "КЭРсУнг(D)-FRHF  14х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 14,
+    "coreSection": 1.5,
+    "outerDiameter": 17.2,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_204",
+    "name": "КЭРсУнг(D)-FRHF  19х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 19,
+    "coreSection": 1.5,
+    "outerDiameter": 19.3,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_205",
+    "name": "КЭРсУнг(D)-FRHF  24х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 24,
+    "coreSection": 1.5,
+    "outerDiameter": 22.6,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_206",
+    "name": "КЭРсУнг(D)-FRHF  27х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 27,
+    "coreSection": 1.5,
+    "outerDiameter": 23.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_207",
+    "name": "КЭРсУнг(D)-FRHF  30х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 30,
+    "coreSection": 1.5,
+    "outerDiameter": 24.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_208",
+    "name": "КЭРсУнг(D)-FRHF  37х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 37,
+    "coreSection": 1.5,
+    "outerDiameter": 26.3,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_209",
+    "name": "КЭРсУнг(D)-FRHF  1х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 1,
+    "coreSection": 2.5,
+    "outerDiameter": 5.3,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_210",
+    "name": "КЭРсУнг(D)-FRHF  2х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 2,
+    "coreSection": 2.5,
+    "outerDiameter": 9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_211",
+    "name": "КЭРсУнг(D)-FRHF  3х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 3,
+    "coreSection": 2.5,
+    "outerDiameter": 9.6,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_212",
+    "name": "КЭРсУнг(D)-FRHF  4х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 4,
+    "coreSection": 2.5,
+    "outerDiameter": 10.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_213",
+    "name": "КЭРсУнг(D)-FRHF  5х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 5,
+    "coreSection": 2.5,
+    "outerDiameter": 11.6,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_214",
+    "name": "КЭРсУнг(D)-FRHF  6х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 6,
+    "coreSection": 2.5,
+    "outerDiameter": 12.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_215",
+    "name": "КЭРсУнг(D)-FRHF  7х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 7,
+    "coreSection": 2.5,
+    "outerDiameter": 12.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_216",
+    "name": "КЭРсУнг(D)-FRHF  8х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 8,
+    "coreSection": 2.5,
+    "outerDiameter": 14,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_217",
+    "name": "КЭРсУнг(D)-FRHF  10х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 10,
+    "coreSection": 2.5,
+    "outerDiameter": 16.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_218",
+    "name": "КЭРсУнг(D)-FRHF  12х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 12,
+    "coreSection": 2.5,
+    "outerDiameter": 18,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_219",
+    "name": "КЭРсУнг(D)-FRHF  14х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 14,
+    "coreSection": 2.5,
+    "outerDiameter": 19.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_220",
+    "name": "КЭРсУнг(D)-FRHF  19х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 19,
+    "coreSection": 2.5,
+    "outerDiameter": 21.3,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_221",
+    "name": "КЭРсУнг(D)-FRHF  24х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 24,
+    "coreSection": 2.5,
+    "outerDiameter": 25.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_222",
+    "name": "КЭРсУнг(D)-FRHF  27х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 27,
+    "coreSection": 2.5,
+    "outerDiameter": 26,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_223",
+    "name": "КЭРсУнг(D)-FRHF  30х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 30,
+    "coreSection": 2.5,
+    "outerDiameter": 26.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_224",
+    "name": "КЭРсУнг(D)-FRHF  37х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 37,
+    "coreSection": 2.5,
+    "outerDiameter": 29.3,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_225",
+    "name": "КЭРсЭПнг(A)-FRHF  1х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 1,
+    "coreSection": 0.2,
+    "outerDiameter": 3.2,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_226",
+    "name": "КЭРсЭПнг(A)-FRHF  2х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 2,
+    "coreSection": 0.2,
+    "outerDiameter": 4.7,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_227",
+    "name": "КЭРсЭПнг(A)-FRHF  3х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 3,
+    "coreSection": 0.2,
+    "outerDiameter": 5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_228",
+    "name": "КЭРсЭПнг(A)-FRHF  4х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 4,
+    "coreSection": 0.2,
+    "outerDiameter": 5.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_229",
+    "name": "КЭРсЭПнг(A)-FRHF  5х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 5,
+    "coreSection": 0.2,
+    "outerDiameter": 6,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_230",
+    "name": "КЭРсЭПнг(A)-FRHF  6х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 6,
+    "coreSection": 0.2,
+    "outerDiameter": 6.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_231",
+    "name": "КЭРсЭПнг(A)-FRHF  7х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 7,
+    "coreSection": 0.2,
+    "outerDiameter": 6.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_232",
+    "name": "КЭРсЭПнг(A)-FRHF  8х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 8,
+    "coreSection": 0.2,
+    "outerDiameter": 6.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_233",
+    "name": "КЭРсЭПнг(A)-FRHF  10х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 10,
+    "coreSection": 0.2,
+    "outerDiameter": 9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_234",
+    "name": "КЭРсЭПнг(A)-FRHF  12х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 12,
+    "coreSection": 0.2,
+    "outerDiameter": 8.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_235",
+    "name": "КЭРсЭПнг(A)-FRHF  14х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 14,
+    "coreSection": 0.2,
+    "outerDiameter": 8.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_236",
+    "name": "КЭРсЭПнг(A)-FRHF  19х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 19,
+    "coreSection": 0.2,
+    "outerDiameter": 9.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_237",
+    "name": "КЭРсЭПнг(A)-FRHF  24х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 24,
+    "coreSection": 0.2,
+    "outerDiameter": 11.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_238",
+    "name": "КЭРсЭПнг(A)-FRHF  27х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 27,
+    "coreSection": 0.2,
+    "outerDiameter": 11.7,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_239",
+    "name": "КЭРсЭПнг(A)-FRHF  30х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 30,
+    "coreSection": 0.2,
+    "outerDiameter": 12.3,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_240",
+    "name": "КЭРсЭПнг(A)-FRHF  37х0,2",
+    "cableTypeId": "cable_type:kers",
+    "cores": 37,
+    "coreSection": 0.2,
+    "outerDiameter": 13.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_241",
+    "name": "КЭРсЭПнг(A)-FRHF  1х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 1,
+    "coreSection": 0.35,
+    "outerDiameter": 3.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_242",
+    "name": "КЭРсЭПнг(A)-FRHF  2х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 2,
+    "coreSection": 0.35,
+    "outerDiameter": 5.3,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_243",
+    "name": "КЭРсЭПнг(A)-FRHF  3х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 3,
+    "coreSection": 0.35,
+    "outerDiameter": 5.6,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_244",
+    "name": "КЭРсЭПнг(A)-FRHF  4х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 4,
+    "coreSection": 0.35,
+    "outerDiameter": 6.3,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_245",
+    "name": "КЭРсЭПнг(A)-FRHF  5х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 5,
+    "coreSection": 0.35,
+    "outerDiameter": 6.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_246",
+    "name": "КЭРсЭПнг(A)-FRHF  6х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 6,
+    "coreSection": 0.35,
+    "outerDiameter": 7.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_247",
+    "name": "КЭРсЭПнг(A)-FRHF  7х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 7,
+    "coreSection": 0.35,
+    "outerDiameter": 7.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_248",
+    "name": "КЭРсЭПнг(A)-FRHF  8х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 8,
+    "coreSection": 0.35,
+    "outerDiameter": 8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_249",
+    "name": "КЭРсЭПнг(A)-FRHF  10х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 10,
+    "coreSection": 0.35,
+    "outerDiameter": 10.6,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_250",
+    "name": "КЭРсЭПнг(A)-FRHF  12х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 12,
+    "coreSection": 0.35,
+    "outerDiameter": 9.7,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_251",
+    "name": "КЭРсЭПнг(A)-FRHF  14х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 14,
+    "coreSection": 0.35,
+    "outerDiameter": 10.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_252",
+    "name": "КЭРсЭПнг(A)-FRHF  19х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 19,
+    "coreSection": 0.35,
+    "outerDiameter": 11.7,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_253",
+    "name": "КЭРсЭПнг(A)-FRHF  24х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 24,
+    "coreSection": 0.35,
+    "outerDiameter": 13.7,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_254",
+    "name": "КЭРсЭПнг(A)-FRHF  27х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 27,
+    "coreSection": 0.35,
+    "outerDiameter": 14,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_255",
+    "name": "КЭРсЭПнг(A)-FRHF  30х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 30,
+    "coreSection": 0.35,
+    "outerDiameter": 14.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_256",
+    "name": "КЭРсЭПнг(A)-FRHF  37х0,35",
+    "cableTypeId": "cable_type:kers",
+    "cores": 37,
+    "coreSection": 0.35,
+    "outerDiameter": 15.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_257",
+    "name": "КЭРсЭПнг(A)-FRHF  1х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 1,
+    "coreSection": 0.5,
+    "outerDiameter": 4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_258",
+    "name": "КЭРсЭПнг(A)-FRHF  2х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 2,
+    "coreSection": 0.5,
+    "outerDiameter": 6.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_259",
+    "name": "КЭРсЭПнг(A)-FRHF  3х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 3,
+    "coreSection": 0.5,
+    "outerDiameter": 6.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_260",
+    "name": "КЭРсЭПнг(A)-FRHF  4х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 4,
+    "coreSection": 0.5,
+    "outerDiameter": 7.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_261",
+    "name": "КЭРсЭПнг(A)-FRHF  5х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 5,
+    "coreSection": 0.5,
+    "outerDiameter": 7.7,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_262",
+    "name": "КЭРсЭПнг(A)-FRHF  6х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 6,
+    "coreSection": 0.5,
+    "outerDiameter": 8.6,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_263",
+    "name": "КЭРсЭПнг(A)-FRHF  7х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 7,
+    "coreSection": 0.5,
+    "outerDiameter": 8.6,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_264",
+    "name": "КЭРсЭПнг(A)-FRHF  8х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 8,
+    "coreSection": 0.5,
+    "outerDiameter": 9.2,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_265",
+    "name": "КЭРсЭПнг(A)-FRHF  10х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 10,
+    "coreSection": 0.5,
+    "outerDiameter": 12,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_266",
+    "name": "КЭРсЭПнг(A)-FRHF  12х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 12,
+    "coreSection": 0.5,
+    "outerDiameter": 11.2,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_267",
+    "name": "КЭРсЭПнг(A)-FRHF  14х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 14,
+    "coreSection": 0.5,
+    "outerDiameter": 11.7,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_268",
+    "name": "КЭРсЭПнг(A)-FRHF  19х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 19,
+    "coreSection": 0.5,
+    "outerDiameter": 13.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_269",
+    "name": "КЭРсЭПнг(A)-FRHF  24х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 24,
+    "coreSection": 0.5,
+    "outerDiameter": 15.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_270",
+    "name": "КЭРсЭПнг(A)-FRHF  27х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 27,
+    "coreSection": 0.5,
+    "outerDiameter": 15.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_271",
+    "name": "КЭРсЭПнг(A)-FRHF  30х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 30,
+    "coreSection": 0.5,
+    "outerDiameter": 16.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_272",
+    "name": "КЭРсЭПнг(A)-FRHF  37х0,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 37,
+    "coreSection": 0.5,
+    "outerDiameter": 18.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_273",
+    "name": "КЭРсЭПнг(A)-FRHF  1х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 1,
+    "coreSection": 0.75,
+    "outerDiameter": 4.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_274",
+    "name": "КЭРсЭПнг(A)-FRHF  2х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 2,
+    "coreSection": 0.75,
+    "outerDiameter": 6.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_275",
+    "name": "КЭРсЭПнг(A)-FRHF  3х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 3,
+    "coreSection": 0.75,
+    "outerDiameter": 7.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_276",
+    "name": "КЭРсЭПнг(A)-FRHF  4х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 4,
+    "coreSection": 0.75,
+    "outerDiameter": 8.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_277",
+    "name": "КЭРсЭПнг(A)-FRHF  5х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 5,
+    "coreSection": 0.75,
+    "outerDiameter": 9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_278",
+    "name": "КЭРсЭПнг(A)-FRHF  6х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 6,
+    "coreSection": 0.75,
+    "outerDiameter": 9.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_279",
+    "name": "КЭРсЭПнг(A)-FRHF  7х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 7,
+    "coreSection": 0.75,
+    "outerDiameter": 9.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_280",
+    "name": "КЭРсЭПнг(A)-FRHF  8х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 8,
+    "coreSection": 0.75,
+    "outerDiameter": 10.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_281",
+    "name": "КЭРсЭПнг(A)-FRHF  10х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 10,
+    "coreSection": 0.75,
+    "outerDiameter": 13.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_282",
+    "name": "КЭРсЭПнг(A)-FRHF  12х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 12,
+    "coreSection": 0.75,
+    "outerDiameter": 13.3,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_283",
+    "name": "КЭРсЭПнг(A)-FRHF  14х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 14,
+    "coreSection": 0.75,
+    "outerDiameter": 13.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_284",
+    "name": "КЭРсЭПнг(A)-FRHF  19х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 19,
+    "coreSection": 0.75,
+    "outerDiameter": 16.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_285",
+    "name": "КЭРсЭПнг(A)-FRHF  24х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 24,
+    "coreSection": 0.75,
+    "outerDiameter": 18.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_286",
+    "name": "КЭРсЭПнг(A)-FRHF  27х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 27,
+    "coreSection": 0.75,
+    "outerDiameter": 19.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_287",
+    "name": "КЭРсЭПнг(A)-FRHF  30х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 30,
+    "coreSection": 0.75,
+    "outerDiameter": 19.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_288",
+    "name": "КЭРсЭПнг(A)-FRHF  37х0,75",
+    "cableTypeId": "cable_type:kers",
+    "cores": 37,
+    "coreSection": 0.75,
+    "outerDiameter": 21.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_289",
+    "name": "КЭРсЭПнг(A)-FRHF  1х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 1,
+    "coreSection": 1,
+    "outerDiameter": 4.6,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_290",
+    "name": "КЭРсЭПнг(A)-FRHF  2х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 2,
+    "coreSection": 1,
+    "outerDiameter": 7.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_291",
+    "name": "КЭРсЭПнг(A)-FRHF  3х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 3,
+    "coreSection": 1,
+    "outerDiameter": 7.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_292",
+    "name": "КЭРсЭПнг(A)-FRHF  4х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 4,
+    "coreSection": 1,
+    "outerDiameter": 8.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_293",
+    "name": "КЭРсЭПнг(A)-FRHF  5х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 5,
+    "coreSection": 1,
+    "outerDiameter": 9.6,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_294",
+    "name": "КЭРсЭПнг(A)-FRHF  6х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 6,
+    "coreSection": 1,
+    "outerDiameter": 10.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_295",
+    "name": "КЭРсЭПнг(A)-FRHF  7х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 7,
+    "coreSection": 1,
+    "outerDiameter": 10.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_296",
+    "name": "КЭРсЭПнг(A)-FRHF  8х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 8,
+    "coreSection": 1,
+    "outerDiameter": 11.2,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_297",
+    "name": "КЭРсЭПнг(A)-FRHF  10х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 10,
+    "coreSection": 1,
+    "outerDiameter": 15,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_298",
+    "name": "КЭРсЭПнг(A)-FRHF  12х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 12,
+    "coreSection": 1,
+    "outerDiameter": 14.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_299",
+    "name": "КЭРсЭПнг(A)-FRHF  14х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 14,
+    "coreSection": 1,
+    "outerDiameter": 14.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_300",
+    "name": "КЭРсЭПнг(A)-FRHF  19х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 19,
+    "coreSection": 1,
+    "outerDiameter": 17.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_301",
+    "name": "КЭРсЭПнг(A)-FRHF  24х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 24,
+    "coreSection": 1,
+    "outerDiameter": 20,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_302",
+    "name": "КЭРсЭПнг(A)-FRHF  27х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 27,
+    "coreSection": 1,
+    "outerDiameter": 20.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_303",
+    "name": "КЭРсЭПнг(A)-FRHF  30х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 30,
+    "coreSection": 1,
+    "outerDiameter": 21.3,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_304",
+    "name": "КЭРсЭПнг(A)-FRHF  37х1",
+    "cableTypeId": "cable_type:kers",
+    "cores": 37,
+    "coreSection": 1,
+    "outerDiameter": 22.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_305",
+    "name": "КЭРсЭПнг(A)-FRHF  1х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 1,
+    "coreSection": 1.5,
+    "outerDiameter": 5.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_306",
+    "name": "КЭРсЭПнг(A)-FRHF  2х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 2,
+    "coreSection": 1.5,
+    "outerDiameter": 8.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_307",
+    "name": "КЭРсЭПнг(A)-FRHF  3х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 3,
+    "coreSection": 1.5,
+    "outerDiameter": 9.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_308",
+    "name": "КЭРсЭПнг(A)-FRHF  4х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 4,
+    "coreSection": 1.5,
+    "outerDiameter": 10.2,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_309",
+    "name": "КЭРсЭПнг(A)-FRHF  5х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 5,
+    "coreSection": 1.5,
+    "outerDiameter": 11.2,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_310",
+    "name": "КЭРсЭПнг(A)-FRHF  6х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 6,
+    "coreSection": 1.5,
+    "outerDiameter": 12.2,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_311",
+    "name": "КЭРсЭПнг(A)-FRHF  7х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 7,
+    "coreSection": 1.5,
+    "outerDiameter": 12.2,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_312",
+    "name": "КЭРсЭПнг(A)-FRHF  8х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 8,
+    "coreSection": 1.5,
+    "outerDiameter": 13.4,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_313",
+    "name": "КЭРсЭПнг(A)-FRHF  10х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 10,
+    "coreSection": 1.5,
+    "outerDiameter": 18.2,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_314",
+    "name": "КЭРсЭПнг(A)-FRHF  12х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 12,
+    "coreSection": 1.5,
+    "outerDiameter": 17.3,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_315",
+    "name": "КЭРсЭПнг(A)-FRHF  14х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 14,
+    "coreSection": 1.5,
+    "outerDiameter": 18.3,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_316",
+    "name": "КЭРсЭПнг(A)-FRHF  19х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 19,
+    "coreSection": 1.5,
+    "outerDiameter": 20.5,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_317",
+    "name": "КЭРсЭПнг(A)-FRHF  24х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 24,
+    "coreSection": 1.5,
+    "outerDiameter": 23.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_318",
+    "name": "КЭРсЭПнг(A)-FRHF  27х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 27,
+    "coreSection": 1.5,
+    "outerDiameter": 24.3,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_319",
+    "name": "КЭРсЭПнг(A)-FRHF  30х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 30,
+    "coreSection": 1.5,
+    "outerDiameter": 25.7,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_320",
+    "name": "КЭРсЭПнг(A)-FRHF  37х1,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 37,
+    "coreSection": 1.5,
+    "outerDiameter": 27.7,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_321",
+    "name": "КЭРсЭПнг(A)-FRHF  1х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 1,
+    "coreSection": 2.5,
+    "outerDiameter": 5.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_322",
+    "name": "КЭРсЭПнг(A)-FRHF  2х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 2,
+    "coreSection": 2.5,
+    "outerDiameter": 9.7,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_323",
+    "name": "КЭРсЭПнг(A)-FRHF  3х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 3,
+    "coreSection": 2.5,
+    "outerDiameter": 10.2,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_324",
+    "name": "КЭРсЭПнг(A)-FRHF  4х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 4,
+    "coreSection": 2.5,
+    "outerDiameter": 11.2,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_325",
+    "name": "КЭРсЭПнг(A)-FRHF  5х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 5,
+    "coreSection": 2.5,
+    "outerDiameter": 12.3,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_326",
+    "name": "КЭРсЭПнг(A)-FRHF  6х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 6,
+    "coreSection": 2.5,
+    "outerDiameter": 13.6,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_327",
+    "name": "КЭРсЭПнг(A)-FRHF  7х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 7,
+    "coreSection": 2.5,
+    "outerDiameter": 13.6,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_328",
+    "name": "КЭРсЭПнг(A)-FRHF  8х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 8,
+    "coreSection": 2.5,
+    "outerDiameter": 14.9,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_329",
+    "name": "КЭРсЭПнг(A)-FRHF  10х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 10,
+    "coreSection": 2.5,
+    "outerDiameter": 20,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_330",
+    "name": "КЭРсЭПнг(A)-FRHF  12х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 12,
+    "coreSection": 2.5,
+    "outerDiameter": 19.1,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_331",
+    "name": "КЭРсЭПнг(A)-FRHF  14х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 14,
+    "coreSection": 2.5,
+    "outerDiameter": 20.3,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_332",
+    "name": "КЭРсЭПнг(A)-FRHF  19х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 19,
+    "coreSection": 2.5,
+    "outerDiameter": 22.7,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_333",
+    "name": "КЭРсЭПнг(A)-FRHF  24х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 24,
+    "coreSection": 2.5,
+    "outerDiameter": 26.8,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_334",
+    "name": "КЭРсЭПнг(A)-FRHF  27х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 27,
+    "coreSection": 2.5,
+    "outerDiameter": 27.3,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_335",
+    "name": "КЭРсЭПнг(A)-FRHF  30х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 30,
+    "coreSection": 2.5,
+    "outerDiameter": 28.3,
+    "TU": "ТУ 16.К99-046-2011"
+  },
+  {
+    "id": "cable_kers_336",
+    "name": "КЭРсЭПнг(A)-FRHF  37х2,5",
+    "cableTypeId": "cable_type:kers",
+    "cores": 37,
+    "coreSection": 2.5,
+    "outerDiameter": 30.7,
+    "TU": "ТУ 16.К99-046-2011"
+  }
+]

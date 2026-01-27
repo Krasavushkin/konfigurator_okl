@@ -1,47 +1,21 @@
 import React from 'react';
 import {CableList} from './CableList';
 import {OKLActions} from './OKLActions';
-import styles from './OKLCard.module.css';
+import styles from '../styles/OKLCard.module.css';
 import {Link} from "./Link";
 import {CapacityStatus, CapacityStatusData} from "../CapacityStatus";
 import {useOKLLink} from "../../hooks/useOKLLink";
-import {newOKLItem} from "../data";
-
-export type OKL = {
-    id: string;
-    name: string;
-    length: number;
-    cables: Cable[];
-    sectionOKL?: number;
-    type?: string;
-};
+import {newOKLItem} from "../../data/data";
 
 
-export type Cable = {
-    id: string;
-    cableTypeId: string;
-    name: string;
-    length: number;
-    description?: string
-};
-export type NewCable = {
-    id: string;
-    name: string;
-    cableTypeId: string;
-    cores: number;
-    outerDiameter: number;
-    TU: string
-    length: number;
-};
+
 
 interface OKLCardProps {
     okl: newOKLItem;
     isSelected: boolean;
     onSelect: (oklId: string) => void;
-    onEdit: (oklId: string) => void;
     onDelete: (oklId: string) => void;
     onRemoveCable: (oklId: string, cableId: string) => void;
-    onAddCable: (oklId: string) => void;
     onCopy: (oklId: string) => void;
     capacityStatusData?: CapacityStatusData | null;
     index: number;
@@ -51,13 +25,12 @@ export const OKLCard: React.FC<OKLCardProps> = ({
                                                     okl,
                                                     isSelected,
                                                     onSelect,
-                                                    onEdit,
                                                     onDelete,
                                                     onRemoveCable,
                                                     onCopy,
                                                     capacityStatusData,
                                                     index,
-                                                    onAddCable
+
                                                 }) => {
     const handleCardClick = () => {
         onSelect(okl.id);
@@ -82,7 +55,6 @@ export const OKLCard: React.FC<OKLCardProps> = ({
 
                 <OKLActions
                     oklId={okl.id}
-                    onEdit={onEdit}
                     onDelete={onDelete}
                     isSelected={isSelected}
                     onCopy={onCopy}

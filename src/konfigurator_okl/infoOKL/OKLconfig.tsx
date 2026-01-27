@@ -3,7 +3,7 @@ import {OKLCard} from './OKLCard';
 import styles from '../styles/OKL.module.css';
 import {ExportButtons} from "../services/ExportButtons";
 import {Button} from "../Button";
-import {newOKLItem} from "../data";
+import {Cable, newOKLItem} from "../../data/data";
 import {useOKLData} from "../../hooks/useOKLData";
 import {CapacityInfo} from "../CapacityStatus";
 
@@ -12,42 +12,40 @@ interface ConfigurationSummaryProps {
     oklList: newOKLItem[];
     onRemoveCable: (oklId: string, cableId: string) => void;
     onDeleteOKL: (oklId: string) => void;
-    onEditOKL: (oklId: string) => void;
-    onAddCable: (oklId: string) => void;
     onCopyOKL: (oklId: string) => void;
     getOKLCapacityInfo?: (oklId: string) => CapacityInfo | null;
-
     selectedOKL?: string;
     onSelectOKL?: (oklId: string) => void;
     onDeleteAllOKL: () => void;
     canAddAnyCableFromList: (oklId: string, cables: any[]) => boolean;
-    getAvailableCablesCount: (oklId: string, cables: any[]) => number; // Добавляем новую функцию
+    getAvailableCablesCount: (oklId: string, cables: any[]) => number;
+    getCompatibleCables: (oklType: string) => Cable[];
+
+
 }
 
 export const OKLconfig: React.FC<ConfigurationSummaryProps> = ({
                                                                    oklList,
                                                                    onRemoveCable,
                                                                    onDeleteOKL,
-                                                                   onEditOKL,
-                                                                   onAddCable,
                                                                    onCopyOKL,
                                                                    getOKLCapacityInfo,
                                                                    selectedOKL: externalSelectedOKL,
                                                                    onSelectOKL,
                                                                    onDeleteAllOKL,
                                                                    canAddAnyCableFromList,
-                                                                   getAvailableCablesCount
+                                                                   getAvailableCablesCount,
+                                                                   getCompatibleCables
                                                                }) => {
     const [currentPage, setCurrentPage] = useState(1);
-    const cardsPerPage = 4;
+    const [internalSelectedOKL, setInternalSelectedOKL] = useState<string>('');
 
+    const cardsPerPage = 4;
     const paginatedOKL = oklList.slice(
         (currentPage - 1) * cardsPerPage,
         currentPage * cardsPerPage
     );
     const totalPages = Math.ceil(oklList.length / cardsPerPage);
-
-    const [internalSelectedOKL, setInternalSelectedOKL] = useState<string>('');
 
     useEffect(() => {
         if (externalSelectedOKL) {
@@ -65,18 +63,14 @@ export const OKLconfig: React.FC<ConfigurationSummaryProps> = ({
             setCurrentPage(maxPage);
         }
     }, [oklList.length, currentPage, cardsPerPage]);
+
+    const selectedOKL = externalSelectedOKL;
+
     const handleSelectOKL = (oklId: string) => {
-        const newSelected = internalSelectedOKL === oklId ? '' : oklId;
-        setInternalSelectedOKL(newSelected);
+        const newSelected = selectedOKL === oklId ? '' : oklId;
+        onSelectOKL?.(newSelected);
 
-        // УВЕДОМЛЯЕМ О ВЫБОРЕ
-        if (onSelectOKL) {
-            onSelectOKL(newSelected);
-        }
-
-        onAddCable(oklId);
     };
-    const { getCompatibleCables } = useOKLData();
 
     return (
         <div className={styles.configContainer}>
@@ -101,10 +95,8 @@ export const OKLconfig: React.FC<ConfigurationSummaryProps> = ({
                             okl={okl}
                             isSelected={internalSelectedOKL === okl.id}
                             onSelect={handleSelectOKL}
-                            onEdit={onEditOKL}
                             onDelete={onDeleteOKL}
                             onRemoveCable={onRemoveCable}
-                            onAddCable={onAddCable}
                             onCopy={onCopyOKL}
                             capacityStatusData={capacityStatusData}
                         />

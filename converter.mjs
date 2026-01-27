@@ -9,13 +9,14 @@ const __dirname = dirname(__filename);
 
 // Создаем папку для результатов, если её нет
 const outputDir = `${__dirname}/src/data/cables`;
+/*const outputDir = `${__dirname}/src/data`;*/
 if (!existsSync(outputDir)) {
     mkdirSync(outputDir, { recursive: true });
     console.log(`📁 Создана папка: ${outputDir}`);
 }
 
 // Читаем Excel файл
-const fileBuffer = readFileSync("cables.xlsx");
+const fileBuffer = readFileSync("SCAB_S.xlsx");
 const workbook = XLSX.read(fileBuffer, { type: "buffer" });
 
 // Функция для парсинга массивов
@@ -90,6 +91,8 @@ console.log(`🎉 Конвертация завершена! Создано ${wo
 
 
 /*
+node converter.mjs
+
 import * as XLSX from "xlsx";
 import { readFileSync, writeFileSync } from "fs";
 

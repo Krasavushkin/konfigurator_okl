@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from "../Button";
-import { newOKLItem } from "../data";
+import { newOKLItem } from "../../data/data";
 import { ServiceExport } from "./ServiceExport";
 
 interface ExportButtonsProps {

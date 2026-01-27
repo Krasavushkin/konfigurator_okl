@@ -1,18 +1,91 @@
 import { OKL_DB, OKL_CABLE_MAP, ALL_CABLES } from "../data";
 import {CABLE_APPOINTMENT} from "../data/CABLE_APPOINTMENT";
+import {normalizeCable} from "./normalizeCable";
+import {useMemo} from "react";
+import {Cable, OKLCableMapItem} from "../data/data";
 
 export const useOKLData = () => {
     // Получить все ОКЛ
     const allOKL = OKL_DB;
 
     // Получить все кабели
-    const allCables = ALL_CABLES;
+    const allCables: Cable[] = useMemo(
+        () => ALL_CABLES.map(normalizeCable),
+        []
+    );
 
     // Получить все типы кабелей
     const allAppointments = CABLE_APPOINTMENT;
 
     // Получить все зависимости
-    const allOKLCableMap = OKL_CABLE_MAP
+    const allOKLCableMap: OKLCableMapItem[] = OKL_CABLE_MAP
+
+
+
+    const isCableAllowedByRule = (cable: Cable, rule: OKLCableMapItem): boolean => {
+        if (cable.cableTypeId !== rule.cableTypeId) return false;
+
+        // Проверка по сечению
+        if (cable.coreSection !== undefined) {
+            if (rule.minSection !== undefined && cable.coreSection < rule.minSection) return false;
+            if (rule.maxSection !== undefined && cable.coreSection > rule.maxSection) return false;
+            return true;
+        }
+
+        // Проверка по диаметру
+        if (cable.coreDiameter !== undefined) {
+            if (rule.minDiameter !== undefined && cable.coreDiameter < rule.minDiameter) return false;
+            if (rule.maxDiameter !== undefined && cable.coreDiameter > rule.maxDiameter) return false;
+            return true;
+        }
+
+        return false;
+    };
+
+    const getCompatibleCableAppointments = (
+        oklId: string,
+        oklList: any[] = []
+    ): string[] => {
+        const okl = oklList.find(o => o.id === oklId) || allOKL.find(o => o.id === oklId);
+        if (!okl) return allAppointments.map(a => a.id);
+
+        const rules = allOKLCableMap.filter(rule =>
+            rule.oklType.includes(okl.type!)
+        );
+
+        return Array.from(
+            new Set([
+                'cable_type:all',
+                ...rules.map(r => r.cableTypeId),
+            ])
+        );
+    };
+
+    const getCompatibleCablesForOKL = (
+        oklId: string,
+        cableTypeId?: string,
+        oklList: any[] = []
+    ): Cable[] => {
+        const okl = oklList.find(o => o.id === oklId) || allOKL.find(o => o.id === oklId);
+        if (!okl) {
+            return cableTypeId ? getCablesByType(cableTypeId) : allCables;
+        }
+
+        // 1️⃣ Берём правила для этого типа ОКЛ
+        const rules = allOKLCableMap.filter(rule =>
+            rule.oklType.includes(okl.type!)
+        );
+
+        // 2️⃣ Если выбран тип кабеля — сужаем правила
+        const filteredRules = cableTypeId
+            ? rules.filter(r => r.cableTypeId === cableTypeId)
+            : rules;
+
+        // 3️⃣ Фильтруем кабели по правилам
+        return allCables.filter(cable =>
+            filteredRules.some(rule => isCableAllowedByRule(cable, rule))
+        );
+    };
 
     // Найти, какие типы кабелей совместимы с данной ОКЛ
     const getCompatibleCableTypes = (oklType: string) => {
@@ -25,76 +98,13 @@ export const useOKLData = () => {
         const types = compatibleTypes.map(t => t.cableTypeId);
         return allCables.filter(cable => types.includes(cable.cableTypeId));
     };
-
-    // Найти все назначения кабелей, которые подходят для конкретной ОКЛ
-    const getCompatibleCableAppointments = (oklId: string, oklList: any[] = []) => {
-        // Ищем ОКЛ сначала в добавленных, потом в базе данных
-        let okl = oklList.find(o => o.id === oklId);
-        if (!okl) {
-            okl = allOKL.find(o => o.id === oklId);
-        }
-
-        if (!okl) {
-            return allAppointments; // возвращаем все, включая "Все кабели"
-        }
-
-        // Ищем совместимые типы кабелей
-        const compatibleMaps = allOKLCableMap.filter(map =>
-            map.oklType.includes(okl!.type!)
-        );
-
-        const allowedCableTypeIds = compatibleMaps.map(map => map.cableTypeId);
-
-        // Фильтруем назначения, но оставляем "Все кабели"
-        const filteredAppointments = allAppointments.filter(a =>
-            a.id === "cable_type:all" || allowedCableTypeIds.includes(a.id)
-        );
-
-        return filteredAppointments;
-    };
-
-    const getCompatibleCablesForOKL = (oklId: string, cableTypeId?: string, oklList: any[] = []) => {
-        // Ищем ОКЛ сначала в добавленных, потом в базе
-        let okl = oklList.find(o => o.id === oklId);
-        if (!okl) {
-            okl = allOKL.find(o => o.id === oklId);
-        }
-
-        if (!okl) {
-            return cableTypeId ? getCablesByType(cableTypeId) : allCables;
-        }
-
-        // Получаем совместимые назначения
-        const compatibleAppointments = getCompatibleCableAppointments(oklId, oklList);
-        const allowedCableTypeIds = compatibleAppointments.map(a => a.id);
-
-        let compatibleCables = allCables.filter(cable =>
-            allowedCableTypeIds.includes(cable.cableTypeId)
-        );
-
-        if (cableTypeId) {
-            compatibleCables = compatibleCables.filter(cable =>
-                cable.cableTypeId === cableTypeId
-            );
-        }
-
-        return compatibleCables;
-    };
-
     // Получить кабели по типу (назначению)
     const getCablesByType = (cableTypeId: string) => {
         return allCables.filter(cable => cable.cableTypeId === cableTypeId);
     };
 
-    // Найти максимальное время работы ОКЛ для конкретного типа кабеля
-    const getMaxFireTime = (oklType: string, cableTypeId: string) => {
-        const match = allOKLCableMap.find(
-            m => m.oklType.includes(oklType) && m.cableTypeId === cableTypeId
-        );
-        return match?.maxFireWorkTime || null;
-    };
 
-    // 🔄 В хук useOKLData добавляем функцию
+    // В хук useOKLData добавляем функцию
     const getCompatibleOKLForCable = (cableId: string) => {
         const cableData = allCables.find(c => c.id === cableId);
         if (!cableData) return [];
@@ -105,15 +115,50 @@ export const useOKLData = () => {
         });
     };
 
+
     return {
         allOKL,
         allCables,
         getCompatibleCableTypes,
         getCompatibleCables,
-        getMaxFireTime,
         getCablesByType,
         getCompatibleCableAppointments,
         getCompatibleCablesForOKL,
         getCompatibleOKLForCable
     };
 };
+
+/* const getCompatibleCableAppointments = (oklId: string, oklList: any[] = []): string[] => {
+     const okl = oklList.find(o => o.id === oklId) || allOKL.find(o => o.id === oklId);
+     if (!okl) return allAppointments.map(a => a.id);
+
+     const compatibleMaps = allOKLCableMap.filter(map => map.oklType.includes(okl.type!));
+     const allowedCableTypeIds = compatibleMaps.map(map => map.cableTypeId);
+
+     return allAppointments
+         .filter(a => a.id === "cable_type:all" || allowedCableTypeIds.includes(a.id))
+         .map(a => a.id); // <- возвращаем только id
+ };
+
+ const getCompatibleCablesForOKL = (oklId: string, cableTypeId?: string, oklList: any[] = []) => {
+     let okl = oklList.find(o => o.id === oklId) || allOKL.find(o => o.id === oklId);
+     if (!okl) {
+         return cableTypeId ? getCablesByType(cableTypeId) : allCables;
+     }
+
+     // Получаем совместимые назначения (уже string[])
+     const compatibleAppointments = getCompatibleCableAppointments(oklId, oklList);
+     const allowedCableTypeIds = compatibleAppointments; // просто используем массив строк
+
+     let compatibleCables = allCables.filter(cable =>
+         allowedCableTypeIds.includes(cable.cableTypeId)
+     );
+
+     if (cableTypeId) {
+         compatibleCables = compatibleCables.filter(cable =>
+             cable.cableTypeId === cableTypeId
+         );
+     }
+
+     return compatibleCables;
+ };*/

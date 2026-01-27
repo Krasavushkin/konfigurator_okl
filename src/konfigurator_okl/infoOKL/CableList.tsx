@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from '../styles/OKL.module.css';
-import {Cable} from "./OKLCard";
+import {Cable, NewCable} from "../../data/data";
 
 interface CableListProps {
-    cables: Cable[];
+    cables: NewCable[];
     oklId: string;
     onRemoveCable: (oklId: string, cableId: string) => void;
 }

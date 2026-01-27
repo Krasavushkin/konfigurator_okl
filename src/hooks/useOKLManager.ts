@@ -1,13 +1,14 @@
-import {newOKLItem} from "../konfigurator_okl/data";
-import {useState} from "react";
-import {NewCable} from "../konfigurator_okl/infoOKL/OKLCard";
+import {Cable, NewCable, newOKLItem, OKLBaseType} from "../data/data";
+import {useMemo, useState} from "react";
 import {ALL_CABLES, OKL_DB} from "../data";
 
-export const useOKLManager = () => {
+export const useOKLManager = (
+    allOKL: OKLBaseType[]
+) => {
     const [oklList, setOklList] = useState<newOKLItem[]>([]);
     const [selectedOKL, setSelectedOKL] = useState<string>('');
 
-    // Генератор уникальных ID
+    // генератор уникальных ID
     const generateUniqueId = () =>
         Date.now().toString(36) + Math.random().toString(36).slice(2);
 
@@ -26,7 +27,7 @@ export const useOKLManager = () => {
             sectionOKL: oklData.sectionOKL,
             type: oklData.type,
             TU: oklData.TU,
-            description: oklData.description,
+
         };
         setOklList(prev => [...prev, newOKL]);
         setSelectedOKL(newOKL.id);
@@ -37,6 +38,7 @@ export const useOKLManager = () => {
     const selectOKL = (oklId: string) => {
         setSelectedOKL(oklId);
     };
+
     // добавление кабеля с проверкой вместимости
     const addCable = (oklId: string, cableId: string, length: number) => {
         const cableData = ALL_CABLES.find(c => c.id === cableId);
@@ -136,7 +138,7 @@ export const useOKLManager = () => {
         }, 0);
     };
 
-    // НОВАЯ ФУНКЦИЯ: получение информации о заполненности ОКЛ
+    // получение информации о заполненности ОКЛ
     const getOKLCapacityInfo = (oklId: string) => {
         const okl = oklList.find(o => o.id === oklId);
         if (!okl) return null;
@@ -162,7 +164,7 @@ export const useOKLManager = () => {
         );
     };
 
-    // Удаление всей ОКЛ
+    // Удаление ОКЛ
     const deleteOKL = (oklId: string) => {
         setOklList(prev => prev.filter(okl => okl.id !== oklId));
     };
@@ -184,7 +186,7 @@ export const useOKLManager = () => {
         setSelectedOKL('');
     };
 
-    const getAvailableCablesForOKL = (oklId: string, cables: any[]): any[] => {
+    const getAvailableCablesForOKL = (oklId: string, cables: Cable[]) => {
         const okl = oklList.find(o => o.id === oklId);
         if (!okl || !okl.sectionOKL) return cables;
 
@@ -228,17 +230,29 @@ export const useOKLManager = () => {
             return cableArea <= freeArea;
         }).length;
     };
-// 🔄 В хук useOKLManager добавляем функцию
-    const addOKLWithCable = (oklId: string, cableId: string, oklLength: number, cableLength: number) => {
-        const newOKLId = addOKL(oklId, oklLength);
-        if (newOKLId) {
-            addCable(newOKLId, cableId, cableLength);
+
+    const selectedOKLInfo = useMemo(() => {
+        if (!selectedOKL) return {name: '', index: -1};
+
+        const index = oklList.findIndex(okl => okl.id === selectedOKL) + 1;
+
+        // Ищем название
+        let name = '';
+        const oklFromList = oklList.find(o => o.id === selectedOKL);
+        if (oklFromList && oklFromList.name) {
+            name = oklFromList.name;
+        } else {
+            const oklFromDB = allOKL.find(o => o.id === selectedOKL);
+            name = oklFromDB?.name || 'Неизвестная ОКЛ';
         }
-        return newOKLId;
-    };
+
+        return {name, index};
+    }, [selectedOKL, oklList, allOKL]);
+
     return {
         oklList,
         selectedOKL,
+
         setSelectedOKL: selectOKL,
         addOKL,
         addCable,
@@ -247,120 +261,16 @@ export const useOKLManager = () => {
         copyOKL,
         canAddCableToOKL,
         getOKLCapacityInfo,
-
         canAddAnyCable,
         deleteAllOKL,
-
         getAvailableCablesForOKL,
-
-
         canAddAnyCableFromList,
-        getAvailableCablesCount
+        getAvailableCablesCount,
+
+        selectedOKLInfo
     };
 };
 
 
 
-/*
-import {newOKLItem} from "../konfigurator_okl/data";
-import {useState} from "react";
-import {NewCable} from "../konfigurator_okl/infoOKL/OKLCard";
-import {ALL_CABLES, OKL_DB} from "../data";
 
-export const useOKLManager = () => {
-    const [oklList, setOklList] = useState<newOKLItem[]>([]);
-    const [selectedOKL, setSelectedOKL] = useState<string>('');
-
-    // Генератор уникальных ID
-    const generateUniqueId = () =>
-        Date.now().toString(36) + Math.random().toString(36).slice(2);
-
-    // Добавление новой ОКЛ
-    const addOKL = (oklName: string, length: number) => {
-        const oklData = OKL_DB.find(o => o.name === oklName);
-        if (!oklData) {
-            console.error('ОКЛ не найдена в базе:', oklName);
-            return;
-        }
-
-        const newOKL: newOKLItem = {
-            id: generateUniqueId(),
-            name: oklData.name,
-            length,
-            cables: [],
-            sectionOKL: oklData.sectionOKL,
-            type: oklData.type,
-            TU: oklData.TU,
-            description: oklData.description,
-        };
-        setOklList(prev => [...prev, newOKL]);
-        setSelectedOKL(newOKL.id);
-    };
-
-    // Добавление кабеля в выбранную ОКЛ
-    const addCable = (oklId: string, cableId: string, length: number) => {
-        const cableData = ALL_CABLES.find(c => c.id === cableId);
-        if (!cableData) {
-            console.error('Кабель не найден в базе:', cableId);
-            return;
-        }
-
-        const cable: NewCable = {
-            id: generateUniqueId(),
-            name: cableData.name,
-            cableTypeId: cableData.cableTypeId,
-            cores: cableData.cores,
-            outerDiameter: cableData.outerDiameter,
-            TU: cableData.TU,
-            length: length,
-        };
-
-        setOklList(prev =>
-            prev.map(okl =>
-                okl.id === oklId ?
-                    {...okl, cables: [...okl.cables, cable]} : okl
-            )
-        );
-    };
-
-
-    // Удаление кабеля
-    const removeCable = (oklId: string, cableId: string) => {
-        setOklList(prev => prev.map(okl => okl.id === oklId ?
-                { ...okl, cables: okl.cables.filter(c => c.id !== cableId) } : okl
-            )
-        );
-    };
-
-    // Удаление всей ОКЛ
-    const deleteOKL = (oklId: string) => {
-        setOklList(prev => prev.filter(okl => okl.id !== oklId));
-    };
-
-    // Копирование ОКЛ
-    const copyOKL = (oklId: string) => {
-        const original = oklList.find(o => o.id === oklId);
-        if (!original) return;
-        const copy: newOKLItem = {
-            ...original,
-            id: generateUniqueId(),
-            cables: original.cables.map(c => ({ ...c, id: generateUniqueId() })),
-        };
-        setOklList(prev => [...prev, copy]);
-    };
-
-
-
-
-    return {
-        oklList,
-        selectedOKL,
-        setSelectedOKL,
-        addOKL,
-        addCable,
-        removeCable,
-        deleteOKL,
-        copyOKL,
-    };
-};
-*/

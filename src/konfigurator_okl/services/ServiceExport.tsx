@@ -1,5 +1,5 @@
 import {pdf, Document, Page, Text, View, StyleSheet, Font} from '@react-pdf/renderer';
-import {OKL_LINKS} from "../data";
+import {OKL_LINKS} from "../../data/data";
 import ExcelJS from 'exceljs';
 // === Регистрация шрифта (для кириллицы) ===
 Font.register({

@@ -1,6 +1,6 @@
 // components/HelpSidebar.tsx
 import React, { useState } from 'react';
-import styles from './HelpSidebar.module.css';
+import styles from '../styles/HelpSidebar.module.css';
 
 interface Step {
     title: string;
